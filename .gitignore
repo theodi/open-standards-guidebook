@@ -1,0 +1,47 @@
+###################
+# Dependencies
+###################
+/node_modules/
+.bundle/
+npm-debug.log
+
+
+###################
+# Build artefacts
+###################
+/dist/
+.sass-cache/
+/assets/styles/design/
+/assets/js/design/
+/src/.jekyll-metadata
+
+
+###################
+# Backups
+###################
+*.bak
+
+
+###################
+# Editor
+###################
+*.sublime-project
+*.sublime-workspace
+/.phpintel/
+.idea
+
+
+###################
+# Platform specific
+###################
+
+# OSX
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+*.bat
+*.ps1

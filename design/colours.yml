@@ -1,0 +1,28 @@
+global:
+  category: 'Visual'
+  type: 'color'
+props:
+  black:
+    value: '#4d4e5d'
+    comment: 'Near black, used for copy'
+  grey:
+    value: '#cbcbcc'
+    comment: 'Grey'
+  lightgrey:
+    value: '#fafafa'
+    comment: 'Light Grey used for backgrounds'
+  primary:
+    value: '#ff655d'
+    comment: 'Primary'
+  secondary:
+    value: '#1822ba'
+    comment: 'Secondary'
+  secondaryhover:
+    value: '#121987'
+    comment: 'Secondary Hover'
+  tertiary:
+    value: '#ccb38f'
+    comment: 'Tertiary'
+  tertiaryhover:
+    value: '#8a6433'
+    comment: 'Tertiary Hover'

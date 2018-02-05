@@ -1,0 +1,16 @@
+global:
+  category: 'Layout'
+  type: 'number'
+props:
+  small:
+    comment: 'Small'
+    value: 480
+  medium:
+    comment: 'Medium'
+    value: 720
+  large:
+    comment: 'Large'
+    value: 960
+  xlarge:
+    comment: 'X-large'
+    value: 1200

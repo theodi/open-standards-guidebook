@@ -1,0 +1,22 @@
+global:
+  category: 'Spacing Units'
+  type: 'number'
+props:
+  half:
+    value: 6
+    comment: 'half'
+  base:
+    value: 12
+    comment: 'base'
+  double:
+    value: 24
+    comment: '2x'
+  triple:
+    value: 36
+    comment: '3x'
+  quad:
+    value: 48
+    comment: '4x'
+  oct:
+    value: 96
+    comment: '8x'

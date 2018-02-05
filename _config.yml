@@ -1,0 +1,10 @@
+
+# Site Source
+source: src
+# Site Destination
+destination: dist
+
+timezone: Europe/London
+
+# Incremental build
+incremental: true
