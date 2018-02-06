@@ -3,23 +3,18 @@
 // ==========================================================================
 
 %list-base {
-    font-size: 16px;
     list-style: none;
+    line-height: 1.44;
+    font-size: ms(0);
     padding-left: 0;
-    margin-bottom: rem-calc(15);
+    margin: 0 0 spacing(base) 0;
 
     li {
-        margin-bottom: spacing(half);
-        line-height: rem-calc(18);
+        margin-bottom: spacing(5);
 
         &:before {
             left: 0;
         }
-    }
-
-    ul, ol {
-        margin-top: rem-calc(5);
-        margin-left: rem-calc(15);
     }
 }
 
@@ -35,12 +30,12 @@ ul {
         padding-left: rem-calc(5);
 
         &:before {
-            content: "";
+            content: " ";
             display: inline-block;
             margin-bottom: rem-calc(4);
-            margin-right: rem-calc(5);
-            width: rem-calc(4);
-            height: rem-calc(4);
+            margin-right: rem-calc(12);
+            width: 4px;
+            height: 4px;
             border-radius: 100%;
             background-color: palette(black);
         }
@@ -62,8 +57,8 @@ ul {
             counter-increment: list;
             content: counters(list, ".") ".";
             color: palette(black);
-            font-size: rem-calc(fontsize(small));
-            margin-right: rem-calc(5);
+            margin-right: rem-calc(12);
+            font-size: ms(-1);
         }
     }
 
@@ -84,7 +79,6 @@ ul {
             margin-bottom: rem-calc(2);
             margin-right: rem-calc(8);
             content: ' ';
-            @include chevron;
         }
     }
 }
