@@ -1,14 +1,19 @@
 // ==========================================================================
 // Lede Atom
 // ==========================================================================
-
 .lede {
-    font-size: fontsize(regular);
-    line-height: rem-calc(21);
-    font-weight: bold;
+  line-height: 1.43;
+  font-size: ms(1);
+
+  @include respond-to(medium) {
+    font-size: ms(1, $thread: desktop);
+  }
 }
 
 .lede > p {
-	font-size: fontsize(regular);
-    line-height: rem-calc(21);
+  font-size: ms(1);
+
+  @include respond-to(medium) {
+    font-size: ms(1, $thread: desktop);
+  }
 }
