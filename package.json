@@ -27,7 +27,14 @@
     "json-loader": "^0.5.7",
     "vue-loader": "^13.5.0",
     "vue-template-compiler": "^2.5.7",
-    "yml-loader": "^2.1.0"
+    "yml-loader": "^2.1.0",
+    "@mise-en-place/tools.clearfix": "^3.0.0",
+    "@mise-en-place/tools.link": "^3.0.0",
+    "@mise-en-place/tools.strip-units": "^3.0.1",
+    "@mise-en-place/tools.trim": "^3.0.0",
+    "@mise-en-place/utilities.bg-cover": "^3.0.0",
+    "@mise-en-place/utilities.scroll": "^3.0.1",
+    "@mise-en-place/utilities.uppercase": "^3.0.0"
   },
   "dependencies": {
     "@frctl/fractal": "^1.1.7",
