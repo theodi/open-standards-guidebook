@@ -6,4 +6,9 @@ layout: application
 
 <p class="lede">{{ page.lede }}</p>
 
+<div id="toc">
+    <h4>Page contents</h4>
+    {% include toc.html html=content %}
+</div>
+
 {{ content }}
