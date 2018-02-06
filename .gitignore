@@ -25,9 +25,7 @@ npm-debug.log
 ###################
 # Editor
 ###################
-*.sublime-project
 *.sublime-workspace
-/.phpintel/
 .idea
 
 
