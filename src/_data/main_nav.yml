@@ -1,0 +1,17 @@
+####
+# main-nav.yml: defines the items for the main site (top) navigation
+####
+- title: Introduction
+  url: /introduction/
+
+- title: Find Existing Standards
+  url: /find-existing-standards/
+
+- title: Creating Impact
+  url: /creating-impact/
+
+- title: Creating Open Standards
+  url: /creating-open-standards/
+
+- title: The Standards Community
+  url: /the-standards-community/
