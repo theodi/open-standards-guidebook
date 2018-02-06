@@ -146,6 +146,40 @@
     normalize-path "^2.0.1"
     through2 "^2.0.3"
 
+"@mise-en-place/tools.bg-cover@~3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@mise-en-place/tools.bg-cover/-/tools.bg-cover-3.0.0.tgz#76f987188b36a395f948cee189e1b5793e437535"
+
+"@mise-en-place/tools.clearfix@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@mise-en-place/tools.clearfix/-/tools.clearfix-3.0.0.tgz#247c7b0c0f4866bd734f06f817de91f8954eecf1"
+
+"@mise-en-place/tools.link@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@mise-en-place/tools.link/-/tools.link-3.0.0.tgz#b684b790f2e6e68dd20622ef591c58290db03b1a"
+
+"@mise-en-place/tools.strip-units@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@mise-en-place/tools.strip-units/-/tools.strip-units-3.0.1.tgz#9db2a66a166591df53cd348a559c2368b263355f"
+
+"@mise-en-place/tools.trim@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@mise-en-place/tools.trim/-/tools.trim-3.0.0.tgz#6e6d4a68b1488075b1123e6056e65e379a17ed10"
+
+"@mise-en-place/utilities.bg-cover@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@mise-en-place/utilities.bg-cover/-/utilities.bg-cover-3.0.0.tgz#144bc1fdc3bb82438864c495af9cb7bcb5bd141b"
+  dependencies:
+    "@mise-en-place/tools.bg-cover" "~3.0.0"
+
+"@mise-en-place/utilities.scroll@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@mise-en-place/utilities.scroll/-/utilities.scroll-3.0.1.tgz#a72f256359dc2b0dc7867930c42ca51a2b6c58c8"
+
+"@mise-en-place/utilities.uppercase@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@mise-en-place/utilities.uppercase/-/utilities.uppercase-3.0.0.tgz#dafc2b18eac0db7c2280141a8b6292453e1c9c7a"
+
 a-sync-waterfall@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/a-sync-waterfall/-/a-sync-waterfall-1.0.0.tgz#38e8319d79379e24628845b53b96722b29e0e47c"
