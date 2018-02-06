@@ -1,0 +1,44 @@
+@import '../tools/map-get-if-exists';
+@import '../tools/rem-calc';
+
+$__spacing: () !default  !global;
+
+@mixin spacing-load($spacing-map) {
+  $__spacing: $spacing-map !global;
+}
+
+@function spacing-value($space) {
+    $space: quote($space);
+    @return map-get-if-exists($__spacing, $space);
+}
+
+@function spacing($target) {
+
+    $max: length($target);
+    $values: ();
+
+    @for $i from 1 through $max {
+        // Export spacing value of $target
+        $value: 0;
+
+        $spacing: nth($target, $i);
+
+        @if type-of($spacing) == 'number' {
+            $value: $spacing;
+        } @else {
+            $value: spacing-value(quote($spacing));
+        }
+
+        $values: append($values, $value);
+    }
+
+    @return rem-calc($values);
+
+}
+
+
+
+
+@function get-spacing() {
+    @return $__spacing;
+}
