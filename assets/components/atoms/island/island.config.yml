@@ -1,0 +1,30 @@
+title: "Islands"
+context:
+    colors:
+    -
+      title: This is a default island
+      inverse: false
+    -
+      class: island--primary
+      title: This is a primary inversed island
+      inverse: true
+    -
+      class: island--primary-dark
+      title: This is a primary-dark inversed island
+      inverse: true
+    -
+      class: island--primary-mid
+      title: This is a primary-mid inversed island
+      inverse: true
+    -
+      class: island--primary-light
+      title: This is a primary-light inversed island
+      inverse: true
+    -
+      class: island--secondary
+      title: This is a secondary inversed island
+      inverse: true
+    -
+      class: island--secondary-dark
+      title: This is a secondary dark inversed island
+      inverse: true

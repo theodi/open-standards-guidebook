@@ -1,0 +1,10 @@
+@import '~modularscale-sass/stylesheets/modularscale';
+
+$modularscale: (
+  base: 15px,
+  ratio: 1.200,
+
+  desktop: (
+    ratio: 1.333
+  )
+);

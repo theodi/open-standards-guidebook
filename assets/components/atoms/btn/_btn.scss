@@ -1,0 +1,84 @@
+// ==========================================================================
+// Button Atom
+// ==========================================================================
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  text-align: center;
+  border-radius: rem-calc(5);
+  padding: spacing(14 30);
+  font-size: rem-calc(fontsize(small));
+  font-weight: 600;
+  transition: all ease 150ms;
+
+  @include respond-to(medium) {
+    font-size: rem-calc(fontsize(regular));
+  }
+
+  @include link() {
+    background: palette(primary);
+    color: white;
+  }
+
+  @include link-hover() {
+    background: palette(black);
+  }
+}
+
+.btn--primary {
+  @include link() {
+    background: palette(primary);
+    color: white;
+  }
+
+  @include link-hover() {
+    background: palette(primary);
+  }
+}
+
+.btn--secondary {
+  @include link() {
+    background-color: palette(secondary);
+    color: white;
+  }
+
+  @include link-hover() {
+    background: palette(primary);
+  }
+}
+
+.btn--black {
+  @include link() {
+    background-color: palette(black);
+    color: white;
+  }
+
+  @include link-hover() {
+    background: palette(black);
+  }
+}
+
+.btn--naked {
+  @include link() {
+    background-color: rgba(255, 255, 255, 0);
+    color: palette(primary);
+  }
+
+  @include link-hover() {
+    color: black;
+  }
+}
+
+.btn--block {
+  display: block;
+}
+
+.btn--inline {
+  display: inline-block;
+
+  &+.btn--inline {
+    margin-top: spacing(base);
+  }
+}

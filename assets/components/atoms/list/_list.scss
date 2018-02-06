@@ -1,0 +1,107 @@
+// ==========================================================================
+// Lists Atom
+// ==========================================================================
+
+%list-base {
+    font-size: 16px;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: rem-calc(15);
+
+    li {
+        margin-bottom: spacing(half);
+        line-height: rem-calc(18);
+
+        &:before {
+            left: 0;
+        }
+    }
+
+    ul, ol {
+        margin-top: rem-calc(5);
+        margin-left: rem-calc(15);
+    }
+}
+
+ul {
+    @extend %list-base;
+}
+
+
+@mixin list--bullet {
+    @extend %list-base;
+
+    li {
+        padding-left: rem-calc(5);
+
+        &:before {
+            content: "";
+            display: inline-block;
+            margin-bottom: rem-calc(4);
+            margin-right: rem-calc(5);
+            width: rem-calc(4);
+            height: rem-calc(4);
+            border-radius: 100%;
+            background-color: palette(black);
+        }
+    }
+}
+
+.list--bullet {
+    @include list--bullet;
+}
+
+
+@mixin list--numbered {
+    @extend %list-base;
+    counter-reset: list;
+
+    li {
+
+        &:before {
+            counter-increment: list;
+            content: counters(list, ".") ".";
+            color: palette(black);
+            font-size: rem-calc(fontsize(small));
+            margin-right: rem-calc(5);
+        }
+    }
+
+    ol {
+        counter-reset: list;
+    }
+}
+
+.list--numbered {
+    @include list--numbered;
+}
+
+@mixin list--styled {
+    @extend %list-base;
+
+    li {
+        &:before {
+            margin-bottom: rem-calc(2);
+            margin-right: rem-calc(8);
+            content: ' ';
+            @include chevron;
+        }
+    }
+}
+
+.list--styled {
+    @include list--styled;
+}
+
+.u-styled-lists {
+    ul {
+        @extend %list-base;
+    }
+
+    ul {
+        @include list--styled;
+    }
+    ol {
+        @include list--numbered;
+    }
+}

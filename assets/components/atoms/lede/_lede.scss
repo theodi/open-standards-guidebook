@@ -1,0 +1,10 @@
+.lede {
+    font-size: fontsize(regular);
+    line-height: rem-calc(21);
+    font-weight: bold;
+}
+
+.lede > p {
+	font-size: fontsize(regular);
+    line-height: rem-calc(21);
+}

@@ -1,0 +1,46 @@
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+  color: palette(black);
+  margin: 0 0 rem-calc(15) 0;
+  line-height: 1;
+  font-weight: bold;
+
+  > a {
+    @include link() {
+      text-decoration: none;
+    }
+  }
+}
+
+h1, .h1 {
+  font-size: ms(4);
+
+  @include respond-to(medium) {
+    font-size: ms(4, $thread: desktop);
+  }
+}
+
+h2, .h2 {
+  font-size: ms(3);
+
+  @include respond-to(medium) {
+    font-size: ms(3, $thread: desktop);
+  }
+}
+
+h3, .h3 {
+  font-size: ms(2);
+
+  @include respond-to(medium) {
+    font-size: ms(2, $thread: desktop);
+  }
+}
+
+h4, .h4 {
+  font-size: ms(1);
+
+  @include respond-to(medium) {
+    font-size: ms(1, $thread: desktop);
+  }
+}
+
+

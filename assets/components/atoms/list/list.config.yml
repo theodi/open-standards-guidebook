@@ -1,0 +1,20 @@
+title: "Lists"
+context:
+    message: This is a standard list item
+variants:
+    -
+        name: Bulleted List
+        context:
+            modifier: list--bullet
+            message: This is also a bulleted list item
+    -
+        name: Numbered List
+        context:
+            modifier: list--numbered
+            message: This is also a numbered list item
+    -
+        name: Styled List
+        context:
+            modifier: list--styled
+            message: This is a styled button with a chevron accent
+

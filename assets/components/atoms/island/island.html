@@ -1,0 +1,7 @@
+{% for color in colors %}
+	<div class="island{% if color.class %} {{ color.class }}{% endif %}{% if color.inverse %} u-inverse{% endif %}">
+		<h1>{{ color.title }}</h1>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+	</div>
+{% endfor %}

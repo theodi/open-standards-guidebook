@@ -1,0 +1,46 @@
+// ==========================================================================
+// Links Atom
+// ==========================================================================
+
+a {
+    text-decoration: underline;
+    text-decoration-skip: ink;
+
+    @include link() {
+        color: palette(primary);
+    }
+
+    @include link-hover() {
+        color: palette(secondary);
+    }
+}
+
+.link--block {
+    display: block;
+}
+
+.link--plain {
+    text-decoration: none;
+    text-decoration-skip: none;
+
+    @include link() {
+        color: palette(black);
+    }
+
+    @include link-hover() {
+    }
+}
+
+.link--black {
+    @include link() {
+        color: palette(black);
+    }
+
+    @include link-hover() {
+        color: palette(primary);
+    }
+}
+
+.link--long-break {
+    word-break: break-word;
+}

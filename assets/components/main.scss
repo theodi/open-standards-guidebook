@@ -9,6 +9,7 @@
 @import 'tools/rem-calc';
 @import 'tools/map-get-if-exists';
 @import 'tools/map-deep-get-set';
+@import 'tools/font-ratio';
 
 // Palette Tool Load
 @import 'tools/palette';
@@ -41,6 +42,8 @@
 // Forms
 
 // Atoms
+@import 'atoms/headings/headings';
+@import 'atoms/island/island';
 
 // Molecules
 
