@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "concurrently 'docker run -v $PWD:/usr/src/app -p 4000:4000 starefossen/github-pages' 'BLENDID_CONFIG_PATH=./build yarn run blendid'"
+    "start": "concurrently 'bundle exec jekyll serve' 'BLENDID_CONFIG_PATH=./build yarn run blendid'"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

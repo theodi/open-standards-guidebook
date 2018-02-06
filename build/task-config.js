@@ -87,7 +87,7 @@ module.exports = {
     //   // path-config.json
     //   baseDir: 'public'
     // },
-    files: ["design/*.yml", "src/*.html"],
+    files: ["design/*.yml", "dist/*.html"],
     proxy: "http://localhost:4000",
   },
   // Specify additional environment specific configuration to be merged in with Blendid's defaults

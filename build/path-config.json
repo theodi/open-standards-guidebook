@@ -1,6 +1,6 @@
 {
   "src": "./",
-  "dest": "./src/dist",
+  "dest": "./dist/assets",
 
   "static": {
     "src": "assets/static",
