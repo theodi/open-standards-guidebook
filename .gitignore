@@ -11,7 +11,7 @@ npm-debug.log
 ###################
 /dist/
 .sass-cache/
-/assets/styles/design/
+/assets/components/design/
 /assets/js/design/
 /src/.jekyll-metadata
 
