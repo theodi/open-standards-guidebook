@@ -1,0 +1,43 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% comment %}
+    <link rel="home" href="{{ siteUrl }}" />
+    <link rel="stylesheet" href="{{ 'dist/styles/main.css' | gulp_rev }}">
+    {% endcomment %}
+    <title>{{ page.title }}</title>
+
+    {% comment %}
+      add a .js class to the html element
+    {% endcomment %}
+    <script>
+        (function(){
+            var d = document.documentElement;
+            d.className = d.className.replace(/(^|\s)no-js(\s|$)/, '$1$2') +  ' js ';
+        }());
+    </script>
+
+</head>
+{% comment %}
+    @todo make debug class dynamic
+{% endcomment %}
+<body class="debug">
+
+{% include header.html %}
+
+<main id="site-body">
+    {{ content }}
+</main>
+
+
+{% include footer.html %}
+
+{% comment %}
+<script src="{{ 'dist/js/app.js' | gulp_rev }}"></script>
+{% endcomment %}
+
+</body>
+</html>
