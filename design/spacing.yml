@@ -2,21 +2,18 @@ global:
   category: 'Spacing Units'
   type: 'number'
 props:
-  half:
-    value: 6
-    comment: 'half'
-  base:
+  small:
     value: 12
+    comment: 'small'
+  base:
+    value: 26
     comment: 'base'
-  double:
-    value: 24
-    comment: '2x'
-  triple:
+  medium:
     value: 36
-    comment: '3x'
-  quad:
+    comment: 'medium'
+  large:
     value: 48
-    comment: '4x'
-  oct:
-    value: 96
-    comment: '8x'
+    comment: 'large'
+  xlarge:
+    value: 60
+    comment: 'xlarge'
