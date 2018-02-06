@@ -1,0 +1,11 @@
+####
+# top_nav_aux.yml: defines the items for the auxillary site  navigation at the top of the page
+#
+# Note: Max 2 items
+####
+- title: How to use this guide
+  url: /how-to-use-this-guide/
+
+- title: About
+  url: /about/
+

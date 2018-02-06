@@ -1,3 +1,3 @@
 ---
-layout: application
+Contact: background
 ---

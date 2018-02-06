@@ -1,0 +1,18 @@
+<header>
+    <h1>Open Standards for Data</h1>
+
+    <nav>
+    <ul>
+       {% for item in site.data.main_nav %}
+          <li><a href="{{ item.url }}"
+            alt="{{ item.title }}">{{ item.title }} {% if page.url contains item.url %}(active){% endif %} </a></li>
+       {% endfor %}
+    </ul>
+    <ul>
+       {% for item in site.data.top_aux_nav %}
+          <li><a href="{{ item.url }}"
+            alt="{{ item.title }}">{{ item.title }} {% if page.url contains item.url %}(active){% endif %} </a></li>
+       {% endfor %}
+    </ul>
+    </nav>
+</header>
