@@ -1,0 +1,5 @@
+@each $color, $value in $colours-map {
+  .u-text-color--#{$color} {
+    color: $value;
+  }
+}

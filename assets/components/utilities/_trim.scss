@@ -1,0 +1,10 @@
+@mixin trim(){
+    > *:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
+.u-trim {
+	@include trim;
+}

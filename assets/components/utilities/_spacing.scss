@@ -1,0 +1,39 @@
+$positions: (
+    "all",
+    "top",
+    "right",
+    "bottom",
+    "left"
+);
+// Build the selector suffix to remove 'base' and 'all' from selectors
+@each $position in $positions {
+
+    $positionSelector: if($position == 'all', '', '-#{$position}');
+    $property: if($position == 'all', 'padding', 'padding-#{$position}');
+
+    @each $spacing, $spacingvalue in $spacing-map {
+        $spacingSelector: if($spacing == 'base', $positionSelector, '#{$positionSelector}-#{$spacing}');
+
+        .pad#{$spacingSelector} {
+            #{$property}: spacing($spacing);
+            // per breakpoint
+            @each $bp, $config in $breakpoints-map {
+                @include respond-to($bp) {
+                    &--#{$bp} {
+                        #{$property}: spacing($spacing) !important;
+                    }
+                }
+            }
+        }
+    }
+    /* start reset pad */
+    .pad#{$positionSelector}-reset {
+        @each $bp, $config in $breakpoints-map {
+            @include respond-to($bp) {
+                &--#{$bp} {
+                    #{$property}: 0 !important;
+                }
+            }
+        }
+    }
+}
