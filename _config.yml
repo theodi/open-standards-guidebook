@@ -8,3 +8,16 @@ timezone: Europe/London
 
 # Incremental build
 incremental: true
+
+collections_dir: _collections
+
+collections:
+  user-group:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: '' # an empty string here means all files in the project
+    values:
+      layout: content-page
