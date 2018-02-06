@@ -1,10 +1,31 @@
-
-# Site Source
+###
+# Build
+###
 source: src
-# Site Destination
 destination: dist
-
 timezone: Europe/London
-
-# Incremental build
 incremental: true
+
+###
+# Collections
+###
+collections_dir: _collections
+collections:
+  user-group:
+    output: true
+
+###
+# Default front matter
+###
+
+defaults:
+  -
+    scope:
+      path: '' # an empty string here means all files in the project
+    values:
+      layout: content-page
+
+###
+# Plugins
+###
+# plugins:

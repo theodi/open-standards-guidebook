@@ -1,5 +1,4 @@
 ---
-layout: application
 title: Introduction
 ---
 
