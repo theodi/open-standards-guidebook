@@ -1,1 +1,1 @@
-module.exports = require(__dirname + '/config/fractal-config');
+module.exports = require(__dirname + '/build/fractal-config');

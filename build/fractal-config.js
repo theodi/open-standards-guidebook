@@ -44,11 +44,9 @@ fractal.docs.set('path', path.join(srcPath, 'docs'));
  * Web
  */
 
-
 // Where the generated static assets will be
 fractal.web.set('static.path', publicPath);
 // prefix static asset URLs
-fractal.web.set('static.mount', 'dist');
 
 // Where to output the built (static HTML) styleguide
 fractal.web.set('builder.dest',  path.resolve(__dirname, '../styleguide'));
