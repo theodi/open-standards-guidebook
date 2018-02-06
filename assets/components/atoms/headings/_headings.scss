@@ -4,9 +4,10 @@
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   color: palette(black);
-  margin: 0 0 rem-calc(15) 0;
   line-height: 1;
   font-weight: bold;
+  margin: 0;
+  padding: 0 0 spacing(base) 0;
 
   > a {
     @include link() {
