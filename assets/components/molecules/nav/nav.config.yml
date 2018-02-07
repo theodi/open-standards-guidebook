@@ -1,0 +1,45 @@
+title: "Nav Default"
+status: "ready"
+context:
+  items:
+    -
+      title: What are Open Standards for Data?
+    -
+      title: Types of Open Data Standards
+    -
+      title: Why use Open Standards for Data
+    -
+      title: The Open Standards process
+    -
+      title: Case Studies
+variants:
+  -
+    name: large
+    context:
+      modifier: m-nav--large
+  -
+    name: inline
+    context:
+      modifier: m-nav--inline
+      items:
+      -
+        title: How to use this guide
+      -
+        title: About
+  -
+    name: masthead
+    context:
+      modifier: m-nav--masthead
+      items:
+      -
+        title: Introduction
+        active: false
+      -
+        title: Creating Impact
+        active: true
+      -
+        title: Creating Open Standards
+        active: false
+      -
+        title: The Standards Community
+        active: false

@@ -1,0 +1,9 @@
+<div class="m-nav {{ modifier }}">
+	{% if not modifier or modifier == 'm-nav--large' %}
+	{% render '@meta-title'%}
+	{% endif %}
+
+	{% for item in items %}
+		<a href="#" class="m-nav__item {% if item.active %}is--active{% endif %}">{{ item.title }}</a>
+	{% endfor %}
+</div>

@@ -50,11 +50,12 @@
 @import 'atoms/list/list';
 @import 'atoms/meta-title/meta-title';
 @import 'atoms/paragraph/paragraph';
+@import 'atoms/brand/brand';
 
 // Molecules
 @import 'molecules/breadcrumb/breadcrumb';
 @import 'molecules/hero/hero-default/hero';
-@import 'molecules/nav/nav-default/nav';
+@import 'molecules/nav/nav';
 @import 'molecules/masthead/masthead';
 
 // Utilities
