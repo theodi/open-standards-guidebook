@@ -36,20 +36,6 @@ $sass-burger-add-vendor-prefixes: true !default;
         @if $border-radius != 0 {
             border-radius: $border-radius;
         }
-
-        @if $sass-burger-add-vendor-prefixes {
-            -webkit-transition-property: background-color, -webkit-transform;
-            -moz-transition-property: background-color, -moz-transform;
-            -o-transition-property: background-color, -o-transform;
-        }
-        transition-property: background-color, transform;
-
-        @if $sass-burger-add-vendor-prefixes {
-            -webkit-transition-duration: $transition-duration;
-            -moz-transition-duration: $transition-duration;
-            -o-transition-duration: $transition-duration;
-        }
-        transition-duration: $transition-duration;
     }
 
     &::before, &::after {
@@ -144,7 +130,6 @@ $sass-burger-add-vendor-prefixes: true !default;
 }
 
 .burger__text {
-	transition: all ease 250ms;
 	color: palette(primary);
 	font-size: ms(-1);
 	padding-left: spacing(4);
