@@ -1,0 +1,28 @@
+// ==========================================================================
+// Breadcrumb Molecule
+// ==========================================================================
+
+.m-breadcrumb {
+}
+
+.m-breadcrumb__item {
+	@include link() {
+		font-weight: bold;
+		font-size: ms(0, $thread: desktop);
+		color: palette(primary-mid);
+	}
+
+	@include link-hover() {
+		color: palette(primary);
+	}
+
+	&.is--active {
+		@include link() {
+			font-weight: normal;
+		}
+	}
+}
+
+.m-breadcrumb__seperator {
+	font-weight: bold;
+}
