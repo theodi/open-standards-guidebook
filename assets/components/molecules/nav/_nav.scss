@@ -49,6 +49,7 @@
 			display: inline-block;
 			margin-right: spacing(8);
 			color: palette(primary);
+			font-weight: bold;
 
 			&:last-of-type {
 				margin-right: 0;
@@ -58,6 +59,10 @@
 				color: white;
 				text-decoration: none;
 			}
+		}
+
+		@include link-hover {
+			color: palette(white);
 		}
 	}
 }
