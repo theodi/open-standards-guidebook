@@ -1,5 +1,5 @@
 <div class="m-breadcrumb">
-	{% for item in items %}
+	{% for item in breadcrumb.items %}
 		<a href="#" class="m-breadcrumb__item {% if item.active %}is--active{% endif %}">{{ item.title }}</a>
 		
 		{% if not loop.last %}

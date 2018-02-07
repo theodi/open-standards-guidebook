@@ -1,6 +1,7 @@
 title: "Lists"
 context:
-    message: This is a standard list item
+    list:
+        message: This is a standard list item
 variants:
     -
         name: Bulleted List

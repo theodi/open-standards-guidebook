@@ -1,0 +1,33 @@
+<div class="m-hero">
+	<div class="wrapper">
+		{% if hero.breadcrumbs %}
+			<div class="pad-bottom">
+				{% render '@breadcrumb' %}
+			</div>
+		{% endif %}
+		<div class="g">
+			<div class="g__cell g__cell-12 g__cell-8--medium">
+				<div class="g">
+					<div class="g__cell g__cell-12 g__cell-11--medium">
+						{% if pill %}
+							{% include '@pill' %}
+						{% endif %}
+						{% if heading %}
+							<div class="u-trim--all">
+								<h1>{{ hero.heading }}</h1>
+							</div>
+						{% endif %}
+						{% if lede %}
+							{% include '@lede' %}
+						{% endif %}
+					</div>
+				</div>
+			</div>
+			{% if hero.sidenav %}
+				<div class="g__cell g__cell-12 g__cell-4--medium pad-top-small pad-top-reset--medium">
+					{% render '@nav--large' %}
+				</div>
+			{% endif %}
+		</div>
+	</div>
+</div>

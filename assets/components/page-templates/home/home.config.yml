@@ -1,0 +1,11 @@
+title: "Home Page Layout"
+status: "ready"
+
+context:
+  hero:
+    heading: false
+    breadcrumbs: false
+    sidenav: false
+  pill: false
+  lede:
+    message: 'Some introductory text lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate magna velit. Vestibulum fermentum fermentum libero. Vestibulum dui dui, pulvinar bibendum nulla eget, lacinia fermentum lorem.'
