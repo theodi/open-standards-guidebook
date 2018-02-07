@@ -46,7 +46,6 @@ ul {
     @include list--bullet;
 }
 
-
 @mixin list--numbered {
     @extend %list-base;
     counter-reset: list;
@@ -71,29 +70,9 @@ ul {
     @include list--numbered;
 }
 
-@mixin list--styled {
-    @extend %list-base;
-
-    li {
-        &:before {
-            margin-bottom: rem-calc(2);
-            margin-right: rem-calc(8);
-            content: ' ';
-        }
-    }
-}
-
-.list--styled {
-    @include list--styled;
-}
-
 .u-styled-lists {
     ul {
         @extend %list-base;
-    }
-
-    ul {
-        @include list--styled;
     }
     ol {
         @include list--numbered;
