@@ -5,6 +5,22 @@ context:
     heading: General Transit Feed Specification (GTFS)
     sidenav: true
     breadcrumbs: true
+    lowernav: false
+  nav:
+    modifier: m-nav--large
+    items:
+    -
+      title: What are Open Standards for Data?
+    -
+      title: Types of Open Data Standards
+    -
+      title: Why use Open Standards for Data
+    -
+      title: The Open Standards process
+    -
+      title: Case Studies
+  metatitle:
+    message: Lorem
   pill:
     message: Test
   lede:

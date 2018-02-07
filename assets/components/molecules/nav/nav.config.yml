@@ -1,45 +1,62 @@
 title: "Nav Default"
 status: "ready"
 context:
-  items:
-    -
-      title: What are Open Standards for Data?
-    -
-      title: Types of Open Data Standards
-    -
-      title: Why use Open Standards for Data
-    -
-      title: The Open Standards process
-    -
-      title: Case Studies
+  nav:
+    items:
+      -
+        title: What are Open Standards for Data?
+      -
+        title: Types of Open Data Standards
+      -
+        title: Why use Open Standards for Data
+      -
+        title: The Open Standards process
+      -
+        title: Case Studies
+  metatitle:
+      message: Meta Title
 variants:
   -
     name: large
     context:
-      modifier: m-nav--large
+      nav:
+        modifier: m-nav--large
+        items:
+          -
+            title: Large nav item 1
+          -
+            title: Large nav item 2
+          -
+            title: Large nav item 3
+      metatitle:
+          message: Large Meta Title
   -
     name: inline
     context:
-      modifier: m-nav--inline
-      items:
-      -
-        title: How to use this guide
-      -
-        title: About
+      nav:
+        modifier: m-nav--inline
+        items:
+          -
+            title: Inline nav item 1
+          -
+            title: Inline nav item 2
+      metatitle: false
   -
     name: masthead
     context:
-      modifier: m-nav--masthead
-      items:
-      -
-        title: Introduction
-        active: false
-      -
-        title: Creating Impact
-        active: true
-      -
-        title: Creating Open Standards
-        active: false
-      -
-        title: The Standards Community
-        active: false
+      nav:
+        modifier: m-nav--masthead
+        items:
+        -
+          title: Introduction
+          active: false
+        -
+          title: Creating Impact
+          active: true
+        -
+          title: Creating Open Standards
+          active: false
+        -
+          title: The Standards Community
+          active: false
+      metatitle: false
