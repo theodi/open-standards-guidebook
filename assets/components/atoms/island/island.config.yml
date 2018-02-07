@@ -18,8 +18,8 @@ context:
       inverse: true
     -
       class: island--primary-light
-      title: This is a primary-light inversed island
-      inverse: true
+      title: This is a primary-light island
+      inverse: false
     -
       class: island--secondary
       title: This is a secondary inversed island
