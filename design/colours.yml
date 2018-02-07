@@ -5,6 +5,9 @@ props:
   black:
     value: '#000000'
     comment: 'Pure Black - Example Usage: Text'
+  white: 
+    value: '#FFFFFF'
+    comment: 'Pure White'
   primary:
     value: '#ff6700'
     comment: 'Primary: Base - Example Usage: Used as primary link colour and CTA quick edit bar'
