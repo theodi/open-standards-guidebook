@@ -6,8 +6,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   color: palette(black);
   line-height: 1.11;
   font-weight: bold;
-  margin: 0;
-  padding: 0 0 spacing(medium) 0;
+  padding: 0;
+  margin: 1em 0 0.5em;
 
   > a {
     @include link() {
@@ -21,6 +21,7 @@ h1, .h1 {
 
   @include respond-to(medium) {
     font-size: ms(4, $thread: desktop);
+    margin: 1em 0 0.25em;
   }
 }
 
@@ -29,7 +30,7 @@ h2, .h2 {
 
   @include respond-to(medium) {
     font-size: ms(3, $thread: desktop);
-    padding: 0 0 spacing(base) 0;
+    // margin: spacing(base) 0;
   }
 }
 
@@ -38,7 +39,7 @@ h3, .h3 {
 
   @include respond-to(medium) {
     font-size: ms(2, $thread: desktop);
-    padding: 0 0 spacing(base) 0;
+    // margin: spacing(base) 0;
   }
 }
 
@@ -47,8 +48,7 @@ h4, .h4 {
 
   @include respond-to(medium) {
     font-size: ms(1, $thread: desktop);
-    padding: 0 0 spacing(base) 0;
+    // margin: spacing(base) 0;
   }
 }
-
-
+  

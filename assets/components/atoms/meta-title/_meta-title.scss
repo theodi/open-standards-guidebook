@@ -10,3 +10,12 @@
     display: block;
     padding-bottom: spacing(small);
 }
+
+.meta-title + h1, .meta-title + h2, .meta-title + h3, .meta-title + h4 {
+	margin-top: 0;
+}
+
+p + .meta-title, h1 + .meta-title, h2 + .meta-title, h3 + .meta-title, h4 + .meta-title, ul + .meta-title, ol + .meta-title {
+	padding: 1em 0 0.25em;
+}
+
