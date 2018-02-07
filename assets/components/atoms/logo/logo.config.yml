@@ -1,0 +1,8 @@
+title: "Logo"
+status: ready
+variants:
+  -
+    name: black
+    context:
+      modifier: logo--black
+      message: Black Logo
