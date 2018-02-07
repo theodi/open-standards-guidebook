@@ -46,11 +46,14 @@
 @import 'atoms/island/island';
 @import 'atoms/lede/lede';
 @import 'atoms/link/link';
+@import 'atoms/pill/pill';
 @import 'atoms/list/list';
 @import 'atoms/meta-title/meta-title';
 @import 'atoms/paragraph/paragraph';
 
 // Molecules
+@import 'molecules/breadcrumb/breadcrumb';
+@import 'molecules/hero/hero-default/hero';
 
 // Utilities
 @import 'utilities/text-color';
