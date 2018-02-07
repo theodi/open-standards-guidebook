@@ -8,12 +8,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   font-weight: bold;
   padding: 0;
   margin: 1em 0 0.5em;
-
-  > a {
-    @include link() {
-      text-decoration: none;
-    }
-  }
 }
 
 h1, .h1 {
@@ -49,6 +43,15 @@ h4, .h4 {
   @include respond-to(medium) {
     font-size: ms(1, $thread: desktop);
     // margin: spacing(base) 0;
+  }
+}
+
+h5, .h5 {
+  font-size: ms(0);
+  margin: 1em 0 0.1em;
+
+  @include respond-to(medium) {
+    font-size: ms(0, $thread: desktop);
   }
 }
   
