@@ -8,6 +8,10 @@
     width: 100%;
     text-align: left;
 
+    @include link-hover() {
+        cursor: pointer;
+    }
+
     &.is--open {
         .m-nav-tray__title {
             color: palette(white);
