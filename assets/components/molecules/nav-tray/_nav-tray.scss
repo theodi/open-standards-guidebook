@@ -1,0 +1,50 @@
+// ==========================================================================
+// Nav Tray Molecule
+// ==========================================================================
+
+.m-nav-tray {
+    background: palette(secondary);
+    padding: spacing(15 0);
+    width: 100%;
+    text-align: left;
+
+    &.is--open {
+        .m-nav-tray__title {
+            color: palette(white);
+
+            .chevron {
+                margin-bottom: spacing(0);
+            }
+        }
+    }
+}
+
+.m-nav-tray__title {
+    color: palette(white);
+    font-size: ms(0);
+    font-weight: 500;
+
+    .chevron {
+        margin-left: spacing(3);
+        margin-bottom: spacing(2);
+    }
+}
+
+
+.m-nav-tray__inner {
+    display: none;
+    background: palette(secondary-dark);
+    padding: spacing(25 0);
+
+    &.is--open {
+        display: block;
+    }
+
+    .m-nav__item {
+        @include link() {
+            color: palette(white);
+            font-size: ms(0, $thread: desktop);
+            margin-bottom: spacing(10);
+        }
+    }
+}

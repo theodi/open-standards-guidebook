@@ -1,0 +1,20 @@
+title: "Chevron"
+context:
+    message: Chevron (Default right)
+variants:
+    -
+        name: up
+        context:
+            modifier: chevron--up
+    -
+        name: down
+        context:
+            modifier: chevron--down
+    -
+        name: left
+        context:
+            modifier: chevron--left
+    -
+        name: white
+        context:
+            modifier: chevron--white
