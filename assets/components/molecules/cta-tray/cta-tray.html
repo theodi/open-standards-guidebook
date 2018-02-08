@@ -1,0 +1,20 @@
+<button class="m-cta-tray {{ modifier }}">
+    <div class="wrapper">
+        <div class="g">
+            {% if modifier %}
+            <span class="g__cell m-cta-tray__close">Close</span>
+            {% endif %}
+            <div class="g__cell g__cell-12 g__cell-auto--medium g--align-right--medium u-text-center u-text-right--medium">
+                <div class="u-trim--all">
+                    <span class="m-cta-tray__title">{{ ctaTray.titleMessage }} <div class="chevron chevron--white {% if modifier %} chevron--up {% else %} chevron--down {% endif %}"></div></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</button>
+
+<div class="m-cta-tray__inner u-inverse {{ modifier }}">
+    <div class="wrapper">
+        {{ ctaTray.trayMessage }}
+    </div>
+</div>

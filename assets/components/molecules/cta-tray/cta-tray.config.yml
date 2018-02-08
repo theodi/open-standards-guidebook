@@ -1,0 +1,14 @@
+title: "CTA Tray"
+status: "ready"
+context:
+  ctaTray:
+    titleMessage: Something missing?
+    trayMessage: false
+variants:
+  -
+    name: open
+    context:
+      modifier: is--open
+      ctaTray:
+          titleMessage: Something Missing?
+          trayMessage: Something missing? <a href="#">edit this page</a> or <a href="#">suggest new content</a>
