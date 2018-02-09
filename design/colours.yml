@@ -5,7 +5,7 @@ props:
   black:
     value: '#000000'
     comment: 'Pure Black - Example Usage: Text'
-  white: 
+  white:
     value: '#FFFFFF'
     comment: 'Pure White'
   primary:
