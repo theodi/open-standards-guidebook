@@ -13,7 +13,7 @@ props:
     comment: 'Grey: - Example Usage: Section divider background and dividing lines lines'
   grey-dark:
     value: '#333333'
-    comment: 'Grey DarkL - Example Usage: Header and footer background'
+    comment: 'Grey Dark - Example Usage: Header and footer background'
   primary:
     value: '#178cff'
     comment: 'Primary: - Example Usage: Used as primary link colour and CTA quick edit bar'

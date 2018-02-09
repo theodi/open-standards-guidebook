@@ -5,13 +5,7 @@
 	}
 </style>
 
-<div class="island pad-top-small pad-bottom-small u-text-right">
-	<div class="wrapper">
-		<div class="u-trim--all">
-			<small><a href="#">Something missing?</a></small>
-		</div>
-	</div>
-</div>
+{% render '@cta-tray' %}
 
 {% render '@masthead' %}
 {% include '@hero' %}
@@ -21,7 +15,7 @@
 		{% for section in sections.items %}
 		<div class="m-section">
 			<span class="meta-title">{{ section.meta }}</span>
-			<h3>{{ section.title }}</h3>
+			<h2>{{ section.title }}</h2>
 
 				<div class="g">
 					{% for item in section.items %}
@@ -36,28 +30,25 @@
 	</div>
 </section>
 
-<section class="island island--grey pad-top pad-bottom-medium">
+<section class="island island--grey pad-top-medium pad-top-xlarge--medium pad-bottom-medium pad-bottom-xlarge--medium">
 	<div class="wrapper">
 		<div class="g">
 			<div class="g__cell g__cell-12 g__cell-6--medium g__cell-4--large">
-				<h5 class="u-text-color--black"><a class="link" href="#">About Open Standards</a></h5>
+                <div class="u-trim--all">
+    				<h5 class="u-text-color--black"><a class="link" href="#">About Open Standards</a></h5>
+                </div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim aminim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo</p>
 			</div>
 
 			<div class="g__cell g__cell-12 g__cell-6--medium g__cell-4--large">
-				<h5 class="u-text-color--black"><a class="link" href="#">Help &amp; Support</a></h5>
+                <div class="u-trim--all">
+    				<h5 class="u-text-color--black"><a class="link" href="#">Help &amp; Support</a></h5>
+                </div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim aminim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex commodo</p>
 			</div>
 		</div>
 	</div>
 </section>
 
-<div class="island island--primary pad-top-small pad-bottom-small">
-	<div class="wrapper">
-		<div class="u-trim--all">
-			<small class="u-text-color--white">Something missing? <a href="#">edit this page</a> or <a href="#">suggest new content</a></small>
-		</div>
-	</div>
-</div>
-
+{% render '@cta' %}
 {% render '@footer' %}

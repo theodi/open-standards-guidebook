@@ -38,9 +38,9 @@ variants:
         modifier: m-nav--inline
         items:
           -
-            title: Inline nav item 1
+            title: How to use this guide
           -
-            title: Inline nav item 2
+            title: About
       metatitle: false
   -
     name: masthead

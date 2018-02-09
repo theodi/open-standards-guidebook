@@ -3,6 +3,10 @@
 		{% include '@meta-title'%}
 	{% endif %}
 
+    {% if nav.pill %}
+        <span class="pill">Getting Started</span>
+    {% endif %}
+
     {% if navTitle %}
         <div class="u-trim--all pad-bottom">
             <h2>{{ navTitle}}</h2>

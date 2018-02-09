@@ -51,22 +51,25 @@
 
 .m-nav--masthead {
     background: palette(grey-dark);
+    margin-top: spacing(5);
 
     .m-nav__item {
         @include link() {
             font-size: ms(0);
             display: inline-block;
-            margin-right: spacing(8);
-            color: palette(primary);
+            margin-right: spacing(2);
+            color: palette(white);
             font-weight: bold;
+            text-decoration: none;
+            padding: spacing(4 8 6 8);
 
             &:last-of-type {
                 margin-right: 0;
             }
 
             &.is--active {
-                color: white;
-                text-decoration: none;
+                color: palette(white);
+                background: palette(primary);
             }
         }
 

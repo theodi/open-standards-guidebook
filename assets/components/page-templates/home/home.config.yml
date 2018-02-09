@@ -10,6 +10,7 @@ context:
 
   navTitle: Introduction to Open Standards
   nav:
+    pill: true
     modifier: m-nav--large
     items:
     -
@@ -19,8 +20,7 @@ context:
     -
       title: Why use Open Standards for Data
 
-  metatitle:
-    message: Getting Started
+  metatitle: false
 
   pill: false
 

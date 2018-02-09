@@ -1,15 +1,9 @@
 // ==========================================================================
-// Logo Atom
+// CTA Tray Molecule
 // ==========================================================================
 
-.logo {
-	fill: white;
-
-    @include link-hover() {
-        opacity: 0.85;
-    }
-}
-
-.logo--black {
-	fill: black;
+.m-cta {
+    background: palette(secondary);
+    padding: spacing(15 0);
+    color: white;
 }
