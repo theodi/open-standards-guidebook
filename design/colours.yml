@@ -4,25 +4,19 @@ global:
 props:
   black:
     value: '#000000'
-    comment: 'Pure Black - Example Usage: Text'
-  white: 
+    comment: 'Pure Black'
+  white:
     value: '#FFFFFF'
     comment: 'Pure White'
+  grey:
+    value: '#f3f3f4'
+    comment: 'Grey: - Example Usage: Section divider background and dividing lines lines'
+  grey-dark:
+    value: '#333333'
+    comment: 'Grey DarkL - Example Usage: Header and footer background'
   primary:
-    value: '#ff6700'
-    comment: 'Primary: Base - Example Usage: Used as primary link colour and CTA quick edit bar'
-  primary-dark:
-    value: '#260f00'
-    comment: 'Primary: Dark - Example Usage: Header and footer background'
-  primary-mid:
-    value: '#541c00'
-    comment: 'Primary: Mid - Example Usage: Open menu colour'
-  primary-light:
-    value: '#fef5ee'
-    comment: 'Primary: Light - Example Usage: Section divider background and dividing lines lines '
+    value: '#178cff'
+    comment: 'Primary: - Example Usage: Used as primary link colour and CTA quick edit bar'
   secondary:
-    value: '#00aae8'
-    comment: 'Secondary: Base - Example Usage: Case study label'
-  secondary-dark:
-    value: '#00729c'
-    comment: 'Secondary: Dark - Example Usage: Meta titles and secondary links'
+    value: '#ff6700'
+    comment: 'Secondary: - Example Usage: Case study label'

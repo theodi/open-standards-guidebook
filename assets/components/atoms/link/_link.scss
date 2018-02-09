@@ -10,7 +10,7 @@ a {
   }
 
   @include link-hover() {
-    color: palette(primary-mid);
+    color: palette(grey-dark);
   }
 }
 

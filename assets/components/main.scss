@@ -74,13 +74,13 @@
 @import 'utilities/visibility';
 
 .m-section {
-	padding-bottom: spacing(medium);
-	margin-bottom: spacing(medium);
-	border-bottom: 1px solid darken(palette(primary-light), 5%);
+    padding-bottom: spacing(medium);
+    margin-bottom: spacing(medium);
+    border-bottom: 1px solid darken(palette(grey), 5%);
 
-	&:last-of-type {
-		padding-bottom: 0;
-		margin-bottom: 0;
-		border-bottom: none;
-	}
+    &:last-of-type {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border-bottom: none;
+    }
 }

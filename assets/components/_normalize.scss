@@ -15,6 +15,13 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
   font-family: -apple-system, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: ms(0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: palette(grey-dark);
+
+  @include respond-to(medium) {
+    font-size: ms(0, $thread: desktop);
+  }
 }
 
 /* Sections

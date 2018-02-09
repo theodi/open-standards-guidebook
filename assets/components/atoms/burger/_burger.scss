@@ -112,7 +112,7 @@ $sass-burger-add-vendor-prefixes: true !default;
 .burger {
 	display: inline-block;
 	padding: .3em;
-	background: palette(primary-dark);
+	background: palette(grey-dark);
 
 	&:hover {
 		cursor: pointer; 

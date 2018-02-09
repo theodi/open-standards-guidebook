@@ -3,6 +3,12 @@
 		{% include '@meta-title'%}
 	{% endif %}
 
+    {% if navTitle %}
+        <div class="u-trim--all pad-bottom">
+            <h2>{{ navTitle}}</h2>
+        </div>
+    {% endif %}
+
 	{% for item in nav.items %}
 		<a href="#" class="m-nav__item {% if item.active %}is--active{% endif %}">{{ item.title }}</a>
 	{% endfor %}

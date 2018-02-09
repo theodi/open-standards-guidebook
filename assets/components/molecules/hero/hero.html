@@ -18,7 +18,9 @@
 							</div>
 						{% endif %}
 						{% if lede %}
-							{% include '@lede' %}
+                            <div class="u-trim--all">
+    							{% include '@lede' %}
+                            </div>
 						{% endif %}
 					</div>
 				</div>
@@ -30,8 +32,8 @@
 			{% endif %}
 		</div>
 		{% if hero.lowernav %}
-		<div class="g">
-			<div class="g__cell pad-top-small pad-top--medium">
+		<div class="g pad-top-medium">
+			<div class="g__cell">
 				{% include '@nav' %}
 			</div>
 		</div>

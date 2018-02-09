@@ -7,7 +7,8 @@ context:
     breadcrumbs: false
     sidenav: false
     lowernav: true
-  
+
+  navTitle: Introduction to Open Standards
   nav:
     modifier: m-nav--large
     items:
@@ -17,12 +18,12 @@ context:
       title: Types of Open Data Standards
     -
       title: Why use Open Standards for Data
-  
+
   metatitle:
     message: Getting Started
 
   pill: false
-  
+
   sections:
     items:
     -

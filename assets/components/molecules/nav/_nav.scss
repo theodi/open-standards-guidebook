@@ -3,66 +3,75 @@
 // ==========================================================================
 
 .m-nav {
-	
+
 }
 
 .m-nav__item {
-	@include link() {
-		color: palette(primary-mid);
-		display: block;
-		font-size: ms(-1);
-		margin-bottom: spacing(5);
-	}
+    @include link() {
+        color: palette(grey-dark);
+        display: block;
+        font-size: ms(-1);
+        margin-bottom: spacing(5);
 
-	@include link-hover() {
-		color: palette(primary);
-	}
+        @include respond-to(medium) {
+            font-size: ms(0, $thread: desktop);
+        }
+    }
+
+    @include link-hover() {
+        color: palette(primary);
+    }
 }
 
 .m-nav--large {
-	.m-nav__item {
-		@include link() {
-			font-size: ms(0);
-		}
-	}
+    .m-nav__item {
+        @include link() {
+            font-size: ms(0);
+            margin-bottom: spacing(11);
+
+            @include respond-to(medium) {
+                font-size: ms(1);
+            }
+        }
+    }
 }
 
 .m-nav--inline {
-	.m-nav__item {
-		@include link() {
-			display: inline-block;
-			margin-right: spacing(8);
+    .m-nav__item {
+        @include link() {
+            display: inline-block;
+            margin-right: spacing(8);
 
-			&:last-of-type {
-				margin-right: 0;
-			}
-		}
-	}
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
 }
 
 .m-nav--masthead {
-	background: palette(primary-dark);
+    background: palette(grey-dark);
 
-	.m-nav__item {
-		@include link() {
-			font-size: ms(0);
-			display: inline-block;
-			margin-right: spacing(8);
-			color: palette(primary);
-			font-weight: bold;
+    .m-nav__item {
+        @include link() {
+            font-size: ms(0);
+            display: inline-block;
+            margin-right: spacing(8);
+            color: palette(primary);
+            font-weight: bold;
 
-			&:last-of-type {
-				margin-right: 0;
-			}
+            &:last-of-type {
+                margin-right: 0;
+            }
 
-			&.is--active {
-				color: white;
-				text-decoration: none;
-			}
-		}
+            &.is--active {
+                color: white;
+                text-decoration: none;
+            }
+        }
 
-		@include link-hover {
-			color: palette(white);
-		}
-	}
+        @include link-hover {
+            color: palette(white);
+        }
+    }
 }

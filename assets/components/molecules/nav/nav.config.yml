@@ -19,6 +19,7 @@ variants:
   -
     name: large
     context:
+      navTitle: Lorem ipsum dolor sit
       nav:
         modifier: m-nav--large
         items:
