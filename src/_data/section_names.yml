@@ -1,0 +1,11 @@
+####
+# section_names.yml: maps url first segments to section names
+#
+# Used for headings on navigations that are generated via URL
+####
+introduction: Introduction
+creating-impact: Creating impact
+creating-open-standards: Creating Open Standards
+creating-impact: Creating Impact
+community: The Standards Community
+guide: How to use this guide
