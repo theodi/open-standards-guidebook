@@ -4,7 +4,11 @@ global:
 props:
   black:
     value: '#000000'
+<<<<<<< HEAD
     comment: 'Pure Black'
+=======
+    comment: 'Pure Black - Example Usage: Text'
+>>>>>>> 19936ad2e3e84a81c4d7a960a1144834136d71d8
   white:
     value: '#FFFFFF'
     comment: 'Pure White'

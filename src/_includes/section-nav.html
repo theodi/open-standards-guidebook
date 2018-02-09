@@ -1,0 +1,45 @@
+{% assign url_parts = page.url | split: '/' %}
+{% comment %}
+remove the leading slash
+{% endcomment %}
+{% assign url_parts = url_parts | slice:1, url_parts.size %}
+
+{% assign url_parts.size = url_parts | size %}
+
+{% comment %}
+    if we're a top level page, use that that as the base url,
+    otherwise use last segment
+{% endcomment %}
+{% assign last_segment = url_parts | last %}
+{% if url_parts.size == 1 %}
+    {% assign base_url = page.url %}
+    {% assign section_name = site.data.section_names[last_segment] %}
+{% else %}
+    {% assign base_url = page.url | replace: last_segment %}
+
+    {% assign section_slug = url_parts | slice:-2,-1 %}
+    {{ last_segment | inspect }}<br>
+    {{ url_parts | slice:-1 | inspect }}<br>
+    {% assign section_name = site.data.section_names[last_segment] %}
+{% endif %}
+
+
+
+
+{% if section_name.size %}
+    <h4>{{ section_name }}  {{ base_url }} </h4>
+{% endif %}
+<ul>
+{% for node in site.pages %}
+  {% if node.url contains base_url %}
+    use this: {{ node.url }}<br/>
+    {% assign node_url_parts = node.url | split: '/' %}
+    {% assign node_url_parts_size = node_url_parts | size %}
+    {% assign filename = node_url_parts | last %}
+    node_url_parts_size: {{ node_url_parts_size }}<br>
+    {% if url_parts.size == node_url_parts_size  %}
+      <li><a href='{{ node.url }}'>{{ node.title }}</a></li>
+    {% endif %}
+  {% endif %}
+{% endfor %}
+</ul>
