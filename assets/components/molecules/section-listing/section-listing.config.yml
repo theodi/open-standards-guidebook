@@ -5,7 +5,6 @@ context:
         items:
         -
           title: Creating Open Standards
-          description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
           meta: Process
           items:
           -
@@ -19,6 +18,22 @@ context:
             description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
           -
             title: Impact of Open Standards
+            description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
+        -
+          title: Open Standards and you
+          meta: Groups
+          items:
+          -
+            title: Organisations developing standards
+            description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
+          -
+            title: Policy specialists
+            description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
+          -
+            title: Domain experts
+            description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
+          -
+            title: Data publishers and consumers
             description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
 variants:
     -

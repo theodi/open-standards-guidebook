@@ -4,7 +4,9 @@
 	<div class="u-trim--all">
 		<h2>{{ section.title }}</h2>
 	</div>
-	<p>{{ section.description }}</p>
+	{% if section.description %}
+		<p>{{ section.description }}</p>
+	{% endif %}
 
 		<div class="g pad-top-small pad-top--medium">
 			{% for item in section.items %}

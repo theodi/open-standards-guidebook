@@ -12,21 +12,7 @@
 
 <section class="pad-top-medium pad-top-xlarge--medium pad-bottom-medium pad-bottom-xlarge--medium">
 	<div class="wrapper">
-		{% for section in sections.items %}
-		<div class="m-section">
-			<span class="meta-title">{{ section.meta }}</span>
-			<h2>{{ section.title }}</h2>
-
-				<div class="g">
-					{% for item in section.items %}
-						<div class="g__cell g__cell-12 g__cell-6--medium g__cell-4--large">
-							<h4><a class="link" href="#">{{ item.title }}</a></h4>
-							<p>{{ item.description }}</p>
-						</div>
-					{% endfor %}
-				</div>
-			</div>
-		{% endfor %}
+		{% render '@section-listing' %}
 	</div>
 </section>
 
