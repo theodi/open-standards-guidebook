@@ -1,5 +1,38 @@
 title: "Section Listing"
 status: "ready"
 context:
-    sectionListing:
+    sections:
         items:
+        -
+          title: Creating Open Standards
+          description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
+          meta: Process
+          items:
+          -
+            title: Scoping & Starting
+            description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
+          -
+            title: Developing standards
+            description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
+          -
+            title: Governance and guidance
+            description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
+          -
+            title: Impact of Open Standards
+            description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
+variants:
+    -
+        name: short
+        context:
+            modifier: m-section-listing--short
+            message: Shorthand listing items
+    -
+        name: long-grid
+        context:
+            modifier: m-section-listing--long-grid
+            message: Long listing items within a grid
+    -
+        name: long-full
+        context:
+            modifier: m-section-long-full
+            message: Long listing items full width
