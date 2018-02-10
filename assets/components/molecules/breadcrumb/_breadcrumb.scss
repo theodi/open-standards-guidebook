@@ -13,7 +13,7 @@
     }
 
     @include link-hover() {
-        color: palette(primary);
+        color: lighten(palette(grey-dark), 25%);
     }
 
     &.is--active {
