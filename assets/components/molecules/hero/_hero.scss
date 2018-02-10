@@ -11,4 +11,10 @@
 		padding-top: spacing(xlarge);
 		padding-bottom: spacing(xlarge);
 	}
+
+	.m-nav__item {
+		@include link-hover {
+			color: lighten(palette(grey-dark), 25%);
+		}
+	}
 }

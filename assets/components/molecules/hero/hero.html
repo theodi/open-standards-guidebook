@@ -13,7 +13,7 @@
 							{% include '@pill' %}
 						{% endif %}
 						{% if hero.heading %}
-							<div class="u-trim--all">
+							<div class="u-trim--top">
 								<h1>{{ hero.heading }}</h1>
 							</div>
 						{% endif %}
@@ -26,7 +26,7 @@
 				</div>
 			</div>
 			{% if hero.sidenav %}
-				<div class="g__cell g__cell-12 g__cell-4--medium pad-top-small pad-top-reset--medium">
+				<div class="g__cell g__cell-12 g__cell-4--medium pad-top-medium pad-top-reset--medium">
 					{% include '@nav--large' %}
 				</div>
 			{% endif %}
