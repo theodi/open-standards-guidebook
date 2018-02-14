@@ -1,0 +1,18 @@
+// ==========================================================================
+// Share Molecule
+// ==========================================================================
+
+.m-share__item {
+    display: inline-block;
+
+    @include link() {
+        background-color: darken(palette(primary), 20%);
+        color: white;
+        font-weight: bold;
+        padding: spacing(9 12 8 12);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: rem-calc(13) !important;
+        margin-top: 4px;
+    }
+}
