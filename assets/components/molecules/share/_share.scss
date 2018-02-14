@@ -15,4 +15,8 @@
         font-size: rem-calc(13) !important;
         margin-top: 4px;
     }
+
+    @include link-hover() {
+        background-color: palette(primary);
+    }
 }
