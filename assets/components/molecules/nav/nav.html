@@ -1,4 +1,4 @@
-<div class="m-nav {{ nav.modifier }}">
+<div class="m-nav {{ nav.modifier }} {% if nav.open %}is--open{% endif %}">
 	{% if metatitle %}
 		{% include '@meta-title'%}
 	{% endif %}

@@ -80,3 +80,26 @@
         }
     }
 }
+
+.m-nav--mobile {
+    background: palette(primary);
+    padding: spacing(20 25);
+    display: none;
+
+    .m-nav__item {
+        @include link() {
+            padding: spacing(3 0);
+            color: white;
+            font-weight: bold;
+            font-size: ms(0);
+        }
+
+        @include link-hover() {
+            color: darken(white, 10%);
+        }
+    }
+
+    &.is--open {
+        display: block;
+    }
+}
