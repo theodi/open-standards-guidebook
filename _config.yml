@@ -5,7 +5,7 @@ source: src
 destination: dist
 timezone: Europe/London
 incremental: true
-
+permalink: pretty
 ###
 # Collections
 ###
