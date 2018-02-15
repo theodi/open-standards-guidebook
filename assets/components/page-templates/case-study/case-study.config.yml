@@ -1,0 +1,65 @@
+title: "Case Study Layout"
+status: "ready"
+
+context:
+  hero:
+    heading: General Transit Feed Specification (GTFS)
+    breadcrumbs: true
+    sidenav: true
+    lowernav: false
+
+  navTitle: false
+  nav:
+    pill: true
+    modifier: m-nav--large
+    items:
+    -
+      title: What are Open Standards for Data?
+    -
+      title: Types of Open Data Standards
+    -
+      title: Why use Open Standards for Data
+
+  metatitle: false
+
+  pill:
+    message: Case Study
+
+  sections:
+    items:
+    -
+      title: Creating Open Standards
+      meta: Process
+      items:
+      -
+        title: Scoping & Starting
+        description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
+      -
+        title: Developing standards
+        description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
+      -
+        title: Governance and guidance
+        description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
+      -
+        title: Impact of Open Standards
+        description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
+    -
+      title: Open Standards and you
+      meta: Groups
+      items:
+      -
+        title: Organisations developing standards
+        description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
+      -
+        title: Policy specialists
+        description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
+      -
+        title: Domain experts
+        description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
+      -
+        title: Data publishers and consumers
+        description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
+
+  lede:
+    message: 'A case study of General Transit Feed Specification (GTFS) and General Transit Feed Specification Real-Time (GTFS-RT) extension to support organisations developing or thinking of developing open standards for data.
+Our standards case studies provide a summary of the history, development process, governance and key actors involved in the development of an open standard for data.'

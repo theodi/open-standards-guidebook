@@ -4,7 +4,8 @@
 
 .lede {
   line-height: 1.43;
-  font-size: ms(1);
+  font-size: ms(0);
+  font-weight: 500;
 
   @include respond-to(medium) {
     font-size: ms(1, $thread: desktop);
@@ -12,7 +13,8 @@
 }
 
 .lede > p {
-  font-size: ms(1);
+  font-size: ms(0);
+  font-weight: 500;
 
   @include respond-to(medium) {
     font-size: ms(1, $thread: desktop);

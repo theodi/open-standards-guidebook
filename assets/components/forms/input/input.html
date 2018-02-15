@@ -1,0 +1,1 @@
+<input type="{% if modifier == 'password' %}password{% else %}text{% endif %}" class="input {{ modifier }}" {% if modifier != 'password' %}placeholder="{{ input.message }}"{% endif %} {% if modifier %}value="{{ input.message }}"{% endif %}>

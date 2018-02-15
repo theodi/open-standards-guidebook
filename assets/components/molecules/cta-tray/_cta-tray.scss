@@ -18,7 +18,7 @@
 }
 
 .m-cta-tray__title {
-    color: palette(primary);
+    color: palette(secondary);
     font-size: ms(0, $thread: desktop);
     text-decoration: underline;
     text-decoration-skip: ink;
@@ -42,7 +42,7 @@
 
 .m-cta-tray__inner {
     display: none;
-    background: palette(primary);
+    background: palette(secondary);
     padding: spacing(15 0);
     color: white;
 

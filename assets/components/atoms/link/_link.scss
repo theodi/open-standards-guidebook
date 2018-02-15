@@ -10,12 +10,16 @@ a {
   }
 
   @include link-hover() {
-    color: palette(primary-mid);
+    color: palette(grey-dark);
   }
 }
 
 .link--block {
   display: block;
+}
+
+.link--bold {
+  font-weight: 600;
 }
 
 .link--plain {

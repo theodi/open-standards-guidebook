@@ -3,66 +3,103 @@
 // ==========================================================================
 
 .m-nav {
-	
+    .meta-title {
+        margin-bottom: spacing(8);
+    }
 }
 
 .m-nav__item {
-	@include link() {
-		color: palette(primary-mid);
-		display: block;
-		font-size: ms(-1);
-		margin-bottom: spacing(5);
-	}
+    @include link() {
+        color: palette(grey-dark);
+        display: block;
+        font-size: ms(-1);
+        margin-bottom: spacing(5);
 
-	@include link-hover() {
-		color: palette(primary);
-	}
+        @include respond-to(medium) {
+            font-size: ms(0, $thread: desktop);
+        }
+    }
+
+    @include link-hover() {
+        color: palette(primary);
+    }
 }
 
 .m-nav--large {
-	.m-nav__item {
-		@include link() {
-			font-size: ms(0);
-		}
-	}
+    .m-nav__item {
+        @include link() {
+            font-size: ms(0);
+            margin-bottom: spacing(11);
+
+            @include respond-to(medium) {
+                font-size: ms(1);
+            }
+        }
+    }
 }
 
 .m-nav--inline {
-	.m-nav__item {
-		@include link() {
-			display: inline-block;
-			margin-right: spacing(8);
+    .m-nav__item {
+        @include link() {
+            display: inline-block;
+            margin-right: spacing(8);
 
-			&:last-of-type {
-				margin-right: 0;
-			}
-		}
-	}
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
 }
 
 .m-nav--masthead {
-	background: palette(primary-dark);
+    background: palette(grey-dark);
+    margin-top: spacing(5);
 
-	.m-nav__item {
-		@include link() {
-			font-size: ms(0);
-			display: inline-block;
-			margin-right: spacing(8);
-			color: palette(primary);
-			font-weight: bold;
+    .m-nav__item {
+        @include link() {
+            font-size: ms(0);
+            display: inline-block;
+            margin-right: spacing(2);
+            color: palette(white);
+            font-weight: bold;
+            text-decoration: none;
+            padding: spacing(4 8 6 8);
 
-			&:last-of-type {
-				margin-right: 0;
-			}
+            &:last-of-type {
+                margin-right: 0;
+            }
 
-			&.is--active {
-				color: white;
-				text-decoration: none;
-			}
-		}
+            &.is--active {
+                color: palette(white);
+                background: palette(primary);
+            }
+        }
 
-		@include link-hover {
-			color: palette(white);
-		}
-	}
+        @include link-hover {
+            color: palette(white);
+        }
+    }
+}
+
+.m-nav--mobile {
+    background: palette(primary);
+    padding: spacing(20 25);
+    display: none;
+
+    .m-nav__item {
+        @include link() {
+            padding: spacing(3 0);
+            color: white;
+            font-weight: bold;
+            font-size: ms(0);
+        }
+
+        @include link-hover() {
+            color: darken(white, 10%);
+        }
+    }
+
+    &.is--open {
+        display: block;
+    }
 }

@@ -1,0 +1,47 @@
+// ==========================================================================
+// Section Listing Molecule
+// ==========================================================================
+
+.m-section-listing {
+    padding-bottom: spacing(medium);
+    margin-bottom: spacing(medium);
+    border-bottom: 1px solid darken(palette(grey), 5%);
+
+    @include respond-to(medium) {
+        padding-bottom: spacing(large);
+        margin-bottom: spacing(large);
+    }
+
+    &:last-of-type {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border-bottom: none;
+    }
+}
+
+.m-section-listing__title {
+    font-size: ms(0);
+
+    @include respond-to(medium) {
+        font-size: ms(1, $thread: desktop);
+    }
+}
+
+.m-section-listing--short {
+    .m-section-listing__title {
+        font-size: ms(0, $thread: desktop);
+        margin: spacing(0 0 5 0);
+
+        @include respond-to(medium) {
+            font-size: ms(0, $thread: desktop);
+        }
+    }
+}
+
+.m-section-listing--long-grid {
+
+}
+
+.m-section-listing--short-grid {
+
+}

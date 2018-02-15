@@ -1,4 +1,4 @@
-title: "Home Page Layout"
+title: "Content Page Layout"
 status: "ready"
 
 context:
@@ -8,6 +8,7 @@ context:
     sidenav: false
     lowernav: true
 
+  navTitle: Introduction to Open Standards
   nav:
     modifier: m-nav--large
     items:

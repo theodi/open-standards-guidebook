@@ -11,7 +11,7 @@
 $sass-burger-add-vendor-prefixes: true !default;
 
 // Burger
-@mixin burger($width: 20px, $height: 2px, $gutter: 3px, $color: palette(primary), $border-radius: 0, $transition-duration: 250ms) {
+@mixin burger($width: 20px, $height: 2px, $gutter: 3px, $color: palette(white), $border-radius: 0, $transition-duration: 250ms) {
     $burger-height: $height !global;
     $burger-gutter: $gutter !global;
 
@@ -112,25 +112,25 @@ $sass-burger-add-vendor-prefixes: true !default;
 .burger {
 	display: inline-block;
 	padding: .3em;
-	background: palette(primary-dark);
+	background: palette(grey-dark);
 
 	&:hover {
-		cursor: pointer; 
+		cursor: pointer;
 
 		.burger__icon {
 			&, &::before, &::after {
-		        background-color: palette(white);
+		        background-color: palette(secondary);
 			}
 		}
 
 		.burger__text {
-			color: palette(white);
+			color: palette(secondary);
 		}
 	}
 }
 
 .burger__text {
-	color: palette(primary);
+	color: palette(white);
 	font-size: ms(-1);
 	padding-left: spacing(4);
 }

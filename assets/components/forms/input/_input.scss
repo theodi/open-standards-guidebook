@@ -1,0 +1,47 @@
+// ==========================================================================
+// Input Form Atom
+// ==========================================================================
+
+.input {
+    width: 100%;
+    display: block;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid lighten(palette(black), 60%);
+    padding: spacing(13 15);
+    font-size: ms(0, $thread: desktop);
+    font-family: -apple-system, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    box-sizing: border-box;
+    border-radius: rem-calc(3);
+    margin-bottom: rem-calc(5);
+
+    @include placeholder {
+        color: lighten(black, 60%);
+    }
+
+    &:active,
+    &:focus {
+        border-color: palette(primary);
+    }
+
+    &.has--error {
+        border-color: #d60303;
+        color: #d60303;
+    }
+
+    &.has--success {
+        border-color: #0dbc37;
+        color: #0dbc37;
+    }
+}
+
+.input[type="password"] {
+    font-size: ms(2);
+    padding: spacing(8 15);
+
+    @include placeholder {
+        display: none;
+    }
+}

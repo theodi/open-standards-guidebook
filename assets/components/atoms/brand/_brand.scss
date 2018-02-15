@@ -5,6 +5,9 @@
 .brand {
   font-size: ms(3);
   font-weight: bold;
+  color: palette(black);
+  text-decoration: none;
+  display: inline-block;
 
   @include respond-to(medium) {
     font-size: ms(4, $thread: desktop);

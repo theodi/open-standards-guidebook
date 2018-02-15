@@ -1,4 +1,4 @@
-<div class="m-hero">
+<div class="m-hero {{ modifier }}">
 	<div class="wrapper">
 		{% if hero.breadcrumbs %}
 			<div class="pad-bottom">
@@ -8,33 +8,42 @@
 		<div class="g">
 			<div class="g__cell g__cell-12 g__cell-8--medium">
 				<div class="g">
-					<div class="g__cell g__cell-12 g__cell-11--medium">
+					<div class="g__cell g__cell-12">
 						{% if pill %}
 							{% include '@pill' %}
 						{% endif %}
 						{% if hero.heading %}
-							<div class="u-trim--all">
+							<div class="u-trim--top">
 								<h1>{{ hero.heading }}</h1>
 							</div>
 						{% endif %}
 						{% if lede %}
-							{% include '@lede' %}
+                            <div class="u-trim--all">
+    							{% include '@lede' %}
+                            </div>
 						{% endif %}
 					</div>
 				</div>
 			</div>
 			{% if hero.sidenav %}
-				<div class="g__cell g__cell-12 g__cell-4--medium pad-top-small pad-top-reset--medium">
+				<div class="g__cell g__cell-12 g__cell-4--medium pad-top-medium pad-top-reset--medium">
 					{% include '@nav--large' %}
 				</div>
 			{% endif %}
 		</div>
 		{% if hero.lowernav %}
-		<div class="g">
-			<div class="g__cell pad-top-small pad-top--medium">
-				{% include '@nav' %}
-			</div>
-		</div>
+    		<div class="g pad-top-medium">
+    			<div class="g__cell g__cell-12">
+    				{% include '@nav' %}
+    			</div>
+    		</div>
 		{% endif %}
+
+        {% if modifier == 'soundcloud' %}
+            <div class="pad-top pad-top-xlarge--medium">
+                <!-- @TODO Properly integrate this... -->
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/396896136&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+            </div>
+        {% endif %}
 	</div>
 </div>

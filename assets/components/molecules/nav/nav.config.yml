@@ -19,6 +19,7 @@ variants:
   -
     name: large
     context:
+      navTitle: Lorem ipsum dolor sit
       nav:
         modifier: m-nav--large
         items:
@@ -37,9 +38,9 @@ variants:
         modifier: m-nav--inline
         items:
           -
-            title: Inline nav item 1
+            title: How to use this guide
           -
-            title: Inline nav item 2
+            title: About
       metatitle: false
   -
     name: masthead
@@ -58,5 +59,31 @@ variants:
           active: false
         -
           title: The Standards Community
+          active: false
+      metatitle: false
+  -
+    name: mobile
+    context:
+      nav:
+        open: true
+        modifier: m-nav--mobile
+        items:
+        -
+          title: Introduction
+          active: false
+        -
+          title: Creating Impact
+          active: true
+        -
+          title: Creating Open Standards
+          active: false
+        -
+          title: The Standards Community
+          active: false
+        -
+          title: How to use this guide
+          active: false
+        -
+          title: About
           active: false
       metatitle: false

@@ -11,4 +11,4 @@ variants:
       modifier: is--open
       ctaTray:
           titleMessage: Something Missing?
-          trayMessage: Something missing? <a href="#">edit this page</a> or <a href="#">suggest new content</a>
+          trayMessage: Something missing? <a class="link link--bold" href="#">edit this page</a> or <a class="link link--bolc" href="#">suggest new content</a>

@@ -4,6 +4,10 @@
 
 .logo {
 	fill: white;
+
+    @include link-hover() {
+        opacity: 0.85;
+    }
 }
 
 .logo--black {

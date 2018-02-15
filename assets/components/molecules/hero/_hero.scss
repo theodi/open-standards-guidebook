@@ -3,12 +3,18 @@
 // ==========================================================================
 
 .m-hero {
-	background: palette(primary-light);
-	padding-top: spacing(small);
+	background: palette(grey);
+	padding-top: spacing(base);
 	padding-bottom: spacing(base);
 
 	@include respond-to(medium) {
-		padding-top: spacing(base);
-		padding-bottom: spacing(medium);
+		padding-top: spacing(xlarge);
+		padding-bottom: spacing(xlarge);
+	}
+
+	.m-nav__item {
+		@include link-hover {
+			color: lighten(palette(grey-dark), 25%);
+		}
 	}
 }

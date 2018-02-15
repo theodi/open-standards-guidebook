@@ -1,0 +1,22 @@
+title: "Input"
+status: ready
+context:
+    input:
+        message: Placeholder text
+variants:
+    -
+        name: error
+        context:
+            modifier: has--error
+            input:
+                message: I have an error
+    -
+        name: success
+        context:
+            modifier: has--success
+            input:
+                message: I am successful
+    -
+        name: password
+        context:
+            modifier: password

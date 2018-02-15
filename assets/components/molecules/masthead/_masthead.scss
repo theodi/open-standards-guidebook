@@ -3,7 +3,12 @@
 // ==========================================================================
 
 .m-masthead {
-	background: palette(primary-dark);
-	padding-top: spacing(base);
-	padding-bottom: spacing(base);
+    background: palette(grey-dark);
+    padding-top: spacing(small);
+    padding-bottom: spacing(small);
+
+    @include respond-to(medium) {
+        padding-top: spacing(medium);
+        padding-bottom: spacing(medium);
+    };
 }

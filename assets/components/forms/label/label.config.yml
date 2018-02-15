@@ -1,0 +1,5 @@
+title: "Label"
+status: ready
+context:
+    label:
+        message: Label text

@@ -1,27 +1,30 @@
 <div class="m-masthead">
 	<div class="wrapper">
 		<div class="g">
-			<div class="g__cell g__cell-12 g__cell-7--medium">
-				<div class="u-inverse">
-					<div class="pad-bottom-small u-text-center u-text-left--medium">
-						{% render '@brand' %}
-					</div>
+			<div class="g__cell g__cell-12 g__cell-7--large g__cell-order-2 g__cell-order-1--large">
+				<div class="pad-bottom-small u-text-center u-text-left--medium u-text-color--white">
+					{% render '@brand' %}
 				</div>
 			</div>
-			<div class="g__cell g__cell-12 g__cell-5--medium g--align-right u-text-right--medium is-hidden is-visible--medium">
+			<div class="g__cell g__cell-12 g__cell-5--large g--align-right--large u-text-right--large is-hidden is-visible--medium g__cell-order-1 g__cell-order-2--large">
 				<div class="u-text-color--white">
 					{% render '@nav--inline' %}
 				</div>
 			</div>
+        </div>
 
+        <div class="g">
 			<div class="g__cell g__cell-12">
 				<div class="is-hidden is-visible--medium">
 					{% render '@nav--masthead' %}
 				</div>
 				<div class="is-visible is-hidden--medium u-text-center">
-					{% render '@burger' %}
+					{% render '@burger--active' %}
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
+<div class="is-visible is-hidden--medium">
+    {% render '@nav--mobile' %}
 </div>

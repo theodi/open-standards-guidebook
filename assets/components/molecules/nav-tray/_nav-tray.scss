@@ -3,7 +3,7 @@
 // ==========================================================================
 
 .m-nav-tray {
-    background: palette(secondary);
+    background: palette(primary);
     padding: spacing(15 0);
     width: 100%;
     text-align: left;
@@ -25,8 +25,12 @@
 
 .m-nav-tray__title {
     color: palette(white);
-    font-size: ms(0);
-    font-weight: 500;
+    font-size: ms(-1);
+    font-weight: 600;
+
+    @include respond-to(medium) {
+        font-size: ms(0, $thread: desktop);
+    }
 
     .chevron {
         margin-left: spacing(3);
@@ -37,7 +41,7 @@
 
 .m-nav-tray__inner {
     display: none;
-    background: palette(secondary-dark);
+    background: darken(palette(primary), 10%);
     padding: spacing(25 0);
 
     &.is--open {
@@ -49,6 +53,21 @@
             color: palette(white);
             font-size: ms(0, $thread: desktop);
             margin-bottom: spacing(10);
+            font-weight: 600;
         }
+
+        @include link-hover() {
+            color: darken(palette(white), 10%);
+        }
+    }
+}
+
+.m-nav-tray__close {
+    color: palette(white);
+    font-size: ms(-1);
+    font-weight: 600;
+
+    @include respond-to(medium) {
+        font-size: ms(0, $thread: desktop);
     }
 }
