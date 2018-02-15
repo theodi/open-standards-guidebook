@@ -11,8 +11,8 @@ cache:
 
 before_install:
   - . $HOME/.nvm/nvm.sh
-  - nvm install stable
-  - nvm use stable
+  - nvm install 8.9.3
+  - nvm use 8.9.3
 
 install:
   - yarn
