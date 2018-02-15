@@ -1,0 +1,6 @@
+title: "Input"
+status: ready
+context:
+    textarea:
+        rows: 5
+        message: Enter your message here...

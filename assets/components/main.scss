@@ -10,6 +10,7 @@
 @import 'tools/map-get-if-exists';
 @import 'tools/map-deep-get-set';
 @import 'tools/font-ratio';
+@import 'tools/placeholder';
 
 // Palette Tool Load
 @import 'tools/palette';
@@ -67,6 +68,13 @@
 @import 'molecules/cta-tray/cta-tray';
 @import 'molecules/section-listing/section-listing';
 @import 'molecules/share/share';
+
+// Forms
+@import 'forms/form/form';
+@import 'forms/control/control';
+@import 'forms/input/input';
+@import 'forms/label/label';
+@import 'forms/select/select';
 
 // Utilities
 @import 'utilities/text-color';

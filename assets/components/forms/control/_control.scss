@@ -1,0 +1,43 @@
+// ==========================================================================
+// Control Atom
+// ==========================================================================
+
+.control {
+    padding-bottom: rem-calc(20);
+
+    &.has--success {
+        .label, .control__caption {
+            color: #0dbc37;
+        }
+
+        .input {
+            border-color: #0dbc37;
+            color: #0dbc37;
+        }
+    }
+
+    &.has--error {
+        .label, .control__caption {
+            color: #d60303;
+        }
+
+        .input {
+            border-color: #d60303;
+            color: #d60303;
+        }
+    }
+}
+
+.control__caption {
+    @include trim();
+    font-size: ms(-1);
+    font-style: italic;
+    color: lighten(black, 40%);
+    display: block;
+    padding-bottom: rem-calc(5);
+
+    &,
+    > * {
+
+    }
+}

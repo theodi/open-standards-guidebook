@@ -1,0 +1,5 @@
+title: "Input"
+status: ready
+context:
+    input:
+        message: Placeholder text
