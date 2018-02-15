@@ -4,40 +4,48 @@ remove the leading slash
 {% endcomment %}
 {% assign url_parts = url_parts | slice:1, url_parts.size %}
 
-{% assign url_parts.size = url_parts | size %}
+{% assign url_parts_size = url_parts | size %}
 
 {% comment %}
     if we're a top level page, use that that as the base url,
     otherwise use last segment
 {% endcomment %}
 {% assign last_segment = url_parts | last %}
+
+{% assign base_page = false %}
+{% assign base_url = nil %}
+{% assign max_size_difference = 3 %}
 {% if url_parts.size == 1 %}
+    {% assign base_page = page %}
     {% assign base_url = page.url %}
     {% assign section_name = site.data.section_names[last_segment] %}
 {% else %}
-    {% assign base_url = page.url | replace: last_segment %}
+    {% assign base_url = page.url | replace: last_segment | replace: '//', '/' %}
+    {% assign section_slug = url_parts.first %}
+    {% assign section_name = site.data.section_names[section_slug] %}
+    {% assign max_size_difference = 3 %}
 
-    {% assign section_slug = url_parts | slice:-2,-1 %}
-    {{ last_segment | inspect }}<br>
-    {{ url_parts | slice:-1 | inspect }}<br>
-    {% assign section_name = site.data.section_names[last_segment] %}
+    {% for node in site.pages %}
+        {% if node.url == base_url %}
+            {% assign base_page = node %}
+        {% endif %}
+    {% endfor %}
 {% endif %}
-
-
-
 
 {% if section_name.size %}
-    <h4>{{ section_name }}  {{ base_url }} </h4>
+    <h4>{{ section_name }}</h4>
 {% endif %}
+{% comment %}
+<h5>base url: {{ base_url }}</h5>
+base url parts size: {{ url_parts.size }}<br/>
+{% endcomment %}
+
 <ul>
 {% for node in site.pages %}
   {% if node.url contains base_url %}
-    use this: {{ node.url }}<br/>
     {% assign node_url_parts = node.url | split: '/' %}
-    {% assign node_url_parts_size = node_url_parts | size %}
-    {% assign filename = node_url_parts | last %}
-    node_url_parts_size: {{ node_url_parts_size }}<br>
-    {% if url_parts.size == node_url_parts_size  %}
+    {% assign size_difference = (node_url_parts.size | minus: url_parts_size) %}
+    {% if size_difference < max_size_difference %}
       <li><a href='{{ node.url }}'>{{ node.title }}</a></li>
     {% endif %}
   {% endif %}

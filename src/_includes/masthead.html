@@ -1,18 +1,59 @@
-<header>
-    <h1>Open Standards for Data</h1>
+<div class="m-masthead">
+    <div class="wrapper">
+        <div class="g">
+            <div class="g__cell g__cell-12 g__cell-7--large g__cell-order-2 g__cell-order-1--large">
+                <div class="pad-bottom-small u-text-center u-text-left--medium u-text-color--white">
+                    <a href="/" class="brand">Open Standards for Data</a>
+                </div>
+            </div>
+            <div class="g__cell g__cell-12 g__cell-5--large g--align-right--large u-text-right--large is-hidden is-visible--medium g__cell-order-1 g__cell-order-2--large">
+                <div class="u-text-color--white">
+                    <nav class="m-nav m-nav--inline">
+                        {% for item in site.data.top_aux_nav %}
+                            <a href="{{ item.url }}" class="m-nav__item
+                            {% if page.url contains item.url %}is--active{% endif %}
+                            ">{{ item.title }}</a>
+                        {% endfor %}
+                    </nav>
+                </div>
+            </div>
+        </div>
 
-    <nav>
-    <ul>
-       {% for item in site.data.main_nav %}
-          <li><a href="{{ item.url }}"
-            alt="{{ item.title }}">{{ item.title }} {% if page.url contains item.url %}(active){% endif %} </a></li>
-       {% endfor %}
-    </ul>
-    <ul>
-       {% for item in site.data.top_aux_nav %}
-          <li><a href="{{ item.url }}"
-            alt="{{ item.title }}">{{ item.title }} {% if page.url contains item.url %}(active){% endif %} </a></li>
-       {% endfor %}
-    </ul>
+        <div class="g">
+            <div class="g__cell g__cell-12">
+                <div class="is-hidden is-visible--medium">
+                    <nav class="m-nav m-nav--masthead ">
+                        {% for item in site.data.main_nav %}
+                            <a href="{{ item.url }}" class="m-nav__item
+                            {% if page.url contains item.url %}is--active{% endif %}
+                            ">{{ item.title }}</a>
+                        {% endfor %}
+                    </nav>
+                </div>
+                <div class="is-visible is-hidden--medium u-text-center">
+                    <div class="burger is--active">
+                        <div class="g g--no-gutters g--align-v-center">
+                            <div class="g__cell">
+                                <div class="burger__icon"></div>
+                            </div>
+                            <div class="g__cell">
+                                <div class="burger__text">Menu</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="is-visible is-hidden--medium">
+    <nav class="m-nav m-nav--mobile is--open">
+
+    {% for item in site.data.main_nav %}
+        <a href="{{ item.url }}" class="m-nav__item
+        {% if page.url contains item.url %}is--active{% endif %}
+        ">{{ item.title }}</a>
+    {% endfor %}
+
     </nav>
-</header>
+</div>
