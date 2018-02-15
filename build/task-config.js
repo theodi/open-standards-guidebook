@@ -92,7 +92,7 @@ module.exports = {
   },
   // Specify additional environment specific configuration to be merged in with Blendid's defaults
   production: {
-    rev: true, // revision filenames when running the production `build` task?
+    rev: false, // revision filenames when running the production `build` task?
     devtool: 'source-map',
     // plugins: [], // production only webpack plugins
   },
