@@ -1,2 +1,7 @@
 title: "Burger"
 status: ready
+variants:
+    -
+        name: active
+        context:
+            modifier: is--active

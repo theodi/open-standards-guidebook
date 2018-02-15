@@ -119,12 +119,12 @@ $sass-burger-add-vendor-prefixes: true !default;
 
 		.burger__icon {
 			&, &::before, &::after {
-		        background-color: palette(primary);
+		        background-color: palette(secondary);
 			}
 		}
 
 		.burger__text {
-			color: palette(primary);
+			color: palette(secondary);
 		}
 	}
 }
