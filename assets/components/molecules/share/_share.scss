@@ -6,17 +6,26 @@
     display: inline-block;
 
     @include link() {
-        background-color: darken(palette(primary), 20%);
-        color: white;
-        font-weight: bold;
-        padding: spacing(9 12 8 12);
+        display: inline-block;
         text-decoration: none;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+        text-align: center;
+        border-radius: rem-calc(2);
+        padding: spacing(7 15);
+        font-weight: 600;
+        transition: all ease 150ms;
         text-transform: uppercase;
-        font-size: rem-calc(13) !important;
-        margin-top: 4px;
+        background: palette(primary);
+        color: white;
+        font-size: rem-calc(12);
+        background-image: linear-gradient(to bottom, #3e9eff, palette(primary));
+        border: solid 2px palette(primary);
+        margin-top: rem-calc(5);
     }
 
     @include link-hover() {
-        background-color: palette(primary);
+        background: darken(palette(primary), 20%);
+        border-color: darken(palette(primary), 10%);
     }
 }

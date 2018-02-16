@@ -9,6 +9,6 @@
 
     @include respond-to(medium) {
         padding-top: spacing(medium);
-        padding-bottom: spacing(medium);
+        padding-bottom: spacing(small);
     };
 }

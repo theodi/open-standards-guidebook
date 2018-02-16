@@ -60,6 +60,7 @@ variants:
         -
           title: The Standards Community
           active: false
+
       metatitle: false
   -
     name: mobile
