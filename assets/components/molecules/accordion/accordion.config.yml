@@ -1,0 +1,19 @@
+title: "Accordion"
+context:
+    message: Accordion
+    items:
+    -
+      title: Lorem ipsum dolor sit amet
+      open: false
+    -
+      title: Consectetur adipiscing elit
+      open: true
+    -
+      title: Pellentesque dictum augue iaculis purus  finibus molestie nulla
+      open: false
+    -
+      title: Lorem ipsum dolor sit amet
+      open: false
+    -
+      title: Nulla imperdiet sed velit vitae congue
+      open: true
