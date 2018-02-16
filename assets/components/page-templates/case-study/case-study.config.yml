@@ -10,7 +10,7 @@ context:
 
   navTitle: false
   nav:
-    pill: true
+    pill: false
     modifier: m-nav--large
     items:
     -
@@ -20,7 +20,8 @@ context:
     -
       title: Why use Open Standards for Data
 
-  metatitle: false
+  metatitle:
+    message: Something
 
   pill:
     message: Case Study

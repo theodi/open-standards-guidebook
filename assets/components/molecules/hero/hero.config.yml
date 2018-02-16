@@ -31,3 +31,8 @@ variants:
         name: soundcloud
         context:
             modifier: soundcloud
+
+    -
+        name: infographic
+        context:
+            modifier: infographic

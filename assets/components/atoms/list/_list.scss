@@ -28,6 +28,7 @@ ul {
 
     li {
         padding-left: rem-calc(5);
+        background: red;
 
         &:before {
             content: " ";

@@ -30,7 +30,7 @@
 .m-section-listing--short {
     .m-section-listing__title {
         font-size: ms(0, $thread: desktop);
-        margin: spacing(0 0 5 0);
+        margin: spacing(0 0 8 0);
 
         @include respond-to(medium) {
             font-size: ms(0, $thread: desktop);

@@ -119,12 +119,8 @@ $sass-burger-add-vendor-prefixes: true !default;
 
 		.burger__icon {
 			&, &::before, &::after {
-		        background-color: palette(secondary);
+		        background-color: palette(primary);
 			}
-		}
-
-		.burger__text {
-			color: palette(secondary);
 		}
 	}
 }
@@ -132,6 +128,7 @@ $sass-burger-add-vendor-prefixes: true !default;
 .burger__text {
 	color: palette(white);
 	font-size: ms(-1);
+    font-weight: bold;
 	padding-left: spacing(4);
 }
 
