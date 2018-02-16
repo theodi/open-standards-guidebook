@@ -30,7 +30,9 @@
                                     </div>
 
                                     <div class="pad-top">
-                                        <a class="link link--block" href="#">View full size</a>
+                                        <div class="pad-bottom-small">
+                                            <a class="link link--block" href="#">View full size</a>
+                                        </div>
                                         <a class="link link--block" href="#">Download infographic</a>
                                     </div>
                                 {% endif %}
@@ -42,7 +44,7 @@
             </div>
 
             {% if hero.sidenav %}
-                <div class="g__cell g__cell-12 g__cell-4--large pad-top pad-top-reset--large">
+                <div class="g__cell g__cell-12 g__cell-4--large pad-top-medium pad-top-reset--large">
                     {% include '@nav--large' %}
                 </div>
             {% endif %}
