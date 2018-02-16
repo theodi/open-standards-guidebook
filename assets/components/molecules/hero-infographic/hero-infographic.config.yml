@@ -1,0 +1,37 @@
+title: "Hero Infographic"
+status: "ready"
+context:
+  hero:
+    heading: The Open Standards Process
+    sidenav: true
+    breadcrumbs: true
+    lowernav: false
+  nav:
+    modifier: m-nav--large
+    items:
+    -
+      title: What are Open Standards for Data?
+    -
+      title: Types of Open Data Standards
+    -
+      title: Why use Open Standards for Data
+    -
+      title: The Open Standards process
+    -
+      title: Case Studies
+  metatitle:
+    message: Lorem
+  pill:
+    message: Case Study
+  lede:
+    message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel velit sed dolor aliquam viverra eget in es.Mauris sed ullamcorper elit, in hendrerit augue. Nunc sodales mauris a ullamcorper pellentesque. Morbi lobortis eleifend nulla non interdum. Lorem ipsum dolor sit amet consecteteur adipicising elit'
+variants:
+    -
+        name: soundcloud
+        context:
+            modifier: soundcloud
+
+    -
+        name: infographic
+        context:
+            modifier: infographic
