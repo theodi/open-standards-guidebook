@@ -1,0 +1,16 @@
+<div class="m-person">
+    <div class="m-person__grid">
+        <img class="m-person__avatar" src="http://i.pravatar.cc/300" alt="Placeholder person" />
+        <div class="m-person__title">
+            <div class="u-trim--all">
+                <span class="m-person__title-header">{{ person.name }}</span>
+            </div>
+            <span class="m-person__title-lede">{{ person.role }}</span>
+        </div>
+    </div>
+
+    <div class="m-person__social">
+        <span class="m-person__social-link">Twitter: <a target="_blank" href="https://www.twitter.com/{{ person.twitter }}">@{{ person.twitter }}</a>
+        <span class="m-person__social-link">Website: <a target="_blank" href="http://{{ person.website }}">{{ person.website }}</a>
+    </div>
+</div>
