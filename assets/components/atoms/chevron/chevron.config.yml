@@ -18,3 +18,7 @@ variants:
         name: white
         context:
             modifier: chevron--white
+    -
+        name: secondary
+        context:
+            modifier: chevron--secondary
