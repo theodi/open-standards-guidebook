@@ -11,6 +11,10 @@
     padding-bottom: spacing(2);
 }
 
+.meta-title--white {
+    color: palette(white);
+}
+
 .meta-title + h1, .meta-title + h2, .meta-title + h3, .meta-title + h4 {
     margin-top: 0;
 }

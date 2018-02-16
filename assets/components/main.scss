@@ -44,6 +44,8 @@
 
 // Atoms
 @import 'atoms/headings/headings';
+@import 'atoms/checklist-heading/checklist-heading';
+@import 'atoms/citation/citation';
 @import 'atoms/island/island';
 @import 'atoms/lede/lede';
 @import 'atoms/link/link';
@@ -71,6 +73,7 @@
 @import 'molecules/cta-tray/cta-tray';
 @import 'molecules/section-listing/section-listing';
 @import 'molecules/share/share';
+@import 'molecules/modal/modal';
 @import 'molecules/person/person';
 
 // Forms

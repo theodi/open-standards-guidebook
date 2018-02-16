@@ -1,0 +1,35 @@
+.m-modal {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: rgba(255,255,255,0.8);
+}
+
+// Class to apply to body when modal is active...
+.is--modal-active {
+    filter: blur(4px);
+}
+
+.m-modal__inner {
+    background: white;
+    border-radius: rem-calc(6);
+    max-width: rem-calc(900);
+    padding: spacing(base);
+    box-shadow: 0 2px 65px 0 rgba(0, 0, 0, 0.22);
+    padding: spacing(40 30);
+    max-height: calc(90vh);
+    margin: 0 auto;
+    overflow-x: scroll;
+
+    @include respond-to(medium) {
+        padding: spacing(50 90);
+    }
+
+    @include respond-to(large) {
+        padding: spacing(80 125);
+        max-height: calc(85vh);
+    }
+}

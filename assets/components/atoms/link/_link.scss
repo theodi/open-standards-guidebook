@@ -43,6 +43,16 @@ a {
   }
 }
 
+.link--white {
+  @include link() {
+    color: palette(white);
+  }
+
+  @include link-hover() {
+    color: darken(palette(white), 10%);
+  }
+}
+
 .link--break {
   word-break: break-word;
 }
