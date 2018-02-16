@@ -8,17 +8,18 @@
   font-weight: 500;
   letter-spacing: 0.2px;
   text-align: center;
-  border-radius: rem-calc(5);
-  padding: spacing(14 30);
-  font-size: rem-calc(fontsize(small));
+  border-radius: rem-calc(2);
+  padding: spacing(16 35);
   font-weight: 600;
   transition: all ease 150ms;
+  text-transform: uppercase;
 
   @include respond-to(medium) {
     font-size: rem-calc(fontsize(regular));
   }
 
   @include link() {
+    font-size: ms(-1);
     background: palette(primary);
     color: white;
   }
@@ -32,32 +33,27 @@
   @include link() {
     background: palette(primary);
     color: white;
+    background-image: linear-gradient(to bottom, #3e9eff, palette(primary));
+    border: solid 2px palette(primary);
   }
 
   @include link-hover() {
-    background: palette(primary);
+    background: darken(palette(primary), 20%);
+    border-color: darken(palette(primary), 10%);
   }
 }
 
 .btn--secondary {
   @include link() {
-    background-color: palette(secondary);
+    background: palette(secondary);
     color: white;
+    background-image: linear-gradient(to bottom, #ff7d25, palette(secondary));
+    border: solid 2px palette(secondary);
   }
 
   @include link-hover() {
-    background: palette(primary);
-  }
-}
-
-.btn--black {
-  @include link() {
-    background-color: palette(black);
-    color: white;
-  }
-
-  @include link-hover() {
-    background: palette(black);
+    background: darken(palette(secondary), 10%);
+    border-color: darken(palette(secondary), 10%);
   }
 }
 
@@ -79,7 +75,15 @@
 .btn--inline {
   display: inline-block;
 
-  &+.btn--inline {
+  & +.btn--inline {
     margin-top: spacing(base);
   }
+}
+
+.btn--small {
+    padding: spacing(7 15);
+
+    @include link() {
+        font-size: rem-calc(12);
+    }
 }

@@ -4,15 +4,15 @@ context:
     message: Button Primary
 variants:
     -
+        name: primary
+        context:
+            modifier: btn--primary
+            message: Button Primary
+    -
         name: secondary
         context:
             modifier: btn--secondary
             message: Button Secondary
-    -
-        name: black
-        context:
-            modifier: btn--black
-            message: Button Black
     -
         name: naked
         context:
