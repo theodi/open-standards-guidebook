@@ -1,0 +1,51 @@
+title: "Hero "
+status: "ready"
+context:
+  hero:
+    heading: false
+    sidenav: false
+    breadcrumbs: false
+    lowernav: true
+  navTitle: Introduction to Open Standards
+  nav:
+    pill: true
+    modifier: m-nav--large
+    items:
+    -
+      title: What are Open Standards for Data?
+    -
+      title: Types of Open Data Standards
+    -
+      title: Why use Open Standards for Data
+  metatitle: false
+  pill: false
+  lede:
+    message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
+
+variants:
+    -
+        name: soundcloud
+        context:
+            modifier: soundcloud
+    -
+        name: home
+        context:
+            modifier: home
+            hero:
+                heading: false
+                breadcrumbs: false
+                sidenav: false
+                lowernav: true
+            nav:
+                modifier: m-nav--large
+                pill: Something
+                items:
+                -
+                  title: What are Open Standards for Data?
+                -
+                  title: Types of Open Data Standards
+                -
+                  title: Why use Open Standards for Data
+            pill: false
+            metatitle: false
+            navTitle: Introduction to Open Standards
