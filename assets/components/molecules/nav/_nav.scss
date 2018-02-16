@@ -53,7 +53,7 @@
 
 .m-nav--masthead {
     background: palette(grey-dark);
-    margin-top: spacing(10);
+    margin-top: spacing(15);
 
     .m-nav__item {
         @include link() {
@@ -70,13 +70,23 @@
             }
 
             &.is--active {
-                color: palette(white);
                 background: palette(primary);
+                color: white;
+                background-image: linear-gradient(to bottom, #3e9eff, palette(primary));
+                border: solid 2px palette(primary);
+                display: inline-block;
+                text-decoration: none;
+                font-weight: 500;
+                letter-spacing: 0.2px;
+                text-align: center;
+                border-radius: rem-calc(2);
+                font-weight: 600;
+                transition: all ease 150ms;
             }
         }
 
         @include link-hover {
-            color: palette(white);
+            color: darken(palette(white), 15%);
         }
     }
 }
