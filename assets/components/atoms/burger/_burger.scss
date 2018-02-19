@@ -7,9 +7,6 @@
 // [---] middle -> &
 // (---) bottom -> &::after
 
-// Vendor prefixes
-$sass-burger-add-vendor-prefixes: true !default;
-
 // Burger
 @mixin burger($width: 20px, $height: 2px, $gutter: 3px, $color: palette(white), $border-radius: 0, $transition-duration: 250ms) {
     $burger-height: $height !global;
@@ -19,11 +16,6 @@ $sass-burger-add-vendor-prefixes: true !default;
     margin-top: $height + $gutter;
     margin-bottom: $height + $gutter;
 
-    @if $sass-burger-add-vendor-prefixes {
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-    }
     user-select: none;
 
     // 1. Fixes jagged edges in Firefox, see issue #10.
@@ -90,21 +82,9 @@ $sass-burger-add-vendor-prefixes: true !default;
         }
     }
     &::before {
-        @if $sass-burger-add-vendor-prefixes {
-            -webkit-transform: translateY($burger-gutter + $burger-height) rotate(45deg);
-            -moz-transform: translateY($burger-gutter + $burger-height) rotate(45deg);
-            -ms-transform: translateY($burger-gutter + $burger-height) rotate(45deg);
-            -o-transform: translateY($burger-gutter + $burger-height) rotate(45deg);
-        }
         transform: translateY($burger-gutter + $burger-height) rotate(45deg);
     }
     &::after {
-        @if $sass-burger-add-vendor-prefixes {
-            -webkit-transform: translateY(-($burger-gutter + $burger-height)) rotate(-45deg);
-            -moz-transform: translateY(-($burger-gutter + $burger-height)) rotate(-45deg);
-            -ms-transform: translateY(-($burger-gutter + $burger-height)) rotate(-45deg);
-            -o-transform: translateY(-($burger-gutter + $burger-height)) rotate(-45deg);
-        }
         transform: translateY(-($burger-gutter + $burger-height)) rotate(-45deg);
     }
 }
