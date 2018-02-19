@@ -23,7 +23,7 @@ The list below is automatically generated from the colours available to this pro
             `{{ colour.value }}`
         </td>
         <td>{{ colour.comment }}</td>
-        <td`palette({{ key }})`</td>
+        <td>`palette({{ key }})`</td>
     <tr>
 {% endfor %}
 </tr>
