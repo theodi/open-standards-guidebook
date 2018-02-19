@@ -2,30 +2,30 @@
 //  Layout Alignment
 // ==========================================================================
 
-.g--align-end {
+.align-end {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
 }
 
-.g--align-justify-center {
+.align-end {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
 }
 
-.g--align-right {
+.align-right {
     margin-left: auto;
 }
 
-.g--align-v-top {
+.align-v-top {
     align-items: flex-start;
 }
 
-.g--align-v-bottom {
+.align-v-bottom {
     align-items: flex-end;
 }
 
-.g--align-v-center {
+.align-v-center {
     align-items: center;
 }
