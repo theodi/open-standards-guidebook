@@ -7,14 +7,6 @@
     }
 }
 
-.m-accordion__item {
-    &.is--open {
-        .chevron {
-            transform: rotate(180deg);
-        }
-    }
-}
-
 .m-accordion__title {
     @include link() {
         display: block;
