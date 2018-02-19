@@ -79,3 +79,9 @@
         font-size: rem-calc(12);
     }
 }
+
+.btn[disabled] {
+    background: palette(grey);
+    color: darken(palette(grey), 25%);
+    cursor: not-allowed;
+}
