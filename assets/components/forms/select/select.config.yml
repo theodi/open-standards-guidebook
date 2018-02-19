@@ -1,5 +1,4 @@
 title: "Select"
-status: ready
 context:
     input:
         message: Placeholder text

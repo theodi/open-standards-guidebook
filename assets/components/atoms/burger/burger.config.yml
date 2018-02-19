@@ -1,5 +1,4 @@
 title: "Burger"
-status: ready
 variants:
     -
         name: active

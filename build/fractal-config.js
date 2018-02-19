@@ -30,6 +30,16 @@ fractal.components.set('default.preview', '@preview');
 fractal.components.engine('@frctl/nunjucks');
 fractal.components.set('ext', '.html');
 
+// Collate components by default
+fractal.components.set('default.collated', true);
+// Wrapping each in a padded div
+fractal.components.set('default.collator', function(markup, item) {
+    return `<!-- Start: @${item.handle} -->\n
+            <div style="padding-bottom:20px">\n
+                ${markup}\n
+            </div>\n
+            <!-- End: @${item.handle} -->\n`
+});
 /**
  * Docs
  */
