@@ -29,11 +29,6 @@ variants:
             modifier: btn--block
             message: Block Display Button
     -
-        name: inline-block
-        context:
-            modifier: btn--inline-block
-            message: Inline Block Display Button
-    -
         name: disabled
         context:
             modifier: btn--disabled
