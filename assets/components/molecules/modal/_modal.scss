@@ -8,7 +8,7 @@
     background: rgba(255,255,255,0.8);
 }
 
-// Class to apply to body when modal is active...
+// Class to apply to body (inner wrapper) when modal is active...
 .is--modal-active {
     filter: blur(4px);
 }

@@ -32,14 +32,6 @@
         margin: rem-calc(6 0 0 0);
         float: left;
     }
-
-    & + .m-accordion__item--underlined {
-        padding-top: 0;
-
-        .m-accordion__title {
-            border-bottom: 1px solid lighten(palette(primary), 40%);
-        }
-    }
 }
 
 .m-accordion__title-text {

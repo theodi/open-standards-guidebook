@@ -35,11 +35,6 @@
     }
   }
 
-  &:disabled + label {
-    color: #b8b8b8;
-    cursor: auto;
-  }
-
   &:checked + label:after {
     content: '';
     position: absolute;

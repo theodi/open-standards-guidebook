@@ -74,10 +74,6 @@
 
 .btn--inline {
   display: inline-block;
-
-  & +.btn--inline {
-    margin-top: spacing(base);
-  }
 }
 
 .btn--small {
