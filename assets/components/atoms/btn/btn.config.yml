@@ -2,7 +2,6 @@ title: "Buttons"
 context:
     modifier: ''
     message: Default Button
-collated: true
 variants:
     -
         name: primary
