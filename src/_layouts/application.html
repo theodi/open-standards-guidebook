@@ -26,13 +26,23 @@
 {% endcomment %}
 <body class="debug">
 
+<!-- Global Masthead -->
 {% include masthead.html %}
 
+<!-- Site Content -->
 <main id="site-body">
     {{ content }}
 </main>
 
+<!-- Global CTA with default content injected -->
+{% capture cta_default_content %}
+    <div class="u-trim--all">
+        <p>Something missing? <a class="link link--bold" href="#">edit this page</a> or <a class="link link--bold" href="#">suggest new content</a></p>
+    </div>
+{% endcapture %}
+{% include cta.html content=cta_default_content %}
 
+<!-- Global Footer -->
 {% include footer.html %}
 
 {% comment %}

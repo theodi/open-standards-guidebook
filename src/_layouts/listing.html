@@ -1,6 +1,8 @@
 ---
 layout: application
 breadcrumbs: true
+hero:
+    side_nav: true
 ---
 
 <div class="m-hero__wrapper">
@@ -8,17 +10,19 @@ breadcrumbs: true
     {% include hero.html %}
 </div>
 
-<div class="wrapper">
-    <h1>{{ page.title }}</h1>
+<div class="pad-bottom-medium pad-bottom-xlarge--medium">
+    <div class="wrapper">
+        <h1>{{ page.title }}</h1>
 
-    <p class="lede">{{ page.lede }}</p>
+        <p class="lede">{{ page.lede }}</p>
 
-    {% include section-nav.html %}
+        {% include section-nav.html %}
 
-    <div id="toc">
-        <h4>Page contents</h4>
-        {% include toc.html html=content %}
+        <div id="toc">
+            <h4>Page contents</h4>
+            {% include toc.html html=content %}
+        </div>
+
+        {{ content }}
     </div>
-
-    {{ content }}
 </div>
