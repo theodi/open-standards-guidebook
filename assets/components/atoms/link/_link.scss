@@ -49,7 +49,7 @@ a {
   }
 
   @include link-hover() {
-    color: darken(palette(white), 10%);
+    color: tint(palette(white), 'darken');
   }
 }
 

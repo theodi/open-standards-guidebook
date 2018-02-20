@@ -25,7 +25,7 @@
     }
 
     @include link-hover() {
-        background: darken(palette(primary), 20%);
-        border-color: darken(palette(primary), 10%);
+        background: tint(palette(primary), 'darken');
+        border-color: tint(palette(primary), 'darken');
     }
 }
