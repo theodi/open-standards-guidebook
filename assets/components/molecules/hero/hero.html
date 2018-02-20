@@ -1,47 +1,47 @@
 <div class="m-hero__wrapper">
     <div class="m-hero {{ modifier }}">
-    	<div class="wrapper">
-    		{% if hero.breadcrumbs %}
-    			<div class="pad-bottom">
-    				{% render '@breadcrumb' %}
-    			</div>
-    		{% endif %}
-    		<div class="g">
-    			<div class="g__cell g__cell-12 g__cell-8--medium">
-    				<div class="g">
-    					<div class="g__cell g__cell-12">
-    						{% if pill %}
-    							{% include '@pill' %}
-    						{% endif %}
-    						{% if hero.heading %}
-    							<div class="u-trim--top">
-    								<h1>{{ hero.heading }}</h1>
-    							</div>
-    						{% endif %}
-    						{% if lede %}
-                                <div class="u-trim--all">
-        							{% include '@lede' %}
+        <div class="wrapper">
+            {% if hero.breadcrumbs %}
+                <div class="pad-bottom">
+                    {% render '@breadcrumb' %}
+                </div>
+            {% endif %}
+            <div class="g">
+                <div class="g__cell g__cell-12 g__cell-8--medium">
+                    <div class="g">
+                        <div class="g__cell g__cell-12">
+                            {% if pill %}
+                                {% include '@pill' %}
+                            {% endif %}
+                            {% if hero.heading %}
+                                <div class="u-trim--top">
+                                    <h1>{{ hero.heading }}</h1>
                                 </div>
-    						{% endif %}
-    					</div>
-    				</div>
-    			</div>
+                            {% endif %}
+                            {% if lede %}
+                                <div class="u-trim--all">
+                                    {% include '@lede' %}
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
                 {% if modifier != 'home' %}
-        			{% if hero.sidenav %}
-        				<div class="g__cell g__cell-12 g__cell-4--medium pad-top-medium pad-top-reset--medium">
-        					{% include '@nav--large' %}
-        				</div>
-        			{% endif %}
+                    {% if hero.sidenav %}
+                        <div class="g__cell g__cell-12 g__cell-4--medium pad-top-medium pad-top-reset--medium">
+                            {% include '@nav--large' %}
+                        </div>
+                    {% endif %}
                 {% endif %}
-    		</div>
+            </div>
 
-    		{% if hero.lowernav %}
-        		<div class="g pad-top-medium">
-        			<div class="g__cell g__cell-12">
-        				{% include '@nav' %}
-        			</div>
-        		</div>
-    		{% endif %}
+            {% if hero.lowernav %}
+                <div class="g pad-top-medium">
+                    <div class="g__cell g__cell-12">
+                        {% include '@nav' %}
+                    </div>
+                </div>
+            {% endif %}
 
             {% if modifier != 'home' %}
                 {% if modifier == 'soundcloud' %}
@@ -51,6 +51,6 @@
                     </div>
                 {% endif %}
             {% endif %}
-    	</div>
+        </div>
     </div>
 </div>

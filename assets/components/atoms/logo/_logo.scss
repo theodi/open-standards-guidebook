@@ -3,7 +3,7 @@
 // ==========================================================================
 
 .logo {
-	fill: white;
+    fill: white;
 
     @include link-hover() {
         opacity: 0.85;
@@ -11,5 +11,5 @@
 }
 
 .logo--black {
-	fill: black;
+    fill: black;
 }
