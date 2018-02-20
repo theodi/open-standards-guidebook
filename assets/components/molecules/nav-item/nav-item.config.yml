@@ -43,26 +43,6 @@ variants:
             title: About
       metatitle: false
   -
-    name: masthead
-    context:
-      nav:
-        modifier: m-nav--masthead
-        items:
-        -
-          title: Introduction
-          active: false
-        -
-          title: Creating Impact
-          active: true
-        -
-          title: Creating Open Standards
-          active: false
-        -
-          title: The Standards Community
-          active: false
-
-      metatitle: false
-  -
     name: mobile
     context:
       nav:

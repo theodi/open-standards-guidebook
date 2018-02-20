@@ -1,7 +1,7 @@
 <div class="m-nav {{ nav.modifier }} {% if nav.open %}is--open{% endif %}">
-	{% if metatitle %}
-		{% include '@meta-title'%}
-	{% endif %}
+    {% if metatitle %}
+        {% include '@meta-title'%}
+    {% endif %}
 
     {% if nav.pill %}
         <span class="pill">Getting Started</span>
@@ -13,7 +13,7 @@
         </div>
     {% endif %}
 
-	{% for item in nav.items %}
-		<a href="#" class="m-nav__item {% if item.active %}is--active{% endif %}">{{ item.title }}</a>
-	{% endfor %}
+    {% for item in nav.items %}
+        <a href="#" class="m-nav__item {% if item.active %}is--active{% endif %}">{{ item.title }}</a>
+    {% endfor %}
 </div>
