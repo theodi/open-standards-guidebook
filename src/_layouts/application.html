@@ -14,9 +14,11 @@
       add a .js class to the html element
     {% endcomment %}
     <script>
+        window.OSD = window.OSD || {};
         (function(){
-            var d = document.documentElement;
-            d.className = d.className.replace(/(^|\s)no-js(\s|$)/, '$1$2') +  ' js ';
+            var doc = document.documentElement;
+            doc.classList.remove('no-js');
+            doc.classList.add('js', 'js-loading');
         }());
     </script>
 

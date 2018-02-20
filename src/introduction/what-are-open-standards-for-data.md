@@ -2,10 +2,21 @@
 title: What Are Open Standards For Data?
 lede: Standards are documented, reusable agreements that affect us everyday - from addressing a letter, to changing a lightbulb, or looking up train times. Open standards for data make it easier for people and organisations to publish, access, share and use better quality data.
 gdoc: https://docs.google.com/document/d/1YcbKgtZAFjdeS6KiS_KGIi5GAUSwe1JTG4uRxhaWUQQ/edit
+sidebar:
+  sections:
+    - title: Further reading
+      intro: Read these guides to discover how to create an open standard
+      items:
+        -
+          title: How Open Standards Are Developed
+          url: https://docs.google.com/document/d/1kBsBph0bionPForwpriLMLY9MozSMHdviOandnK_hjM/edit?usp=sharing
+        -
+          title: Developing Standards
+          url: https://docs.google.com/document/d/1p2o3pn8l1j-AKnIIx0mY-RpNdgz33ujJzUCQVWUi8Gg/edit?usp=sharing
+        -
+          title: ITU Definition of "Open Standards"
+          url: https://www.itu.int/en/ITU-T/ipr/Pages/open.aspx
 ---
-
-
-{:toc}
 
 
 ## What Are Standards?
@@ -42,14 +53,6 @@ Open standards tend to be developed to:
 
 * The US [Environmental Protection Agency (EPA)](https://www.epa.gov/) use [open standards for environmental data](https://www.epa.gov/data-standards) and a central data exchange to significantly reduce the cost of collecting and sharing data with 65,000 active users
 
-## Further Reading
-
-Read these guides to discover how to create an open standard:
-
-**[How Open Standards Are Developed](https://docs.google.com/document/d/1kBsBph0bionPForwpriLMLY9MozSMHdviOandnK_hjM/edit?usp=sharing)**
-
-**[Developing Standard**s](https://docs.google.com/document/d/1p2o3pn8l1j-AKnIIx0mY-RpNdgz33ujJzUCQVWUi8Gg/edit?usp=sharing)
-**[ITU Definition of "Open Standards**"](https://www.itu.int/en/ITU-T/ipr/Pages/open.aspx
 
 Read about open standards in use:
 
