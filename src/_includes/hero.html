@@ -1,0 +1,36 @@
+<div class="m-hero ">
+    <div class="wrapper">
+        <div class="pad-bottom">
+            {% include breadcrumbs.html %}
+        </div>
+        <div class="g">
+            <div class="g__cell g__cell-12 g__cell-8--medium">
+                <div class="g">
+                    <div class="g__cell g__cell-12">
+                        <span class="pill">Case Study</span>
+                        {% if page.title %}
+                        <div class="u-trim--top">
+                            <h1>{{ page.title }}</h1>
+                        </div>
+                        {% endif %}
+                        {% if page.lede %}
+                            <div class="u-trim--all">
+                                <p class="lede">{{ page.lede }}</a>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            <div class="g__cell g__cell-12 g__cell-4--medium pad-top-medium pad-top-reset--medium">
+                <div class="m-nav m-nav--large ">
+                    <span class="meta-title">Lorem</span>
+                    <a href="#" class="m-nav__item ">What are Open Standards for Data?</a>
+                    <a href="#" class="m-nav__item ">Types of Open Data Standards</a>
+                    <a href="#" class="m-nav__item ">Why use Open Standards for Data</a>
+                    <a href="#" class="m-nav__item ">The Open Standards process</a>
+                    <a href="#" class="m-nav__item ">Case Studies</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
