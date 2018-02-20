@@ -25,13 +25,3 @@ context:
     message: Case Study
   lede:
     message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel velit sed dolor aliquam viverra eget in es.Mauris sed ullamcorper elit, in hendrerit augue. Nunc sodales mauris a ullamcorper pellentesque. Morbi lobortis eleifend nulla non interdum. Lorem ipsum dolor sit amet consecteteur adipicising elit'
-variants:
-    -
-        name: soundcloud
-        context:
-            modifier: soundcloud
-
-    -
-        name: infographic
-        context:
-            modifier: infographic
