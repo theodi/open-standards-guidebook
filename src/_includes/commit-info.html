@@ -2,6 +2,6 @@
     <div class="u-trim--all">
         <h4>Last updated</h4>
     </div>
-    <p>7th April 2018</p>
+    <p>{{ site.git.last_commit.commit_date | date_to_long_string }}</p>
     <a href="{{ site.data.contributing.repo_url }}">See all updates on Github</a>
 </div>
