@@ -1,8 +1,12 @@
 ---
 layout: application
+breadcrumbs: true
 ---
 
-{% include hero.html %}
+<div class="m-hero__wrapper">
+    {% include breadcrumbs.html %}
+    {% include hero.html %}
+</div>
 
 <div class="wrapper">
     <h1>{{ page.title }}</h1>

@@ -1,12 +1,16 @@
 {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
 
-<div class="m-breadcrumb">
-    <a class="m-breadcrumb__item" href="/">Home</a>
-    {% for crumb in crumbs offset: 1 %}
-      {% if forloop.last %}
-        <span class="m-breadcrumb__seperator">/</span> <a class="m-breadcrumb__item is--active">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
-      {% else %}
-        <span class="m-breadcrumb__seperator">/</span> <a class="m-breadcrumb__item" href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
-      {% endif %}
-    {% endfor %}
+<div class="wrapper">
+    <div class="pad-bottom">
+        <div class="m-breadcrumb">
+            <a class="m-breadcrumb__item" href="/">Home</a>
+            {% for crumb in crumbs offset: 1 %}
+              {% if forloop.last %}
+                <span class="m-breadcrumb__seperator">/</span> <a class="m-breadcrumb__item is--active">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
+              {% else %}
+                <span class="m-breadcrumb__seperator">/</span> <a class="m-breadcrumb__item" href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
+              {% endif %}
+            {% endfor %}
+        </div>
+    </div>
 </div>

@@ -2,7 +2,7 @@
 // Hero Molecule
 // ==========================================================================
 
-.m-hero {
+.m-hero__wrapper {
 	background-color: palette(grey);
 	padding-top: spacing(base);
 	padding-bottom: spacing(base);
@@ -11,4 +11,8 @@
 		padding-top: spacing(xlarge);
 		padding-bottom: spacing(xlarge);
 	}
+}
+
+.m-hero {
+
 }
