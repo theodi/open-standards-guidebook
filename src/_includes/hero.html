@@ -21,16 +21,35 @@
                 </div>
             </div>
 
-            <div class="g__cell g__cell-12 g__cell-4--medium pad-top-medium pad-top-reset--medium">
-                <div class="m-nav m-nav--large ">
-                    <span class="meta-title">Lorem</span>
-                    <a href="#" class="m-nav__item ">What are Open Standards for Data?</a>
-                    <a href="#" class="m-nav__item ">Types of Open Data Standards</a>
-                    <a href="#" class="m-nav__item ">Why use Open Standards for Data</a>
-                    <a href="#" class="m-nav__item ">The Open Standards process</a>
-                    <a href="#" class="m-nav__item ">Case Studies</a>
+            {% if layout.hero.sideNav %}
+            <!-- @TODO - Integrate -->
+                <div class="g__cell g__cell-12 g__cell-4--medium pad-top-medium pad-top-reset--medium">
+                    <nav class="m-nav">
+                        <span class="meta-title">Lorem</span>
+                        <a href="#" class="nav-item nav-item--large">What are Open Standards for Data?</a>
+                        <a href="#" class="nav-item nav-item--large">Types of Open Data Standards</a>
+                        <a href="#" class="nav-item nav-item--large">Why use Open Standards for Data</a>
+                        <a href="#" class="nav-item nav-item--large">The Open Standards process</a>
+                        <a href="#" class="nav-item nav-item--large">Case Studies</a>
+                    </nav>
+                </div>
+            {% endif %}
+        </div>
+
+        {% if layout.hero.lowerNav %}
+        <!-- @TODO - Integrate -->
+            <div class="g pad-top-medium">
+                <div class="g__cell">
+                    <nav class="m-nav">
+                        <span class="meta-title">Lorem</span>
+                        <a href="#" class="nav-item nav-item--large">What are Open Standards for Data?</a>
+                        <a href="#" class="nav-item nav-item--large">Types of Open Data Standards</a>
+                        <a href="#" class="nav-item nav-item--large">Why use Open Standards for Data</a>
+                        <a href="#" class="nav-item nav-item--large">The Open Standards process</a>
+                        <a href="#" class="nav-item nav-item--large">Case Studies</a>
+                    </nav>
                 </div>
             </div>
-        </div>
+        {% endif %}
     </div>
 </div>
