@@ -29,7 +29,8 @@
                 {% if modifier != 'home' %}
                     {% if hero.sidenav %}
                         <div class="g__cell g__cell-12 g__cell-4--medium pad-top-medium pad-top-reset--medium">
-                            {% include '@nav--large' %}
+                            {% render '@meta-title' %}
+                            {% include '@nav-item--large' %}
                         </div>
                     {% endif %}
                 {% endif %}

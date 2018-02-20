@@ -2,7 +2,7 @@
 // Nav Item Molecule
 // ==========================================================================
 
-.m-nav-item {
+.nav-item {
     @include link() {
         color: palette(grey-dark);
         display: block;
@@ -19,7 +19,7 @@
     }
 }
 
-.m-nav-item--large {
+.nav-item--large {
     @include link() {
         font-size: ms(0);
         margin-bottom: spacing(11);
@@ -30,7 +30,7 @@
     }
 }
 
-.m-nav-item--inline {
+.nav-item--inline {
     @include link() {
         display: inline-block;
         margin-right: spacing(8);
@@ -38,29 +38,5 @@
         &:last-of-type {
             margin-right: 0;
         }
-    }
-}
-
-
-.m-nav--mobile {
-    background: palette(primary);
-    padding: spacing(20 25);
-    display: none;
-
-    .m-nav__item {
-        @include link() {
-            padding: spacing(3 0);
-            color: white;
-            font-weight: bold;
-            font-size: ms(0);
-        }
-
-        @include link-hover() {
-            color: tint(white, 'darken');
-        }
-    }
-
-    &.is--open {
-        display: block;
     }
 }

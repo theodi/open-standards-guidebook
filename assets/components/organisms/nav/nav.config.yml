@@ -1,4 +1,4 @@
-title: "Nav Default"
+title: "Nav"
 status: "ready"
 context:
   nav:
@@ -21,7 +21,7 @@ variants:
     context:
       navTitle: Lorem ipsum dolor sit
       nav:
-        modifier: m-nav--large
+        modifier: m-nav-item--large
         items:
           -
             title: Large nav item 1
@@ -35,36 +35,10 @@ variants:
     name: inline
     context:
       nav:
-        modifier: m-nav--inline
+        modifier: m-nav-item--inline
         items:
           -
             title: How to use this guide
           -
             title: About
-      metatitle: false
-  -
-    name: mobile
-    context:
-      nav:
-        open: true
-        modifier: m-nav--mobile
-        items:
-        -
-          title: Introduction
-          active: false
-        -
-          title: Creating Impact
-          active: true
-        -
-          title: Creating Open Standards
-          active: false
-        -
-          title: The Standards Community
-          active: false
-        -
-          title: How to use this guide
-          active: false
-        -
-          title: About
-          active: false
       metatitle: false
