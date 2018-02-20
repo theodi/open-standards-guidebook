@@ -1,3 +1,17 @@
 ---
 layout: application
+hero:
+  pill: podcast
 ---
+
+<div class="m-hero__wrapper">
+    {% include breadcrumbs.html %}
+    {% include hero-podcast.html %}
+</div>
+
+<div class="pad-bottom-medium pad-bottom-xlarge--medium">
+    <div class="wrapper">
+        <h1>{{ page.title }}</h1>
+        {{ content }}
+    </div>
+</div>
