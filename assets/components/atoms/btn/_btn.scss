@@ -14,6 +14,7 @@
   transition: all ease 150ms;
   text-transform: uppercase;
 
+
   @include respond-to(medium) {
     font-size: rem-calc(fontsize(regular));
   }
@@ -22,10 +23,13 @@
     font-size: ms(-1);
     background: palette(primary);
     color: white;
+    background-image: linear-gradient(to bottom, #3e9eff, palette(primary));
+    border: solid 2px palette(primary);
   }
 
   @include link-hover() {
-    background: palette(black);
+    background: tint(palette(primary), 'darken');
+    border-color: tint(palette(primary), 'darken');
   }
 }
 
@@ -38,8 +42,8 @@
   }
 
   @include link-hover() {
-    background: darken(palette(primary), 20%);
-    border-color: darken(palette(primary), 10%);
+    background: tint(palette(primary), 'darken');
+    border-color: tint(palette(primary), 'darken');
   }
 }
 
@@ -52,13 +56,15 @@
   }
 
   @include link-hover() {
-    background: darken(palette(secondary), 10%);
-    border-color: darken(palette(secondary), 10%);
+    background: tint(palette(secondary), 'darken');
+    border-color: tint(palette(secondary), 'darken');
   }
 }
 
 .btn--naked {
   @include link() {
+    border: none;
+    background-image: none;
     background-color: rgba(255, 255, 255, 0);
     color: palette(primary);
   }
@@ -81,6 +87,7 @@
 }
 
 .btn[disabled] {
+    border: none;
     background: palette(grey);
     color: darken(palette(grey), 25%);
     cursor: not-allowed;

@@ -87,7 +87,7 @@
         }
 
         @include link-hover {
-            color: darken(palette(white), 15%);
+            color: tint(palette(white), 'darken');
         }
     }
 }
@@ -106,7 +106,7 @@
         }
 
         @include link-hover() {
-            color: darken(white, 10%);
+            color: tint(white, 'darken');
         }
     }
 

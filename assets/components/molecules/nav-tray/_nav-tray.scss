@@ -41,7 +41,7 @@
 
 .m-nav-tray__inner {
     display: none;
-    background: darken(palette(primary), 10%);
+    background: tint(palette(primary), 'darken');
     padding: spacing(25 0);
 
     &.is--open {
@@ -57,7 +57,7 @@
         }
 
         @include link-hover() {
-            color: darken(palette(white), 10%);
+            color: tint(palette(white), 'darken');
         }
     }
 }

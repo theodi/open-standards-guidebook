@@ -5,7 +5,7 @@
 .m-section-listing {
     padding-bottom: spacing(medium);
     margin-bottom: spacing(medium);
-    border-bottom: 1px solid darken(palette(grey), 5%);
+    border-bottom: 1px solid palette(grey);
 
     @include respond-to(medium) {
         padding-bottom: spacing(large);

@@ -11,13 +11,13 @@
     @include link() {
         display: block;
         color: palette(primary);
-        border-bottom: 1px solid lighten(palette(primary), 40%);
+        border-bottom: 1px solid palette(grey);
         padding: spacing(10 0);
         text-decoration: none;
     }
 
     @include link-hover() {
-        color: darken(palette(primary), 20%);
+        color: tint(palette(primary), 'darken');
     }
 
     .chevron {
