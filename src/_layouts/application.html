@@ -23,10 +23,20 @@
     </script>
 
 </head>
+
 {% comment %}
     @todo make debug class dynamic
 {% endcomment %}
 <body class="debug">
+
+<!-- Global CTA with default content injected -->
+{% capture cta_top_default %}
+    <div class="u-trim--all">
+        <p>Something missing? <a class="link link--bold link--secondary" href="#">edit this page</a> or <a class="link link--bold link--secondary" href="#">suggest new content</a></p>
+    </div>
+{% endcapture %}
+<!-- Global CTA Above Masthead -->
+{% include cta.html content=cta_top_default color="white" %}
 
 <!-- Global Masthead -->
 {% include masthead.html %}
@@ -37,12 +47,13 @@
 </main>
 
 <!-- Global CTA with default content injected -->
-{% capture cta_default_content %}
+{% capture cta_bottom_default %}
     <div class="u-trim--all">
         <p>Something missing? <a class="link link--bold" href="#">edit this page</a> or <a class="link link--bold" href="#">suggest new content</a></p>
     </div>
 {% endcapture %}
-{% include cta.html content=cta_default_content %}
+<!-- Global CTA Above Footer -->
+{% include cta.html content=cta_bottom_default color="primary" %}
 
 <!-- Global Footer -->
 {% include footer.html %}
