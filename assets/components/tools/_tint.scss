@@ -1,0 +1,13 @@
+$_tint-amount: 10%;
+
+@function tint($color, $shade) {
+    @if $shade == 'lighten' {
+        @return lighten($color, $_tint-amount);
+    } @else {
+        @if $shade == 'darken' {
+            @return darken($color, $_tint-amount);
+        } @else {
+            @error '$shade value must be one of "lighten" or "darken"';
+        }
+    }
+}
