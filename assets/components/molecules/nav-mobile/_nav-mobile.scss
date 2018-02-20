@@ -1,0 +1,28 @@
+// ==========================================================================
+// Nav Mobile Molecule
+// ==========================================================================
+
+.m-nav-mobile {
+    background: palette(primary);
+    padding: spacing(20 25);
+    display: none;
+
+    &.is--open {
+        display: block;
+    }
+}
+
+.m-nav-mobile__item {
+    display: block;
+
+    @include link() {
+        padding: spacing(3 0);
+        color: white;
+        font-weight: bold;
+        font-size: ms(0);
+    }
+
+    @include link-hover() {
+        color: tint(white, 'darken');
+    }
+}

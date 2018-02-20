@@ -13,15 +13,15 @@
 @each $bp, $config in $breakpoints-map {
     @include respond-to($bp) {
         .u-text-center--#{$bp} {
-		    text-align: center;
-		}
+            text-align: center;
+        }
 
-		.u-text-right--#{$bp} {
-		  text-align: right;
-		}
+        .u-text-right--#{$bp} {
+          text-align: right;
+        }
 
-		.u-text-left--#{$bp} {
-		  text-align: left;
-		}
+        .u-text-left--#{$bp} {
+          text-align: left;
+        }
     }
 }

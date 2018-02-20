@@ -1,0 +1,24 @@
+title: "Nav Mobile"
+status: "ready"
+context:
+  nav:
+    open: true
+    items:
+    -
+      title: Introduction
+      active: false
+    -
+      title: Creating Impact
+      active: true
+    -
+      title: Creating Open Standards
+      active: false
+    -
+      title: The Standards Community
+      active: false
+    -
+      title: How to use this guide
+      active: false
+    -
+      title: About
+      active: false

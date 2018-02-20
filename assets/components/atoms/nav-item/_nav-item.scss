@@ -1,0 +1,66 @@
+// ==========================================================================
+// Nav Item Molecule
+// ==========================================================================
+
+.nav-item {
+    &, & > a {
+        @include link() {
+            color: palette(grey-dark);
+            display: block;
+            font-size: ms(-1);
+            margin-bottom: spacing(5);
+
+            @include respond-to(medium) {
+                font-size: ms(0, $thread: desktop);
+            }
+        }
+
+        @include link-hover() {
+            color: palette(primary);
+        }
+    }
+}
+
+.nav-item--large {
+    &, & > a {
+        @include link() {
+            font-size: ms(0);
+            margin-bottom: spacing(11);
+
+            @include respond-to(medium) {
+                font-size: ms(1);
+            }
+        }
+    }
+}
+
+.nav-item--inline {
+    &, & > a {
+        @include link() {
+            display: inline-block;
+            margin-right: spacing(8);
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.nav-item--white {
+    &, & > a {
+        @include link() {
+            color: white;
+            display: inline-block;
+            margin-right: spacing(8);
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+
+        @include link-hover() {
+            color: tint(white, 'darken');
+        }
+    }
+}

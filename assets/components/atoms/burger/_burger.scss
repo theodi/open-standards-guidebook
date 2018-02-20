@@ -90,26 +90,26 @@
 }
 
 .burger {
-	display: inline-block;
-	padding: .3em;
-	background: palette(grey-dark);
+    display: inline-block;
+    padding: .3em;
+    background: palette(grey-dark);
 
-	&:hover {
-		cursor: pointer;
+    &:hover {
+        cursor: pointer;
 
-		.burger__icon {
-			&, &::before, &::after {
-		        background-color: palette(primary);
-			}
-		}
-	}
+        .burger__icon {
+            &, &::before, &::after {
+                background-color: palette(primary);
+            }
+        }
+    }
 }
 
 .burger__text {
-	color: palette(white);
-	font-size: ms(-1);
+    color: palette(white);
+    font-size: ms(-1);
     font-weight: bold;
-	padding-left: spacing(4);
+    padding-left: spacing(4);
 }
 
 .burger__icon {

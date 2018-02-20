@@ -1,0 +1,44 @@
+title: "Nav Item"
+status: "ready"
+context:
+  nav:
+    items:
+      -
+        title: What are Open Standards for Data?
+      -
+        title: Types of Open Data Standards
+      -
+        title: Why use Open Standards for Data
+      -
+        title: The Open Standards process
+      -
+        title: Case Studies
+  metatitle:
+      message: Meta Title
+variants:
+  -
+    name: large
+    context:
+      navTitle: Lorem ipsum dolor sit
+      nav:
+        modifier: nav-item--large
+        items:
+          -
+            title: Large nav item 1
+          -
+            title: Large nav item 2
+          -
+            title: Large nav item 3
+      metatitle:
+          message: Large Meta Title
+  -
+    name: inline
+    context:
+      nav:
+        modifier: nav-item--inline
+        items:
+          -
+            title: How to use this guide
+          -
+            title: About
+      metatitle: false

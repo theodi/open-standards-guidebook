@@ -1,0 +1,5 @@
+<div class="m-nav-mobile {% if nav.open %}is--open{% endif %}">
+    {% for item in nav.items %}
+        <a href="#" class="m-nav-mobile__item {% if item.active %}is--active{% endif %}">{{ item.title }}</a>
+    {% endfor %}
+</div>

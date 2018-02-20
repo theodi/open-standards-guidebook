@@ -1,0 +1,18 @@
+title: "Masthead Nav"
+status: "ready"
+context:
+  nav:
+    modifier: m-nav--masthead
+    items:
+    -
+      title: Introduction
+      active: false
+    -
+      title: Creating Impact
+      active: true
+    -
+      title: Creating Open Standards
+      active: false
+    -
+      title: The Standards Community
+      active: false

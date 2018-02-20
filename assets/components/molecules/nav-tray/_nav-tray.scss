@@ -2,7 +2,7 @@
 // Nav Tray Molecule
 // ==========================================================================
 
-.m-nav-tray {
+.m-nav-tray__toggle {
     background: palette(primary);
     padding: spacing(15 0);
     width: 100%;
@@ -48,19 +48,6 @@
 
     &.is--open {
         display: block;
-    }
-
-    .m-nav__item {
-        @include link() {
-            color: palette(white);
-            font-size: ms(0, $thread: desktop);
-            margin-bottom: spacing(10);
-            font-weight: 600;
-        }
-
-        @include link-hover() {
-            color: tint(palette(white), 'darken');
-        }
     }
 }
 

@@ -9,6 +9,6 @@ p {
     margin: 1em 0 0.5em;
 
     @include respond-to(medium) {
-    	font-size: ms(0, $thread: desktop);
+        font-size: ms(0, $thread: desktop);
     }
 }

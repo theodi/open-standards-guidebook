@@ -22,7 +22,7 @@
 }
 
 .u-trim {
-	@include trim;
+    @include trim;
 }
 
 .u-trim--top {
@@ -30,5 +30,5 @@
 }
 
 .u-trim--all {
-	@include trim-all;
+    @include trim-all;
 }

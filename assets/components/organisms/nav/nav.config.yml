@@ -1,0 +1,17 @@
+title: "Nav"
+status: "ready"
+context:
+  nav:
+    items:
+      -
+        title: What are Open Standards for Data?
+      -
+        title: Types of Open Data Standards
+      -
+        title: Why use Open Standards for Data
+      -
+        title: The Open Standards process
+      -
+        title: Case Studies
+  metatitle:
+      message: Meta Title

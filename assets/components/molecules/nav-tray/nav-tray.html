@@ -1,29 +1,31 @@
-<button class="m-nav-tray {{ modifier }}">
-    <div class="wrapper">
-        <div class="g">
-            <div class="g__cell">
-                <div class="u-trim--all">
-                    <span class="m-nav-tray__title">Page Contents <div class="chevron chevron--white {% if modifier %} chevron--up {% else %} chevron--down {% endif %}"></div></span>
-                </div>
-            </div>
-            {% if modifier %}
-            <div class="g__cell align-right">
-                <span class="u-text-color--white link link--bold m-nav-tray__close">Close</span>
-            </div>
-            {% endif %}
-        </div>
-    </div>
-</button>
-
-<div class="m-nav-tray__inner {{ modifier }}">
-    <div class="wrapper">
-        <div class="m-nav m-nav--large g__cell g__cell-12">
+<div class="m-nav-tray">
+    <button class="m-nav-tray__toggle {{ modifier }}">
+        <div class="wrapper">
             <div class="g">
-                {% for item in navtray.items %}
-                    <div class="g__cell-12 g__cell-6--medium g__cell-4--large">
-                        <a href="#" class="m-nav__item">{{ item.title }}</a>
+                <div class="g__cell">
+                    <div class="u-trim--all">
+                        <span class="m-nav-tray__title">Page Contents <div class="chevron chevron--white {% if modifier %} chevron--up {% else %} chevron--down {% endif %}"></div></span>
                     </div>
-                {% endfor %}
+                </div>
+                {% if modifier %}
+                <div class="g__cell align-right">
+                    <span class="u-text-color--white link link--bold m-nav-tray__close">Close</span>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </button>
+
+    <div class="m-nav-tray__inner {{ modifier }}">
+        <div class="wrapper">
+            <div class="g__cell g__cell-12">
+                <div class="g">
+                    {% for item in navtray.items %}
+                        <div class="g__cell-12 g__cell-6--medium g__cell-4--large">
+                            <a href="#" class="nav-item nav-item--white">{{ item.title }}</a>
+                        </div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>

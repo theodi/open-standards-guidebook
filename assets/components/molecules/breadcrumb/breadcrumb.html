@@ -1,9 +1,9 @@
 <div class="m-breadcrumb">
-	{% for item in breadcrumb.items %}
-		<a href="#" class="m-breadcrumb__item {% if item.active %}is--active{% endif %}">{{ item.title }}</a>
-		
-		{% if not loop.last %}
-			<span class="m-breadcrumb__seperator">/</span>
-		{% endif %}
-	{% endfor %}
+    {% for item in breadcrumb.items %}
+        <a href="#" class="m-breadcrumb__item {% if item.active %}is--active{% endif %}">{{ item.title }}</a>
+        
+        {% if not loop.last %}
+            <span class="m-breadcrumb__seperator">/</span>
+        {% endif %}
+    {% endfor %}
 </div>
