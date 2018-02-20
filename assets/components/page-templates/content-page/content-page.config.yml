@@ -2,62 +2,31 @@ title: "Content Page Layout"
 status: "ready"
 
 context:
+  # Hero Context
   hero:
-    heading: false
-    breadcrumbs: false
-    sidenav: false
-    lowernav: true
+    heading: Content Page
+    breadcrumbs: true
+    sidenav: true
 
-  navTitle: Introduction to Open Standards
+  # Hero Lede
+  lede:
+    message: 'Some introductory text lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate magna velit. Vestibulum fermentum fermentum libero. Vestibulum dui dui, pulvinar bibendum nulla eget, lacinia fermentum lorem.'
+
+  # Nav context
   nav:
     modifier: m-nav--large
     items:
     -
-      title: What are Open Standards for Data?
+      title: Getting Started
     -
-      title: Types of Open Data Standards
+      title: Creating open standards
     -
-      title: Why use Open Standards for Data
+      title: Find existing standards
+    -
+      title: How to use this guide
+    -
+      title: Introduction
 
+  # The nav metatitle
   metatitle:
-    message: Getting Started
-
-  pill: false
-
-  sections:
-    items:
-    -
-      title: Creating Open Standards
-      meta: Process
-      items:
-      -
-        title: Scoping & Starting
-        description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
-      -
-        title: Developing standards
-        description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
-      -
-        title: Governance and guidance
-        description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
-      -
-        title: Impact of Open Standards
-        description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
-    -
-      title: Open Standards and you
-      meta: Groups
-      items:
-      -
-        title: Organisations developing standards
-        description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
-      -
-        title: Policy specialists
-        description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
-      -
-        title: Domain experts
-        description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
-      -
-        title: Data publishers and consumers
-        description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
-
-  lede:
-    message: 'Some introductory text lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate magna velit. Vestibulum fermentum fermentum libero. Vestibulum dui dui, pulvinar bibendum nulla eget, lacinia fermentum lorem.'
+    message: Contents

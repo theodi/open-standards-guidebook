@@ -2,17 +2,17 @@ title: "Resource Listing Layout"
 status: "ready"
 
 context:
+  # Hero Context
   hero:
     heading: Open Standards Organisations
-    breadcrumbs: false
     sidenav: true
-    lowernav: false
+
+  # Hero Lede
   lede:
     message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pulvinar ex pretium interdum gravida. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere.'
 
-  navTitle: false
+  # Nav Context
   nav:
-    pill: false
     modifier: m-nav--large
     items:
     -
@@ -21,16 +21,19 @@ context:
       title: Types of Open Data Standards
     -
       title: Why use Open Standards for Data
+
+  # Nav Meta Title
   metatitle:
     message: Getting started
 
-  pill: false
-
+  # Section Listings
   sections:
     items:
     -
       title: Creating Open Standards
       meta: Process
+
+      # Items within this Section Listing
       items:
       -
         title: Scoping & Starting
@@ -47,6 +50,8 @@ context:
     -
       title: Open Standards and you
       meta: Groups
+
+      # Items within this Section Listing
       items:
       -
         title: Organisations developing standards

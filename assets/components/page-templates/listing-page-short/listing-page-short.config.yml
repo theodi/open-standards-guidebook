@@ -2,13 +2,15 @@ title: "Listing Page - Short Layout"
 status: "ready"
 
 context:
+  # Hero Context
   hero:
-    heading: false
-    breadcrumbs: false
-    sidenav: false
     lowernav: true
 
-  navTitle: Introduction to Open Standards
+  # Hero Lede
+  lede:
+    message: 'Some introductory text lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate magna velit. Vestibulum fermentum fermentum libero. Vestibulum dui dui, pulvinar bibendum nulla eget, lacinia fermentum lorem.'
+
+  # Nav Context
   nav:
     modifier: m-nav--large
     items:
@@ -19,16 +21,21 @@ context:
     -
       title: Why use Open Standards for Data
 
+  # Nav Title
+  navTitle: Introduction to Open Standards
+
+  # Nav Meta Title
   metatitle:
     message: Getting Started
 
-  pill: false
-
+  # Section Listings
   sections:
     items:
     -
       title: Creating Open Standards
       meta: Process
+
+      # Items within this Section Listing
       items:
       -
         title: Scoping & Starting
@@ -45,6 +52,8 @@ context:
     -
       title: Open Standards and you
       meta: Groups
+
+      # Items within this Section Listing
       items:
       -
         title: Organisations developing standards
@@ -58,6 +67,3 @@ context:
       -
         title: Data publishers and consumers
         description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
-
-  lede:
-    message: 'Some introductory text lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate magna velit. Vestibulum fermentum fermentum libero. Vestibulum dui dui, pulvinar bibendum nulla eget, lacinia fermentum lorem.'
