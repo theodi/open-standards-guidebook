@@ -2,16 +2,16 @@ const yaml = require('js-yaml');
 const fs = require('fs');
 const path = require('path');
 
-let palette;
+let data;
 
 const filePath = path.resolve(__dirname, '../design/colours.yml');
 
 try {
-    palette = yaml.safeLoad(fs.readFileSync(filePath, 'utf8'));
+    data = yaml.safeLoad(fs.readFileSync(filePath, 'utf8'));
 
     module.exports = {
         context: {
-            palette: palette.props,
+            palette: data.props,
         },
     };
 
