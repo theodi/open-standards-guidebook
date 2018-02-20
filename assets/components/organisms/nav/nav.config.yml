@@ -15,30 +15,3 @@ context:
         title: Case Studies
   metatitle:
       message: Meta Title
-variants:
-  -
-    name: large
-    context:
-      navTitle: Lorem ipsum dolor sit
-      nav:
-        modifier: m-nav-item--large
-        items:
-          -
-            title: Large nav item 1
-          -
-            title: Large nav item 2
-          -
-            title: Large nav item 3
-      metatitle:
-          message: Large Meta Title
-  -
-    name: inline
-    context:
-      nav:
-        modifier: m-nav-item--inline
-        items:
-          -
-            title: How to use this guide
-          -
-            title: About
-      metatitle: false

@@ -1,0 +1,10 @@
+title: "Nav - Inline"
+status: "ready"
+context:
+  nav:
+    items:
+      -
+        title: How to use this guide
+      -
+        title: About
+  metatitle: false
