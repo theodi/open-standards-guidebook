@@ -53,6 +53,16 @@ a {
   }
 }
 
+.link--secondary {
+  @include link() {
+    color: palette(secondary);
+  }
+
+  @include link-hover() {
+    color: tint(palette(secondary), 'darken');
+  }
+}
+
 .link--break {
   word-break: break-word;
 }
