@@ -4,14 +4,16 @@ layout: application
 
 {% include hero-home.html %}
 
-<div class="pad-bottom-medium pad-bottom-xlarge--medium">
-    <div class="wrapper">
-        {{ content }}
+<div id="site-content">
+	<section class="pad-bottom-medium pad-bottom-xlarge--medium">
+	    <div class="wrapper">
+	        {{ content }}
 
-        <section class="pad-top-medium pad-top-xlarge--medium pad-bottom-medium pad-bottom-xlarge--medium">
-            {% for section in page.sections.items %}
-                {% include section-listing.html %}
-            {% endfor %}
-        </section>
-    </div>
+	        <section class="pad-top-medium pad-top-xlarge--medium pad-bottom-medium pad-bottom-xlarge--medium">
+	            {% for section in page.sections.items %}
+	                {% include section-listing.html %}
+	            {% endfor %}
+	        </section>
+	    </div>
+	</section>
 </div>
