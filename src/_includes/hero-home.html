@@ -4,11 +4,7 @@
             <div class="g__cell g__cell-12 g__cell-8--medium g__cell-7--large">
                 <div class="g">
                     <div class="g__cell g__cell-12">
-                        {% if page.lede %}
-                            <div class="u-trim--all">
-                                <p class="lede">{{ page.lede}}</p>
-                            </div>
-                        {% endif %}
+                        {% include hero-text.html %}
                     </div>
                 </div>
             </div>
