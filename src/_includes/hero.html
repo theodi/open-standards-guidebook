@@ -22,14 +22,7 @@
             {% if layout.hero.side_nav %}
             <!-- @TODO - Integrate -->
                 <div class="g__cell g__cell-12 g__cell-4--medium pad-top-medium pad-top-reset--medium">
-                    <nav class="m-nav">
-                        <span class="meta-title">Lorem</span>
-                        <a href="#" class="nav-item nav-item--large">What are Open Standards for Data?</a>
-                        <a href="#" class="nav-item nav-item--large">Types of Open Data Standards</a>
-                        <a href="#" class="nav-item nav-item--large">Why use Open Standards for Data</a>
-                        <a href="#" class="nav-item nav-item--large">The Open Standards process</a>
-                        <a href="#" class="nav-item nav-item--large">Case Studies</a>
-                    </nav>
+                    {% include section-nav.html %}
                 </div>
             {% endif %}
         </div>
@@ -38,14 +31,7 @@
         <!-- @TODO - Integrate -->
             <div class="g pad-top-medium">
                 <div class="g__cell">
-                    <nav class="m-nav">
-                        <span class="meta-title">Lorem</span>
-                        <a href="#" class="nav-item nav-item--large">What are Open Standards for Data?</a>
-                        <a href="#" class="nav-item nav-item--large">Types of Open Data Standards</a>
-                        <a href="#" class="nav-item nav-item--large">Why use Open Standards for Data</a>
-                        <a href="#" class="nav-item nav-item--large">The Open Standards process</a>
-                        <a href="#" class="nav-item nav-item--large">Case Studies</a>
-                    </nav>
+                    {% include section-nav.html %}
                 </div>
             </div>
         {% endif %}

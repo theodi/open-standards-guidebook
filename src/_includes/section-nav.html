@@ -33,21 +33,27 @@ remove the leading slash
 {% endif %}
 
 {% if section_name.size %}
-    <h4>{{ section_name }}</h4>
+    <h4 class="meta-title">{{ section_name }}</h4>
 {% endif %}
 {% comment %}
 <h5>base url: {{ base_url }}</h5>
 base url parts size: {{ url_parts.size }}<br/>
 {% endcomment %}
 
-<ul>
-{% for node in site.pages %}
-  {% if node.url contains base_url %}
-    {% assign node_url_parts = node.url | split: '/' %}
-    {% assign size_difference = (node_url_parts.size | minus: url_parts_size) %}
-    {% if size_difference < max_size_difference %}
-      <li><a class="nav-item nav-item--large" href='{{ node.url }}'>{{ node.title }}</a></li>
-    {% endif %}
-  {% endif %}
-{% endfor %}
-</ul>
+<nav>
+    {% assign sorted_pages = site.pages | group_by:'nav_order' | sort:'name' %}
+    {% for group in sorted_pages  %}
+        {% for node in group.items %}
+            {% if node.url contains base_url %}
+                {% assign node_url_parts = node.url | split: '/' %}
+                {% assign size_difference = (node_url_parts.size | minus: url_parts_size) %}
+                {% if size_difference < max_size_difference %}
+                    {% if node.url == page.url %}
+                        {% assign activeClass = 'is--active' %}
+                    {% endif %}
+                    <a class="nav-item nav-item--large {{ activeClass }}" href="{{ node.url }}">{{ node.title }}</a>
+                    {% endif %}
+              {% endif %}
+        {% endfor %}
+    {% endfor %}
+</nav>
