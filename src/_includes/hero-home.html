@@ -12,13 +12,34 @@
 
         <div class="g pad-top-medium">
             <div class="g__cell g__cell-12">
+                {% if page.hero.nav.meta %}
+                    <span class="meta-title">{{ page.hero.nav.meta }}</span>
+                {% endif %}
+                {% if page.hero.nav.title %}
                 <div class="u-trim--all pad-bottom-small pad-bottom--medium">
-                    <h2>Introduction to Open Standards</h2>
+                    <h2>{{ page.hero.nav.title }}</h2>
                 </div>
+                {% endif %}
+                {% if page.hero.nav.items.size %}
+                <nav>
+                    {% for item in page.hero.nav.items %}
+                        {% if item.title and item.url %}
+                            {% assign itemPage = item %}
+                        {% else %}
+                            {% assign path = item %}
 
-                <a href="#" class="nav-item nav-item--large ">What are Open Standards for Data?</a>
-                <a href="#" class="nav-item nav-item--large ">Types of Open Data Standards</a>
-                <a href="#" class="nav-item nav-item--large ">Why use Open Standards for Data</a>
+                            {% comment %}Add a .md file extension if missing {% endcomment %}
+                            {% unless path contains '.md' or path contains '.html' %}
+                                {% assign path = path | append:'.md' %}
+                            {% endunless %}
+                            {% assign itemPage = site.pages | where:'path', path | first %}
+                        {% endif %}
+                        {% if itemPage %}
+                            <a href="{{ itemPage.url }} " class="nav-item nav-item--large ">{{ itemPage.title }}</a>
+                        {% endif %}
+                    {% endfor %}
+                </nav>
+                {% endif %}
             </div>
         </div>
     </div>
