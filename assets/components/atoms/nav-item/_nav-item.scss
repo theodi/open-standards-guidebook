@@ -23,7 +23,8 @@
     &.is--active {
         &, & > a {
             @include link() {
-                color: palette(secondary);
+                text-decoration: none;
+                font-weight: bold;
             }
         }
     }
@@ -82,7 +83,8 @@
     &.is--active {
         &, & > a {
             @include link() {
-                color: palette(primary);
+                text-decoration: none;
+                font-weight: bold;
             }
         }
     }
