@@ -1,30 +1,31 @@
 ---
 layout: application
+lede: 'About page intro'
+hero:
+  side_nav: true
 ---
-<div class="wrapper">
-    <h1>{{ page.title }}</h1>
-
-    <p class="lede">{{ page.lede }}</p>
-
-    {% include section-nav.html %}
+<div class="m-hero__wrapper">
+    {% include breadcrumbs.html %}
+    {% include hero.html %}
 </div>
-<button class="m-nav-tray ">
-    <div class="wrapper">
-        <div class="g">
-            <div class="g__cell">
-                <div class="u-trim--all">
-                    <span class="m-nav-tray__title">Page Contents <div class="chevron chevron--white  chevron--down "></div></span>
+<div class="m-nav-tray">
+    <button class="m-nav-tray__toggle" data-toggle="#toc">
+        <div class="wrapper">
+            <div class="g">
+                <div class="g__cell">
+                    <div class="u-trim--all">
+                        <span class="m-nav-tray__title">Page Contents <div class="chevron chevron--white  chevron--down "></div></span>
+                    </div>
                 </div>
             </div>
-
         </div>
-    </div>
-</button>
-<div class="m-nav-tray__inner {{ modifier }}">
-    <div class="wrapper">
-        <div class="m-nav m-nav--large g__cell g__cell-12">
-            <div class="g">
-                {% include toc.html html=content item_class="m-nav__item" %}
+    </button>
+    <div class="m-nav-tray__inner" id="toc" aria-hidden="true">
+        <div class="wrapper">
+            <div class="m-nav m-nav--large g__cell g__cell-12">
+                <div class="g">
+                    {% include toc.html html=content item_class="nav-item--white" %}
+                </div>
             </div>
         </div>
     </div>
