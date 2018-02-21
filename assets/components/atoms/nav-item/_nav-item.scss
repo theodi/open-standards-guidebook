@@ -19,6 +19,14 @@
             color: palette(primary);
         }
     }
+
+    &.is--active {
+        &, & > a {
+            @include link() {
+                color: palette(secondary);
+            }
+        }
+    }
 }
 
 .nav-item--large {
@@ -68,6 +76,14 @@
 
         @include link-hover() {
             color: tint(white, 'darken');
+        }
+    }
+    
+    &.is--active {
+        &, & > a {
+            @include link() {
+                color: palette(primary);
+            }
         }
     }
 }

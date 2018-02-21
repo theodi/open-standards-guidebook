@@ -8,52 +8,35 @@ hero:
     {% include breadcrumbs.html %}
     {% include hero.html %}
 </div>
-<div class="m-nav-tray">
-    <button class="m-nav-tray__toggle" data-toggle="#toc">
+
+{% include nav-tray.html %}
+
+<div id="site-content">
+    <section class="pad-top-medium pad-top-xlarge--medium pad-bottom-medium pad-bottom-xlarge--medium">
         <div class="wrapper">
             <div class="g">
-                <div class="g__cell">
-                    <div class="u-trim--all">
-                        <span class="m-nav-tray__title">Page Contents <div class="chevron chevron--white  chevron--down "></div></span>
-                    </div>
+                <div class="g__cell g__cell-12 g__cell-8--medium">
+                    {{ content }}
+                </div>
+                <div class="g__cell g__cell-12 g__cell-4--medium">
+                    {% for section in page.sidebar.sections %}
+                        <div class="pad-top">
+                            <h4>{{ section.title }}</h4>
+                            {% if section.intro %}
+                                <p>{{ section.intro }}</p>
+                            {% endif %}
+                            {% if section.items %}
+                                <nav>
+                                {% for item in section.items %}
+                                   <a class="nav-item" href="{{ item.url }}">{{ item.title }}</a>
+                                {% endfor %}
+                            </nav>
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                    {% include commit-info.html %}
                 </div>
             </div>
         </div>
-    </button>
-    <div class="m-nav-tray__inner" id="toc" aria-hidden="true">
-        <div class="wrapper">
-            <div class="m-nav m-nav--large g__cell g__cell-12">
-                <div class="g">
-                    {% include toc.html html=content item_class="nav-item--white" %}
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
 </div>
-<section class="pad-top-medium pad-top-xlarge--medium pad-bottom-medium pad-bottom-xlarge--medium">
-    <div class="wrapper">
-        <div class="g">
-            <div class="g__cell g__cell-12 g__cell-8--medium">
-                {{ content }}
-            </div>
-            <div class="g__cell g__cell-12 g__cell-4--medium">
-                {% for section in page.sidebar.sections %}
-                    <div class="pad-top">
-                        <h4>{{ section.title }}</h4>
-                        {% if section.intro %}
-                            <p>{{ section.intro }}</p>
-                        {% endif %}
-                        {% if section.items %}
-                            <nav>
-                            {% for item in section.items %}
-                               <a class="nav-item" href="{{ item.url }}">{{ item.title }}</a>
-                            {% endfor %}
-                        </nav>
-                        {% endif %}
-                    </div>
-                {% endfor %}
-                {% include commit-info.html %}
-            </div>
-        </div>
-    </div>
-</section>

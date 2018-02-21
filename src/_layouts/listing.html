@@ -19,15 +19,16 @@ remove the leading slash
     {% include hero.html %}
 </div>
 
-<div class="pad-bottom-medium pad-bottom-xlarge--medium">
-    <div class="wrapper">
-        <article>
+<div id="site-content">
+    <div class="pad-bottom-medium pad-bottom-xlarge--medium">
+        <div class="wrapper">
             {{ content }}
-        </article>
-        <section class="pad-top-medium pad-top-xlarge--medium pad-bottom-medium pad-bottom-xlarge--medium">
-            {% for section in page.sections.items %}
-                {% include section-listing.html type=section.type %}
-            {% endfor %}
-        </section>
+
+            <section class="pad-top-medium pad-top-xlarge--medium pad-bottom-medium pad-bottom-xlarge--medium">
+                {% for section in page.sections.items %}
+                    {% include section-listing.html type=section.type %}
+                {% endfor %}
+            </section>
+        </div>
     </div>
 </div>
