@@ -1,3 +1,11 @@
+aside {
+	padding-top: spacing(base);
+
+	@include respond-to(medium) {
+		padding-top: none;
+	}
+}
+
 aside > *:first-child {
 	margin-top: 0;
 	padding-top: 0;
