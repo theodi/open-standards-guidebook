@@ -15,6 +15,7 @@ npm-debug.log
 /assets/js/design/
 /src/.jekyll-metadata
 /src/assets/
+src/.git-metadata/
 
 ###################
 # Backups
