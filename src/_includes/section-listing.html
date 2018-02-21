@@ -9,23 +9,38 @@
 
     <div class="g pad-top-small pad-top--medium">
         {% for item in section.items %}
-            <div class="g__cell
-                        g__cell-12
-                        {% if section.type != 'short' and section.type != 'full' %}
-                            g__cell-6--medium
-                            g__cell-4--large
-                        {% endif %}">
-                {% if section.type == 'short' %}
-                <div class="u-trim--all pad-bottom-small">
-                {% endif %}
-                    <h4 class="m-section-listing__title"><a class="link" href="#">{{ item.title }}</a></h4>
-                {% if section.type == 'short' %}
-                    </div>
-                {% endif %}
-                {% if section.type != 'short' %}
-                    <p>{{ item.description }}</p>
-                {% endif %}
-            </div>
+            {% comment %}Is this a custom item (has title and url) {% endcomment %}
+            {% if item.title and item.url %}
+                {% assign itemPage = item %}
+            {% else %}
+                {% assign path = item %}
+
+                {% comment %}Add a .md file extension if missing {% endcomment %}
+                {% unless path contains '.md' or path contains '.html' %}
+                    {% assign path = path | append:'.md' %}
+                {% endunless %}
+                {% assign itemPage = site.pages | where:'path', path | first %}
+            {% endif %}
+            {% comment %}ensure we have a page {% endcomment %}
+            {% if itemPage %}
+                <div class="g__cell
+                            g__cell-12
+                            {% if section.type != 'short' and section.type != 'full' %}
+                                g__cell-6--medium
+                                g__cell-4--large
+                            {% endif %}">
+                    {% if section.type == 'short' %}
+                    <div class="u-trim--all pad-bottom-small">
+                    {% endif %}
+                        <h4 class="m-section-listing__title"><a class="link" href="{{ itemPage.url }}">{{ itemPage.title }}</a></h4>
+                    {% if section.type == 'short' %}
+                        </div>
+                    {% endif %}
+                    {% if section.type != 'short' and itemPage.lede %}
+                        <p>{{ itemPage.lede }}</p>
+                    {% endif %}
+                </div>
+            {% endif %}
         {% endfor %}
     </div>
 </div>
