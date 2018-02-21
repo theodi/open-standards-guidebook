@@ -8,9 +8,9 @@ hero:
     {% include breadcrumbs.html %}
     {% include hero.html %}
 </div>
-
-{% include nav-tray.html %}
-
+{% if page.show_toc %}
+    {% include nav-tray.html %}
+{% endif %}
 <div id="site-content">
     <section class="pad-top-medium pad-top-xlarge--medium pad-bottom-medium pad-bottom-xlarge--medium">
         <div class="wrapper">

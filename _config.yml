@@ -28,6 +28,7 @@ defaults:
       layout: content-page
       nav:
         order: 1000
+      show_toc: true
 ###
 # Plugins
 ###
