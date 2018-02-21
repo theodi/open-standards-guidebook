@@ -40,6 +40,7 @@ defaults:
       nav:
         order: 1000
       show_toc: true
+      show_nav: true
 ###
 # Plugins
 ###
