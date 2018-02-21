@@ -53,6 +53,13 @@
             color: white;
             display: inline-block;
             margin-right: spacing(8);
+            display: block;
+            font-size: ms(-1);
+            margin-bottom: spacing(5);
+
+            @include respond-to(medium) {
+                font-size: ms(0, $thread: desktop);
+            }
 
             &:last-of-type {
                 margin-right: 0;
