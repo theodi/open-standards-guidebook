@@ -3,14 +3,33 @@
 // ==========================================================================
 
 .meta-title {
-    color: palette(secondary);
     text-transform: uppercase;
     font-weight: bold;
     font-size: ms(-1);
     display: block;
     padding-bottom: spacing(2);
+    &, & > a {
+        color: palette(secondary);
+    }
+    > a {
+        @include link() {
+            color: palette(secondary);
+            text-decoration: none;
+        }
+        @include link-hover() {
+            color: palette(secondary);
+            text-decoration: underline;
+        }
+    }
 }
 
 .meta-title--white {
-    color: palette(white);
+    &, & > a {
+        color: palette(white);
+    }
+    > a {
+        @include link() {
+            color: palette(white);
+        }
+    }
 }
