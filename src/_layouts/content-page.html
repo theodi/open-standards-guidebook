@@ -19,7 +19,7 @@ hero:
                 <div class="g__cell g__cell-12 g__cell-8--medium">
                     {{ content }}
                 </div>
-                <div class="g__cell g__cell-12 g__cell-4--medium">
+                <aside class="g__cell g__cell-12 g__cell-4--medium">
                     {% for section in page.sidebar.sections %}
                         <div class="pad-top">
                             <h4>{{ section.title }}</h4>
@@ -36,7 +36,7 @@ hero:
                         </div>
                     {% endfor %}
                     {% include commit-info.html %}
-                </div>
+                </aside>
             </div>
         </div>
     </section>
