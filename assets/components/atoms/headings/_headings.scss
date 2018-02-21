@@ -54,3 +54,14 @@ h5, .h5 {
     font-size: ms(0, $thread: desktop);
   }
 }
+
+// Remove spacing from first element in site-content as we don't want to do this in markdown land
+#site-content h1:first-child,
+#site-content h2:first-child,
+#site-content h3:first-child,
+#site-content h4:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+
