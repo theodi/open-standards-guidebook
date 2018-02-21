@@ -8,11 +8,11 @@ lede: Introduction. Dissident augmented reality saturation point artisanal bridg
 sections:
   items:
     - type: grid # full, grid, short
+      meta: Process
       title: Getting started
       description: >-
         Short description nulla eu molestie massa. Pellentesque fermentum
         urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
-      meta: Process
       items:
         # Linked items use the relative path of the source file, with no leading slash
         - introduction/types-of-open-standards-for-data.md
@@ -41,20 +41,20 @@ sections:
       title: Open Standards and you
       meta: Groups
       items:
-        - introduction/types-of-open-standards-for-data.md
-        - introduction/what-are-open-standards-for-data.md
-        - introduction/when-not-to-create-new-standards.md
-        - introduction/when-to-use-open-standards-for-data.md
-        - introduction/how-open-standards-are-developed.md
+        - introduction/types-of-open-standards-for-data
+        - introduction/what-are-open-standards-for-data
+        - introduction/when-not-to-create-new-standards
+        - introduction/when-to-use-open-standards-for-data
+        - introduction/how-open-standards-are-developed
     - type: short # full, grid, short
       title: Open Standards and you
       meta: Groups
       description: >-
         This is an optional section description. Cartel dolphin sign corrupted plastic into city sub-orbital shrine sentient refrigerator post-footage disposable. Footage grenade neon industrial grade human sprawl courier. Jeans futurity euro-pop table modem receding math-boat tube media A.I. weathered uplink realism motion.
       items:
-        - introduction/types-of-open-standards-for-data.md
-        - introduction/what-are-open-standards-for-data.md
-        - introduction/when-not-to-create-new-standards.md
-        - introduction/when-to-use-open-standards-for-data.md
-        - introduction/how-open-standards-are-developed.md
+        - introduction/types-of-open-standards-for-data
+        - introduction/what-are-open-standards-for-data
+        - introduction/when-not-to-create-new-standards
+        - introduction/when-to-use-open-standards-for-data
+        - introduction/how-open-standards-are-developed
 ---

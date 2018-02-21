@@ -8,6 +8,15 @@ incremental: true
 permalink: pretty
 
 exclude: ['_templates']
+
+###
+# Meta
+###
+url: http://open-standards-guidebook.odi.kindclients.co.uk
+name: Open Standards for Data Guidebook
+twitter_username: ODIHQ
+description: This is the default site description, change me
+title_image: ''
 ###
 # Collections
 ###
