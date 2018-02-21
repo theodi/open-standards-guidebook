@@ -35,7 +35,7 @@ remove the leading slash
 {% comment %}
 Determine the base page for this nav
 {% endcomment %}
-{% if page_has_children %}
+{% if page_has_children or url_parts.size == 1 %}
     {% assign base_page = page %}
 {% else %}
     {% comment %}
