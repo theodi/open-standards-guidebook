@@ -6,6 +6,8 @@ destination: dist
 timezone: Europe/London
 incremental: true
 permalink: pretty
+
+exclude: ['_templates']
 ###
 # Collections
 ###
