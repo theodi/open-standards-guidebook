@@ -14,7 +14,10 @@ hero:
     meta: Starting
     # Nav title
     title: Introduction to Open Standards
-    # Nav items
+    # Nav items - can be any of:
+    #  - a path to a html or md file (.md suffix optional)
+    #  - a custom item with title: (required), url: (required)
+    #  and lede: (optional) keys
     items:
       - introduction/what-are-open-standards-for-data
       - introduction/types-of-open-standards-for-data

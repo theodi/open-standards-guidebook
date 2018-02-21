@@ -12,3 +12,12 @@ The following templates are available:
 - Homepage
 
 The template that the site will render is determined by the `layout` key in each page's front matter - be sure to set the correct `layout` value or the page will not render as expected!
+
+## Shared frontmatter keys
+
+The following keys can be used on all page templates:
+
+```
+nav:
+    title: 'My custom nav title' # specify a string to use when referencing the page in navigation, e.g. section nav and breadcrumbs - defaults to page.title
+```

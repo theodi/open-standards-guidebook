@@ -26,7 +26,7 @@ hero:
 # Soundcloud ID @todo integrate
 soundcloud: http://soundcloud.com
 
-# People information for sidebar
+# People information for sidebar (optional)
 people:
   - name: Edafe Onerhime
     role: Consultant Data Scientist #optional
