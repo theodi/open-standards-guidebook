@@ -9,6 +9,19 @@ lede: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in'
+
+# The Hero contents
+hero:
+  nav:
+    # Nav meta title
+    meta: Starting
+    # Nav title
+    title: Introduction to Open Standards
+    # Nav items
+    items:
+      - introduction/what-are-open-standards-for-data
+      - introduction/types-of-open-standards-for-data
+      - introduction/when-to-use-open-standards-for-data
 ---
 
 ### Case Study Details
