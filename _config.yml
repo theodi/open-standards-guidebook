@@ -17,6 +17,8 @@ name: Open Standards for Data Guidebook
 twitter_username: ODIHQ
 description: This is the default site description, change me
 title_image: ''
+ga: 'UA-XXXXXXXX-X'
+
 ###
 # Collections
 ###
