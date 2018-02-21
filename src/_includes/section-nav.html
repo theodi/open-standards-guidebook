@@ -3,57 +3,93 @@
 remove the leading slash
 {% endcomment %}
 {% assign url_parts = url_parts | slice:1, url_parts.size %}
-
 {% assign url_parts_size = url_parts | size %}
+
+{% assign last_segment = url_parts | last %}
+{% assign base_page = false %}
+{% assign base_url = nil %}
+{% assign max_size_difference = 2 %}
+
+{% comment %}
+    Does the current page have children?
+
+    - if yes, we will use these in the nav
+    - if no, we will use the parent page's children instead
+{% endcomment %}
+{% assign page_has_children = false %}
+{% assign child_pages = false %}
+{% for node in site.pages %}
+    {% assign first_segment_match = node.url | split:page.url | first %}
+    {% if first_segment_match.size == 0 %}
+        {% assign page_has_children = true %}
+    {% endif %}
+{% endfor %}
+
 
 {% comment %}
     if we're a top level page, use that that as the base url,
     otherwise use last segment
 {% endcomment %}
-{% assign last_segment = url_parts | last %}
 
-{% assign base_page = false %}
-{% assign base_url = nil %}
-{% assign max_size_difference = 3 %}
-{% if url_parts.size == 1 %}
-    {% assign base_page = page %}
-    {% assign base_url = page.url %}
-    {% assign section_name = site.data.section_names[last_segment] %}
-{% else %}
-    {% assign base_url = page.url | replace: last_segment | replace: '//', '/' %}
-    {% assign section_slug = url_parts.first %}
-    {% assign section_name = site.data.section_names[section_slug] %}
-    {% assign max_size_difference = 3 %}
 
-    {% for node in site.pages %}
-        {% if node.url == base_url %}
-            {% assign base_page = node %}
-        {% endif %}
-    {% endfor %}
-{% endif %}
-
-{% if section_name.size %}
-    <h4 class="meta-title">{{ section_name }}</h4>
-{% endif %}
 {% comment %}
-<h5>base url: {{ base_url }}</h5>
-base url parts size: {{ url_parts.size }}<br/>
+Determine the base page for this nav
 {% endcomment %}
+{% if page_has_children %}
+    {% assign base_page = page %}
+{% else %}
+    {% comment %}
+    Otherwise use the parent page
+    {% endcomment %}
+    {% assign base_url = page.url | replace: last_segment | replace: '//', '/' %}
+    {% assign base_page = site.pages | where:'url', base_url | first %}
+    {% assign max_size_difference = 1 %}
+{% endif %}
+
+{% assign section_name = base_page.title %}
+{% if base_page.nav.title %}
+    {% assign section_name = base_page.nav.title %}
+{% endif %}
+
+{% if base_page %}
+    <h4 class="meta-title"><a href="{{ base_page.url }}">{{ section_name }}</a></h4>
+{% endif %}
 
 <nav>
-    {% assign sorted_pages = site.pages | group_by:'nav_order' | sort:'name' %}
+    {% assign sorted_pages = site.pages | group_by:'nav.order' | sort:'name' %}
     {% for group in sorted_pages  %}
         {% for node in group.items %}
-            {% if node.url contains base_url %}
-                {% assign node_url_parts = node.url | split: '/' %}
-                {% assign size_difference = (node_url_parts.size | minus: url_parts_size) %}
-                {% if size_difference < max_size_difference %}
-                    {% if node.url == page.url %}
-                        {% assign activeClass = 'is--active' %}
+            {% comment %}
+                Check that the node has base_url at the start of it
+            {% endcomment %}
+            {% if node.url contains base_page.url %}
+                {% assign first_segment_match = node.url | split:base_page.url | first %}
+
+                {% if first_segment_match.size == 0 %}
+
+                    {% comment %}
+                        Check that the node is not deeper than one level below the current page
+                    {% endcomment %}
+                    {% assign node_url_parts = node.url | split: '/' %}
+                    {% assign size_difference = (node_url_parts.size | minus: url_parts_size) %}
+
+                    {% if size_difference <= max_size_difference %}
+
+                        {% assign activeClass = '' %}
+                        {% comment %}Active state {% endcomment %}
+                        {% if page.url contains node.url  %}
+                            {% assign activeClass = 'is--active' %}
+                        {% endif %}
+
+                        {% comment %} title can be overidden with nav_title {% endcomment %}
+                        {% assign title = node.title %}
+                        {% if node.nav.title %}
+                            {% assign title = node.nav.title %}
+                        {% endif %}
+                        <a class="nav-item nav-item--large {{ activeClass }}" href="{{ node.url }}">{{ title }}</a>
                     {% endif %}
-                    <a class="nav-item nav-item--large {{ activeClass }}" href="{{ node.url }}">{{ node.title }}</a>
-                    {% endif %}
-              {% endif %}
+                {% endif %}
+            {% endif %}
         {% endfor %}
     {% endfor %}
 </nav>

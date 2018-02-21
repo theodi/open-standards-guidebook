@@ -5,14 +5,25 @@ hero:
     side_nav: true
 ---
 
+{% assign url_parts = page.url | split: '/' %}
+{% comment %}
+remove the leading slash
+{% endcomment %}
+{% assign url_parts = url_parts | slice:1, url_parts.size %}
+{% assign url_parts_size = url_parts | size %}
+
 <div class="m-hero__wrapper">
+    {% if url_parts_size > 1 %}
+        {% include breadcrumbs.html %}
+    {% endif %}
     {% include hero.html %}
 </div>
 
 <div class="pad-bottom-medium pad-bottom-xlarge--medium">
     <div class="wrapper">
-        {{ content }}
-
+        <article>
+            {{ content }}
+        </article>
         <section class="pad-top-medium pad-top-xlarge--medium pad-bottom-medium pad-bottom-xlarge--medium">
             {% for section in page.sections.items %}
                 {% include section-listing.html type=section.type %}

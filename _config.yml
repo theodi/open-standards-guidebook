@@ -24,7 +24,8 @@ defaults:
       path: '' # an empty string here means all files in the project
     values:
       layout: content-page
-      nav_order: 100
+      nav:
+        order: 1000
 ###
 # Plugins
 ###
