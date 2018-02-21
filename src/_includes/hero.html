@@ -9,16 +9,14 @@
                 </div>
             </div>
 
-            {% if layout.hero.side_nav %}
-            <!-- @TODO - Integrate -->
+            {% if layout.hero.nav.position == 'side' %}
                 <div class="g__cell g__cell-12 g__cell-4--medium pad-top-medium pad-top-reset--medium">
                     {% include section-nav.html %}
                 </div>
             {% endif %}
         </div>
 
-        {% if layout.hero.lower_nav %}
-        <!-- @TODO - Integrate -->
+        {% if layout.hero.nav.position == 'lower' %}
             <div class="g pad-top-medium">
                 <div class="g__cell">
                     {% include section-nav.html %}
