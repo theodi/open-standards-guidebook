@@ -9,33 +9,43 @@ hero:
     {% include hero-podcast.html %}
 </div>
 
-<section class="pad-top-medium pad-top-xlarge--medium pad-bottom-medium pad-bottom-xlarge--medium">
-    <div class="wrapper">
-        <div class="g">
-            <div class="g__cell g__cell-12 g__cell-8--medium">
-                {{ content }}
-            </div>
-            <div class="g__cell g__cell-12 g__cell-4--medium">
-                {% for section in page.sidebar.sections %}
-                    <div class="pad-top">
-                        <h4>{{ section.title }}</h4>
-                        {% if section.intro %}
-                            <p>{{ section.intro }}</p>
-                        {% endif %}
-                        {% if section.items %}
-                            <nav>
-                            {% for item in section.items %}
-                               <a class="nav-item" href="{{ item.url }}">{{ item.title }}</a>
-                            {% endfor %}
-                        </nav>
-                        {% endif %}
-                    </div>
-                {% endfor %}
+<div id="site-content">
+    <section class="pad-top-medium pad-top-xlarge--medium pad-bottom-medium pad-bottom-xlarge--medium">
+        <div class="wrapper">
+            <div class="g">
+                <div class="g__cell g__cell-12 g__cell-8--medium">
+                    {{ content }}
+                </div>
+                <div class="g__cell g__cell-12 g__cell-4--medium">
+                    {% for section in page.sidebar.sections %}
+                        <div class="pad-top">
+                            <h4>{{ section.title }}</h4>
+                            {% if section.intro %}
+                                <p>{{ section.intro }}</p>
+                            {% endif %}
+                            {% if section.items %}
+                                <nav>
+                                {% for item in section.items %}
+                                   <a class="nav-item" href="{{ item.url }}">{{ item.title }}</a>
+                                {% endfor %}
+                            </nav>
+                            {% endif %}
+                        </div>
+                    {% endfor %}
 
-                {% include share.html %}
-                {% include commit-info.html %}
-                
+                    <div class="pad-top-medium pad-top-reset--medium">
+                        {% for person in page.people %}
+                            {% include person.html %}
+                        {% endfor %}
+                    </div>
+
+                    <div class="pad-top">
+                        {% include share.html %}
+                    </div>
+                    {% include commit-info.html %}
+                    
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+</div>
