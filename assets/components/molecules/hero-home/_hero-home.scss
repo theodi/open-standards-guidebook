@@ -15,21 +15,42 @@
         padding-bottom: 90%;
         background-size: 100%;
 
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            background-image: none;
+            padding-bottom: spacing(medium);
+        }
+
         @include respond-to(medium) {
             background-position: bottom -20px right -200px;
             padding-top: spacing(xlarge);
             padding-bottom: spacing(xlarge);
             background-size: rem-calc(475);
+
+            @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                background-size: rem-calc(880);
+                background-position: bottom -20px right -200px;
+            }
         }
 
         @include respond-to(large) {
             background-position: bottom -20px right -100px;
             background-size: rem-calc(550);
+
+            @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                background-image: url('../images/hero-illustration.svg');
+                background-size: rem-calc(920);
+                background-position: bottom -20px right -200px;
+            }
         }
 
         @include respond-to(xlarge) {
             background-size: rem-calc(575);
             background-position: bottom -20px right 0;
+
+            @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                background-size: rem-calc(1080);
+                background-position: bottom -20px right -200px;
+            }
         }
     }
 }
