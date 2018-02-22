@@ -1,0 +1,8 @@
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@{{ site.twitter_username }}" />
+<meta name="twitter:creator" content="@{{ site.twitter_username }}" />
+
+<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:description" content="{% if page.lede %}{{ page.lede }}{% else %}{{ site.description }}{% endif %}" />
+<meta property="og:image" content="./assets/images/twitter-card.png" />
