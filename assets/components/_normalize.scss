@@ -293,6 +293,10 @@ html [type="button"], /* 1 */
   -webkit-appearance: none; /* 2 */
   border: none;
   display: block;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 /**

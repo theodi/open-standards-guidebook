@@ -6,6 +6,11 @@
     display: flex;
     align-items: center;
     background: rgba(255,255,255,0.8);
+    display: none;
+    top: 0;
+    &.is--open {
+        display: flex;
+    }
 }
 
 // Class to apply to body (inner wrapper) when modal is active...
@@ -31,5 +36,39 @@
     @include respond-to(large) {
         padding: spacing(80 125);
         max-height: calc(85vh);
+    }
+}
+
+.m-modal__close {
+    position: absolute;
+    right: rem-calc(35);
+    top: rem-calc(20);
+    width: rem-calc(24);
+    height: rem-calc(24);
+    opacity: 0.7;
+    display: block;
+}
+
+.m-modal__close:before, .m-modal__close:after {
+    position: absolute;
+    left: rem-calc(0);
+    top: rem-calc(0);
+    content: ' ';
+    height: rem-calc(24);
+    width: rem-calc(2);
+    background-color: palette(black);
+}
+
+.m-modal__close:before {
+  transform: rotate(45deg);
+}
+
+.m-modal__close:after {
+  transform: rotate(-45deg);
+}
+
+.m-modal__close:hover {
+    &:before, &:after {
+        background-color: palette(secondary);
     }
 }

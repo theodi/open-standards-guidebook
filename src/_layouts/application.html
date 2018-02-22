@@ -33,67 +33,94 @@
 {% comment %}
     @todo make debug class dynamic
 {% endcomment %}
+
 <body class="debug">
 
-<!-- Global CTA with default content injected -->
-{% capture cta_top_default %}
-    <div class="u-trim--all">
-        <p>Something missing? <a class="link link--bold link--secondary" href="#">edit this page or suggest new content</a></p>
+
+<div data-page-container>
+    <!-- Global CTA with default content injected -->
+    {% capture cta_top_default %}
+        <div class="u-trim--all">
+            <p>Something missing? <a class="link link--bold link--secondary" href="#" data-modal="#modal-suggestion" aria-controls="modal-suggestions">edit this page or suggest new content</a></p>
+        </div>
+    {% endcapture %}
+    <!-- Global CTA Above Masthead -->
+    <div class="is-hidden is-visible--medium">
+    {% include cta.html content=cta_top_default color="white" %}
     </div>
-{% endcapture %}
-<!-- Global CTA Above Masthead -->
-<div class="is-hidden is-visible--medium">
-{% include cta.html content=cta_top_default color="white" %}
+
+    <!-- Global Masthead -->
+    {% include masthead.html %}
+
+    <!-- Site Content -->
+    <main id="site-body">
+        {{ content }}
+    </main>
+
+    <section class="pad-top-medium pad-top-large--medium pad-bottom-medium pad-bottom-xlarge--medium island island--grey">
+        <div class="wrapper">
+            <div class="g">
+                {% for item in site.data.footer_aux_nav %}
+
+                    {% comment %}Is this a custom item (has title and url) {% endcomment %}
+                    {% if item.title and item.url %}
+                        {% assign itemPage = item %}
+                    {% else %}
+                        {% assign path = item %}
+
+                        {% comment %}Add a .md file extension if missing {% endcomment %}
+                        {% unless path contains '.md' or path contains '.html' %}
+                            {% assign path = path | append:'.md' %}
+                        {% endunless %}
+                        {% assign itemPage = site.pages | where:'path', path | first %}
+                    {% endif %}
+
+                    {% if itemPage %}
+                        <div class="g__cell g__cell-12 g__cell-6--medium g__cell-4--large">
+                            <h4 class="m-section-listing__title"><a class="link" href="{{ itemPage.url }}">{{ itemPage.title }}</a></h4>
+                            <p>{{ itemPage.lede  }}</p>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <!-- Global CTA with default content injected -->
+    {% capture cta_bottom_default %}
+        <div class="u-trim--all">
+            <p>Something missing? <a class="link link--bold" href="#" data-modal="#modal-suggestion" aria-controls="modal-suggestions">edit this page or suggest new content</a></p>
+        </div>
+    {% endcapture %}
+    <!-- Global CTA Above Footer -->
+    {% include cta.html content=cta_bottom_default color="primary" %}
+
+    <!-- Global Footer -->
+    {% include footer.html %}
 </div>
 
-<!-- Global Masthead -->
-{% include masthead.html %}
 
-<!-- Site Content -->
-<main id="site-body">
-    {{ content }}
-</main>
-
-<section class="pad-top-medium pad-top-large--medium pad-bottom-medium pad-bottom-xlarge--medium island island--grey">
+<div class="m-modal" id="modal-suggestion" aria-hidden="true">
     <div class="wrapper">
-        <div class="g">
-            {% for item in site.data.footer_aux_nav %}
+        <div class="m-modal__inner">
+            <button class="m-modal__close" aria-controls="modal-suggestion" data-modal="#modal-suggestion"></button>
+            <span class="meta-title">Modal meta</span>
+            <div class="u-trim--all">
+                <h2>Modal Heading</h2>
+            </div>
 
-                {% comment %}Is this a custom item (has title and url) {% endcomment %}
-                {% if item.title and item.url %}
-                    {% assign itemPage = item %}
-                {% else %}
-                    {% assign path = item %}
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur.</p>
 
-                    {% comment %}Add a .md file extension if missing {% endcomment %}
-                    {% unless path contains '.md' or path contains '.html' %}
-                        {% assign path = path | append:'.md' %}
-                    {% endunless %}
-                    {% assign itemPage = site.pages | where:'path', path | first %}
-                {% endif %}
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-                {% if itemPage %}
-                    <div class="g__cell g__cell-12 g__cell-6--medium g__cell-4--large">
-                        <h4 class="m-section-listing__title"><a class="link" href="{{ itemPage.url }}">{{ itemPage.title }}</a></h4>
-                        <p>{{ itemPage.lede  }}</p>
-                    </div>
-                {% endif %}
-            {% endfor %}
         </div>
     </div>
-</section>
-
-<!-- Global CTA with default content injected -->
-{% capture cta_bottom_default %}
-    <div class="u-trim--all">
-        <p>Something missing? <a class="link link--bold" href="#">edit this page or suggest new content</a></p>
-    </div>
-{% endcapture %}
-<!-- Global CTA Above Footer -->
-{% include cta.html content=cta_bottom_default color="primary" %}
-
-<!-- Global Footer -->
-{% include footer.html %}
+</div>
 
 <script src="{{ 'assets/js/app.js' | rev }}"></script>
 
