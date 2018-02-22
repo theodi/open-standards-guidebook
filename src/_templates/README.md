@@ -49,3 +49,17 @@ Back to markdown here
 ```
 
 Notes: the `markdown="1"` is required to parse markdown inside the `<div>` element
+
+
+## Checklist headings
+
+
+To output a completeable / checklist heading, just use the following markup pattern
+```
+<input class="h-checkbox" type="checkbox" id="heading1" value="heading1"><label for="heading1">Checklist Heading</label>
+```
+
+Notes:
+
+- The same value must be used for the `id` attribute on the heading and the `for` attribute on the label
+- The `id` / `for` attribtute value must be unique per heading in the page
