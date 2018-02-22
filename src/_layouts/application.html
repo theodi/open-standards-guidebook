@@ -26,6 +26,8 @@
         }());
     </script>
 
+    {% include head-meta.html %}
+
 </head>
 
 {% comment %}
@@ -51,6 +53,35 @@
 <main id="site-body">
     {{ content }}
 </main>
+
+<section class="pad-top-medium pad-top-large--medium pad-bottom-medium pad-bottom-xlarge--medium island island--grey">
+    <div class="wrapper">
+        <div class="g">
+            {% for item in site.data.footer_aux_nav %}
+
+                {% comment %}Is this a custom item (has title and url) {% endcomment %}
+                {% if item.title and item.url %}
+                    {% assign itemPage = item %}
+                {% else %}
+                    {% assign path = item %}
+
+                    {% comment %}Add a .md file extension if missing {% endcomment %}
+                    {% unless path contains '.md' or path contains '.html' %}
+                        {% assign path = path | append:'.md' %}
+                    {% endunless %}
+                    {% assign itemPage = site.pages | where:'path', path | first %}
+                {% endif %}
+
+                {% if itemPage %}
+                    <div class="g__cell g__cell-12 g__cell-6--medium g__cell-4--large">
+                        <h4 class="m-section-listing__title"><a class="link" href="{{ itemPage.url }}">{{ itemPage.title }}</a></h4>
+                        <p>{{ itemPage.lede  }}</p>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
 
 <!-- Global CTA with default content injected -->
 {% capture cta_bottom_default %}

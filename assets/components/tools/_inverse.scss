@@ -11,6 +11,13 @@
     color: white;
   }
 
+    li {
+        &:before {
+            // Overwrite all ul, ol
+            background-color: white !important;
+        }
+    }
+
   a, .link {
     @include link() {
         color: white;
