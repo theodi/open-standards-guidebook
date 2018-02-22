@@ -24,7 +24,7 @@ sections:
       - creating-open-standards/getting-started
       - creating-open-standards/developing-standards/index
       - creating-open-standards/managing-change/index
-  - type: grid # full, grid, short
+  - type: full # full, grid, short
     meta: Groups
     title: Open Standards and you
     description: >-
