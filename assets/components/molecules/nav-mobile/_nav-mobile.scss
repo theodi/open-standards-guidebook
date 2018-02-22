@@ -18,11 +18,18 @@
     @include link() {
         padding: spacing(3 0);
         color: white;
-        font-weight: bold;
+        font-weight: regular;
         font-size: ms(0);
     }
 
     @include link-hover() {
         color: tint(white, 'darken');
+    }
+
+    &.is--active {
+        @include link() {
+            font-weight: bold;
+            text-decoration: none;
+        }
     }
 }

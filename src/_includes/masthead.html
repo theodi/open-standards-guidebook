@@ -31,7 +31,7 @@
                     </nav>
                 </div>
                 <div class="is-visible is-hidden--medium u-text-center">
-                    <div class="burger is--active">
+                    <button class="burger" data-toggle="#mobile-nav" aria-controls="mobile-nav">
                         <div class="g g--no-gutters align-v-center">
                             <div class="g__cell">
                                 <div class="burger__icon"></div>
@@ -40,20 +40,18 @@
                                 <div class="burger__text">Menu</div>
                             </div>
                         </div>
-                    </div>
+                    </button>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <div class="is-visible is-hidden--medium">
-    <nav class="m-nav-mobile is--open">
-
-    {% for item in site.data.main_nav %}
-        <a href="{{ item.url }}" class="m-nav-mobile__item
-        {% if page.url contains item.url %}is--active{% endif %}
-        ">{{ item.title }}</a>
-    {% endfor %}
-
+    <nav class="m-nav-mobile" id="mobile-nav" aria-hidden="true">
+        {% for item in site.data.main_nav %}
+            <a href="{{ item.url }}" class="m-nav-mobile__item
+            {% if page.url contains item.url %}is--active{% endif %}
+            ">{{ item.title }}</a>
+        {% endfor %}
     </nav>
 </div>
