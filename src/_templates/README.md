@@ -21,3 +21,31 @@ The following keys can be used on all page templates:
 nav:
     title: 'My custom nav title' # specify a string to use when referencing the page in navigation, e.g. section nav and breadcrumbs - defaults to page.title
 ```
+
+## Inline callouts
+
+To make a callout box within the Markdown text of a page do the following:
+
+
+
+```
+## A markdown heading
+
+Standards are used in every sector across the world to capture agreements on physical items, concepts, ideas, digital products, and processes.
+
+
+<div class="callout" markdown="1">
+Everyday standards include:
+* standards for electrical sockets that allow any appliance to plug in seamlessly
+* standard for addresses that makes post delivery more efficient
+* standard units of measurement for drinks that makes bar service faster and easier
+* standardised sizes for nuts and bolts that makes buying and selling more cost effective
+</div>
+
+
+## Heading
+
+Back to markdown here
+```
+
+Notes: the `markdown="1"` is required to parse markdown inside the `<div>` element
