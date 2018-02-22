@@ -95,3 +95,28 @@
 @import 'utils/spacing';
 @import 'utils/trim';
 @import 'utils/visibility';
+
+
+
+
+body.debug {
+  &:after { // fixed elem that shows which bp the viewport is at
+    background-color: rgba(0,0,0,.3);
+    color: white;
+    text-transform: uppercase;
+    padding: 17px 25px;
+    position: fixed;
+    font-size: 15px;
+    font-weight: 700;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    @each $config in $breakpoints-map {
+      $name: nth($config, 1);
+      @include respond-to($name) {
+          content: $name;
+
+      }
+    }
+  }
+}
