@@ -17,10 +17,10 @@
     {% if person.twitter or person.website %}
         <div class="m-person__social">
             {% if person.twitter %}
-                <span class="m-person__social-link">Twitter: <a target="_blank" href="https://www.twitter.com/{{ person.twitter }}">@{{ person.twitter }}</a>
+                <span class="m-person__social-link">Twitter: <a target="_blank" href="https://www.twitter.com/{{ person.twitter }}" rel="noopener noreferrer">@{{ person.twitter }}</a>
             {% endif %}
             {% if person.website %}
-                <span class="m-person__social-link">Website: <a target="_blank" href="http://{{ person.website }}">{{ person.website }}</a>
+                <span class="m-person__social-link">Website: <a target="_blank" href="{{ person.website }}" rel="noopener noreferrer">{{ person.website | replace_first:'https://','' | replace_first:'http://','' }}</a>
             {% endif %}
         </div>
     {% endif %}
