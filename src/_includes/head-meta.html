@@ -6,4 +6,4 @@
 <meta property="og:type" content="article" />
 <meta property="og:title" content="{{ page.title }}" />
 <meta property="og:description" content="{% if page.lede %}{{ page.lede }}{% else %}{{ site.description }}{% endif %}" />
-<meta property="og:image" content="./assets/images/twitter-card.png" />
+<meta property="og:image" content="{{ 'assets/images/twitter-card.png' | rev }}" />
