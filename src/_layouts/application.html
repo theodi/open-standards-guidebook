@@ -14,7 +14,12 @@
       add a .js class to the html element
     {% endcomment %}
     <script>
-        window.OSD = window.OSD || {};
+        window.OSD = {
+            CONFIG: {
+                SITE_URL: '{{ site.url }}',
+                GA: '{{ site.ga }}'  ,
+            },
+        };
         (function(){
             var doc = document.documentElement;
             doc.classList.remove('no-js');
