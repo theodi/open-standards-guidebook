@@ -11,6 +11,11 @@
 
     li {
         margin-bottom: spacing(5);
+        font-size: ms(0);
+
+        @include respond-to(medium) {
+            font-size: ms(0, $thread: desktop);
+        }
 
         &:before {
             left: 0;

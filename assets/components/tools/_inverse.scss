@@ -11,6 +11,12 @@
     color: white;
   }
 
+    li {
+        &:before {
+            background-color: white;
+        }
+    }
+
   a, .link {
     @include link() {
         color: white;
