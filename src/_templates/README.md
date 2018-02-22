@@ -22,6 +22,13 @@ nav:
     title: 'My custom nav title' # specify a string to use when referencing the page in navigation, e.g. section nav and breadcrumbs - defaults to page.title
 ```
 
+Pages are automatically included in the site's XML sitemap. If for some reason there's a page you don't want included just set:
+
+```
+sitemap: false
+```
+
+
 ## Inline callouts
 
 To make a callout box within the Markdown text of a page do the following:
