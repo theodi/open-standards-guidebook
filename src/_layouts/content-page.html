@@ -16,25 +16,11 @@ hero:
     <section class="pad-top-medium pad-top-xlarge--medium pad-bottom-medium pad-bottom-xlarge--medium">
         <div class="wrapper">
             <div class="g">
-                <div class="g__cell g__cell-12 g__cell-8--medium">
+                <article class="g__cell g__cell-12 g__cell-8--medium u-styled-lists">
                     {{ content }}
-                </div>
+                </article>
                 <aside class="g__cell g__cell-12 g__cell-4--medium">
-                    {% for section in page.sidebar.sections %}
-                        <div class="pad-top">
-                            <h4>{{ section.title }}</h4>
-                            {% if section.intro %}
-                                <p>{{ section.intro }}</p>
-                            {% endif %}
-                            {% if section.items %}
-                                <nav>
-                                {% for item in section.items %}
-                                   <a class="nav-item" href="{{ item.url }}">{{ item.title }}</a>
-                                {% endfor %}
-                            </nav>
-                            {% endif %}
-                        </div>
-                    {% endfor %}
+                    {% include sidebar-sections.html sections=page.sidebar.sections %}
                     {% include commit-info.html %}
                 </aside>
             </div>

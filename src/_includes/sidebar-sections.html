@@ -1,0 +1,15 @@
+{% for section in sections %}
+    <div class="pad-top">
+        <h4>{{ section.title }}</h4>
+        {% if section.intro %}
+            <p>{{ section.intro }}</p>
+        {% endif %}
+        {% if section.items %}
+            <nav>
+            {% for item in section.items %}
+               <a class="nav-item" href="{{ item.url }}">{{ item.title }}</a>
+            {% endfor %}
+        </nav>
+        {% endif %}
+    </div>
+{% endfor %}
