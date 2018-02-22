@@ -40,9 +40,9 @@
 
 
 .m-nav-tray__inner {
-    .js & {
-        display: none;
-    }
+    // .js & {
+    //     display: none;
+    // }
     background: tint(palette(primary), 'darken');
     padding: spacing(25 0);
 
