@@ -43,11 +43,10 @@ module.exports = {
       // files paths are relative to
       // javascripts.dest in path-config.json
       app: [
-        'babel-polyfill',
         './main.js'
       ],
     },
-    publicPath: "/dist/js",
+    publicPath: "/assets/js",
     extensions: ['js', 'vue', 'json'],
     alias: {
       '@': resolve('src/js'),
