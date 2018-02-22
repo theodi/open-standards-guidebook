@@ -96,12 +96,6 @@
 
     &:hover {
         cursor: pointer;
-
-        .burger__icon {
-            &, &::before, &::after {
-                background-color: palette(primary);
-            }
-        }
     }
 }
 
