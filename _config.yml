@@ -4,9 +4,8 @@
 source: src
 destination: dist
 timezone: Europe/London
-incremental: true
 permalink: pretty
-
+env: production
 exclude: ['_templates']
 
 ###
@@ -18,14 +17,6 @@ twitter_username: ODIHQ
 description: This is the default site description, change me
 title_image: ''
 ga: 'UA-XXXXXXXX-X' #@TODO - Add this...
-
-###
-# Collections
-###
-collections_dir: _collections
-collections:
-  user-group:
-    output: true
 
 ###
 # Default front matter

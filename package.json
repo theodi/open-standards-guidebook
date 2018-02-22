@@ -7,8 +7,8 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "concurrently 'bundle exec jekyll serve' 'BLENDID_CONFIG_PATH=./build yarn run blendid'",
-    "build": "BLENDID_CONFIG_PATH='./build' NODE_ENV='production' yarn run blendid build && bundle exec jekyll build"
+    "start": "concurrently 'JEKYLL_ENV=development bundle exec jekyll serve --config _config.yml,_config.dev.yml' 'BLENDID_CONFIG_PATH=./build yarn run blendid'",
+    "build": "BLENDID_CONFIG_PATH='./build' NODE_ENV='production' yarn run blendid build && JEKYLL_ENV='production' bundle exec jekyll build"
   },
   "engines": {
     "node": "~8.9.3"

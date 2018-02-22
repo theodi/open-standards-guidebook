@@ -5,4 +5,6 @@ gem 'json'
 
 group :jekyll_plugins do
   gem 'jekyll-git_metadata'
+  gem 'octopress-minify-html'
+  gem 'jekyll-sitemap'
 end
