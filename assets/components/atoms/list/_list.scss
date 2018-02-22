@@ -72,9 +72,9 @@ ul {
 
 .u-styled-lists {
     ul {
-        @extend %list-base;
+        @include list--bullet();
     }
     ol {
-        @include list--numbered;
+        @include list--numbered();
     }
 }

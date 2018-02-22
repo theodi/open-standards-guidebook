@@ -27,13 +27,15 @@ Standards are documented, reusable agreements that solve a specific set of probl
 
 Standards are used in every sector across the world to capture agreements on physical items, concepts, ideas, digital products, and processes.
 
+
+<div class="callout" markdown="1">
 Everyday standards include:
 
 * standards for electrical sockets that allow any appliance to plug in seamlessly
 * standard for addresses that makes post delivery more efficient
 * standard units of measurement for drinks that makes bar service faster and easier
 * standardised sizes for nuts and bolts that makes buying and selling more cost effective
-
+</div>
 ## What are Open Standards for Data?
 
 An open standard is a standard that’s available for anyone to access and use (NOTE:  See: ITU Definition of Open Standards[^1]. Open standards for data help people and organisations to publish, access, share and use better quality data.
