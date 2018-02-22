@@ -56,7 +56,8 @@ Notes: the `markdown="1"` is required to parse markdown inside the `<div>` eleme
 
 To output a completeable / checklist heading, just use the following markup pattern
 ```
-<input class="h-checkbox" type="checkbox" id="heading1" value="heading1"><label for="heading1">Checklist Heading</label>
+<h3><input class="h-checkbox" type="checkbox" id="heading1" value="heading1" {% if checked == true %}checked{% endif %}><label for="heading1">Checklist Heading</label></h3>
+
 ```
 
 Notes:
