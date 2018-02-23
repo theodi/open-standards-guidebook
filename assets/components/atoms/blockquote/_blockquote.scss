@@ -1,0 +1,26 @@
+blockquote {
+    color: palette(primary);
+    text-align: center;
+    font-weight: bold;
+    margin: spacing(25 15);
+
+    &:before {
+        content: "“";
+        display: inline;
+    }
+
+    &:after {
+        content: "”";
+        display: inline;
+    }
+
+    > p {
+        display: inline;
+        font-size: ms(1);
+        line-height: 1.33;
+
+        @include respond-to(medium) {
+            font-size: ms(1, $thread: desktop);
+        }
+    }
+}
