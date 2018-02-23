@@ -40,8 +40,8 @@
                     {% if section.type == 'short' %}
                         </div>
                     {% endif %}
-                    {% if section.type != 'short' and itemPage.lede %}
-                        <p>{{ itemPage.lede }}</p>
+                    {% if section.type != 'short' and itemPage.description %}
+                        <p>{{ itemPage.description }}</p>
                     {% endif %}
                 </div>
             {% endif %}

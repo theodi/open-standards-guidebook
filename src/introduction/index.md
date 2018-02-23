@@ -4,7 +4,7 @@ layout: listing
 nav:
   order: 1
   title: Introduction
-lede: Introduction. Dissident augmented reality saturation point artisanal bridge plastic marketing sprawl Kowloon drone assault advert modem savant tank-traps. Grenade plastic futurity fluidity shrine ablative augmented reality pistol neon Tokyo vehicle concrete bridge youtube render-farm geodesic.
+description: Introduction. Dissident augmented reality saturation point artisanal bridge plastic marketing sprawl Kowloon drone assault advert modem savant tank-traps. Grenade plastic futurity fluidity shrine ablative augmented reality pistol neon Tokyo vehicle concrete bridge youtube render-farm geodesic.
 sections:
   items:
     - type: grid # full, grid, short
@@ -31,7 +31,7 @@ sections:
         # Custom items can have an optional lede
         -
           title: 'This is a custom item with a lede'
-          lede: >-
+          description: >-
             Jeans futurity euro-pop table modem receding math-boat tube media A.I. weathered uplink realism motion.
           url: '/'
         # Custom items that lack a title will not be output

@@ -2,7 +2,7 @@
 title: What Are Open Standards For Data?
 nav:
   order: 1
-lede: Standards are documented, reusable agreements that affect us everyday - from addressing a letter, to changing a lightbulb, or looking up train times. Open standards for data make it easier for people and organisations to publish, access, share and use better quality data.
+description: Standards are documented, reusable agreements that affect us everyday - from addressing a letter, to changing a lightbulb, or looking up train times. Open standards for data make it easier for people and organisations to publish, access, share and use better quality data.
 gdoc: https://docs.google.com/document/d/1YcbKgtZAFjdeS6KiS_KGIi5GAUSwe1JTG4uRxhaWUQQ/edit
 sidebar:
   sections:

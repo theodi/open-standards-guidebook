@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-lede: Open standards for data can help drive collaboration, implement policy, create new ecosystems and more. Creating impact starts with understanding the ecosystem so you can solve clearly defined problems and engage with stakeholders.
+description: Open standards for data can help drive collaboration, implement policy, create new ecosystems and more. Creating impact starts with understanding the ecosystem so you can solve clearly defined problems and engage with stakeholders.
 gdoc: https://docs.google.com/document/d/1DhhO7mCq6hIUJxLGT2gI3Y2brmFmUVf5PhgTNz7nYAo/edit#heading=h.p90zzhc4jn26
 ---
 

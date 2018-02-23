@@ -1,7 +1,7 @@
 ---
 title: Example Case Study
 layout: case-study
-lede: 'A case study of General Transit Feed Specification (GTFS) and General Transit Feed Specification Real-Time (GTFS-RT) extension to support organisations developing or thinking of developing open standards for data.
+description: 'A case study of General Transit Feed Specification (GTFS) and General Transit Feed Specification Real-Time (GTFS-RT) extension to support organisations developing or thinking of developing open standards for data.
 Our standards case studies provide a summary of the history, development process, governance and key actors involved in the development of an open standard for data.'
 ---
 

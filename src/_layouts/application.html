@@ -8,14 +8,7 @@
     <link rel="stylesheet" href="{{ 'assets/styles/main.css' | rev }}">
 
     <title>{{ page.title }} | {{ site.name }}</title>
-    {% capture meta_description -%}
-        {% if page.lede -%}
-            {{ page.lede -}}
-        {% else -%}
-            {{ site.description -}}
-        {% endif -%}
-    {% endcapture -%}
-    <meta name="description" content="{{ meta_description }}">
+
     {% comment %}
       add a .js class to the html element
     {% endcomment %}
@@ -33,8 +26,13 @@
         }());
     </script>
 
-    {% include head-meta.html %}
-
+    {% seo title=false %}
+    {% comment %}
+    Needs to be revved so can't use seo tag to output{% endcomment %}
+    {% unless page.image %}
+        <meta property="og:image" content="{{ 'assets/images/twitter-card.png' | rev }}" />
+    {% endunless %}
+    <meta name="twitter:creator" content="@{{ site.twitter.username }}" />
 </head>
 
 {% capture body_class -%}
@@ -84,7 +82,7 @@
                     {% if itemPage %}
                         <div class="g__cell g__cell-12 g__cell-6--medium g__cell-4--large">
                             <a class="link link--black" href="{{ itemPage.url }}"><strong>{{ itemPage.title }}</strong></a>
-                            <p>{{ itemPage.lede  }}</p>
+                            <p>{{ itemPage.description  }}</p>
                         </div>
                     {% endif %}
                 {% endfor %}
