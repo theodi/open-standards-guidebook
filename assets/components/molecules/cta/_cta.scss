@@ -6,6 +6,10 @@
     background: palette(secondary);
     padding: spacing(15 0);
     color: white;
+
+    @media print {
+        display: none;
+    }
 }
 
 .m-cta--white {

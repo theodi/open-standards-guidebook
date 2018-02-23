@@ -3,6 +3,9 @@
 // ==========================================================================
 
 .m-breadcrumb {
+    @media print {
+        display: none;
+    }
 }
 
 .m-breadcrumb__item {

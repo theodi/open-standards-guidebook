@@ -7,4 +7,8 @@
     background: palette(grey-dark);
     padding-top: spacing(50);
     padding-bottom: spacing(50);
+
+    @media print {
+        display: none;
+    }
 }

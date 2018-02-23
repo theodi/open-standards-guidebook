@@ -10,7 +10,9 @@ hero:
     {% include hero.html %}
 </div>
 {% if page.show_toc %}
-    {% include nav-tray.html %}
+    <div class="u-hide-print">
+        {% include nav-tray.html %}
+    </div>
 {% endif %}
 <div id="site-content" class="site-content">
     <section class="pad-top-medium pad-top-xlarge--medium pad-bottom-medium pad-bottom-xlarge--medium">
@@ -19,7 +21,7 @@ hero:
                 <article class="g__cell g__cell-12 g__cell-8--medium u-styled-lists">
                     {{ content }}
                 </article>
-                <aside class="g__cell g__cell-12 g__cell-4--medium">
+                <aside class="g__cell g__cell-12 g__cell-4--medium u-hide-print">
                     {% include download-links.html %}
                     {% include sidebar-sections.html %}
                     {% include commit-info.html %}

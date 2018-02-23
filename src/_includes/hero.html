@@ -10,7 +10,7 @@
             </div>
 
             {% if layout.hero.nav.position == 'side' and page.show_nav %}
-                <div class="g__cell g__cell-12 g__cell-4--medium pad-top-medium pad-top-reset--medium">
+                <div class="g__cell g__cell-12 g__cell-4--medium pad-top-medium pad-top-reset--medium u-hide-print">
                     {% include section-nav.html %}
                 </div>
             {% endif %}
@@ -18,7 +18,7 @@
 
         {% if layout.hero.nav.position == 'lower' and page.show_nav %}
             <div class="g pad-top-medium">
-                <div class="g__cell">
+                <div class="g__cell u-hide-print">
                     {% include section-nav.html %}
                 </div>
             </div>
