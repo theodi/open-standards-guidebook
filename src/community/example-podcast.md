@@ -12,6 +12,7 @@ soundcloud: 396896136
 people:
   - name: Edafe Onerhime
     role: Consultant Data Scientist
+    image: ../../assets/images/people/edafe.jpg
     twitter: ekoner
     website: 'http://ekoner.com'
   - name: Chris Bailey

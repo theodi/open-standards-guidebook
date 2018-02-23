@@ -1,7 +1,8 @@
 <div class="m-person">
     <div class="m-person__grid">
-        {% comment %}@TODO Integrate this{% endcomment %}
-        <img class="m-person__avatar" src="http://i.pravatar.cc/300" alt="Placeholder person" />
+        {% if person.image %}
+        <img class="m-person__avatar" src="{{ person.image }}" alt="{{ person.name }}" />
+        {% endif %}
         <div class="m-person__title">
             {% if person.name %}
                 <div class="u-trim--all">
