@@ -1,6 +1,8 @@
 {% for section in page.sidebar.sections %}
     <div class="pad-top">
-        <h4>{{ section.title }}</h4>
+        {% if section.title %}
+            <h4>{{ section.title }}</h4>
+        {% endif %}
         {% if section.intro %}
             <p>{{ section.intro }}</p>
         {% endif %}
