@@ -3,10 +3,10 @@
 // ==========================================================================
 
 .meta-title {
+    display: block;
     text-transform: uppercase;
     font-weight: bold;
     font-size: ms(-1);
-    display: block;
     padding-bottom: spacing(2);
     &, & > a {
         color: palette(secondary);

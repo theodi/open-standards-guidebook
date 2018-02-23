@@ -1,9 +1,10 @@
+// sass-lint:disable no-important
 $positions: (
     "all",
     "top",
     "right",
     "bottom",
-    "left"
+    "left",
 );
 // Build the selector suffix to remove 'base' and 'all' from selectors
 @each $position in $positions {

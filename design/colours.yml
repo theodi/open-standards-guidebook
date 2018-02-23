@@ -16,7 +16,7 @@ props:
     comment: 'Grey Dark - Example Usage: Header and footer background'
   primary:
     value: '#178cff'
-    comment: 'Primary: - Example Usage: Used as primary link colour and CTA quick edit bar'
+    comment: 'Primary blue: - Example Usage: Used as primary link colour and CTA quick edit bar'
   secondary:
     value: '#ff6700'
-    comment: 'Secondary: - Example Usage: Case study label'
+    comment: 'Secondary orange: - Example Usage: Case study label''

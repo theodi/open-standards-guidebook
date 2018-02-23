@@ -3,9 +3,9 @@
 // ==========================================================================
 
 .m-nav-mobile {
+    display: none;
     background: palette(primary);
     padding: spacing(20 25);
-    display: none;
 
     &.is--open {
         display: block;

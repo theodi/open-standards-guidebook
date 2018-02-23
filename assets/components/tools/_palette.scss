@@ -1,22 +1,20 @@
-/*doc
----
-title: Colour palette
-name: colors
-category: config
----
-Colors are accessed via the `palette()` function, with the tone as the second (optional) parameter, like so:
-```
-.widget {
-    color: palette(grey, dark);
-}`
-```
-Standard colours (white and black) should be referenced directly without the palette function like `.widget { color: black; }`
-Before using you need to call `load-palette()`, passing a map of the colours to load.
-```html_example
-<div data-styleguide-palette></div>
-```
-**NB** You need to call `@include load-palette($palettes);` in your main Sass file to load the palette before using this fn.
-*/
+// ---
+// title: Colour palette
+// name: colors
+// category: config
+// ---
+// Colors are accessed via the `palette()` function, with the tone as the second (optional) parameter, like so:
+// ```
+// .widget {
+//     color: palette(grey, dark);
+// }`
+// ```
+// Standard colours (white and black) should be referenced directly without the palette function like `.widget { color: black; }`
+// Before using you need to call `load-palette()`, passing a map of the colours to load.
+// ```html_example
+// <div data-styleguide-palette></div>
+// ```
+// **NB** You need to call `@include load-palette($palettes);` in your main Sass file to load the palette before using this fn.
 
 
 @import '../tools/map-get-if-exists';
@@ -25,9 +23,8 @@ Before using you need to call `load-palette()`, passing a map of the colours to 
 $__palette: () !default  !global;
 
 @mixin palette-load($palette-map) {
-  $__palette: $palette-map !global;
+    $__palette: $palette-map !global;
 }
-
 
 @function palette($color) {
     $color: quote($color);

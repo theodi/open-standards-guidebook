@@ -5,8 +5,8 @@
 .nav-item {
     &, & > a {
         @include link() {
-            color: palette(grey-dark);
             display: block;
+            color: palette(grey-dark);
             font-size: ms(-1);
             margin-bottom: spacing(5);
 
@@ -59,10 +59,9 @@
 .nav-item--white {
     &, & > a {
         @include link() {
-            color: white;
-            display: inline-block;
-            margin-right: spacing(8);
             display: block;
+            color: white;
+            margin-right: spacing(8);
             font-size: ms(-1);
             margin-bottom: spacing(5);
 
@@ -79,7 +78,7 @@
             color: tint(white, 'darken');
         }
     }
-    
+
     &.is--active {
         &, & > a {
             @include link() {

@@ -3,11 +3,11 @@
 }
 
 .u-text-right {
-  text-align: right;
+    text-align: right;
 }
 
 .u-text-left {
-  text-align: left;
+    text-align: left;
 }
 
 @each $bp, $config in $breakpoints-map {
@@ -17,11 +17,11 @@
         }
 
         .u-text-right--#{$bp} {
-          text-align: right;
+            text-align: right;
         }
 
         .u-text-left--#{$bp} {
-          text-align: left;
+            text-align: left;
         }
     }
 }

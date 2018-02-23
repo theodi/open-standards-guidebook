@@ -3,11 +3,11 @@
 // ==========================================================================
 
 %list-base {
+    margin: 1em 0 0.5em;
     list-style: none;
     line-height: 1.44;
     font-size: ms(0);
     padding-left: 0;
-    margin: 1em 0 0.5em;
 
     li {
         margin-bottom: spacing(5);
@@ -32,14 +32,14 @@ ul {
     @extend %list-base;
 
     li {
-        padding-left: rem-calc(5);
         margin-bottom: spacing(10);
+        padding-left: rem-calc(5);
 
         &:before {
-            content: " ";
             display: inline-block;
             margin-bottom: rem-calc(4);
             margin-right: rem-calc(8);
+            content: " ";
             width: 4px;
             height: 4px;
             border-radius: 100%;

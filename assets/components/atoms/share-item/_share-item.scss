@@ -2,7 +2,7 @@
 // Share Molecule
 // ==========================================================================
 
-.m-share__item {
+.share-item {
     display: inline-block;
 
     @include link() {
@@ -19,7 +19,8 @@
         background: palette(primary);
         color: white;
         font-size: rem-calc(12);
-        background-image: linear-gradient(to bottom, #3e9eff, palette(primary));
+        // @todo extract
+        background-image: linear-gradient(to bottom, #3E9EFF, palette(primary));
         border: solid 2px palette(primary);
         margin-top: rem-calc(5);
     }

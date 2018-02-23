@@ -1,12 +1,11 @@
 .m-modal {
+    display: none;
     position: fixed;
     z-index: 1000;
     width: 100%;
     height: 100%;
-    display: flex;
     align-items: center;
     background: rgba(255,255,255,0.85);
-    display: none;
     top: 0;
 
     &.is--open {
@@ -18,6 +17,8 @@
 
 
 .m-modal__inner {
+    margin: 0 auto;
+    position: relative;
     background: white;
     border-radius: rem-calc(6);
     max-width: rem-calc(900);
@@ -25,7 +26,6 @@
     box-shadow: 0 2px 65px 0 rgba(0, 0, 0, 0.22);
     padding: spacing(40 30);
     max-height: calc(90vh);
-    margin: 0 auto;
     overflow-x: scroll;
 
     @include respond-to(medium) {
@@ -39,12 +39,12 @@
 }
 
 .m-modal__close {
+    display: block;
     position: absolute;
     right: rem-calc(35);
     top: rem-calc(10);
     width: rem-calc(50);
     height: rem-calc(50);
-    display: block;
     background: rgba(255,255,255,0);
 }
 
@@ -59,11 +59,11 @@
 }
 
 .m-modal__close:before {
-  transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .m-modal__close:after {
-  transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 
 .m-modal__close:hover {

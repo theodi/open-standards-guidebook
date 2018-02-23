@@ -4,6 +4,7 @@
 
 .select {
     display: block;
+    margin-bottom: rem-calc(5);
     outline: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -14,23 +15,22 @@
     font-family: -apple-system, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     box-sizing: border-box;
     border-radius: rem-calc(3);
-    margin-bottom: rem-calc(5);
     background: white;
 }
 
 .select__wrapper {
+    display: inline-block;
     position: relative;
     background-color: white;
     overflow: hidden;
-    display: inline-block;
     vertical-align: middle;
     width: 100%;
 
     .select {
+        display: block;
         width: 100%;
         position: relative;
         z-index: 2;
-        display: block;
         outline: none;
         -webkit-appearance: none;
         -moz-appearance: none;

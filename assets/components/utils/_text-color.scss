@@ -1,15 +1,15 @@
 @each $color, $value in $colours-map {
-  .u-text-color--#{$color} {
-    color: $value;
+    .u-text-color--#{$color} {
+        color: $value;
 
-    a {
-        @include link() {
-            color: $value;
-        }
+        a {
+            @include link() {
+                color: $value;
+            }
 
-        @include link-hover() {
-            color: darken($value, 10%);
+            @include link-hover() {
+                color: darken($value, 10%);
+            }
         }
     }
-  }
 }
