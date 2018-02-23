@@ -13,7 +13,7 @@ people:
   - name: Edafe Onerhime
     role: Consultant Data Scientist
     twitter: ekoner
-    website: ekoner.com
+    website: 'http://ekoner.com'
   - name: Chris Bailey
     role: UX Designer
     twitter: chris3ailey
