@@ -16,6 +16,24 @@ consequat. Duis aute irure dolor in reprehenderit in'
 #
 # show_toc: false # Show / hide the table of contents
 # show_nav: false # Show / hide the section nav in the hero
+
+# Optional sidebar download links, download urls should be kept within the same directory
+downloads:
+  # Top level - can include an optional title and description
+  items:
+  - title: Where to find the canvas
+    description: >-
+      Short description nulla eu molestie massa. Pellentesque fermentu lorem ipsum dolor sit amet consectetuer adipicising elit
+    # Download items, template will autodetect if this is a downloadable item or external link
+    items:
+    - title: Open Standards for Data Canvas
+      # Example external link
+      url: http://example.com
+    - title: 'Open Standards for Data Canvas [pdf]'
+      # Example download item, asset stored relative to page file
+      url: ./open-standards-for-data.pdf
+    - title: 'Open Standards for Data Canvas: GTFS Example [pdf]'
+      url: ./gtfs-example.pdf
 ---
 
 ### Content Page Details
