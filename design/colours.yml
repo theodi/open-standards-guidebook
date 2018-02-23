@@ -19,4 +19,4 @@ props:
     comment: 'Primary blue: - Example Usage: Used as primary link colour and CTA quick edit bar'
   secondary:
     value: '#ff6700'
-    comment: 'Secondary orange: - Example Usage: Case study label''
+    comment: 'Secondary orange: - Example Usage: Case study label'
