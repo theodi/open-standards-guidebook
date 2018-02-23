@@ -12,10 +12,12 @@ soundcloud: http://soundcloud.com
 people:
   - name: Edafe Onerhime
     role: Consultant Data Scientist
+    image: ../../assets/images/people/edafe.jpg
     twitter: ekoner
     website: ekoner.com
   - name: Chris Bailey
     role: UX Designer
+    image: http://via.placeholder.com/350x350
     twitter: chris3ailey
 ---
 
