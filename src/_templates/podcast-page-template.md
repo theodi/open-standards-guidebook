@@ -12,7 +12,7 @@ soundcloud: http://soundcloud.com
 people:
   - name: Edafe Onerhime
     role: Consultant Data Scientist
-    image: ../../assets/images/people/edafe.jpg
+    image: ./edafe.jpg
     twitter: ekoner
     website: ekoner.com
   - name: Chris Bailey
