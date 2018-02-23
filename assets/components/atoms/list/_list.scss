@@ -33,16 +33,21 @@ ul {
 
     li {
         padding-left: rem-calc(5);
+        margin-bottom: spacing(10);
 
         &:before {
             content: " ";
             display: inline-block;
             margin-bottom: rem-calc(4);
-            margin-right: rem-calc(12);
+            margin-right: rem-calc(8);
             width: 4px;
             height: 4px;
             border-radius: 100%;
             background-color: palette(black);
+        }
+
+        p {
+            display: inline;
         }
     }
 }
