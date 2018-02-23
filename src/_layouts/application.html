@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" direction="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,21 +42,21 @@
 
 
 <div data-page-container>
-    <!-- Global CTA with default content injected -->
+    {% comment %} Global CTA with default content injected {% endcomment %}
     {% capture cta_top_default %}
         <div class="u-trim--all">
             <p>Something missing? <a class="link link--bold link--secondary" href="#" data-modal="#modal-suggestion" aria-controls="modal-suggestions">edit this page or suggest new content</a></p>
         </div>
     {% endcapture %}
-    <!-- Global CTA Above Masthead -->
+    {% comment %} Global CTA Above Masthead {% endcomment %}
     <div class="is-hidden is-visible--medium">
     {% include cta.html content=cta_top_default color="white" %}
     </div>
 
-    <!-- Global Masthead -->
+    {% comment %} Global Masthead {% endcomment %}
     {% include masthead.html %}
 
-    <!-- Site Content -->
+    {% comment %} Site Content {% endcomment %}
     <main id="site-body">
         {{ content }}
     </main>
@@ -90,20 +90,19 @@
         </div>
     </section>
 
-    <!-- Global CTA with default content injected -->
+    {% comment %} Global CTA with default content injected {% endcomment %}
     {% capture cta_bottom_default %}
         <div class="u-trim--all">
             <p>Something missing? <a class="link link--bold" href="#" data-modal="#modal-suggestion" aria-controls="modal-suggestions">edit this page or suggest new content</a></p>
         </div>
     {% endcapture %}
-    <!-- Global CTA Above Footer -->
+    {% comment %} Global CTA Above Footer {% endcomment %}
     {% include cta.html content=cta_bottom_default color="primary" %}
 
-    <!-- Global Footer -->
+    {% comment %} Global Footer {% endcomment %}
     {% include footer.html %}
 </div>
 
-<!-- Include page modal -->
 {% include modal.html %}
 
 
