@@ -76,7 +76,7 @@ Open standards for data make it easier for people and organisations to publish, 
 
 [ITU](https://www.itu.int/en/about/Pages/default.aspx), the United Nations specialised agency for information and communication technologies, provides a useful definition of open standards from their telecommunication standardisation sector group ([ITU-T](https://www.itu.int/en/ITU-T/ipr/Pages/open.aspx)). 
 
->Open Standards are standards made available to the general public and are developed (or approved) and maintained via a collaborative and consensus-driven process.  – ITU-T</td>
+>Open Standards are standards made available to the general public and are developed (or approved) and maintained via a collaborative and consensus-driven process.  – ITU-T
 
 <div class="callout" markdown="1">
 Open standards may be developed to:
