@@ -17,8 +17,8 @@
             color: palette(white);
 
             .chevron {
-                transform: rotate(-180deg);
                 margin-bottom: spacing(3);
+                transform: rotate(-180deg);
             }
         }
     }
@@ -52,8 +52,8 @@
 
     // Gross list overrides cos we can't reach into inner markup in this section
     ul {
-        width: 100%;
         margin: spacing(5 0 10 0);
+        width: 100%;
         padding: 0;
 
         @include respond-to(medium) {
@@ -70,17 +70,18 @@
         }
 
         ul {
+            display: block;
+            margin: spacing(12 0 0 0);
             column-count: 1;
             padding: 0;
-            margin: spacing(12 0 0 0);
-            display: block;
+
 
             li {
                 break-inside: auto;
                 &:before {
-                    content: "\00BB";
                     margin-bottom: rem-calc(3);
                     margin-right: rem-calc(5);
+                    content: "\00BB";
                 }
 
                 a {

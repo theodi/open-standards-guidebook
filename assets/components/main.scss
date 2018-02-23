@@ -62,6 +62,7 @@
 @import 'atoms/chevron/chevron';
 @import 'atoms/nav-item/nav-item';
 @import 'atoms/callout/callout';
+@import 'atoms/share-item/share-item';
 
 // Molecules
 @import 'molecules/accordion/accordion';
@@ -76,7 +77,6 @@
 @import 'molecules/cta/cta';
 @import 'molecules/cta-tray/cta-tray';
 @import 'molecules/section-listing/section-listing';
-@import 'molecules/share/share';
 @import 'molecules/modal/modal';
 @import 'molecules/person/person';
 
@@ -100,23 +100,22 @@
 
 
 body.debug {
-  &:after { // fixed elem that shows which bp the viewport is at
-    background-color: rgba(0,0,0,.3);
-    color: white;
-    text-transform: uppercase;
-    padding: 17px 25px;
-    position: fixed;
-    font-size: 15px;
-    font-weight: 700;
-    bottom: 0;
-    right: 0;
-    z-index: 999;
-    @each $config in $breakpoints-map {
-      $name: nth($config, 1);
-      @include respond-to($name) {
-          content: $name;
-
-      }
+    &:after { // fixed elem that shows which bp the viewport is at
+        background-color: rgba(0,0,0,.3);
+        color: white;
+        text-transform: uppercase;
+        padding: 17px 25px;
+        position: fixed;
+        font-size: 15px;
+        font-weight: 700;
+        bottom: 0;
+        right: 0;
+        z-index: 999;
+        @each $config in $breakpoints-map {
+            $name: nth($config, 1);
+            @include respond-to($name) {
+                content: $name;
+            }
+        }
     }
-  }
 }

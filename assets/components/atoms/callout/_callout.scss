@@ -3,11 +3,11 @@
 // ==========================================================================
 
 .callout {
-    background: palette(primary);
-    padding: spacing(base);
     @include inverse();
     @include trim();
     margin: spacing(base 0);
+    padding: spacing(base);
+    background: palette(primary);
 
     > *:first-child {
         margin-top: 0;

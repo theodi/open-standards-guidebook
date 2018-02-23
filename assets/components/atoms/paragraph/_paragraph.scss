@@ -3,10 +3,10 @@
 // ==========================================================================
 
 p {
+    margin: 1em 0 0.5em;
+    padding: 0;
     font-size: ms(0);
     line-height: 1.44;
-    padding: 0;
-    margin: 1em 0 0.5em;
 
     @include respond-to(medium) {
         line-height: 1.44;

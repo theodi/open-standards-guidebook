@@ -4,7 +4,7 @@
 $__font-size: () !default  !global;
 
 @mixin fontsize-load($fontsizes-map) {
-  $__font-size: $fontsizes-map !global;
+    $__font-size: $fontsizes-map !global;
 }
 
 

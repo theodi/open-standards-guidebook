@@ -10,8 +10,8 @@ $_wrapper-max-width: 1200;
 $_wrapper-padding: 25;
 
 .wrapper {
-    clear: both;
     margin: 0 auto;
+    clear: both;
     position: relative;
 
     padding-left: rem-calc($_wrapper-padding);

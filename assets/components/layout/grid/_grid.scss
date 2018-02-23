@@ -5,8 +5,8 @@
 $_grid-column-count: 12;
 
 .g {
-    box-sizing: border-box;
     display: flex;
+    box-sizing: border-box;
     flex: 0 1 auto;
     flex-direction: row;
     flex-wrap: wrap;

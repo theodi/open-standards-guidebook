@@ -23,8 +23,8 @@
     "@mise-en-place/utilities.uppercase": "^3.0.0",
     "breakpoint-sass": "^2.7.1",
     "enquire.js": "^2.1.6",
-    "svg4everybody": "^2.1.9",
-    "modularscale-sass": "^3.0.5"
+    "modularscale-sass": "^3.0.5",
+    "svg4everybody": "^2.1.9"
   },
   "devDependencies": {
     "@frctl/fractal": "^1.1.7",
@@ -51,6 +51,7 @@
     "js-yaml": "^3.10.0",
     "json-loader": "^0.5.7",
     "node-sass-magic-importer": "^5.0.3",
+    "sass-lint": "^1.12.1",
     "yml-loader": "^2.1.0"
   }
 }

@@ -16,7 +16,7 @@ npm-debug.log
 /src/.jekyll-metadata
 /src/assets/
 src/.git-metadata/
-
+/linters/
 ###################
 # Backups
 ###################

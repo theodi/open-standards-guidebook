@@ -3,8 +3,8 @@
 // ==========================================================================
 
 .input {
-    width: 100%;
     display: block;
+    width: 100%;
     outline: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -27,13 +27,15 @@
     }
 
     &.has--error {
-        border-color: #d60303;
-        color: #d60303;
+        // @todo extract
+        border-color: #D60303;
+        color: #D60303;
     }
 
     &.has--success {
-        border-color: #0dbc37;
-        color: #0dbc37;
+        // @todo extract
+        border-color: #0DBC37;
+        color: #0DBC37;
     }
 }
 
