@@ -1,4 +1,10 @@
 ###
+# _config.yml
+#
+# Jekyll configuration
+#
+#
+###
 # Build
 ###
 source: src
@@ -13,7 +19,7 @@ exclude: ['_templates']
 # Meta
 #
 ###
-url: http://open-standards-guidebook.odi.kindclients.co.uk
+url: https://open-standards-guidebook.odi.kindclients.co.uk # @todo update for live
 name: Open Standards for Data Guidebook
 
 ###
@@ -21,16 +27,16 @@ name: Open Standards for Data Guidebook
 # see: https://github.com/jekyll/jekyll-seo-tag/blob/46ad253d4de8d8064b4156a9db530399bdd9ec11/docs/usage.md
 # for detailed docs
 ###
+twitter:
+  username: ODIHQ
 
-
+# @todo update pre live
 # facebook:
 #  app_id: 1234 # App ID for Facebook insights
 #  publisher: 1234 # - a Facebook page URL or ID of the publishing entity
 #  admins: 1234 # - a Facebook user ID for domain insights linked to a personal account
 
-twitter:
-  username: ODIHQ
-
+# @todo update pre live
 # # Verify website ownership
 # webmaster_verifications:
 #   google: 1234
@@ -39,12 +45,14 @@ twitter:
 #   yandex: 1234
 #   baidu: 1234
 
-description: This is the default site description, change me
+description: This is the default site description, change me # @todo update pre live
 title_image: ''
-ga: 'UA-XXXXXXXX-X' #@TODO - Add this...
+ga: 'UA-XXXXXXXX-X' # @todo update pre live
 
 ###
 # Default front matter
+#
+# This allows us to not have to set these value in every page template
 ###
 
 defaults:
@@ -57,7 +65,3 @@ defaults:
         order: 1000
       show_toc: true
       show_nav: true
-###
-# Plugins
-###
-# plugins:
