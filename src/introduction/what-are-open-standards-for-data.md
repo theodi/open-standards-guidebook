@@ -99,8 +99,7 @@ Open standards support better data across the [Data Spectrum](https://theodi.org
 
 Read about [types of open standards](https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit?usp=sharing).
 
-![image alt text](/introduction/data-spectrum-open-data-institute.png)
-
+![The data spectrum](/introduction/data-spectrum-open-data-institute.png)
 *Image source: The Open Data Institute*
 
 # Examples of open standards for data
