@@ -1,168 +1,110 @@
 ---
-title: What Are Open Standards For Data?
+title: What are open standards for data?
 nav:
   order: 1
-description: Standards are documented, reusable agreements that affect us everyday - from addressing a letter, to changing a lightbulb, or looking up train times. Open standards for data make it easier for people and organisations to publish, access, share and use better quality data.
-gdoc: https://docs.google.com/document/d/1YcbKgtZAFjdeS6KiS_KGIi5GAUSwe1JTG4uRxhaWUQQ/edit
+description: Standards are documented, reusable agreements that affect us every day. When we address a letter, change a lightbulb, or look up train times we rely on standards. Open standards for data make it easier for people and organisations to publish, access, share and use better quality data. 
+gdoc: https://docs.google.com/document/d/1YcbKgtZAFjdeS6KiS_KGIi5GAUSwe1JTG4uRxhaWUQQ/edit?usp=sharing
 sidebar:
   sections:
     - title: Further reading
-      intro: Read these guides to discover how to create an open standard
+      intro: Learn more about open standards for data
       items:
+        -          
+          title: Types of open standards for data
+          url: https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit?usp=sharing
         -
-          title: How Open Standards Are Developed
+          title: When to use open standards for data
+          url: https://docs.google.com/document/d/1L4xocfkgZC2D6d0z5uUTZGw6kJp76WpKdBwnzb11z1c/edit?usp=sharing
+        -
+          title: When not to create new standards
+          url: https://docs.google.com/document/d/1OoK8T5OtQriFARhb1cSFypAQNz24iEtgURd8YqfI-B0/edit?usp=sharing
+        -
+          title: How open standards are developed
           url: https://docs.google.com/document/d/1kBsBph0bionPForwpriLMLY9MozSMHdviOandnK_hjM/edit?usp=sharing
+    - intro: Discover existing open standards for data
+      items:
+        -          
+          title: How to find open standards
+          url: https://docs.google.com/document/d/1KZBtsPd6Xf8YSL5q07brL2epKbJz-zi14VUEDdjI5Kg/edit?usp=sharing
         -
-          title: Developing Standards
-          url: https://docs.google.com/document/d/1p2o3pn8l1j-AKnIIx0mY-RpNdgz33ujJzUCQVWUi8Gg/edit?usp=sharing
+          title: Tools to find open standards
+          url: https://docs.google.com/document/d/1iTCCFu7WRx5Ak11MtPvApphkutaaPVxOzy0L2NnwWYM/edit?usp=sharing
         -
-          title: ITU Definition of "Open Standards"
-          url: https://www.itu.int/en/ITU-T/ipr/Pages/open.aspx
+          title: How to choose an open standard
+          url: https://docs.google.com/document/d/1iCYntYYX0lFVM-fm94siqPeMPU8dA_ctDQ2yewb9YQ8/edit?usp=sharing
+        -
+          title: "How to choose open standards: Checklist"
+          url: https://docs.google.com/document/d/1dPUhvQcv1MYcDMNeozNm-iPOfrqQyYFugVAg1Im5Eew/edit?usp=sharing
+    - intro: Examples of existing open standards
+      items:
+        -          
+          title: General Transit Feed Specification (GTFS) case study
+          url: https://docs.google.com/document/d/1m3jJR741VcE6ouyPITWgh6HmASQG2jhfIMCddPAva8U/edit?usp=sharing
+        -
+          title: BSI PAS 182 Smart city concept model case study
+          url: https://docs.google.com/document/d/1xsz1NqZGCz9ilkFEvQLsLKFsxXusfMZSd0phZ_LzHMw/edit?usp=sharing
+        -
+          title: Brownfield Site Register Open Data Standard case study
+          url: https://docs.google.com/document/d/1Hv_g2wt3vJ42XJxK6nsLax0M_9c76rFC4JerFYm2x0U/edit?usp=sharing         
 ---
 
 
-## What Are Standards?
+# What are standards?
 
-Standards are documented, reusable agreements that solve a specific set of problems. Standards detail the language, concepts, rules, guidance or results that have been agreed. Standards are used when it’s important to be consistent, repeat processes, make comparisons or reach a shared understanding.
+Standards are documented, reusable agreements that solve a specific set of problems or meet clearly defined needs. 
 
-Standards are used in every sector across the world to capture agreements on physical items, concepts, ideas, digital products, and processes.
+Standards detail the language, concepts, rules, guidance or results that have been agreed. 
 
+Standards are used when it’s important to be consistent, be able to repeat processes, make comparisons, or reach a shared understanding. 
+
+Standards are used in industries and sectors across the world to document agreements on physical items, ideas, digital products, processes, and more.
 
 <div class="callout" markdown="1">
 Everyday standards include:
 
-* standards for electrical sockets that allow any appliance to plug in seamlessly
-* standard for addresses that makes post delivery more efficient
-* standard units of measurement for drinks that makes bar service faster and easier
-* standardised sizes for nuts and bolts that makes buying and selling more cost effective
+* standards for electrical sockets so any appliance can be plugged in
+* standards for addresses so post can be delivered more efficiently
+* standard units of measurement for drinks
+* standard sizes for nuts and bolts so buying and selling are more cost-effective 
 </div>
 
-## What are Open Standards for Data?
+# What are open standards for data?
 
-An open standard is a standard that’s available for anyone to access and use (NOTE:  See: ITU Definition of Open Standards[^1]. Open standards for data help people and organisations to publish, access, share and use better quality data.
+An open standard is a standard that’s available for anyone to access, use or share. 
 
-Open standards tend to be developed to:
+Open standards for data make it easier for people and organisations to publish, access, share and use better quality data. 
+
+[ITU](https://www.itu.int/en/about/Pages/default.aspx), the United Nations specialised agency for information and communication technologies, provides a useful definition of open standards from their telecommunication standardisation sector group ([ITU-T](https://www.itu.int/en/ITU-T/ipr/Pages/open.aspx)). 
+
+>Open Standards are standards made available to the general public and are developed (or approved) and maintained via a collaborative and consensus-driven process.  – ITU-T</td>
+
+<div class="callout" markdown="1">
+Open standards may be developed to:
 
 * agree on common models or a common language
 * share information consistently
-* make information aggregation simpler and more streamlined
-* create social change or implement policy and legislation
-* promote common understanding in a community of practice
+* make combining information simpler and more streamlined
+* support positive social change
+* implement policy or legislation
+* promote common understanding and shared vision
+</div>
 
-### Sunt in culpa qui officia deserunt mollit
+# Open standards and open data
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Open standards for data are documented, reusable agreements that help people and organisations to publish, access, share and use better quality data. 
 
-### Duis aute irure dolor in reprehenderit
+Open standards may produce [open data](https://theodi.org/what-is-open-data) (data that anyone can access, use or share), as well as shared or closed data. 
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Open standards support better data across the [Data Spectrum](https://theodi.org/data-spectrum). The outputs of an open standard can be data or a model that supports better quality data. 
 
-## Examples of Open Standards for Data
+Read about [types of open standards](https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit?usp=sharing).
 
-* [General Transit Feed Specification (GTFS)](https://developers.google.com/transit/gtfs/), the de facto standard for public transit makes it easy to find bus, train, and tram stops and schedules when you use apps like [CityMapper](https://citymapper.com), [Google Maps](https://maps.google.com/) or ride sharing apps like [Park.io](https://www.parkio.co.uk/)
+![image alt text](/introduction/data-spectrum-open-data-institute.png)
 
+*Image source: The Open Data Institute*
+
+# Examples of open standards for data
+
+* [General Transit Feed Specification (GTFS)](https://developers.google.com/transit/gtfs/), the *de facto* standard for public transit, makes it easy to find bus, train, and tram stops and schedules when you use apps like [Citymapper](https://citymapper.com), [Google Maps](https://maps.google.com/) or ride-sharing apps like [Park.io](https://www.parkio.co.uk/)
 * In England, [local planning authorities](https://docs.google.com/document/d/1Hv_g2wt3vJ42XJxK6nsLax0M_9c76rFC4JerFYm2x0U/edit#bookmark=id.x2fknj1by9n0) use the [Brownfield Site Register Open Data Standard](https://www.gov.uk/government/publications/brownfield-land-registers-data-standard) to share the location and condition of sites suitable for residential development
-
-* The US [Environmental Protection Agency (EPA)](https://www.epa.gov/) use [open standards for environmental data](https://www.epa.gov/data-standards) and a central data exchange to significantly reduce the cost of collecting and sharing data with 65,000 active users
-
-
-## Lorem ipsum dolor sit amet
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-## Consectetur adipisicing elit
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-### Sunt in culpa qui officia deserunt mollit
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-### Duis aute irure dolor in reprehenderit
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-### Excepteur sint occaecat
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Read about open standards in use:
-
-[General Transit Feed Specification (GTFS) Case Study](https://docs.google.com/document/d/1m3jJR741VcE6ouyPITWgh6HmASQG2jhfIMCddPAva8U/edit?usp=sharing)
-
-**[BSI PAS 182 Smart City Concept Model Case Stud**y](https://docs.google.com/document/d/1xsz1NqZGCz9ilkFEvQLsLKFsxXusfMZSd0phZ_LzHMw/edit?usp=sharing)
-
-**[Brownfield Site Register Open Data Standard Case Stud**y](https://docs.google.com/document/d/1Hv_g2wt3vJ42XJxK6nsLax0M_9c76rFC4JerFYm2x0U/edit?usp=sharing)
-
-Search or browse existing open standards:
-
-**[Open Data Standards Director**y](http://datastandards.directory/all)
-
-**[Civic Open Data Standards by Azave**a](https://azavea.gitbooks.io/open-data-standards/content/)
-
-**General Transit Feed Specification (GTFS)**
-
-**[Brownfield Site Register Open Data Standar**d](https://www.gov.uk/government/publications/brownfield-land-registers-data-standard)
-
-**[US Open Standards for Environmental Dat**a](https://www.epa.gov/data-standards)
-
-[^1]: See https://www.itu.int/en/ITU-T/ipr/Pages/open.aspx
+* The US [Environmental Protection Agency (EPA)](https://www.epa.gov/) uses [open standards for environmental data](https://www.epa.gov/data-standards) and a central data exchange to significantly reduce the cost of collecting and sharing data with 65,000 active users
