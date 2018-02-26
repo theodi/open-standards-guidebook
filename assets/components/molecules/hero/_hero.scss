@@ -18,19 +18,3 @@
         padding-top: spacing(88);
     }
 }
-
-.m-breadcrumb__wrapper + .m-hero {
-    padding-top: 0;
-
-    @include respond-to(medium) {
-        padding-top: 0;
-    }
-}
-
-.m-breadcrumb__wrapper {
-    padding-top: spacing(base);
-
-    @include respond-to(medium) {
-        padding-top: spacing(xlarge);
-    }
-}
