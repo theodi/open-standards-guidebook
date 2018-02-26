@@ -122,3 +122,8 @@ jekyll-seo-tag - SEO metadata generation
 ### Blendid
 
 You may override the default configuration via editing `path-config.json` and `task-config.js` in the `build/` directory. See the separate README.md and inline documentaton in that directory for full options available.
+
+
+## Hacks
+
+- The `jekyll-git_metadata` is monkey patched in `src/_plugins/git_metadata.rb` to handle the fact that we're running Jekyll in a subdirectory of the project
