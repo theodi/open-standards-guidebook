@@ -2,3 +2,8 @@
 # contributing.yml: data relating to contributing to this guide
 ####
 repo_url: 'https://github.com/theodi/open-standards-guidebook'
+# Custom labels must be created in GH first
+labels:
+    enhancement: Make a suggestion
+    bug: Report an error or bug
+    question: Ask a question

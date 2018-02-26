@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "concurrently 'JEKYLL_ENV=development bundle exec jekyll serve --config _config.yml,_config.dev.yml' 'BLENDID_CONFIG_PATH=./build yarn run blendid'",
+    "start": "concurrently 'JEKYLL_ENV=development bundle exec jekyll serve --config _config.yml,_config.dev.yml' 'BLENDID_CONFIG_PATH=./build yarn run blendid' 'cd contributions && bundle exec foreman start'",
     "build": "BLENDID_CONFIG_PATH='./build' NODE_ENV='production' yarn run blendid build && JEKYLL_ENV='production' bundle exec jekyll build",
     "generate-styleguide": "fractal build"
   },
@@ -22,6 +22,7 @@
     "@mise-en-place/utilities.bg-cover": "^3.0.0",
     "@mise-en-place/utilities.scroll": "^3.0.1",
     "@mise-en-place/utilities.uppercase": "^3.0.0",
+    "axios": "^0.18.0",
     "breakpoint-sass": "^2.7.1",
     "enquire.js": "^2.1.6",
     "modularscale-sass": "^3.0.5",
