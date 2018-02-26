@@ -69,6 +69,16 @@ Compiles files for production to your destination directory. JS files are built 
 
 If `rev` is set to `true` in your `task-config.js` file, filenames will be hashed (file.css -> file-a8908d9io20.css) so your server may cache them indefinitely. A `rev-manifest.json` file is output to the root of your `dest` directory (`public` by default), and maps original filenames to hashed ones. Static files are automatically updated to reference the hashed filenames. A custom Jekyl plugin (rev) is used to to read the manifest file and replace references to static asset filenames via a liquid filter.
 
+
+### Building styleguide as static HTML
+
+```
+yarn generate-styleguide
+```
+
+This builds the Fractal styleguide to static HTML and outputs it to a `component-library/` directory (gitignored) in the project root.
+
+
 ## Project structure
 
 

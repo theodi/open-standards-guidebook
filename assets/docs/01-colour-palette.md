@@ -17,7 +17,7 @@ The list below is automatically generated from the colours available to this pro
 <th>Reference</th>
 </thead>
 <tbody>
-{% for key, colour in palette %}
+{% for key, colour in colours %}
     <tr>
         <td style="background-color:{{ colour.value }}">
             `{{ colour.value }}`

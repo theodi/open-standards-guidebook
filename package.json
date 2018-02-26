@@ -8,7 +8,8 @@
   "private": false,
   "scripts": {
     "start": "concurrently 'JEKYLL_ENV=development bundle exec jekyll serve --config _config.yml,_config.dev.yml' 'BLENDID_CONFIG_PATH=./build yarn run blendid'",
-    "build": "BLENDID_CONFIG_PATH='./build' NODE_ENV='production' yarn run blendid build && JEKYLL_ENV='production' bundle exec jekyll build"
+    "build": "BLENDID_CONFIG_PATH='./build' NODE_ENV='production' yarn run blendid build && JEKYLL_ENV='production' bundle exec jekyll build",
+    "generate-styleguide": "fractal build"
   },
   "engines": {
     "node": "~8.9.3"

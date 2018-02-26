@@ -120,7 +120,7 @@ module.exports = {
 
     },
     development: {
-      prebuild: ['styleguideDev'],
+      prebuild: ['tokensScss', 'tokensJson', 'styleguideDev'],
     //   postbuild: []
     },
     production: {
