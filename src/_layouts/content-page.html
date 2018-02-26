@@ -20,6 +20,10 @@ hero:
             <div class="g">
                 <article class="g__cell g__cell-12 g__cell-8--medium u-styled-lists">
                     {{ content }}
+
+                    {% for tasklist in page.tasklists.items %}
+                        {% include task-list.html %}
+                    {% endfor %}
                 </article>
                 <aside class="g__cell g__cell-12 g__cell-4--medium u-hide-print">
                     {% include download-links.html %}

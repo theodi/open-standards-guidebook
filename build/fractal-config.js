@@ -47,7 +47,7 @@ fractal.components.set('default.collator', function(markup, item) {
 // Set path to documentation pages
 fractal.docs.engine('@frctl/nunjucks');
 fractal.docs.set('ext', '.md');
-fractal.docs.set('path', path.join(srcPath, 'docs'));
+fractal.docs.set('path', path.join(srcPath, 'assets/docs'));
 
 
 /**
@@ -59,7 +59,7 @@ fractal.web.set('static.path', publicPath);
 // prefix static asset URLs
 
 // Where to output the built (static HTML) styleguide
-fractal.web.set('builder.dest',  path.resolve(__dirname, '../styleguide'));
+fractal.web.set('builder.dest',  path.resolve(__dirname, '../component-library'));
 
 
 // Fractal BS opts

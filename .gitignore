@@ -17,6 +17,8 @@ npm-debug.log
 /src/assets/
 src/.git-metadata/
 /linters/
+/component-library/
+
 ###################
 # Backups
 ###################

@@ -76,6 +76,20 @@ ul {
     }
 }
 
+.task-list {
+    .task-list-item {
+        &:before {
+            display: none;
+            padding: none;
+        }
+
+        input[type="checkbox"] {
+            margin-right: spacing(10);
+        }
+    }
+}
+
+
 .list--numbered {
     @include list--numbered;
 }
