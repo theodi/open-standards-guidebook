@@ -17,7 +17,9 @@ hero:
                     {{ content }}
                 </article>
                 <aside class="g__cell g__cell-12 g__cell-4--medium">
+                    <div class="u-hide-print">
                     {% include sidebar-sections.html sections=page.sidebar.sections %}
+                    </div>
 
                     <div class="pad-top-medium pad-top-reset--medium">
                         {% for person in page.people %}
@@ -25,10 +27,13 @@ hero:
                         {% endfor %}
                     </div>
 
-                    <div class="pad-top">
+                    <div class="pad-top u-hide-print">
                         {% include share.html %}
                     </div>
-                    {% include commit-info.html %}
+
+                    <div class="u-hide-print">
+                        {% include commit-info.html %}
+                    </div>
 
                 </aside>
             </div>
