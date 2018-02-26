@@ -94,7 +94,7 @@ tasklists:
     items:
         - title: Archived content
           description: >-
-            Archiving a final version of the open standard, documentation and guides, and website content in an archiving service like [Internet Archive](https://archive.org)
+            Archiving a final version of the open standard, documentation and guides, and website content in an archiving service like <a href="https://archive.org" target="_blank" rel="noopener noreferrer">Internet Archive</a>
         - title: Notice of retirement
           description: >-
             Detailing the retirement of the standard, what this means for the community and any actions that can be taken in future
