@@ -133,11 +133,11 @@ jekyll-seo-tag - SEO metadata generation
 
 ### Blendid
 
-You may override the default configuration via editing `path-config.json` and `task-config.js` in the `build/` directory. See the separate README.md and inline documentaton in that directory for full options available.
+You may override the default configuration via editing `path-config.json` and `task-config.js` in the `build/` directory. See the separate [`README.md`](blob/develop/build/README.md) and inline documentaton in that directory for full options available.
 
 ## Contributions application
 
-The `contributions/` directory contains a small [Sinatra](http://sinatrarb.com) application that takes form submissions and turns them into issues / PRs on the GitHub repo via the GH api. For full details of this component of the project see `contributions/README.md`.
+The `contributions/` directory contains a small [Sinatra](http://sinatrarb.com) application that takes form submissions and turns them into issues / PRs on the GitHub repo via the GH api. For full details of this component of the project see [`contributions/README.md`](blob/develop/contributions/README.md).
 
 ## Hacks
 
