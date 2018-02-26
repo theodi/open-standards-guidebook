@@ -22,7 +22,7 @@ exclude: ['_templates']
 url: https://open-standards-guidebook.odi.kindclients.co.uk # @todo update for live
 name: Open Standards for Data Guidebook
 
-issue_app_url: 'http://localhost:9292/'
+issue_app_url: 'https://open-standards-guidebook.herokuapp.com/'
 
 ###
 # Social / SEO
