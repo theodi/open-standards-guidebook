@@ -46,5 +46,5 @@ description: Developing open standards for data means combining elements of a te
 
 ## Retire
 
-- [ ] **Archived content**: Archiving a final version of the open standard, documentation and guides, and website content in an archiving service like Internet Archive**: https://archive.org
+- [ ] **Archived content**: Archiving a final version of the open standard, documentation and guides, and website content in an archiving service like [Internet Archive](https://archive.org)
 - [ ] **Notice of retirement**: Detailing the retirement of the standard, what this means for the community and any actions that can be taken in future
