@@ -57,5 +57,11 @@
             {% if page.url contains item.url %}is--active{% endif %}
             ">{{ item.title }}</a>
         {% endfor %}
+        <hr>
+        {% for item in site.data.top_aux_nav %}
+            <a href="{{ item.url }}" class="m-nav-mobile__item
+            {% if page.url contains item.url %}is--active{% endif %}
+            ">{{ item.title }}</a>
+        {% endfor %}
     </nav>
 </div>
