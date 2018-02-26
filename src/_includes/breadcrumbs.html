@@ -1,25 +1,23 @@
 {% assign parts = page.url | remove:'/index.html' | split: '/' %}
 {% assign range = parts.size | minus:1 %}
 
-<div class="wrapper">
-    <div class="pad-bottom">
-        <div class="m-breadcrumb">
-            <a class="m-breadcrumb__item" href="/">Home</a>
-            {% for i in (1..range) %}
-                {% assign part_url = parts | slice:1,i | join:'/' | append:'/' | prepend:'/' %}
-                {% assign part_page = site.pages | where:'url',part_url | first %}
-                {% if part_page.nav.title %}
-                    {% assign title = part_page.nav.title %}
-                {% else %}
-                    {% assign title = part_page.title %}
-                {% endif %}
-                <span class="m-breadcrumb__seperator">/</span>
-                {% if forloop.last %}
-                    <span class="m-breadcrumb__item is--active">{{ title }}</span>
-                {% else %}
-                    <a class="m-breadcrumb__item" href="{{ part_page.url }}">{{ title }}</a>
-              {% endif %}
-            {% endfor %}
-        </div>
+<div class="wrapper m-breadcrumb__wrapper">
+    <div class="m-breadcrumb">
+        <a class="m-breadcrumb__item" href="/">Home</a>
+        {% for i in (1..range) %}
+            {% assign part_url = parts | slice:1,i | join:'/' | append:'/' | prepend:'/' %}
+            {% assign part_page = site.pages | where:'url',part_url | first %}
+            {% if part_page.nav.title %}
+                {% assign title = part_page.nav.title %}
+            {% else %}
+                {% assign title = part_page.title %}
+            {% endif %}
+            <span class="m-breadcrumb__seperator">/</span>
+            {% if forloop.last %}
+                <span class="m-breadcrumb__item is--active">{{ title }}</span>
+            {% else %}
+                <a class="m-breadcrumb__item" href="{{ part_page.url }}">{{ title }}</a>
+          {% endif %}
+        {% endfor %}
     </div>
 </div>
