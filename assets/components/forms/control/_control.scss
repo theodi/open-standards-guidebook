@@ -7,23 +7,23 @@
 
     &.has--success {
         .label, .control__caption {
-            color: #0DBC37;
+            color: palette(success);
         }
 
         .input {
-            border-color: #0DBC37;
-            color: #0DBC37;
+            border-color: palette(success);
+            color: palette(success);
         }
     }
 
     &.has--error {
         .label, .control__caption {
-            color: #D60303;
+            color: palette(warning);
         }
 
         .input {
-            border-color: #D60303;
-            color: #D60303;
+            border-color: palette(warning);
+            color: palette(warning);
         }
     }
 }

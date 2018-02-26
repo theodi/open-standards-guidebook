@@ -20,3 +20,9 @@ props:
   secondary:
     value: '#ff6700'
     comment: 'Secondary orange: - Example Usage: Case study label'
+  success:
+    value: '#0DBC37'
+    comment: 'Success Green'
+  warning:
+    value: '#D60303'
+    comment: 'Warning Red'

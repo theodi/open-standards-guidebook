@@ -24,7 +24,7 @@
         background: palette(primary);
         color: white;
         // @todo extract
-        background-image: linear-gradient(to bottom, #3E9EFF, palette(primary));
+        background-image: linear-gradient(to bottom, tint(palette(primary), 'lighten'), palette(primary));
         border: solid 2px palette(primary);
     }
 
@@ -39,7 +39,7 @@
         background: palette(primary);
         color: white;
         // @todo extract
-        background-image: linear-gradient(to bottom, #3E9EFF, palette(primary));
+        background-image: linear-gradient(to bottom, tint(palette(primary), 'lighten'), palette(primary));
         border: solid 2px palette(primary);
     }
 
@@ -53,7 +53,7 @@
     @include link() {
         background: palette(secondary);
         color: white;
-        background-image: linear-gradient(to bottom, #FF7D25, palette(secondary));
+        background-image: linear-gradient(to bottom, tint(palette(secondary), 'lighten'), palette(secondary));
         border: solid 2px palette(secondary);
     }
 

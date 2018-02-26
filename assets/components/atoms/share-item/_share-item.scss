@@ -20,7 +20,7 @@
         color: white;
         font-size: rem-calc(12);
         // @todo extract
-        background-image: linear-gradient(to bottom, #3E9EFF, palette(primary));
+        background-image: linear-gradient(to bottom, tint(palette(primary), 'lighten'), palette(primary));
         border: solid 2px palette(primary);
         margin-top: rem-calc(5);
     }

@@ -27,15 +27,13 @@
     }
 
     &.has--error {
-        // @todo extract
-        border-color: #D60303;
-        color: #D60303;
+        border-color: palette(warning);
+        color: palette(warning);
     }
 
     &.has--success {
-        // @todo extract
-        border-color: #0DBC37;
-        color: #0DBC37;
+        border-color: palette(success);
+        color: palette(success);
     }
 }
 
