@@ -7,6 +7,7 @@
 ###
 # Build
 ###
+markdown: kramdown
 source: src
 destination: dist
 timezone: Europe/London
