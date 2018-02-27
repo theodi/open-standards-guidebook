@@ -1,8 +1,15 @@
 blockquote {
-    color: palette(primary);
-    text-align: center;
+    text-align: left;
     font-weight: bold;
-    margin: spacing(25 15);
+    margin: spacing(25 4);
+
+    &:before, &:after {
+        font-size: ms(1);
+
+        @include respond-to(medium) {
+            font-size: ms(1, $thread: desktop);
+        }
+    }
 
     &:before {
         content: "“";
@@ -18,6 +25,7 @@ blockquote {
         display: inline;
         font-size: ms(1);
         line-height: 1.33;
+        font-style: italic;
 
         @include respond-to(medium) {
             font-size: ms(1, $thread: desktop);
