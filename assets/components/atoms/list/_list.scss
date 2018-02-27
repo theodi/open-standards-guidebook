@@ -30,13 +30,18 @@ ul {
 
 @mixin list--bullet {
     @extend %list-base;
+    list-style-position: outside;
 
     li {
         margin-bottom: spacing(10);
-        padding-left: rem-calc(5);
+        padding-left: rem-calc(15);
+        position: relative;
 
         &:before {
-            display: inline-block;
+            position: absolute;
+            top: rem-calc(10);
+            left: 0;
+            display: block;
             margin-bottom: rem-calc(4);
             margin-right: rem-calc(8);
             content: " ";
@@ -61,8 +66,13 @@ ul {
     counter-reset: list;
 
     li {
+        padding-left: rem-calc(15);
+        position: relative;
 
         &:before {
+            position: absolute;
+            top: rem-calc(10);
+            left: 0;
             counter-increment: list;
             content: counters(list, ".") ".";
             color: palette(black);
@@ -97,8 +107,10 @@ ul {
 .u-styled-lists {
     ul {
         @include list--bullet();
+        list-style-position: outside;
     }
     ol {
         @include list--numbered();
+        list-style-position: outside;
     }
 }
