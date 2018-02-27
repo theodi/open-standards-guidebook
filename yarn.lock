@@ -1409,7 +1409,7 @@ babel-register@^6.26.0:
     mkdirp "^0.5.1"
     source-map-support "^0.4.15"
 
-babel-runtime@^6.18.0, babel-runtime@^6.22.0, babel-runtime@^6.26.0:
+babel-runtime@^6.18.0, babel-runtime@^6.22.0, babel-runtime@^6.26.0, babel-runtime@^6.9.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
   dependencies:
@@ -2238,13 +2238,40 @@ component-bind@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/component-bind/-/component-bind-1.0.0.tgz#00c608ab7dcd93897c0009651b1d3a8e1e73bbd1"
 
+component-closest@*, component-closest@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/component-closest/-/component-closest-1.0.1.tgz#1ed0464132fc88a3510a2dabec079695789fb1b5"
+  dependencies:
+    component-matches-selector "~0.1.6"
+
+component-delegate@^0.2.4:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/component-delegate/-/component-delegate-0.2.4.tgz#dc5028759ea681bea84a3d6bbd650207c3beb138"
+  dependencies:
+    component-closest "*"
+    component-event "*"
+
 component-emitter@1.2.1, component-emitter@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/component-emitter/-/component-emitter-1.2.1.tgz#137918d6d78283f7df7a6b7c5a63e140e69425e6"
 
+component-event@*, component-event@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/component-event/-/component-event-0.2.0.tgz#8689a7c25a7dd0afe7e2e8408091d5b9e12ce196"
+
 component-inherit@0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/component-inherit/-/component-inherit-0.0.3.tgz#645fc4adf58b72b649d5cae65135619db26ff143"
+
+component-matches-selector@^0.1.6, component-matches-selector@~0.1.6:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/component-matches-selector/-/component-matches-selector-0.1.6.tgz#7b630e04e7e0c3b0019f31749fd70af5ed8b972e"
+  dependencies:
+    component-query "*"
+
+component-query@*:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/component-query/-/component-query-0.0.3.tgz#07f49dab7071fa9606725df53e607f468acdaacf"
 
 concat-map@0.0.1:
   version "0.0.1"
@@ -2810,12 +2837,26 @@ doctrine@^2.1.0:
   dependencies:
     esutils "^2.0.2"
 
+dom-classlist@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/dom-classlist/-/dom-classlist-1.0.1.tgz#722814dc2f509d3d7d06f2533ba9ff48eeea59b9"
+
+dom-matches@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/dom-matches/-/dom-matches-1.0.1.tgz#fa7b57cd8287895bf40936b8d8544ba8e8b35a1f"
+
 dom-serializer@0, dom-serializer@~0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/dom-serializer/-/dom-serializer-0.1.0.tgz#073c697546ce0780ce23be4a28e293e40bc30c82"
   dependencies:
     domelementtype "~1.1.1"
     entities "~1.1.1"
+
+dom-siblings@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/dom-siblings/-/dom-siblings-0.1.0.tgz#88025ffa0201f62cbede543066d7ef184c0ec1e9"
+  dependencies:
+    dom-matches "^1.0.1"
 
 domain-browser@^1.1.1:
   version "1.2.0"
@@ -5899,6 +5940,19 @@ liftoff@^2.1.0, liftoff@^2.3.0:
 limiter@^1.0.5:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/limiter/-/limiter-1.1.2.tgz#229d8055891c8b11af9e0ee5200e8e09bb3dcbeb"
+
+littlefoot@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/littlefoot/-/littlefoot-1.0.0.tgz#a92bb7501b7dd85ac7adb8bf56e2823c65c4df2b"
+  dependencies:
+    babel-runtime "^6.9.0"
+    component-closest "^1.0.1"
+    component-delegate "^0.2.4"
+    component-event "^0.2.0"
+    component-matches-selector "^0.1.6"
+    dom-classlist "^1.0.1"
+    dom-siblings "^0.1.0"
+    lodash "^4.12.0"
 
 load-json-file@^1.0.0:
   version "1.1.0"

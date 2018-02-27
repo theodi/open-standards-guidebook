@@ -1,13 +1,13 @@
 import bindToggles from './modules/toggle';
 import bindModals from './modules/modals';
 import bindAjaxForms from './modules/ajaxForm';
-// import BareFoot from './vendor/barefoot';
+import littlefoot from 'littlefoot';
 
 function init(){
     bindToggles();
     bindModals();
     bindAjaxForms();
-    // BareFoot();
+    littlefoot();
 }
 
 window.addEventListener('DOMContentLoaded', init);

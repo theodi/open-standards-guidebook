@@ -30,9 +30,9 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 Something something something
 
-I bet you'd like more information about this sentence [^1].
+I bet you'd like more information about this sentence[^1]
 
-I bet you'd like more information about this sentence [^2].
+I bet you'd like more information about this sentence[^2]
 
 > Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua.
