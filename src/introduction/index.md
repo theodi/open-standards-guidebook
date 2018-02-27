@@ -4,6 +4,7 @@ layout: listing
 nav:
   order: 1
   title: Introduction
+intro_sentence: This is a custom intro sentence
 description: Introduction. Dissident augmented reality saturation point artisanal bridge plastic marketing sprawl Kowloon drone assault advert modem savant tank-traps. Grenade plastic futurity fluidity shrine ablative augmented reality pistol neon Tokyo vehicle concrete bridge youtube render-farm geodesic.
 sections:
   items:

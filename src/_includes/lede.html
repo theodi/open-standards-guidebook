@@ -1,0 +1,15 @@
+{% if page.description %}
+    {% capture description %}
+        {% if page.show_intro_sentence %}
+            {% if page.intro_sentence %}
+                {{ page.intro_sentence }}
+            {% else %}
+                {{ site.data.snippets.intro_sentence }}
+            {% endif %}
+        {% endif %}
+        {{ page.description }}
+    {% endcapture %}
+    <div class="u-trim--all">
+        <p class="lede">{{ description }}</p>
+    </div>
+{% endif %}

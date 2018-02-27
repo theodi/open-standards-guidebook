@@ -9,6 +9,14 @@ consequat. Duis aute irure dolor in reprehenderit in'
 
 soundcloud: http://soundcloud.com
 
+# The following default to true, and only need setting explicitly if you want
+# to set them as false
+#
+# show_nav: false # Show / hide the section nav in the hero
+# show_intro_sentence: false # Show / hide the intro sentence
+# intro_sentence: This is a custom intro sentence that will be used in preference to the global one
+#   defined in site.data.snippets.intro_sentence
+
 people:
   - name: Edafe Onerhime
     role: Consultant Data Scientist
