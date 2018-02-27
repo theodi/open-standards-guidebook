@@ -28,6 +28,28 @@ Pages are automatically included in the site's XML sitemap. If for some reason t
 sitemap: false
 ```
 
+The lede text in the hero of each page by default consists of the page's description prefixed by the site's default intro sentence.
+
+The default intro sentence is defined in `_data/snippets.yml` in the `intro_sentence` key.
+
+To override it on a per page basis just set a `intro_sentence` key in the page's front matter.
+
+```
+intro_sentence: This is a custom intro sentence that will be used in preference to the global one
+defined in site.data.snippets.intro_sentence
+```
+
+It can also be disabled on a per page basis (see next section)
+
+## Disabling component output
+
+The following default to true, and only need setting explicitly if you want to set them as false
+
+```
+# show_toc: false # Show / hide the table of contents
+# show_nav: false # Show / hide the section nav in the hero
+# show_intro_sentence: false # Show / hide the intro sentence
+```
 
 ## Inline callouts
 

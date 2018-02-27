@@ -15,6 +15,13 @@ consequat. Duis aute irure dolor in reprehenderit in'
 # (prose will do this by default)
 image: ./example-infographic.jpg
 
+# The following default to true, and only need setting explicitly if you want
+# to set them as false
+#
+# show_intro_sentence: false # Show / hide the intro sentence
+# intro_sentence: This is a custom intro sentence that will be used in preference to the global one
+#   defined in site.data.snippets.intro_sentence
+
 # The Hero contents
 hero:
   nav:

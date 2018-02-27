@@ -16,6 +16,9 @@ consequat. Duis aute irure dolor in reprehenderit in'
 #
 # show_toc: false # Show / hide the table of contents
 # show_nav: false # Show / hide the section nav in the hero
+# show_intro_sentence: false # Show / hide the intro sentence
+# intro_sentence: This is a custom intro sentence that will be used in preference to the global one
+#   defined in site.data.snippets.intro_sentence
 
 # Optional sidebar download links, download urls should be kept within the same directory
 downloads:

@@ -67,3 +67,4 @@ defaults:
         order: 1000
       show_toc: true
       show_nav: true
+      show_intro_sentence: true
