@@ -12,7 +12,7 @@
                 <div class="control">
                     <label class="label" for="contrib-form-labels">I want to&hellip;</label>
                     <div class="select__wrapper">
-                        <select class="select" name="labels[]" id="contrib-form-lables">
+                        <select class="select" name="labels[]" id="contrib-form-labels">
                             {% for label in site.data.contributing.labels %}
                             {% capture selected -%}
                                 {% if forloop.first %}selected{% endif -%}
@@ -37,7 +37,7 @@
                 <div class="control">
                     <label class="label" for="contrib-form-uploads">Upload suggested content</label>
 
-                    <input type="file" multiple="true"  id="contrib-form-uploads" name="uploads">
+                    <input type="file" multiple id="contrib-form-uploads" name="uploads">
                 </div>
                 <div class="control">
                     <input type="checkbox" class="checkbox" id="contrib-form-terms" name="terms" value="accepted" required>
