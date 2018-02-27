@@ -6,14 +6,24 @@
     @include trim();
     margin: spacing(base 0);
     padding: spacing(base);
-    border: rem-calc(12) solid palette(primary);
+    background: palette(grey);
 
     @include respond-to(medium) {
-        border: rem-calc(25) solid palette(primary);
+        padding: spacing(medium);
     }
 
     > *:first-child {
         margin-top: 0;
         padding-top: 0;
+    }
+
+    > *:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+
+        li:last-child {
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
     }
 }
