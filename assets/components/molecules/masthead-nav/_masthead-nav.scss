@@ -27,8 +27,7 @@
             padding: spacing(4 8 6 8);
             background: palette(primary);
             color: white;
-            //@todo extract
-            background-image: linear-gradient(to bottom, #3E9EFF, palette(primary));
+            background-image: linear-gradient(to bottom, tint(palette(primary), 'lighten'), palette(primary));
             border: solid 2px palette(primary);
             text-decoration: none;
             font-weight: 500;

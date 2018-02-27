@@ -11,11 +11,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 }
 
 h1, .h1 {
-    font-size: ms(4);
+    font-size: ms(3);
 
     @include respond-to(medium) {
         margin: 1em 0 0.25em;
-        font-size: ms(4, $thread: desktop);
+        font-size: ms(3, $thread: desktop);
     }
 }
 

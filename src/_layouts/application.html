@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en" direction="ltr">
+<html class="no-js" lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="{{ 'assets/styles/main.css' | rev }}">
 
     <title>{{ page.title }} | {{ site.name }}</title>
-
-    <meta name="description" content="{{ site.description }}">
-
 
     {% comment %}
       add a .js class to the html element
@@ -32,10 +29,17 @@
     {% seo title=false %}
     {% comment %}
     Needs to be revved so can't use seo tag to output{% endcomment %}
-    {% unless page.image %}
-        <meta property="og:image" content="{{ 'assets/images/twitter-card.png' | rev }}" />
-    {% endunless %}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:image" content="{{ site.url}}/twitter-card.png" />
+    <meta property="og:image" content="{{ site.url}}/twitter-card.png" />
     <meta name="twitter:creator" content="@{{ site.twitter.username }}" />
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ 'assets/images/favicons/apple-touch-icon.png' | rev }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ 'assets/images/favicons/favicon-32x32.png' | rev }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ 'assets/images/favicons/favicon-16x16.png' | rev }}">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 {% capture body_class -%}
@@ -48,7 +52,7 @@
     {% comment %} Global CTA with default content injected {% endcomment %}
     {% capture cta_top_default %}
         <div class="u-trim--all">
-            <p>Something missing? <a class="link link--bold link--secondary" href="#" data-modal="#modal-suggestion" aria-controls="modal-suggestions">edit this page or suggest new content</a></p>
+            <p>Something missing? <a class="link link--bold link--secondary" href="{{ site.data.contributing.repo_url }}/issues" data-modal="#modal-suggestion">{{ site.data.contributing.cta_text }}</a></p>
         </div>
     {% endcapture %}
     {% comment %} Global CTA Above Masthead {% endcomment %}
@@ -64,7 +68,7 @@
         {{ content }}
     </main>
 
-    <section class="pad-top-medium pad-top-large--medium pad-bottom-medium pad-bottom-xlarge--medium island island--grey u-hide-print">
+    <div class="pad-top-medium pad-top-large--medium pad-bottom-medium pad-bottom-xlarge--medium island island--grey u-hide-print">
         <div class="wrapper">
             <div class="g">
                 {% for item in site.data.footer_aux_nav %}
@@ -91,12 +95,12 @@
                 {% endfor %}
             </div>
         </div>
-    </section>
+    </div>
 
     {% comment %} Global CTA with default content injected {% endcomment %}
     {% capture cta_bottom_default %}
         <div class="u-trim--all">
-            <p>Something missing? <a class="link link--bold" href="#" data-modal="#modal-suggestion" aria-controls="modal-suggestions">edit this page or suggest new content</a></p>
+            <p>Something missing? <a class="link link--bold" href="{{ site.data.contributing.repo_url }}/issues" data-modal="#modal-suggestion">{{ site.data.contributing.cta_text }}</a></p>
         </div>
     {% endcapture %}
     {% comment %} Global CTA Above Footer {% endcomment %}

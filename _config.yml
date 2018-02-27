@@ -22,6 +22,8 @@ exclude: ['_templates']
 url: https://open-standards-guidebook.odi.kindclients.co.uk # @todo update for live
 name: Open Standards for Data Guidebook
 
+issue_app_url: 'https://open-standards-guidebook.herokuapp.com/'
+
 ###
 # Social / SEO
 # see: https://github.com/jekyll/jekyll-seo-tag/blob/46ad253d4de8d8064b4156a9db530399bdd9ec11/docs/usage.md

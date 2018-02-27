@@ -162,9 +162,11 @@ Examples of guidance standards:
 We grouped open standards by their main purpose and outputs, however many open standards draw features from one or more categories to achieve their goals. 
 
 <table>
-  <tr>
-    <th  colspan="3">We can standardise</th>
-  </tr>
+    <thead>
+      <tr>
+        <th  colspan="3">We can standardise</th>
+      </tr>
+    </thead>
   <tr>
     <td>Shared vocabulary</td>
     <td><b>Words</b></td>

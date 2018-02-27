@@ -12,6 +12,7 @@
                 ".sass-cache",
                 "node_modules",
                 "dist",
+                "component-library"
             ]
 		}
 	]

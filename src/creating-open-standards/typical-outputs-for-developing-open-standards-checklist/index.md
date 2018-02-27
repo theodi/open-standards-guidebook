@@ -3,8 +3,21 @@ title: Typical outputs for developing open standards checklist
 layout: content-page
 description: Developing open standards for data means combining elements of a technical activity, stakeholder coordination and community engagement. Use this checklist to track typical outputs at each stage.
 show_toc: false
+
 tasklists:
   items:
+  - title: Example with Description
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation.
+    items:
+    - title: Test Item
+      description: >-
+        Listing who will use or be affected by your open standard or its outputs - include your early adopters, the first to engage with the standard
+    - title: Another Test Item
+      description: >-
+        Detailing why the open standard is being developed, the need it meets or problem it solves, the vision for the standard, and what is in and out of
   - title: Scoping & starting
     items:
         - title: Stakeholder map

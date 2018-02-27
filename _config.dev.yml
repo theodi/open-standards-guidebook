@@ -7,3 +7,4 @@
 ###
 incremental: true
 env: development
+issue_app_url: 'http://localhost:5000/'

@@ -4,15 +4,26 @@
 
 .m-hero__wrapper {
     background-color: palette(grey);
-    padding-top: spacing(base);
     padding-bottom: spacing(base);
 
     @include respond-to(medium) {
-        padding-top: spacing(xlarge);
         padding-bottom: spacing(xlarge);
     }
 }
 
 .m-hero {
+    padding-top: spacing(45);
 
+    @include respond-to(medium) {
+        padding-top: spacing(88);
+    }
+}
+
+.m-hero__title {
+    font-size: ms(4);
+
+    @include respond-to(medium) {
+        margin: 1em 0 0.25em;
+        font-size: ms(4, $thread: desktop);
+    }
 }

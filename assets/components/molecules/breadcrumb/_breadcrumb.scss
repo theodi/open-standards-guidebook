@@ -6,6 +6,7 @@
     @media print {
         display: none;
     }
+    margin-bottom: spacing(8);
 }
 
 .m-breadcrumb__item {
@@ -28,4 +29,20 @@
 
 .m-breadcrumb__seperator {
     font-weight: bold;
+}
+
+.m-breadcrumb__wrapper + .m-hero {
+    padding-top: 0;
+
+    @include respond-to(medium) {
+        padding-top: 0;
+    }
+}
+
+.m-breadcrumb__wrapper {
+    padding-top: spacing(base);
+
+    @include respond-to(medium) {
+        padding-top: spacing(xlarge);
+    }
 }

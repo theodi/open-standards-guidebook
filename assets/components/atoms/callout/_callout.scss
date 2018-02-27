@@ -3,14 +3,27 @@
 // ==========================================================================
 
 .callout {
-    @include inverse();
     @include trim();
     margin: spacing(base 0);
     padding: spacing(base);
-    background: palette(primary);
+    background: palette(grey);
+
+    @include respond-to(medium) {
+        padding: spacing(medium);
+    }
 
     > *:first-child {
         margin-top: 0;
         padding-top: 0;
+    }
+
+    > *:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+
+        li:last-child {
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
     }
 }

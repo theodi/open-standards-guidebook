@@ -24,7 +24,7 @@ Hosted on [GH Pages](https://pages.github.com/) and deployed with [TravisCI](htt
 
 - [NodeJS runtime](https://nodejs.org/en/) - ~8.9.3 LTS release:
 - [Yarn](https://yarnpkg.com/en/docs/install#windows-tab)
-- [Ruby 2.3.0](https://www.ruby-lang.org/en/documentation/installation/) or greater
+- [Ruby 2.5.0](https://www.ruby-lang.org/en/documentation/installation/) or greater
 - [bundler](https://bundler.io/)
 
 ## Project setup
@@ -34,6 +34,8 @@ git clone git@github.com:theodi/open-standards-guidebook.git
 cd open-standards-guidebook
 yarn install
 bundle install
+cd contributions && bundle install # install the deps for the the contributions form app
+cd ..
 ```
 
 
@@ -53,6 +55,7 @@ This command does several things concurrently:
 - Starts jekyll server with `JEKYLL_ENV=development bundle exec jekyll serve --config _config.yml,_config.dev.yml` on `localhost:4000`
 - Starts a browsersync proxy of the same server, typically on `localhost:3000` (actual port will be shown when starting the command). This is used to live inject the styles (via browsersync) and JS (via webpack hot reload)
 - Starts the Fractal styleguide server (typically on http://localhost:4001/, see command output for your case)
+- Starts [foreman](https://github.com/ddollar/foreman) to run the contributions Sinatra application
 
 It will also open the Fractal styleguide and browsersync proxied Jekyll build in your default web browser. Additional Browsersync UI tools available on port 3001.
 
@@ -92,6 +95,7 @@ This builds the Fractal styleguide to static HTML and outputs it to a `component
 │   ├── images/ # images - filenames will be revved on build so use rev filter in liquid
 │   └── js/ # JavaScript goes here, use ES6 as transpiled with webpack
 ├── build/ # Build scripts and config
+├── contributions/ # Sinatra app, handles creating GH issue from form submissions
 ├── design/ # Design tokens in spec compliant format
 ├── dist/ # Built site goes here
 ├── docs/ # Markdown formatted documentation for Fractal styleguide
@@ -131,8 +135,11 @@ jekyll-seo-tag - SEO metadata generation
 
 ### Blendid
 
-You may override the default configuration via editing `path-config.json` and `task-config.js` in the `build/` directory. See the separate README.md and inline documentaton in that directory for full options available.
+You may override the default configuration via editing `path-config.json` and `task-config.js` in the `build/` directory. See the separate [`README.md`](blob/develop/build/README.md) and inline documentaton in that directory for full options available.
 
+## Contributions application
+
+The `contributions/` directory contains a small [Sinatra](http://sinatrarb.com) application that takes form submissions and turns them into issues / PRs on the GitHub repo via the GH api. For full details of this component of the project see [`contributions/README.md`](blob/develop/contributions/README.md).
 
 ## Hacks
 
