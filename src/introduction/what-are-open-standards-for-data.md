@@ -60,7 +60,7 @@ Standards are used when it’s important to be consistent, be able to repeat pro
 Standards are used in industries and sectors across the world to document agreements on physical items, ideas, digital products, processes, and more.
 
 <div class="callout" markdown="1">
-Everyday standards include:
+**Everyday standards include:**
 
 * standards for electrical sockets so any appliance can be plugged in
 * standards for addresses so post can be delivered more efficiently
@@ -79,7 +79,7 @@ Open standards for data make it easier for people and organisations to publish, 
 >Open Standards are standards made available to the general public and are developed (or approved) and maintained via a collaborative and consensus-driven process.  – ITU-T
 
 <div class="callout" markdown="1">
-Open standards may be developed to:
+**Open standards may be developed to:**
 
 * agree on common models or a common language
 * share information consistently
