@@ -25,14 +25,13 @@
             doc.classList.add('js', 'js-loading');
         }());
     </script>
-
-    {% seo title=false %}
     {% comment %}
     Needs to be revved so can't use seo tag to output{% endcomment %}
     <meta name="twitter:card" content="summary_large_image">
     <meta property="og:image" content="{{ 'assets/images/twitter-card.png' | rev }}" />
-    <meta property="twitter:image" content="{{ 'assets/images/twitter-card.png' | rev }}" />
     <meta name="twitter:creator" content="@{{ site.twitter.username }}" />
+    {% seo title=false %}
+
 </head>
 
 {% capture body_class -%}
