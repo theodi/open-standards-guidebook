@@ -24,7 +24,7 @@ Hosted on [GH Pages](https://pages.github.com/) and deployed with [TravisCI](htt
 
 - [NodeJS runtime](https://nodejs.org/en/) - ~8.9.3 LTS release:
 - [Yarn](https://yarnpkg.com/en/docs/install#windows-tab)
-- [Ruby 2.3.0](https://www.ruby-lang.org/en/documentation/installation/) or greater
+- [Ruby 2.5.0](https://www.ruby-lang.org/en/documentation/installation/) or greater
 - [bundler](https://bundler.io/)
 
 ## Project setup
