@@ -17,5 +17,6 @@ $_wrapper-padding: 25;
     padding-left: rem-calc($_wrapper-padding);
     padding-right: rem-calc($_wrapper-padding);
 
+    width: 100%;
     max-width: rem-calc($_wrapper-max-width);
 }
