@@ -1469,6 +1469,10 @@ balanced-match@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
 
+barefoot@philgruneich/barefoot:
+  version "2.0.2"
+  resolved "https://codeload.github.com/philgruneich/barefoot/tar.gz/a064b4fb6aa9bd4d2fbc366e6a444eb328701a2b"
+
 base64-arraybuffer@0.1.5:
   version "0.1.5"
   resolved "https://registry.yarnpkg.com/base64-arraybuffer/-/base64-arraybuffer-0.1.5.tgz#73926771923b5a19747ad666aa5cd4bf9c6e9ce8"

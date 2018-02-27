@@ -23,6 +23,7 @@
     "@mise-en-place/utilities.scroll": "^3.0.1",
     "@mise-en-place/utilities.uppercase": "^3.0.0",
     "axios": "^0.18.0",
+    "barefoot": "philgruneich/barefoot",
     "breakpoint-sass": "^2.7.1",
     "enquire.js": "^2.1.6",
     "modularscale-sass": "^3.0.5",
