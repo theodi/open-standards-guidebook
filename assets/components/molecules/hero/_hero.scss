@@ -18,3 +18,12 @@
         padding-top: spacing(88);
     }
 }
+
+.m-hero__title {
+    font-size: ms(4);
+
+    @include respond-to(medium) {
+        margin: 1em 0 0.25em;
+        font-size: ms(4, $thread: desktop);
+    }
+}
