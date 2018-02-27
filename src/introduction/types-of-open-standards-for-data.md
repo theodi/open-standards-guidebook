@@ -51,10 +51,10 @@ sidebar:
 
 # Types of open standards for data
 
-There are thousands of open standards for data in use every day around the world. 
+There are thousands of open standards for data in use every day around the world. To help make sense of them, we grouped standards according to their main purpose and products.
 
 <div class="callout" markdown="1">
-To help make sense of them, we grouped standards according to their main purpose and products, including to:
+**Open standards include:**
 
 * **share vocabularies** and common language using common models, attributes and definitions, with outputs like: registers, taxonomies, vocabularies and ontologies
 
@@ -76,7 +76,7 @@ A good shared vocabulary focuses on a specific area and uses clear, unambiguous 
 Shared vocabularies range from simple lists of words and their meaning to more complex products. The complexity of a vocabulary depends on the complexity of the problem being solved. 
 
 <div class="callout" markdown="1">
-Typical vocabulary formats include: 
+**Typical vocabulary formats include:**
 
 * **registers** comprising [authoritative lists](https://gds.blog.gov.uk/2015/09/01/registers-authoritative-lists-you-can-trust/) 
 
@@ -84,10 +84,11 @@ Typical vocabulary formats include:
 
 * **vocabularies** that are collections of defined words 
 
-* ontologies that describe concepts and relationships 
+* **ontologies** that describe concepts and relationships 
 </div>
 
-With a shared vocabulary, you can standardise:
+<div class="callout" markdown="1">
+**With a shared vocabulary, you can standardise:**
 
 * **concepts** that represent important information, for example ‘education’, ‘crime’, or ‘procurement’
 
@@ -102,14 +103,17 @@ With a shared vocabulary, you can standardise:
 * **units of measurement** that describe how quantities are measured, for example ‘inches’, ‘centimeters’, or ‘centigrade’
 
 * **models** that describe people and organisations operating in an area, and the relationships between them based on how information flows
+</div>
 
 Shared vocabularies are frequently used with data exchange standards to produce better quality data that is easy to analyse and interpret. 
 
-Examples of shared vocabularies:
+<div class="callout" markdown="1">
+**Examples of shared vocabularies:**
 
 * [BBC Ontology](https://www.bbc.co.uk/ontologies/bbc) is used to describe [BBC](https://www.bbc.co.uk/) concepts like organisations and sports teams
 
-* [Local authorities for England register](https://local-authority-eng.register.gov.uk/) is an authoritative list of local authorities managed by the Department for Communities and Local Government
+* [Local authorities for England register](https://local-authority-eng.register.gov.uk/) is an authoritative list of local authorities managed by the [Department for Communities and Local Government](https://www.gov.uk/government/organisations/ministry-of-housing-communities-and-local-government)
+</div>
 
 # Standards to exchange data
 
@@ -119,7 +123,8 @@ Standards for exchanging data specify common formats and shared rules that lead 
 
 Typical data exchange standards define a common format for data that describes how data should be serialised or structured for sharing. Or it might combine common formats, shared vocabularies and other rules to describe what data should be shared to solve a specific problem. 
 
-For data exchange, you can standardise:
+<div class="callout" markdown="1">
+**For data exchange, you can standardise:**
 
 * **formats** that describe how data is structured for sharing or storage, for example file and data formats like csv, json and xml
 
@@ -129,13 +134,16 @@ For data exchange, you can standardise:
 
 * **rules** that describe what data to share, the schemas, formats and shared vocabularies to use and other rules needed to solve a specific problem in a template or specification
 
-* **maps** that describes how models are expressed as data exchange formats – for example mapping the output of a smart city concept model to a data exchange format that information systems can read and write 
+* **maps** that describes how models are expressed as data exchange formats – for example mapping the output of a smart city concept model to a data exchange format that information systems can read and write
+</div> 
 
-Examples of data exchange standards:
+<div class="callout" markdown="1">
+**Examples of data exchange standards:**
 
 * [General Transit Feed Specification (GFTS)](https://developers.google.com/transit/gtfs/) is the worldwide *de facto* standard for publishing, accessing, sharing and using public transport information
 
 * [CSV](https://tools.ietf.org/html/rfc4180) is the plain text format for structuring data files using rows and columns
+</div>
 
 # Standards for guidance
 
@@ -143,19 +151,23 @@ An open standard that provides guidance helps people and organisations understan
 
 A good guidance standard focuses on providing a framework and recommendations for capturing data and promoting understanding within an area or sector.
 
-With a standard for guidance, you can standardise:
+<div class="callout" markdown="1">
+**With a standard for guidance, you can standardise:**
 
 * **units and measures** we use to help us collect data, for example, centigrade, latitude and longitude, and meters
 
 * **processes** that describe protocols or methods for measuring, capturing or sharing data consistently, for example, statistical methods like [sampling populations](https://www.google.com/url?q=https://www.ons.gov.uk/methodology&sa=D&ust=1519725898703000&usg=AFQjCNHduCI2zkmjLkRwNahIjvMxGQHfgQ)
 
 * **codes of practice** that supports consistent data practices, for example, best practices, recommendations, and other guidance
+</div>
 
-Examples of guidance standards:
+<div class="callout" markdown="1">
+**Examples of guidance standards:**
 
 * [BSI PAS 182 Smart city concept model](https://www.bsigroup.com/en-GB/smart-cities/Smart-Cities-Standards-and-Publication/PAS-182-smart-cities-data-concept-model/) helps decision-makers and organisations that provide services in cities remove barriers to sharing information
 
 * [OpenEHR](http://www.openehr.org/home) is the international standard for building flexible health data repositories that can be used with any vendor
+</div>
 
 # Standards can be mixed and matched
 
@@ -234,7 +246,6 @@ Many standards for exchanging data reuse existing standards, for example, a list
 More complex shared vocabularies like ontologies, can reference simpler shared vocabularies like lists, for example, [Popolo](http://www.popoloproject.com/), the international open government data specifications standard reuses the list of genders from the [vCard format specification](https://tools.ietf.org/html/rfc6350#section-6.2.7) rather than creating a new list. Standards for guidance can help people and organisations design models to be used with existing standards.
 
 ![We can standardise](/introduction/we-can-standardise-open-data-institute.jpg)
-
 *Source: The Open Data Institute*
 
 For example, the [Brownfield Site Register Standard](https://docs.google.com/document/d/1Hv_g2wt3vJ42XJxK6nsLax0M_9c76rFC4JerFYm2x0U/edit) for sites in England, suitable for residential redevelopment, includes shared vocabularies like agreements on specific words, taxonomies, identifiers and units. The standard uses a CSV format that describes how data is structured for publication. The [Water Point Data Exchange Standard](https://www.waterpointdata.org/about-wpdx-standard) (WPDx) uses existing geospatial and ISO standards and extends them for specialist use by their community. 
