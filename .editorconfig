@@ -12,6 +12,11 @@ trim_trailing_whitespace = true
 
 # Matches multiple files with brace expansion notation
 # Set default charset
+[*.{rb}]
+indent_size = 2
+
+# Matches multiple files with brace expansion notation
+# Set default charset
 [*.{yml}]
 indent_size = 2
 
