@@ -18,7 +18,8 @@ function bindToggle(trigger, opts) {
     const targetSelector = trigger.getAttribute(targetAttribute);
     const target = document.querySelector(targetSelector);
 
-    trigger.addEventListener('click', function() {
+    trigger.addEventListener('click', function(e) {
+        e.preventDefault();
         toggle({ trigger, target, opts });
     });
 }
