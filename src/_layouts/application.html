@@ -45,7 +45,7 @@
     {% comment %} Global CTA with default content injected {% endcomment %}
     {% capture cta_top_default %}
         <div class="u-trim--all">
-            <p>Something missing? <a class="link link--bold link--secondary" href="{{ site.data.contributing.repo_url }}/issues" data-modal="#modal-suggestion">edit this page or suggest new content</a></p>
+            <p>Something missing? <a class="link link--bold link--secondary" href="{{ site.data.contributing.repo_url }}/issues" data-modal="#modal-suggestion">{{ site.data.contributing.cta_text }}</a></p>
         </div>
     {% endcapture %}
     {% comment %} Global CTA Above Masthead {% endcomment %}
@@ -93,7 +93,7 @@
     {% comment %} Global CTA with default content injected {% endcomment %}
     {% capture cta_bottom_default %}
         <div class="u-trim--all">
-            <p>Something missing? <a class="link link--bold" href="{{ site.data.contributing.repo_url }}/issues" data-modal="#modal-suggestion">edit this page or suggest new content</a></p>
+            <p>Something missing? <a class="link link--bold" href="{{ site.data.contributing.repo_url }}/issues" data-modal="#modal-suggestion">{{ site.data.contributing.cta_text }}</a></p>
         </div>
     {% endcapture %}
     {% comment %} Global CTA Above Footer {% endcomment %}

@@ -4,7 +4,7 @@
             <button class="m-modal__close" aria-controls="modal-suggestion" data-modal="#modal-suggestion"></button>
             <span class="meta-title">Contribute</span>
             <div class="u-trim--top">
-                <h2>Suggest a change or addition</h2>
+                <h2>{{ site.data.contributing.cta_text| capitalize }}</h2>
             </div>
 
             <form method="post" enctype="multipart/form-data" action="{{ site.issue_app_url }}" data-ajax-form>
