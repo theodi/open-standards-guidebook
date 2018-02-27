@@ -38,11 +38,13 @@
     padding: spacing(base);
     box-shadow: 0 2px 65px 0 rgba(0, 0, 0, 0.22);
     padding: spacing(40 25);
+    height: 100vh;
     max-height: calc(100vh);
     overflow-x: scroll;
 
     @include respond-to(medium) {
         padding: spacing(50 90);
+        height: 100%;
         max-height: calc(90vh);
         border-radius: rem-calc(6);
     }
