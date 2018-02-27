@@ -8,10 +8,10 @@
 
     & + label {
         display: block;
-        padding-left: rem-calc(35);
+        padding-left: rem-calc(26);
         text-align: left;
         position: relative;
-        padding-top: spacing(7);
+        padding-top: spacing(1);
 
         &:before {
             content: "";
@@ -36,20 +36,20 @@
         margin-top: rem-calc(3);
 
         vertical-align: text-top;
-        width: rem-calc(18);
-        height: rem-calc(18);
+        width: rem-calc(14);
+        height: rem-calc(14);
         background: white;
-        border: 3px solid palette(primary);
+        border: 2px solid palette(primary);
         border-radius: rem-calc(3);
     }
 
     &:checked + label:after {
         content: '';
         position: absolute;
-        left: rem-calc(6);
-        top: rem-calc(13);
+        left: rem-calc(3);
+        top: rem-calc(10);
         @include respond-to(medium) {
-            top: rem-calc(13);
+            top: rem-calc(10);
         }
         background: palette(primary);
         width: 3px;
@@ -63,12 +63,20 @@
         transform: rotate(45deg);
     }
 
+    &:focus + label {
+        color: palette(primary);
+    }
+
     &:checked + label {
         text-decoration: line-through;
     }
+}
 
-    &:focus + label {
-        text-decoration: underline;
+form {
+    .checkbox {
+        &:checked + label {
+            text-decoration: none;
+        }
     }
 }
 
