@@ -2,26 +2,26 @@
 title: When to use open standards for data
 nav:
   order: 3
-description: Open standards for data are reusable agreements that make it easier for people and organisations to publish, access, share and use better quality data. Where possible, consider using an existing open standard rather than developing a new one.
+description: Open standards for data are useful for interaction, aggregation, comparison and linking. Where possible, consider using an existing open standard rather than developing a new one.
 gdoc: https://docs.google.com/document/d/1L4xocfkgZC2D6d0z5uUTZGw6kJp76WpKdBwnzb11z1c/edit?usp=sharing
 sidebar:
   sections:
     - title: Further reading
-      intro: Learn more about open standards for data
+      intro: More on open standards for data
       items:
         -
           title: What are open standards for data?
-          url: https://docs.google.com/document/d/1YcbKgtZAFjdeS6KiS_KGIi5GAUSwe1JTG4uRxhaWUQQ/edit?usp=sharing
+          url: /introduction/what-are-open-standards-for-data
         -
           title: Types of open standards for data
           url: https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit?usp=sharing
         -
           title: When not to create new standards
-          url: https://docs.google.com/document/d/1OoK8T5OtQriFARhb1cSFypAQNz24iEtgURd8YqfI-B0/edit?usp=sharing
+          url: /introduction/when-not-to-create-new-standards
         -
           title: How open standards are developed
-          url: https://docs.google.com/document/d/1kBsBph0bionPForwpriLMLY9MozSMHdviOandnK_hjM/edit?usp=sharing
-    - intro: Discover existing open standards for data
+          url: /introduction/how-open-standards-are-developed
+    - intro: Find existing open standards for data
       items:
         -
           title: How to find open standards
@@ -70,7 +70,6 @@ Open standards [encourage the creation of new tools and services](https://docs.g
 
 For example, the [US Environmental Protection Agency](https://www.epa.gov/) (EPA) collects environmental data in its role as a federal agency protecting human health and the environment. To form a national picture, information from individual states, local agencies, tribes, and other organisations are aggregated using [open standards for environmental data](https://www.epa.gov/data-standards).
 
- 
 
 **Enabling linkability** – the ease with which diverse data can be combined to increase usefulness and insight. A [shared-vocabulary](https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit#heading=h.36hd992dzujg) open standard featuring common codes and authoritative identifiers that identify people, places, events and things allows data from multiple sources to be linked. 
 
@@ -84,11 +83,13 @@ Open standards are a key tool in helping create a strong [data infrastructure](h
 
 A strong [data infrastructure](https://theodi.org/what-is-data-infrastructure) is critical to fostering business innovation, driving better public services and creating healthy, sustainable communities.
 
-You should develop or adopt an open standard when 
+<div class="callout" markdown="1">
+**You should develop or adopt an open standard when** 
 
 * collaboration with other stakeholders around the data infrastructure is important and 
 
 * processes or data need to be reusable and repeatable.
+</div>
 
 ## To promote common understanding
 

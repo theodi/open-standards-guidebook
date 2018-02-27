@@ -1,5 +1,5 @@
 ---
-title: Types of Open Standards for Data
+title: Types of open standards for data
 nav:
   order: 2
 description: There are thousands of open standards in use around the world. We have divided them into three broad categories. Open standards can fall into a single category or draw features from multiple categories to achieve their aims.
@@ -7,21 +7,21 @@ gdoc: https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8N
 sidebar:
   sections:
     - title: Further reading
-      intro: Learn more about open standards for data
+      intro: More on open standards for data
       items:
         -
           title: What are open standards for data?
-          url: https://docs.google.com/document/d/1YcbKgtZAFjdeS6KiS_KGIi5GAUSwe1JTG4uRxhaWUQQ/edit?usp=sharing
+          url: /introduction/what-are-open-standards-for-data
         -
           title: When to use open standards for data
-          url: https://docs.google.com/document/d/1L4xocfkgZC2D6d0z5uUTZGw6kJp76WpKdBwnzb11z1c/edit?usp=sharing
+          url: /introduction/when-to-use-open-standards-for-data
         -
           title: When not to create new standards
-          url: https://docs.google.com/document/d/1OoK8T5OtQriFARhb1cSFypAQNz24iEtgURd8YqfI-B0/edit?usp=sharing
+          url: /introduction/when-not-to-create-new-standards
         -
           title: How open standards are developed
-          url: https://docs.google.com/document/d/1kBsBph0bionPForwpriLMLY9MozSMHdviOandnK_hjM/edit?usp=sharing
-    - intro: Discover how to find existing open standards for data
+          url: /introduction/how-open-standards-are-developed
+    - intro: Find existing open standards for data
       items:
         -
           title: How to find open standards
