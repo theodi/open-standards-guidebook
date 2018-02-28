@@ -12,4 +12,7 @@
             font-size: ms(1, $thread: desktop);
         }
     }
+    > *:first-child {
+        margin-top: 0;
+    }
 }
