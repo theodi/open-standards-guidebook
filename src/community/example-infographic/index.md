@@ -5,10 +5,13 @@ title: Example Infographic
 layout: infographic
 
 # The lede text for this page
-description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in'
+description: >-
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua.
+
+
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in
 
 # The infographic image as a relative path from the page, case sensitive.
 # probably easiest to upload the image to the same directory as the page

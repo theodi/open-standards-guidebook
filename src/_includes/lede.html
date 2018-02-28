@@ -1,15 +1,15 @@
-{% if page.description %}
-    {% capture description %}
-        {% if page.show_intro_sentence %}
-            {% if page.intro_sentence %}
-                {{ page.intro_sentence }}
-            {% else %}
-                {{ site.data.snippets.intro_sentence }}
-            {% endif %}
-        {% endif %}
-        {{ page.description }}
-    {% endcapture %}
-    <div class="u-trim--all">
-        <p class="lede">{{ description }}</p>
-    </div>
+{% capture intro_sentence -%}
+    {% if page.show_intro_sentence -%}
+        {% if page.intro_sentence -%}
+            {{ page.intro_sentence }}
+        {% else -%}
+            {{ site.data.snippets.intro_sentence }}
+        {% endif -%}
+    {% endif -%}
+{% endcapture -%}
+
+{% assign intro_sentence = intro_sentence | strip %}
+
+{% if page.description -%}
+    <div class="u-trim--all lede">{{ page.description | prepend:intro_sentence | markdownify }}</div>
 {% endif %}
