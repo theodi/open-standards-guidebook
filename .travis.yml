@@ -8,6 +8,7 @@ cache:
   yarn: true
   directories:
     - node_modules # NPM packages
+    - '.rvm'
 
 before_install:
   - . $HOME/.nvm/nvm.sh
@@ -21,3 +22,12 @@ install:
 script:
   - yarn build
 
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
+  keep-history: true
+  local-dir: dist
+  verbose: true
+  on:
+    branch: develop
