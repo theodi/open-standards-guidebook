@@ -38,10 +38,10 @@ ul {
         position: relative;
 
         &:before {
+            display: block;
             position: absolute;
             top: rem-calc(10);
             left: 0;
-            display: block;
             margin-bottom: rem-calc(4);
             margin-right: rem-calc(8);
             content: " ";
@@ -67,10 +67,10 @@ ul {
         position: relative;
 
         &:before {
+            @include chevron;
             margin-bottom: rem-calc(2);
             margin-right: rem-calc(8);
             content: ' ';
-            @include chevron;
             position: absolute;
             top: rem-calc(10);
             left: 0;
