@@ -41,10 +41,12 @@ sidebar:
 
 Policy affects the norms, environments and operation of communities, organisations and systems. These examples show how open standards for data can help to [support public and private policy objectives by enabling the publication and use of data](https://theodi.org/blog/policy-design-patterns-that-help-you-use-data-to-create-impact):
 
+<div class="callout" markdown="1">
 * **Improved consumer experience** interventions, such as a standard for bin collection days, create better lives for citizens, in particular (but not limited to) their interactions with state service provision
 * **Efficient delivery** interventions, such as the [Open Contracting Data Standard](http://standard.open-contracting.org/latest/en/#), make providing services or fulfilling regulatory requirements by government more efficient and effective
 * **Market interventions**, such as the UK’s [Open Banking standard](https://www.openbanking.org.uk/),** **make data available to correct for market failures, such as by breaking down monopolies and promoting competition
 * **Better data management** interventions, such as standards for collecting statistics, help government manage the data that it relies on more effectively and efficiently and with wider societal and economic benefits
+</div>
 
 **Case study: Common Alerting Protocol (CAP)**
 
@@ -55,7 +57,7 @@ Following the Boxing Day tsunami disaster in 2004, the Internet Society (ISOC) l
 Standards are increasingly important in delivering policy. In the past, policymakers requiring organisations to publish data have focused on what data must be published but not on how. This leads to situations where disclosure is widespread but the data is difficult to collate and use.
 
 <div class="callout" markdown="1">
-By adopting open standards for data and linking them to policy and regulation, policymakers can 
+**By adopting open standards for data and linking them to policy and regulation, policymakers can**
 
 * make data more usable
 * provide clear guidance on how to disclose data

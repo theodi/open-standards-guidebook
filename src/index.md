@@ -1,11 +1,11 @@
 ---
 layout: home
 title: Welcome to the Open Standards for Data Handbook
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+description: This guidebook helps people and organistions create, develop and adopt open standards for data. It supports a variety of users, including policy leads, domain experts and technologists.
 hero:
   nav:
     meta: Starting
-    title: Introduction to Open Standards
+    title: Introduction to open standards
     items:
       - introduction/what-are-open-standards-for-data
       - introduction/types-of-open-standards-for-data
@@ -16,10 +16,7 @@ sections:
     meta: Process
     title: Creating Open Standards
     description: >-
-      Short description nulla eu molestie massa. Pellentesque fermentum
-      urna pretium nulla lacinia gravida. Aenean in aliquet mauris. Short
-      description nulla eu molestie massa. Pellentesque fermentum
-      urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
+      This section explores what you need to know about creating a new open standard, from getting started to the development life-cycle and managing change.
     items:
       - creating-open-standards/getting-started
       - creating-open-standards/developing-standards/index
@@ -28,10 +25,7 @@ sections:
     meta: Groups
     title: Open Standards and you
     description: >-
-      Short description nulla eu molestie massa. Pellentesque fermentum
-      urna pretium nulla lacinia gravida. Aenean in aliquet mauris. Short
-      description nulla eu molestie massa. Pellentesque fermentum
-      urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
+      Resources to help you develop and adopt open standards, including the organnisations and communities that can help
     items:
       - title: Organisations developing standards
         url: '#'
