@@ -10,12 +10,12 @@
             {% for item in link.items %}
             {% assign xtn =  item.url | split:'.' | last  %}
             {% case xtn %}
-            {% when 'pdf' or 'xlsx' %}
-            {% assign xtn_type = 'download' %}
+            {% when 'pdf' or 'xlsx' or 'xls' or 'doc' or 'docx' %}
+                {% assign xtn_type = 'download' %}
             {% else %}
-            {% assign xtn_type = 'target="_blank"' %}
+                {% assign xtn_type = 'target="_blank"' %}
             {% endcase %}
-               <a class="nav-item" href="{{ item.url }}" {{ xtn_type }}>{{ item.title }} {% if xtn contains 'pdf' %}[pdf]{% endif %}</a>
+               <a class="nav-item" href="{{ item.url }}" {{ xtn_type }}>{{ item.title }} {% if xtn_type == 'download' %}[{{ xtn }}]{% endif %}</a>
             {% endfor %}
         </nav>
         {% endif %}
