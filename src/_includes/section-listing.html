@@ -1,12 +1,12 @@
 <div class="m-section-listing {{ section.type }}">
     <span class="meta-title">{{ section.meta }}</span>
     <div class="u-trim--all">
-        <h2>{{ section.title }}</h2>
+        <h2>{{ section.title | improve }}</h2>
     </div>
     {% if section.description %}
     <div class="g">
         <div class="g__cell g__cell-12 g__cell-10--medium g__cell-8--large">
-            <p>{{ section.description }}</p>
+            <p>{{ section.description | improve }}</p>
         </div>
     </div>
     {% endif %}
@@ -40,12 +40,12 @@
                     {% if section.type == 'short' %}
                     <div class="u-trim--all pad-bottom-small">
                     {% endif %}
-                        <h4 class="m-section-listing__title"><a class="link" href="{{ itemPage.url }}">{{ itemPage.title }}</a></h4>
+                        <h4 class="m-section-listing__title"><a class="link" href="{{ itemPage.url }}">{{ itemPage.title | improve }}</a></h4>
                     {% if section.type == 'short' %}
                         </div>
                     {% endif %}
                     {% if section.type != 'short' and itemPage.description %}
-                        <p>{{ itemPage.description }}</p>
+                        <p>{{ itemPage.description | improve }}</p>
                     {% endif %}
                 </div>
             {% endif %}

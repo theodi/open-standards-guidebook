@@ -1,15 +1,15 @@
 {% for section in page.sidebar.sections %}
     <div class="pad-top-small">
         {% if section.title %}
-            <h4>{{ section.title }}</h4>
+            <h4>{{ section.title | improve }}</h4>
         {% endif %}
         {% if section.intro %}
-            <p><strong>{{ section.intro }}</strong></p>
+            <p><strong>{{ section.intro | improve }}</strong></p>
         {% endif %}
         {% if section.items %}
             <nav>
             {% for item in section.items %}
-               <a class="nav-item" href="{{ item.url }}">{{ item.title }}</a>
+               <a class="nav-item" href="{{ item.url }}">{{ item.title | improve }}</a>
             {% endfor %}
         </nav>
         {% endif %}

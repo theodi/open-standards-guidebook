@@ -50,14 +50,14 @@
 
 <div data-page-container>
     {% comment %} Global CTA with default content injected {% endcomment %}
-    {% capture cta_top_default %}
+    {% capture cta_text %}
         <div class="u-trim--all">
             <p>Something missing? <a class="link link--bold link--secondary" href="{{ site.data.contributing.repo_url }}/issues" data-modal="#modal-suggestion">{{ site.data.contributing.cta_text }}</a></p>
         </div>
     {% endcapture %}
     {% comment %} Global CTA Above Masthead {% endcomment %}
     <div class="is-hidden is-visible--medium">
-    {% include cta.html content=cta_top_default color="white" %}
+    {% include cta.html content=cta_text color="white" %}
     </div>
 
     {% comment %} Global Masthead {% endcomment %}
@@ -88,8 +88,8 @@
 
                     {% if itemPage %}
                         <div class="g__cell g__cell-12 g__cell-6--medium g__cell-4--large">
-                            <a class="link link--black" href="{{ itemPage.url }}"><strong>{{ itemPage.title }}</strong></a>
-                            <p>{{ itemPage.description  }}</p>
+                            <a class="link link--black" href="{{ itemPage.url }}"><strong>{{ itemPage.title | improve  }}</strong></a>
+                            <p>{{ itemPage.description | improve  }}</p>
                         </div>
                     {% endif %}
                 {% endfor %}
@@ -97,14 +97,8 @@
         </div>
     </div>
 
-    {% comment %} Global CTA with default content injected {% endcomment %}
-    {% capture cta_bottom_default %}
-        <div class="u-trim--all">
-            <p>Something missing? <a class="link link--bold" href="{{ site.data.contributing.repo_url }}/issues" data-modal="#modal-suggestion">{{ site.data.contributing.cta_text }}</a></p>
-        </div>
-    {% endcapture %}
     {% comment %} Global CTA Above Footer {% endcomment %}
-    {% include cta.html content=cta_bottom_default color="primary" %}
+    {% include cta.html content=cta_text color="primary" %}
 
     {% comment %} Global Footer {% endcomment %}
     {% include footer.html %}

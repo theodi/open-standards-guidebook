@@ -4,9 +4,9 @@
             <div class="g__cell g__cell-12 g__cell-7--large g__cell-order-2 g__cell-order-1--large">
                 <div class="pad-bottom-small u-text-center u-text-left--medium u-text-color--white">
                     {% if page.url == '/' %}
-                        <h1 class="brand">Open Standards for Data</h1>
+                        <h1 class="brand">{{ 'Open Standards for Data' | widont }}</h1>
                     {% else %}
-                        <a href="/" class="brand">Open Standards for Data</a>
+                        <a href="/" class="brand">{{ 'Open Standards for Data'| widont }}</a>
                     {% endif %}
                 </div>
             </div>
@@ -16,7 +16,7 @@
                         {% for item in site.data.top_aux_nav %}
                             <a href="{{ item.url }}" class="nav-item nav-item--inline
                             {% if page.url contains item.url %}is--active{% endif %}
-                            ">{{ item.title }}</a>
+                            ">{{ item.title | improve }}</a>
                         {% endfor %}
                     </nav>
                 </div>
@@ -30,7 +30,7 @@
                         {% for item in site.data.main_nav %}
                             <a href="{{ item.url }}" class="m-masthead-nav__item
                             {% if page.url contains item.url %}is--active{% endif %}
-                            ">{{ item.title }}</a>
+                            ">{{ item.title | improve }}</a>
                         {% endfor %}
                     </nav>
                 </div>
@@ -55,13 +55,13 @@
         {% for item in site.data.main_nav %}
             <a href="{{ item.url }}" class="m-nav-mobile__item
             {% if page.url contains item.url %}is--active{% endif %}
-            ">{{ item.title }}</a>
+            ">{{ item.title | improve }}</a>
         {% endfor %}
         <hr>
         {% for item in site.data.top_aux_nav %}
             <a href="{{ item.url }}" class="m-nav-mobile__item
             {% if page.url contains item.url %}is--active{% endif %}
-            ">{{ item.title }}</a>
+            ">{{ item.title | improve }}</a>
         {% endfor %}
     </nav>
 </div>

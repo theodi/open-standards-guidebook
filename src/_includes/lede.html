@@ -11,5 +11,5 @@
 {% assign intro_sentence = intro_sentence | strip %}
 
 {% if page.description -%}
-    <div class="u-trim--all lede">{{ page.description | prepend:intro_sentence | markdownify }}</div>
+    <div class="u-trim--all lede">{{ page.description | prepend:intro_sentence | markdownify | improve }}</div>
 {% endif %}

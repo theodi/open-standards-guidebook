@@ -5,7 +5,8 @@ gem 'json' # required for custom RevFilter plugin
 
 group :jekyll_plugins do
   gem 'jekyll-git_metadata'
-  gem 'octopress-minify-html'
-  gem 'jekyll-sitemap'
   gem 'jekyll-seo-tag'
+  gem 'jekyll-sitemap'
+  gem 'jekyll-typogrify'
+  gem 'octopress-minify-html'
 end

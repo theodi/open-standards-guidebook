@@ -86,7 +86,7 @@ Determine the base page for this nav
                         {% if node.nav.title %}
                             {% assign title = node.nav.title %}
                         {% endif %}
-                        <a class="nav-item nav-item--large {{ activeClass }}" href="{{ node.url }}">{{ title }}</a>
+                        <a class="nav-item nav-item--large {{ activeClass }}" href="{{ node.url }}">{{ title | improve }}</a>
                     {% endif %}
                 {% endif %}
             {% endif %}

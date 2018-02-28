@@ -19,7 +19,7 @@ hero:
         <div class="wrapper">
             <div class="g">
                 <article class="g__cell g__cell-12 g__cell-8--medium u-styled-lists">
-                    {{ content }}
+                    {{ content | improve }}
 
                     {% for tasklist in page.tasklists.items %}
                         {% include task-list.html %}
