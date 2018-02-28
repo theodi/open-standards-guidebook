@@ -57,7 +57,7 @@ module.exports = {
       {
         test: /\.(js|vue)$/,
         loader: 'eslint-loader',
-        include: [resolve('src')],
+        include: [resolve('assets')],
         exclude: [resolve('node_modules')],
         enforce: 'pre',
         options: {

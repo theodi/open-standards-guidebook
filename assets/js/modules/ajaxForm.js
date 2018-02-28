@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const AjaxForm = function(form) {
+function AjaxForm(form) {
     this.form = form;
     this.action = form.getAttribute('action');
     this.submitBtn = form.querySelector('input[type=submit]');
@@ -26,31 +26,32 @@ AjaxForm.prototype = {
         const ajaxForm = this;
 
         axios.post(this.action, data)
-        .then(response => ajaxForm.handleSuccess(response))
-        .catch(error => ajaxForm.handleError(error));
+            .then(response => ajaxForm.handleSuccess(response))
+            .catch(error => ajaxForm.handleError(error));
     },
     handleSuccess({ data }) {
         this.showSuccessMessage(data.success);
         this.submitBtn.removeAttribute('disabled');
     },
     handleError(error) {
-        this.showErrorMessage('data.success');
+        this.showErrorMessage();
+        console.error(error);
         this.submitBtn.removeAttribute('disabled');
     },
     showSuccessMessage(successUrl) {
         this.messageContainer.innerHTML = `<div class="callout">
-        <h4>We've received your submission</h4>
-        <p>Thanks for taking the time to contact us - you can <a href="${successUrl}"
-        targe"_blank" rel="noreferrer noopener">track the progress of your
-        submission here</a>.</p></div>`;
+            <h4>We've received your submission</h4>
+            <p>Thanks for taking the time to contact us - you can <a href="${successUrl}"
+            targe"_blank" rel="noreferrer noopener">track the progress of your
+            submission here</a>.</p></div>`;
     },
-    showErrorMessage(error) {
-    this.messageContainer.innerHTML = `<div class="callout">
-        <h4>Sorry, something went wrong</h4>
-         <p>We weren't able to process your submission. If this problem persists, please <a href="/about/contact/">contact us</a>.</p></div>`;
-    }
+    showErrorMessage() {
+        this.messageContainer.innerHTML = `<div class="callout">
+            <h4>Sorry, something went wrong</h4>
+            <p>We weren't able to process your submission. If this problem persists, please <a href="/about/contact/">contact us</a>.</p></div>`;
+    },
 };
 
-export default function() {
+export default function () {
     [...document.querySelectorAll('[data-ajax-form]')].forEach(f => new AjaxForm(f));
 }

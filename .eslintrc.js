@@ -26,5 +26,6 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 2 : 0,
     'no-underscore-dangle': 0,
     'no-param-reassign': 0,
+    'indent': ["error", 4],
   }
 }
