@@ -1,0 +1,61 @@
+{
+  "name": "open-standards-guidebook",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:theodi/open-standards-guidebook.git",
+  "author": "Kind <dev@madebykind.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "concurrently 'JEKYLL_ENV=development bundle exec jekyll serve --config _config.yml,_config.dev.yml' 'BLENDID_CONFIG_PATH=./build yarn run blendid' 'cd contributions && bundle exec foreman start'",
+    "build": "BLENDID_CONFIG_PATH='./build' NODE_ENV='production' yarn run blendid build && JEKYLL_ENV='production' bundle exec jekyll build",
+    "generate-styleguide": "fractal build"
+  },
+  "engines": {
+    "node": "~8.9.3"
+  },
+  "dependencies": {
+    "@mise-en-place/tools.clearfix": "^3.0.0",
+    "@mise-en-place/tools.link": "^3.0.0",
+    "@mise-en-place/tools.strip-units": "^3.0.1",
+    "@mise-en-place/tools.trim": "^3.0.0",
+    "@mise-en-place/utilities.bg-cover": "^3.0.0",
+    "@mise-en-place/utilities.scroll": "^3.0.1",
+    "@mise-en-place/utilities.uppercase": "^3.0.0",
+    "axios": "^0.18.0",
+    "barefoot": "philgruneich/barefoot",
+    "breakpoint-sass": "^2.7.1",
+    "enquire.js": "^2.1.6",
+    "littlefoot": "^1.0.0",
+    "modularscale-sass": "^3.0.5",
+    "svg4everybody": "^2.1.9"
+  },
+  "devDependencies": {
+    "@frctl/fractal": "^1.1.7",
+    "@frctl/nunjucks": "^1.0.3",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.2",
+    "babel-jest": "^21.2.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "blendid": "^4.4.3",
+    "concurrently": "^3.5.1",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-html": "^4.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "gulp-theo": "^1.0.0-beta.1",
+    "hygen": "^1.4.9",
+    "immutable": "^3.8.2",
+    "jest": "^21.2.1",
+    "js-yaml": "^3.10.0",
+    "json-loader": "^0.5.7",
+    "node-sass-magic-importer": "^5.0.3",
+    "sass-lint": "^1.12.1",
+    "yml-loader": "^2.1.0"
+  }
+}

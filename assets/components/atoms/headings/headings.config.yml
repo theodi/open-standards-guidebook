@@ -1,0 +1,16 @@
+title: "Headings"
+status: "ready"
+context:
+    items:
+        -
+            title: Lorem ipsum dolor sit amet consecteteur adipicising elit aram
+            tag: h1
+        -
+            title: Lorem ipsum dolor sit amet consecteteur adipicising elit aram
+            tag: h2
+        -
+            title: Lorem ipsum dolor sit amet consecteteur adipicising elit aram
+            tag: h3
+        -
+            title: Lorem ipsum dolor sit amet consecteteur adipicising elit aram
+            tag: h4

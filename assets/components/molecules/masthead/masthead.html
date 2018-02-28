@@ -1,0 +1,30 @@
+<div class="m-masthead">
+    <div class="wrapper">
+        <div class="g">
+            <div class="g__cell g__cell-12 g__cell-7--large g__cell-order-2 g__cell-order-1--large">
+                <div class="pad-bottom-small u-text-center u-text-left--medium u-text-color--white">
+                    {% render '@brand' %}
+                </div>
+            </div>
+            <div class="g__cell g__cell-12 g__cell-5--large align-right--large u-text-right--large is-hidden is-visible--medium g__cell-order-1 g__cell-order-2--large">
+                <div class="u-text-color--white">
+                    {% render '@nav-item--inline' %}
+                </div>
+            </div>
+        </div>
+
+        <div class="g">
+            <div class="g__cell g__cell-12">
+                <div class="is-hidden is-visible--medium">
+                    {% render '@masthead-nav' %}
+                </div>
+                <div class="is-visible is-hidden--medium u-text-center">
+                    {% render '@burger--active' %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="is-visible is-hidden--medium">
+    {% render '@nav-mobile' %}
+</div>

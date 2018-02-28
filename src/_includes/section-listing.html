@@ -1,0 +1,54 @@
+<div class="m-section-listing {{ section.type }}">
+    <span class="meta-title">{{ section.meta }}</span>
+    <div class="u-trim--all">
+        <h2>{{ section.title | improve }}</h2>
+    </div>
+    {% if section.description %}
+    <div class="g">
+        <div class="g__cell g__cell-12 g__cell-10--medium g__cell-8--large">
+            <p>{{ section.description | improve }}</p>
+        </div>
+    </div>
+    {% endif %}
+
+    <div class="g pad-top-small pad-top--medium">
+        {% for item in section.items %}
+            {% comment %}Is this a custom item (has title and url) {% endcomment %}
+            {% if item.title and item.url %}
+                {% assign itemPage = item %}
+            {% else %}
+                {% assign path = item %}
+
+                {% comment %}Add a .md file extension if missing {% endcomment %}
+                {% unless path contains '.md' or path contains '.html' %}
+                    {% assign path = path | append:'.md' %}
+                {% endunless %}
+                {% assign itemPage = site.pages | where:'path', path | first %}
+            {% endif %}
+            {% comment %}ensure we have a page {% endcomment %}
+            {% if itemPage %}
+                <div class="g__cell
+                            g__cell-12
+                            {% if section.type != 'short' and section.type != 'full' %}
+                                g__cell-6--medium
+                                g__cell-4--large
+                                pad-bottom-small
+                                {% if section.items.size > 3 %}
+                                    pad-bottom-medium--medium
+                                {% endif %}
+                            {% endif %}">
+                    {% if section.type == 'short' %}
+                    <div class="u-trim--all pad-bottom-small">
+                    {% endif %}
+                        <h4 class="m-section-listing__title"><a class="link" href="{{ itemPage.url }}">{{ itemPage.title | improve }}</a></h4>
+                    {% if section.type == 'short' %}
+                        </div>
+                    {% endif %}
+                    {% if section.type != 'short' and itemPage.description %}
+                        <p>{{ itemPage.description | improve }}</p>
+                    {% endif %}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>

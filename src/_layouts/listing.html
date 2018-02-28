@@ -1,0 +1,35 @@
+---
+layout: application
+breadcrumbs: true
+hero:
+  nav:
+    position: side
+---
+
+{% assign url_parts = page.url | split: '/' %}
+{% comment %}
+remove the leading slash
+{% endcomment %}
+{% assign url_parts = url_parts | slice:1, url_parts.size %}
+{% assign url_parts_size = url_parts | size %}
+
+<div class="m-hero__wrapper">
+    {% if url_parts_size > 1 %}
+        {% include breadcrumbs.html %}
+    {% endif %}
+    {% include hero.html %}
+</div>
+
+<div id="site-content" class="site-content">
+    <div class="pad-top-medium pad-top-xlarge--medium pad-bottom-medium pad-bottom-xlarge--medium">
+        <div class="wrapper">
+            {{ content | improve }}
+
+            <section class="pad-bottom-medium pad-bottom-xlarge--medium">
+                {% for section in page.sections.items %}
+                    {% include section-listing.html type=section.type %}
+                {% endfor %}
+            </section>
+        </div>
+    </div>
+</div>

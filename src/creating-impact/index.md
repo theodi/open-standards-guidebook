@@ -1,0 +1,28 @@
+---
+title: Introduction
+nav:
+  title: Creating Impact
+layout: listing
+description: This section explores the impact and influence of open standards and the lessons learned from developing open standards.
+sections:
+  items:
+    - type: short # full, grid, short
+      meta: Getting started
+      title: Creating impact with open standards
+      description: >-
+        How to create impact with open standards
+      items:
+        - creating-impact/getting-started.md
+        - creating-impact/lessons-learned-in-open-standards-development.md
+    - type: grid # full, grid, short
+      meta: Analysis
+      title: Impact of open standards
+      description: >-
+        Exploring the impact and influence of open standards
+      items:
+        - creating-impact/policy-impacts.md      
+        - creating-impact/economic-impacts.md
+        - creating-impact/social-impacts.md
+        - creating-impact/technology-impacts.md        
+---
+

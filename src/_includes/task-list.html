@@ -1,0 +1,29 @@
+<div class="m-section-listing">
+    {% if tasklist.meta %}
+    <span class="meta-title">{{ tasklist.meta }}</span>
+    {% endif %}
+
+    {% if tasklist.title %}
+    <div class="u-trim--all">
+        <h2 id="{{ tasklist.title | downcase | replace:' ','-' }}">{{ tasklist.title }}</h2>
+    </div>
+    {% endif %}
+
+    {% if tasklist.description %}
+        <p>{{ tasklist.description }}</p>
+    {% endif %}
+
+    <div class="g pad-top-small pad-top--medium">
+        {% for item in tasklist.items %}
+
+        {% assign min = 0 %}
+        {% assign max = 9999 %}
+        {% assign diff = max | minus: min %}
+        {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
+
+            <div class="g__cell g__cell-12 {% if forloop.index != 1 %}pad-top{% endif %}">
+                <input type="checkbox" class="checkbox" id="checkbox-{{ randomNumber }}" aria-checked="false" tabindex="0" role="checkbox" /><label for="checkbox-{{ randomNumber }}"><strong>{{ item.title }}:</strong> {{ item.description }}</label>
+            </div>
+        {% endfor %}
+    </div>
+</div>

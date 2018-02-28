@@ -1,0 +1,64 @@
+// ==========================================================================
+// Select Form Atom
+// ==========================================================================
+
+.select {
+    display: block;
+    margin-bottom: rem-calc(5);
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid lighten(palette(black), 60%);
+    padding: spacing(13 15);
+    font-size: ms(0, $thread: desktop);
+    font-family: -apple-system, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    box-sizing: border-box;
+    border-radius: rem-calc(3);
+    background: white;
+}
+
+.select__wrapper {
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 100%;
+
+    .select {
+        display: block;
+        width: 100%;
+        position: relative;
+        z-index: 2;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: 2px solid lighten(palette(black), 60%);
+        padding: spacing(13 30 13 15);
+        font-size: ms(0, $thread: desktop);
+        font-family: -apple-system, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        box-sizing: border-box;
+        border-radius: rem-calc(3);
+        margin-bottom: rem-calc(5);
+
+
+        &:focus {
+            border-color: palette(primary);
+        }
+    }
+
+    .select::-ms-expand {
+        display: none;
+    }
+}
+
+// icon
+.select__icon {
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+    right: rem-calc(15);
+    top: rem-calc(14);
+}

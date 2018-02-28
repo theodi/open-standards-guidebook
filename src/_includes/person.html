@@ -1,0 +1,28 @@
+<div class="m-person">
+    <div class="m-person__grid">
+        {% if person.image %}
+        <img class="m-person__avatar" src="{{ person.image }}" alt="{{ person.name }}" />
+        {% endif %}
+        <div class="m-person__title">
+            {% if person.name %}
+                <div class="u-trim--all">
+                    <span class="m-person__title-header">{{ person.name }}</span>
+                </div>
+            {% endif %}
+            {% if person.role %}
+                <span class="m-person__title-lede">{{ person.role }}</span>
+            {% endif %}
+        </div>
+    </div>
+
+    {% if person.twitter or person.website %}
+        <div class="m-person__social">
+            {% if person.twitter %}
+                <span class="m-person__social-link">Twitter: <a target="_blank" href="https://www.twitter.com/{{ person.twitter }}" rel="noopener noreferrer">@{{ person.twitter }}</a>
+            {% endif %}
+            {% if person.website %}
+                <span class="m-person__social-link">Website: <a target="_blank" href="{{ person.website }}" rel="noopener noreferrer">{{ person.website | replace_first:'https://','' | replace_first:'http://','' }}</a>
+            {% endif %}
+        </div>
+    {% endif %}
+</div>

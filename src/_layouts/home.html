@@ -1,0 +1,19 @@
+---
+layout: application
+---
+
+{% include hero-home.html %}
+
+<div id="site-content" class="site-content">
+	<div class="pad-bottom-medium pad-bottom-xlarge--medium">
+	    <div class="wrapper">
+	        {{ content | improve }}
+
+	        <section class="pad-top-medium pad-top-xlarge--medium pad-bottom-medium pad-bottom-xlarge--medium">
+	            {% for section in page.sections.items %}
+	                {% include section-listing.html %}
+	            {% endfor %}
+	        </section>
+	    </div>
+	</div>
+</div>

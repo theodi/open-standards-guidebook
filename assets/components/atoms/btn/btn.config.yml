@@ -1,0 +1,35 @@
+title: "Buttons"
+context:
+    modifier: ''
+    message: Default Button
+variants:
+    -
+        name: primary
+        context:
+            modifier: btn--primary
+            message: Button Primary
+    -
+        name: secondary
+        context:
+            modifier: btn--secondary
+            message: Button Secondary
+    -
+        name: naked
+        context:
+            modifier: btn--naked
+            message: Naked Black
+    -
+        name: small
+        context:
+            modifier: btn--small
+            message: Small Button
+    -
+        name: block
+        context:
+            modifier: btn--block
+            message: Block Display Button
+    -
+        name: disabled
+        context:
+            modifier: btn--disabled
+            message: Disabled Button

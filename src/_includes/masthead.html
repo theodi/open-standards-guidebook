@@ -1,0 +1,67 @@
+<div class="m-masthead">
+    <div class="wrapper">
+        <div class="g">
+            <div class="g__cell g__cell-12 g__cell-7--large g__cell-order-2 g__cell-order-1--large">
+                <div class="pad-bottom-small u-text-center u-text-left--medium u-text-color--white">
+                    {% if page.url == '/' %}
+                        <h1 class="brand">{{ 'Open Standards for Data' | widont }}</h1>
+                    {% else %}
+                        <a href="/" class="brand">{{ 'Open Standards for Data'| widont }}</a>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="g__cell g__cell-12 g__cell-5--large align-right--large u-text-right--large is-hidden is-visible--medium g__cell-order-1 g__cell-order-2--large">
+                <div class="u-text-color--white">
+                    <nav>
+                        {% for item in site.data.top_aux_nav %}
+                            <a href="{{ item.url }}" class="nav-item nav-item--inline
+                            {% if page.url contains item.url %}is--active{% endif %}
+                            ">{{ item.title | improve }}</a>
+                        {% endfor %}
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="g">
+            <div class="g__cell g__cell-12">
+                <div class="is-hidden is-visible--medium">
+                    <nav class="m-masthead-nav">
+                        {% for item in site.data.main_nav %}
+                            <a href="{{ item.url }}" class="m-masthead-nav__item
+                            {% if page.url contains item.url %}is--active{% endif %}
+                            ">{{ item.title | improve }}</a>
+                        {% endfor %}
+                    </nav>
+                </div>
+                <div class="is-visible is-hidden--medium u-text-center">
+                    <button class="burger" data-toggle="#mobile-nav" aria-controls="mobile-nav">
+                        <span class="g g--no-gutters align-v-center">
+                            <span class="g__cell">
+                                <span class="burger__icon"></span>
+                            </span>
+                            <span class="g__cell">
+                                <span class="burger__text">Menu</span>
+                            </span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="is-visible is-hidden--medium">
+    <nav class="m-nav-mobile" id="mobile-nav" aria-hidden="true">
+        {% for item in site.data.main_nav %}
+            <a href="{{ item.url }}" class="m-nav-mobile__item
+            {% if page.url contains item.url %}is--active{% endif %}
+            ">{{ item.title | improve }}</a>
+        {% endfor %}
+        <hr>
+        {% for item in site.data.top_aux_nav %}
+            <a href="{{ item.url }}" class="m-nav-mobile__item
+            {% if page.url contains item.url %}is--active{% endif %}
+            ">{{ item.title | improve }}</a>
+        {% endfor %}
+    </nav>
+</div>

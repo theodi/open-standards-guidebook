@@ -1,0 +1,5 @@
+<nav class="m-masthead-nav">
+    {% for item in nav.items %}
+        <a href="#" class="m-masthead-nav__item {% if item.active %}is--active{% endif %}">{{ item.title }}</a>
+    {% endfor %}
+</nav>

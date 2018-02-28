@@ -1,0 +1,34 @@
+---
+layout: application
+hero:
+  pill: case study
+  nav:
+    position: side
+---
+
+<div class="m-hero__wrapper">
+    {% include breadcrumbs.html %}
+    {% include hero.html %}
+</div>
+
+{% if page.show_toc %}
+    <div class="u-hide-print">
+        {% include nav-tray.html %}
+    </div>
+{% endif %}
+
+<div id="site-content" class="site-content">
+    <section class="pad-top-medium pad-top-xlarge--medium pad-bottom-medium pad-bottom-xlarge--medium">
+        <div class="wrapper">
+            <div class="g">
+                <article class="g__cell g__cell-12 g__cell-8--medium">
+                    {{ content | improve }}
+                </article>
+                <aside class="g__cell g__cell-12 g__cell-4--medium u-hide-print">
+                    {% include sidebar-sections.html %}
+                    {% include commit-info.html %}
+                </aside>
+            </div>
+        </div>
+    </section>
+</div>

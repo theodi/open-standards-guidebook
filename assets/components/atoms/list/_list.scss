@@ -1,0 +1,116 @@
+// ==========================================================================
+// Lists Atom
+// ==========================================================================
+
+%list-base {
+    margin: 1em 0 0.5em;
+    list-style: none;
+    line-height: 1.44;
+    font-size: ms(0);
+    padding-left: 0;
+
+    li {
+        margin-bottom: spacing(5);
+        font-size: ms(0);
+
+        @include respond-to(medium) {
+            font-size: ms(0, $thread: desktop);
+        }
+
+        &:before {
+            left: 0;
+        }
+    }
+}
+
+ul {
+    @extend %list-base;
+}
+
+
+@mixin list--bullet {
+    @extend %list-base;
+    list-style-position: outside;
+
+    li {
+        margin-bottom: spacing(10);
+        padding-left: rem-calc(15);
+        position: relative;
+
+        &:before {
+            position: absolute;
+            top: rem-calc(10);
+            left: 0;
+            display: block;
+            margin-bottom: rem-calc(4);
+            margin-right: rem-calc(8);
+            content: " ";
+            width: 4px;
+            height: 4px;
+            border-radius: 100%;
+            background-color: palette(black);
+        }
+
+        p {
+            display: inline;
+        }
+    }
+}
+
+.list--bullet {
+    @include list--bullet;
+}
+
+@mixin list--numbered {
+    @extend %list-base;
+    counter-reset: list;
+
+    li {
+        padding-left: rem-calc(15);
+        position: relative;
+
+        &:before {
+            position: absolute;
+            top: rem-calc(10);
+            left: 0;
+            counter-increment: list;
+            content: counters(list, ".") ".";
+            color: palette(black);
+            margin-right: rem-calc(12);
+            font-size: ms(-1);
+        }
+    }
+
+    ol {
+        counter-reset: list;
+    }
+}
+
+.task-list {
+    .task-list-item {
+        &:before {
+            display: none;
+            padding: none;
+        }
+
+        input[type="checkbox"] {
+            margin-right: spacing(10);
+        }
+    }
+}
+
+
+.list--numbered {
+    @include list--numbered;
+}
+
+.u-styled-lists {
+    ul {
+        @include list--bullet();
+        list-style-position: outside;
+    }
+    ol {
+        @include list--numbered();
+        list-style-position: outside;
+    }
+}

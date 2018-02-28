@@ -1,0 +1,92 @@
+// ==========================================================================
+// Nav Item Molecule
+// ==========================================================================
+
+.nav-item {
+    &, & > a {
+        @include link() {
+            display: block;
+            color: palette(grey-dark);
+            font-size: ms(-1);
+            margin-bottom: spacing(5);
+            line-height: 1.33;
+
+            @include respond-to(medium) {
+                font-size: ms(0, $thread: desktop);
+            }
+        }
+
+        @include link-hover() {
+            color: palette(primary);
+            outline: none;
+        }
+    }
+
+    &.is--active {
+        &, & > a {
+            @include link() {
+                text-decoration: none;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.nav-item--large {
+    &, & > a {
+        @include link() {
+            font-size: ms(0);
+            margin-bottom: spacing(11);
+
+            @include respond-to(medium) {
+                font-size: ms(1);
+            }
+        }
+    }
+}
+
+.nav-item--inline {
+    &, & > a {
+        @include link() {
+            display: inline-block;
+            margin-right: spacing(8);
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.nav-item--white {
+    &, & > a {
+        @include link() {
+            display: block;
+            color: white;
+            margin-right: spacing(8);
+            font-size: ms(-1);
+            margin-bottom: spacing(5);
+
+            @include respond-to(medium) {
+                font-size: ms(0, $thread: desktop);
+            }
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+
+        @include link-hover() {
+            color: tint(white, 'darken');
+        }
+    }
+
+    &.is--active {
+        &, & > a {
+            @include link() {
+                text-decoration: none;
+                font-weight: bold;
+            }
+        }
+    }
+}

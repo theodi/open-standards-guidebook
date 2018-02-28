@@ -1,0 +1,19 @@
+global:
+  category: 'Spacing Units'
+  type: 'number'
+props:
+  small:
+    value: 12
+    comment: 'small'
+  base:
+    value: 26
+    comment: 'base'
+  medium:
+    value: 36
+    comment: 'medium'
+  large:
+    value: 48
+    comment: 'large'
+  xlarge:
+    value: 60
+    comment: 'xlarge'

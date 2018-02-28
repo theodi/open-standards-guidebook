@@ -1,0 +1,15 @@
+title: "Nav - Large"
+status: "ready"
+context:
+      navTitle: Lorem ipsum dolor sit
+      nav:
+        modifier: nav--large
+        items:
+          -
+            title: Large nav item 1
+          -
+            title: Large nav item 2
+          -
+            title: Large nav item 3
+      metatitle:
+          message: Large Meta Title

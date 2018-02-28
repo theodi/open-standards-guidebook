@@ -1,0 +1,7 @@
+{% if metatitle %}
+    {% include '@meta-title'%}
+{% endif %}
+
+{% for item in nav.items %}
+    <a href="#" class="nav-item {{ nav.modifier }} {% if item.active %}is--active{% endif %}">{{ item.title }}</a>
+{% endfor %}

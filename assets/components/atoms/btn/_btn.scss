@@ -1,0 +1,96 @@
+// ==========================================================================
+// Button Atom
+// ==========================================================================
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    text-align: center;
+    border-radius: rem-calc(2);
+    padding: spacing(16 35);
+    font-weight: 600;
+    transition: all ease 150ms;
+    text-transform: uppercase;
+
+
+    @include respond-to(medium) {
+        font-size: rem-calc(fontsize(regular));
+    }
+
+    @include link() {
+        font-size: ms(-1);
+        background: palette(primary);
+        color: white;
+        // @todo extract
+        background-image: linear-gradient(to bottom, tint(palette(primary), 'lighten'), palette(primary));
+        border: solid 2px palette(primary);
+    }
+
+    @include link-hover() {
+        background: tint(palette(primary), 'darken');
+        border-color: tint(palette(primary), 'darken');
+    }
+}
+
+.btn--primary {
+    @include link() {
+        background: palette(primary);
+        color: white;
+        // @todo extract
+        background-image: linear-gradient(to bottom, tint(palette(primary), 'lighten'), palette(primary));
+        border: solid 2px palette(primary);
+    }
+
+    @include link-hover() {
+        background: tint(palette(primary), 'darken');
+        border-color: tint(palette(primary), 'darken');
+    }
+}
+
+.btn--secondary {
+    @include link() {
+        background: palette(secondary);
+        color: white;
+        background-image: linear-gradient(to bottom, tint(palette(secondary), 'lighten'), palette(secondary));
+        border: solid 2px palette(secondary);
+    }
+
+    @include link-hover() {
+        background: tint(palette(secondary), 'darken');
+        border-color: tint(palette(secondary), 'darken');
+    }
+}
+
+.btn--naked {
+    @include link() {
+        border: none;
+        background-image: none;
+        background-color: rgba(255, 255, 255, 0);
+        color: palette(primary);
+    }
+
+    @include link-hover() {
+        color: black;
+    }
+}
+
+.btn--block {
+    display: block;
+}
+
+.btn--small {
+    padding: spacing(7 15);
+
+    @include link() {
+        font-size: rem-calc(12);
+    }
+}
+
+.btn[disabled] {
+    border: none;
+    background: palette(grey);
+    color: darken(palette(grey), 25%);
+    cursor: not-allowed;
+}

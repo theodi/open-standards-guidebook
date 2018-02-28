@@ -1,0 +1,18 @@
+// ==========================================================================
+// CTA Tray Molecule
+// ==========================================================================
+
+.m-cta {
+    background: palette(secondary);
+    padding: spacing(15 0);
+    color: white;
+
+    @media print {
+        display: none;
+    }
+}
+
+.m-cta--white {
+    background: palette(white);
+    color: palette(black);
+}

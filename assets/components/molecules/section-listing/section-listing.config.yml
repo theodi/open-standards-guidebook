@@ -1,0 +1,53 @@
+title: "Section Listing"
+status: "ready"
+context:
+    sections:
+        items:
+        -
+          title: Creating Open Standards
+          meta: Process
+          items:
+          -
+            title: Scoping & Starting
+            description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
+          -
+            title: Developing standards
+            description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
+          -
+            title: Governance and guidance
+            description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
+          -
+            title: Impact of Open Standards
+            description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
+        -
+          title: Open Standards and you
+          meta: Groups
+          items:
+          -
+            title: Organisations developing standards
+            description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
+          -
+            title: Policy specialists
+            description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
+          -
+            title: Domain experts
+            description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
+          -
+            title: Data publishers and consumers
+            description: Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
+variants:
+    -
+        name: short
+        context:
+            modifier: m-section-listing--short
+            message: Shorthand listing items
+    -
+        name: long-grid
+        context:
+            modifier: m-section-listing--long-grid
+            message: Long listing items within a grid
+    -
+        name: long-full
+        context:
+            modifier: m-section-long-full
+            message: Long listing items full width

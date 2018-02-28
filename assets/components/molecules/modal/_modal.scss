@@ -1,0 +1,91 @@
+.m-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background: rgba(255,255,255,0.85);
+    top: 0;
+
+    &.is--open {
+        display: block;
+
+        @include respond-to(medium) {
+            display: flex;
+        }
+    }
+
+    > .wrapper {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+
+        @include respond-to(medium) {
+            padding-left: rem-calc(25);
+            padding-right: rem-calc(25);
+        }
+    }
+}
+
+// Class to apply to body (inner wrapper) when modal is active...
+
+
+.m-modal__inner {
+    margin: 0 auto;
+    position: relative;
+    background: white;
+    max-width: rem-calc(900);
+    padding: spacing(base);
+    box-shadow: 0 2px 65px 0 rgba(0, 0, 0, 0.22);
+    padding: spacing(40 25);
+    height: 100vh;
+    max-height: calc(100vh);
+    overflow-x: scroll;
+
+    @include respond-to(medium) {
+        padding: spacing(50 90);
+        height: 100%;
+        max-height: calc(90vh);
+        border-radius: rem-calc(6);
+    }
+
+    @include respond-to(large) {
+        padding: spacing(80 125);
+        max-height: calc(85vh);
+    }
+}
+
+.m-modal__close {
+    display: block;
+    position: absolute;
+    right: rem-calc(10);
+    top: rem-calc(12);
+    width: rem-calc(50);
+    height: rem-calc(50);
+    background: rgba(255,255,255,0);
+}
+
+.m-modal__close:before, .m-modal__close:after {
+    position: absolute;
+    left: 45%;
+    top: 17%;
+    content: ' ';
+    height: rem-calc(30);
+    width: rem-calc(2);
+    background-color: palette(black);
+}
+
+.m-modal__close:before {
+    transform: rotate(45deg);
+}
+
+.m-modal__close:after {
+    transform: rotate(-45deg);
+}
+
+.m-modal__close:hover {
+    &:before, &:after {
+        background-color: palette(primary);
+    }
+}

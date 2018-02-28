@@ -1,0 +1,129 @@
+// ==========================================================================
+// Grid Layout
+// ==========================================================================
+
+$_grid-column-count: 12;
+
+.g {
+    display: flex;
+    box-sizing: border-box;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: - rem-calc($_wrapper-padding);
+    margin-right: - rem-calc($_wrapper-padding);
+}
+
+.g .g {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+.g__cell {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    padding-left: rem-calc($_wrapper-padding);
+    padding-right: rem-calc($_wrapper-padding);
+    & & {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+// Grid columns
+
+.g__cell-auto {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+}
+
+@for $i from 1 through $_grid-column-count {
+    .g__cell-#{$i} {
+        flex-basis: percentage($i/$_grid-column-count);
+        max-width: percentage( $i/$_grid-column-count);
+    }
+}
+
+
+// Responsive bps
+@each $bp, $config in $breakpoints-map {
+    @include respond-to($bp) {
+        .g__cell-auto--#{$bp} {
+            flex-grow: 1;
+            flex-basis: 0;
+            max-width: 100%;
+        }
+
+        @for $i from 1 through $_grid-column-count {
+            .g__cell-#{$i}--#{$bp} {
+                flex-basis: percentage($i/$_grid-column-count);
+                max-width: percentage( $i/$_grid-column-count);
+            }
+        }
+    }
+}
+
+
+
+
+// Gutters
+.g--no-gutters {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.g--no-gutters > .g__cell {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@include respond-to(medium) {
+    .g--no-gutters {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .g--no-gutters > .g__cell {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.g--margin-gutters > .g__cell {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+
+.g__cell-order-1 {
+    order: 1;
+}
+
+.g__cell-order-2 {
+    order: 2;
+}
+
+.g__cell-order-3 {
+    order: 3;
+}
+
+@each $bp, $config in $breakpoints-map {
+    @include respond-to($bp) {
+        .g__cell-order-1--#{$bp} {
+            order: 1;
+        }
+
+        .g__cell-order-2--#{$bp} {
+            order: 2;
+        }
+
+        .g__cell-order-3--#{$bp} {
+            order: 3;
+        }
+    }
+}

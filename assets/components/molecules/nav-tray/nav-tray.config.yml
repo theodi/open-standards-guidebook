@@ -1,0 +1,37 @@
+title: "Nav Tray"
+status: "ready"
+context:
+  navtray:
+    items:
+      -
+        title: Are Standards Right For Your Problem?
+      -
+        title: Follow the Open Stand Principles
+      -
+        title: Language Matters
+      -
+        title: The Real World is Messy
+      -
+        title: Consider How the Standard Will Be Used
+      -
+        title: Development Process is a Spectrum
+      -
+        title: Be Clear on Purpose
+      -
+        title: Know Your Community
+      -
+        title: Think About Who’s Missing
+      -
+        title: Develop Visible Guidance
+      -
+        title: Agree Ownership and Copyright
+      -
+        title: Develop Use Cases
+      -
+        title: Further Reading
+variants:
+  -
+    name: open
+    context:
+      modifier: is--open
+      message: Open

@@ -1,0 +1,53 @@
+<form>
+    <div class="pad-bottom">
+        <h4>Standard Inputs</h4>
+    </div>
+    <div class="control">
+        {% render '@label' %}
+        {% render '@input' %}
+    </div>
+    <div class="control">
+        {% render '@label' %}
+        {% render '@input' %}
+    </div>
+
+    <div class="pad-bottom">
+        <h4>Textarea</h4>
+    </div>
+
+    <div class="control">
+        {% render '@label' %}
+        {% render '@textarea' %}
+    </div>
+
+    <div class="pad-bottom">
+        <h4>Input modifiers</h4>
+    </div>
+
+    <div class="control">
+        {% render '@label' %}
+        <span class="control__caption">Must be 20 characters long</span>
+        {% render '@input--password' %}
+    </div>
+
+    <div class="control has--success">
+        {% render '@label' %}
+        {% render '@input--password' %}
+        <span class="control__caption">This isn't successfull</span>
+    </div>
+
+    <div class="control has--error">
+        {% render '@label' %}
+        {% render '@input--password' %}
+        <span class="control__caption">This isn't successfull</span>
+    </div>
+
+    <div class="pad-bottom">
+        <h4>Select</h4>
+    </div>
+
+    <div class="control">
+        {% render '@label' %}
+        {% render '@select' %}
+    </div>
+</form>

@@ -1,0 +1,19 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+			"file_exclude_patterns":
+            [
+                ".scssc"
+            ],
+            "folder_exclude_patterns":
+            [
+                ".sass-cache",
+                "node_modules",
+                "dist",
+                "component-library"
+            ]
+		}
+	]
+}

@@ -1,0 +1,53 @@
+###################
+# Environment
+###################
+.env
+
+###################
+# Dependencies
+###################
+/node_modules/
+.bundle/
+npm-debug.log
+/vendor/bundle/
+
+###################
+# Build artefacts
+###################
+/dist/
+.sass-cache/
+/assets/components/design/
+/assets/js/design/
+/src/.jekyll-metadata
+/src/assets/
+src/.git-metadata/
+/linters/
+/component-library/
+
+###################
+# Backups
+###################
+*.bak
+
+
+###################
+# Editor
+###################
+*.sublime-workspace
+.idea
+.Rhistory
+
+###################
+# Platform specific
+###################
+
+# OSX
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+*.bat
+*.ps1

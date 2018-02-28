@@ -1,0 +1,10 @@
+###
+# _config.dev.yml
+#
+# Dev only config settings, not automatically applied unless starting Jekyll via `yarn start`
+# See package.json scripts for details of command
+#
+###
+incremental: true
+env: development
+issue_app_url: 'http://localhost:5000/'

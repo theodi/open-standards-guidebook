@@ -1,0 +1,42 @@
+---
+layout: application
+hero:
+  pill: podcast
+---
+
+<div class="m-hero__wrapper">
+    {% include breadcrumbs.html %}
+    {% include hero-podcast.html %}
+</div>
+
+<div id="site-content" class="site-content">
+    <section class="pad-top-medium pad-top-xlarge--medium pad-bottom-medium pad-bottom-xlarge--medium">
+        <div class="wrapper">
+            <div class="g">
+                <article class="g__cell g__cell-12 g__cell-8--medium">
+                    {{ content | improve }}
+                </article>
+                <aside class="g__cell g__cell-12 g__cell-4--medium">
+                    <div class="u-hide-print">
+                    {% include sidebar-sections.html sections=page.sidebar.sections %}
+                    </div>
+
+                    <div class="pad-top-medium pad-top-reset--medium">
+                        {% for person in page.people %}
+                            {% include person.html %}
+                        {% endfor %}
+                    </div>
+
+                    <div class="pad-top u-hide-print">
+                        {% include share.html %}
+                    </div>
+
+                    <div class="u-hide-print">
+                        {% include commit-info.html %}
+                    </div>
+
+                </aside>
+            </div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,3 @@
+{% for item in nav.items %}
+    <a href="#" class="nav-item nav-item--inline {% if item.active %}is--active{% endif %}">{{ item.title }}</a>
+{% endfor %}

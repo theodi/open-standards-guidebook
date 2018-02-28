@@ -1,0 +1,10 @@
+title: "Logo"
+collated: false
+preview: "@preview-dark"
+variants:
+  -
+    name: black
+    preview: "@preview"
+    context:
+      modifier: logo--black
+      message: Black Logo

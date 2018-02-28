@@ -1,0 +1,33 @@
+title: "Case Study Layout"
+status: "ready"
+
+context:
+  # Hero Context
+  hero:
+    heading: General Transit Feed Specification (GTFS)
+    breadcrumbs: true
+    sidenav: true
+
+  # Hero Heading Pill
+  pill:
+    message: Case Study
+
+  # Hero Lede
+  lede:
+    message: 'A case study of General Transit Feed Specification (GTFS) and General Transit Feed Specification Real-Time (GTFS-RT) extension to support organisations developing or thinking of developing open standards for data.
+Our standards case studies provide a summary of the history, development process, governance and key actors involved in the development of an open standard for data.'
+
+  # Nav Context
+  nav:
+    modifier: m-nav--large
+    items:
+    -
+      title: What are Open Standards for Data?
+    -
+      title: Types of Open Data Standards
+    -
+      title: Why use Open Standards for Data
+
+  # Nav Metatitle
+  metatitle:
+    message: Something

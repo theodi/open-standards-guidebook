@@ -1,0 +1,17 @@
+{% if include.content %}
+    <div class="m-cta
+                {% if include.color == 'white' %}
+                    m-cta--white
+                    u-text-right
+                {% else if include.color == 'primary' %}
+                    m-cta--primary
+                    u-inverse
+                {% else %}
+                    m-cta--primary
+                    u-inverse
+                {% endif %}">
+        <div class="wrapper">
+            {{ include.content }}
+        </div>
+    </div>
+{% endif %}

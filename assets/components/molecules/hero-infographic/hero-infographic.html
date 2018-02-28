@@ -1,0 +1,55 @@
+<div class="m-hero__wrapper">
+    <div class="m-hero {{ modifier }}">
+        <div class="wrapper">
+            {% if hero.breadcrumbs %}
+                <div class="pad-bottom">
+                    {% render '@breadcrumb' %}
+                </div>
+            {% endif %}
+            <div class="g">
+                <div class="g__cell g__cell-12 g__cell-8--large">
+                    {% if hero.heading %}
+                        <div class="u-trim--top">
+                            <h1>{{ hero.heading }}</h1>
+                        </div>
+                    {% endif %}
+
+                    <div class="g pad-top--medium">
+                        <div class="g__cell g__cell-12 g__cell-6--medium g__cell-4--large">
+                            <div class="g">
+                                <div class="g__cell g__cell-12 g__cell-11--medium m-hero__infographic">
+                                    <img class="m-hero__infographic" src="http://via.placeholder.com/350x500" placeholder="Placeholder Image" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="g__cell g__cell-12 g__cell-6--medium g__cell-8--large pad-top pad-top-reset--medium">
+                            <div class="g">
+                                <div class="g__cell g__cell-12 g__cell-10--medium">
+                                    {% if lede %}
+                                        <div class="u-trim--all">
+                                            {% include '@lede' %}
+                                        </div>
+
+                                        <div class="pad-top">
+                                            <div class="pad-bottom-small">
+                                                <a class="link link--block" href="#">View full size</a>
+                                            </div>
+                                            <a class="link link--block" href="#">Download infographic</a>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                {% if hero.sidenav %}
+                    <div class="g__cell g__cell-12 g__cell-4--large pad-top-medium pad-top-reset--large">
+                        {% include '@nav-large' %}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

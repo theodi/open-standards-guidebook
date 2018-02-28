@@ -1,0 +1,34 @@
+blockquote {
+    text-align: left;
+    font-weight: bold;
+    margin: spacing(25 4);
+
+    &:before, &:after {
+        font-size: ms(1);
+
+        @include respond-to(medium) {
+            font-size: ms(1, $thread: desktop);
+        }
+    }
+
+    &:before {
+        content: "“";
+        display: inline;
+    }
+
+    &:after {
+        content: "”";
+        display: inline;
+    }
+
+    > p {
+        display: inline;
+        font-size: ms(1);
+        line-height: 1.33;
+        font-style: italic;
+
+        @include respond-to(medium) {
+            font-size: ms(1, $thread: desktop);
+        }
+    }
+}

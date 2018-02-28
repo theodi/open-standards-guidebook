@@ -1,0 +1,6 @@
+title: "Burger"
+variants:
+    -
+        name: active
+        context:
+            modifier: is--active

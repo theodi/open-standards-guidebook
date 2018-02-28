@@ -1,0 +1,15 @@
+title: "Lists"
+context:
+    list:
+        message: This is a standard list item
+variants:
+    -
+        name: Bulleted List
+        context:
+            modifier: list--bullet
+            message: This is also a bulleted list item
+    -
+        name: Numbered List
+        context:
+            modifier: list--numbered
+            message: This is also a numbered list item

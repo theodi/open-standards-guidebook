@@ -1,0 +1,16 @@
+<div class="m-accordion" role="tablist">
+
+    {% for item in items %}
+        <div class="m-accordion__item {% if item.open %} is--open{% endif %}" id="m-accordion__item-{{ loop.index }}" tabindex="{{ loop.index }}" aria-controls="m-accordion__content-{{ loop.index }}" role="tab">
+            <a class="m-accordion__title" href="#">
+            <b class="chevron {% if item.open %}chevron--up {% else %} chevron--down{% endif %}"></b>
+                <h5 class="m-accordion__title-text">{{ item.title }}</h5>
+            </a>
+            <div class="m-accordion__content{% if item.open %} is--open{% endif %}" id="m-accordion__content-{{ loop.index }}" aria-labelledby="m-accordion__content-{{ loop.index }}" role="tabpanel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum augue iaculis purus pellentesque, finibus molestie nulla aliquet. Cras varius arcu metus, vel eleifend justo porttitor ac. Nulla imperdiet sed velit vitae congue. Consectetur adipiscing elit. Pellentesque dictum augue iaculis purus pellentesque, finibus molestie nulla aliquet. Cras varius arcu metus, vel eleifend justo porttitor ac. Nulla imperdiet sed velit vitae congue</p>
+
+                <p>Pellentesque pulvinar convallis eros. Suspendisse metus lorem, iaculis ac sem ut, rutrum ullamcorper erat. Sed pharetra, justo laoreet vestibulum sagittis, sem ligula facilisis ante, in condimentum turpis nibh non diam.</p>
+            </div>
+        </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,88 @@
+// ==========================================================================
+// Table Atom
+// ==========================================================================
+
+table {
+  background-color: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {
+}
+
+table {
+  border: 1px solid darken(palette(grey), 5%);
+  width: 100%;
+  max-width: 100%;
+  margin: spacing(base 0);
+
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        padding: rem-calc(16);
+        vertical-align: top;
+        border-top: 1px solid darken(palette(grey), 5%);
+
+        @include respond-to(medium) {
+            border-left: 1px solid darken(palette(grey), 5%);
+            border-right: 1px solid darken(palette(grey), 5%);
+        }
+
+        &:nth-of-type(odd) {
+            background: background(primary);
+
+            @include respond-to(medium) {
+                background: none;
+            }
+        }
+      }
+    }
+  }
+
+  > thead > tr {
+    background: palette(grey);
+
+    > th {
+        vertical-align: bottom;
+        border-top: 0;
+      }
+  }
+
+  tr {
+
+    &:nth-of-type(even) {
+        background: palette(grey);
+
+        @include respond-to(medium) {
+            background: none;
+        }
+    }
+  }
+}
+
+table col {
+  position: static;
+  float: none;
+  display: block;
+
+  @include respond-to(medium) {
+    display: table-column;
+  }
+}
+
+table {
+  td,
+  th {
+      position: static;
+      float: none;
+      display: block;
+
+      @include respond-to(medium) {
+          display: table-cell;
+      }
+  }
+}

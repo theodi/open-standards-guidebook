@@ -1,0 +1,9 @@
+title: "Headings"
+status: "ready"
+context:
+    checked: false
+variants:
+    -
+        name: checked
+        context:
+            checked: true

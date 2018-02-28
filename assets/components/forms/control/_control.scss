@@ -1,0 +1,38 @@
+// ==========================================================================
+// Control Atom
+// ==========================================================================
+
+.control {
+    padding-bottom: rem-calc(20);
+
+    &.has--success {
+        .label, .control__caption {
+            color: palette(success);
+        }
+
+        .input {
+            border-color: palette(success);
+            color: palette(success);
+        }
+    }
+
+    &.has--error {
+        .label, .control__caption {
+            color: palette(warning);
+        }
+
+        .input {
+            border-color: palette(warning);
+            color: palette(warning);
+        }
+    }
+}
+
+.control__caption {
+    @include trim();
+    display: block;
+    font-size: ms(-1);
+    font-style: italic;
+    color: lighten(black, 40%);
+    padding-bottom: rem-calc(5);
+}

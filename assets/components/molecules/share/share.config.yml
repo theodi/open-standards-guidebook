@@ -1,0 +1,7 @@
+title: "Share"
+context:
+    share:
+        heading: Share this infographic
+        facebook: true
+        twitter: true
+        email: true

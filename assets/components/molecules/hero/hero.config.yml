@@ -1,0 +1,38 @@
+title: "Hero "
+status: "ready"
+context:
+  hero:
+    heading: General Transit Feed Specification (GTFS)
+    sidenav: true
+    breadcrumbs: true
+    lowernav: false
+  nav:
+    modifier: m-nav--large
+    items:
+    -
+      title: What are Open Standards for Data?
+    -
+      title: Types of Open Data Standards
+    -
+      title: Why use Open Standards for Data
+    -
+      title: The Open Standards process
+    -
+      title: Case Studies
+  metatitle:
+    message: Lorem
+  pill:
+    message: Case Study
+  lede:
+    message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
+
+variants:
+    -
+        name: soundcloud
+        context:
+            modifier: soundcloud
+
+    -
+        name: infographic
+        context:
+            modifier: infographic
