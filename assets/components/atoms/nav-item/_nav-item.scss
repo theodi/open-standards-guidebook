@@ -9,6 +9,7 @@
             color: palette(grey-dark);
             font-size: ms(-1);
             margin-bottom: spacing(5);
+            line-height: 1.33;
 
             @include respond-to(medium) {
                 font-size: ms(0, $thread: desktop);

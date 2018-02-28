@@ -16,8 +16,6 @@ module Jekyll
       end
     end
 
-    private
-
     def get_revved_path(asset_path)
       manifest = self.read_json_file(@@manifest_path)
       asset_path = self.clean_asset_path(asset_path)
