@@ -1,6 +1,6 @@
 {% for link in page.downloads.items %}
     <div class="pad-top">
-        <h4>{{ link.title }}</h4>
+        <h4 id="downloads-{{ forloop.index }}">{{ link.title }}</h4>
         {% if link.description %}
             <p>{{ link.description }}</p>
         {% endif %}
