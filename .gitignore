@@ -35,7 +35,7 @@ src/.git-metadata/
 ###################
 *.sublime-workspace
 .idea
-
+.Rhistory
 
 ###################
 # Platform specific
