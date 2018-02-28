@@ -57,6 +57,31 @@ ul {
     }
 }
 
+
+@mixin list--styled {
+    @extend %list-base;
+
+    li {
+        margin-bottom: spacing(10);
+        padding-left: rem-calc(15);
+        position: relative;
+
+        &:before {
+            margin-bottom: rem-calc(2);
+            margin-right: rem-calc(8);
+            content: ' ';
+            @include chevron;
+            position: absolute;
+            top: rem-calc(10);
+            left: 0;
+            border-left: rem-calc(4) solid transparent;
+            border-right: rem-calc(4) solid transparent;
+            border-top: rem-calc(5) solid palette(black);
+            transform: rotate(-90deg);
+        }
+    }
+}
+
 .list--bullet {
     @include list--bullet;
 }
@@ -106,7 +131,7 @@ ul {
 
 .u-styled-lists {
     ul {
-        @include list--bullet();
+        @include list--styled();
         list-style-position: outside;
     }
     ol {
