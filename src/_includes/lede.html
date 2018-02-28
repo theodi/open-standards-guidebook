@@ -8,7 +8,7 @@
     {% endif -%}
 {% endcapture -%}
 
-{% assign intro_sentence = intro_sentence | strip %}
+{% assign intro_sentence = intro_sentence | strip | append:' ' %}
 
 {% if page.description -%}
     <div class="u-trim--all lede">{{ page.description | prepend:intro_sentence | markdownify | improve }}</div>
