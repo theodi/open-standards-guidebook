@@ -1,1 +1,1 @@
-Sitemap: https://theodi.github.io//open-standards-guidebook/sitemap.xml
+Sitemap: https://theodi.github.io/open-standards-guidebook/sitemap.xml
