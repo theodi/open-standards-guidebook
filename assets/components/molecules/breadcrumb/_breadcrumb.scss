@@ -18,6 +18,7 @@
 
     @include link-hover() {
         color: lighten(palette(grey-dark), 25%);
+        outline: none;
     }
 
     &.is--active {

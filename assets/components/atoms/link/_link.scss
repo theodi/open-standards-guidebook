@@ -1,7 +1,8 @@
 // ==========================================================================
 // Links Atom
 // ==========================================================================
-a {
+a,
+.link {
     text-decoration: underline;
     text-decoration-skip: ink;
 
@@ -11,6 +12,17 @@ a {
 
     @include link-hover() {
         color: palette(grey-dark);
+    }
+}
+
+a,
+.link,
+button {
+    &:focus {
+        outline: 1px dotted palette('secondary');
+    }
+    &:active {
+        outline: none;
     }
 }
 

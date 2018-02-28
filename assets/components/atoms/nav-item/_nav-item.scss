@@ -18,6 +18,7 @@
 
         @include link-hover() {
             color: palette(primary);
+            outline: none;
         }
     }
 
