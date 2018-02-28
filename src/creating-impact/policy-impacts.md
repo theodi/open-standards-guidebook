@@ -1,12 +1,14 @@
 ---
-title: Policy impacts of Open Standards
-description: Open standards for data are reusable agreements that make it easier for people and organisations to publish, access, share and use better-quality data. Open standards for data can support the implementation of policy and embody policy when they are developed and/or adopted. 
+title: Policy impacts of open standards
+nav:
+  order: 3
+description: Open standards for data can support the implementation of policy and embody policy when they are developed and/or adopted. 
 gdoc: https://docs.google.com/document/d/1UiPJHT7qeSR5OBbyMNtjGx9IzHVpO7j96P3kTxPDRaU/edit?usp=sharing
 sidebar:
   sections:
     - title: Further reading
       intro: Read more about the impact of open standards for data
-      items:      
+      items:
         -
           title: Lessons learned in open standards development
           url: https://docs.google.com/document/d/1XVbt4l0En2AeyC7l3WrgPTujGm5LkRNhQJ-7gzb_pGE/edit?usp=sharing
@@ -31,7 +33,7 @@ sidebar:
           title: "Open Data Services Cooperative: towards a toolkit for policy focussed open data standards"
           url: http://www.opendataservices.coop/blog/2018/01/11/odi-open-standards-for-data.html
     - intro: Read about the open standards development lifecycle
-      items:    
+      items:
         -
           title: Developing standards
           url: https://docs.google.com/document/d/1p2o3pn8l1j-AKnIIx0mY-RpNdgz33ujJzUCQVWUi8Gg/edit?usp=sharing
