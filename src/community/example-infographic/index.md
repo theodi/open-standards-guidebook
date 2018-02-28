@@ -10,8 +10,13 @@ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in'
 
-# The infographic
+# The infographic image as a relative path from the page, case sensitive.
+# probably easiest to upload the image to the same directory as the page
+# (prose will do this by default)
 image: ./example-infographic.jpg
+# Optionally add a high resolution version of this image - if provided it will be used for the download link
+hires_image: ./example-infographic.jpg?hi-res=1
+
 
 # The Hero contents
 hero:

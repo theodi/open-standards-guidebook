@@ -1,3 +1,10 @@
+{% capture hires_image %}
+    {% if page.hires_image %}
+        {{ page.hires_image }}
+    {% else %}
+        {{ page.image }}
+    {% endif %}
+{% endcapture %}
 <div class="m-hero">
     <div class="wrapper">
         <div class="g">
@@ -22,9 +29,9 @@
                                 {% include lede.html %}
                                 <div class="pad-top u-hide-print">
                                     <div class="pad-bottom-small">
-                                        <a class="link link--block" href="{{ page.image }}">View full size</a>
+                                        <a class="link link--block" href="{{ hires_image }}">View full size</a>
                                     </div>
-                                    <a class="link link--block" href="{{ page.image }}" download>Download infographic</a>
+                                    <a class="link link--block" href="{{ hires_image }}" download>Download infographic</a>
                                 </div>
                             </div>
                         </div>

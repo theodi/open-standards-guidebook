@@ -14,6 +14,8 @@ consequat. Duis aute irure dolor in reprehenderit in'
 # probably easiest to upload the image to the same directory as the page
 # (prose will do this by default)
 image: ./example-infographic.jpg
+# Optionally add a high resolution version of this image - if provided it will be used for the download link
+hires_image: ./example-infographic.jpg?hi-res=1
 
 # The following default to true, and only need setting explicitly if you want
 # to set them as false
