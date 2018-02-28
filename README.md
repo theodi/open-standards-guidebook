@@ -1,21 +1,25 @@
 # Open Standards Guidebook
 
+## Table of Contents
+
 * [Technologies / dependencies](#technologies--dependencies)
-  * [Built with](#built-with)
-  * [Front end:](#front-end)
-  * [Linting](#linting)
-  * [Deployment](#deployment)
+    * [Built with](#built-with)
+    * [Front end:](#front-end)
+    * [Linting](#linting)
+    * [Deployment](#deployment)
 * [Prerequisties:](#prerequisties)
 * [Project setup](#project-setup)
 * [Commands](#commands)
-  * [Run dev server](#run-dev-server)
-  * [Building for production](#building-for-production)
-  * [Building styleguide as static HTML](#building-styleguide-as-static-html)
+    * [Run dev server](#run-dev-server)
+    * [Building for production](#building-for-production)
+    * [Secondary tasks](#secondary-tasks)
+        * [Linting](#linting-1)
+        * [Building styleguide as static HTML](#building-styleguide-as-static-html)
 * [Release and deployment](#release-and-deployment)
 * [Project structure](#project-structure)
 * [Configuration](#configuration)
-  * [Jekyll](#jekyll)
-  * [Blendid](#blendid)
+    * [Jekyll](#jekyll)
+    * [Blendid](#blendid)
 * [Contributions application](#contributions-application)
 * [Hacks](#hacks)
 * [Other useful bits](#other-useful-bits)
@@ -41,12 +45,12 @@
 - [ESlint](https://eslint.org/)
 - [sass-lint](https://github.com/sasstools/sass-lint)
 
+Linting is enforced on a pre-push hook via [Husky](https://github.com/typicode/husky). This can be disabled / modified via `.huskyrc`
 
 ### Deployment
 
 - Deployed with [TravisCI](https://travis-ci.org/)
 - Hosted on [GH Pages](https://pages.github.com/)
-
 
 ## Prerequisties:
 
@@ -102,7 +106,26 @@ Compiles files for production to your destination directory. JS files are built 
 If `rev` is set to `true` in your `task-config.js` file, filenames will be hashed (file.css -> file-a8908d9io20.css) so your server may cache them indefinitely. A `rev-manifest.json` file is output to the root of your `dest` directory (`public` by default), and maps original filenames to hashed ones. Static files are automatically updated to reference the hashed filenames. A custom Jekyl plugin (rev) is used to to read the manifest file and replace references to static asset filenames via a liquid filter.
 
 
-### Building styleguide as static HTML
+### Secondary tasks
+
+### Linting
+
+Linting (via `yarn lint`) is enforced on a pre-push hook via [Husky](https://github.com/typicode/husky). This can be disabled / modified via `.huskyrc`.
+
+JS files are also linted at Babel compile time via `eslint-friendly-formatter`.
+
+The following tasks are available for your manual linting requirements:
+
+
+```
+yarn lint-styles
+yarn lint-js
+yarn lint # all the things
+
+```
+
+
+#### Building styleguide as static HTML
 
 ```
 yarn generate-styleguide

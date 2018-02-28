@@ -12,7 +12,8 @@
     "generate-styleguide": "fractal build",
     "lint-styles": "yarn sass-lint -v",
     "lint-js": "yarn eslint -o ./linters/eslint.html assets/js/",
-    "lint": "yarn lint-styles && yarn lint-js"
+    "lint": "yarn lint-styles && yarn lint-js",
+    "toc": "./scripts/gh-md-toc README.md"
   },
   "engines": {
     "node": "~8.9.3"
