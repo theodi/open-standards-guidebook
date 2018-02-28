@@ -4,7 +4,7 @@ const logger = fractal.cli.console;
 
 module.exports = function(){
     const server = fractal.web.server({
-      port: 4000,
+      port: 4001,
       sync: true,
     });
     server.on('error', err => logger.error(err.message));
