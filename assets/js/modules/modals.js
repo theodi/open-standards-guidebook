@@ -4,8 +4,24 @@ const pageContainer = document.querySelector('[data-page-container]');
 const blurClass = 'is--modal-active';
 
 const opts = {
-    afterIn: () => pageContainer.classList.add(blurClass),
-    afterOut: () => pageContainer.classList.remove(blurClass),
+    beforeIn({ opts }) {
+        opts.activeElement =  document.activeElement;
+    },
+    afterIn: ({ target }) => {
+        pageContainer.classList.add(blurClass);
+
+        const fields = [...target.querySelectorAll('input, textarea, select')];
+
+        if (fields.length) {
+            fields[0].focus();
+        }
+    },
+    afterOut: ({ opts }) => {
+        pageContainer.classList.remove(blurClass);
+        if (opts.activeElement) {
+            opts.activeElement.focus();
+        }
+    },
 };
 
 export default function() {

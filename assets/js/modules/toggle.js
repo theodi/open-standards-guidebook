@@ -1,14 +1,21 @@
 function toggle({ trigger, target, opts }) {
     const wasHidden = target.getAttribute('aria-hidden') === 'true';
 
+    if (wasHidden) {
+        opts.beforeIn({ trigger, target, opts });
+    } else {
+        opts.beforeOut({ trigger, target, opts });
+    }
+
+
     trigger.classList.toggle(opts.triggerActiveClass);
     target.classList.toggle(opts.targetActiveClass);
     target.setAttribute('aria-hidden', !wasHidden);
 
     if (wasHidden) {
-        opts.afterIn();
+        opts.afterIn({ trigger, target, opts });
     } else {
-        opts.afterOut();
+        opts.afterOut({ trigger, target, opts });
     }
 }
 
@@ -28,8 +35,10 @@ export default function initToggle(selector = '[data-toggle]', opts){
     const defaults = {
         targetActiveClass: 'is--open',
         triggerActiveClass: 'is--active',
+        beforeIn:() => {},
         afterIn: () => {},
-        afterOut: () => {},
+        beforeOut: () => {},
+        afterOut:() => {},
         selector: selector,
     };
 
