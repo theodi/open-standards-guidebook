@@ -1,1 +1,1 @@
-Sitemap: https://open-standards-guidebook.odi.kindclients.co.uk/sitemap.xml
+Sitemap: https://theodi.github.io/open-standards-guidebook/sitemap.xml
