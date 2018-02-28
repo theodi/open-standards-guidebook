@@ -2,26 +2,26 @@
 title: When not to create new standards
 nav:
   order: 4
-description: Open standards for data are reusable agreements that make it easier for people and organisations to publish, access, share and use better-quality data. Creating open standards can be resource and time-intensive, so it’s worth first considering whether using an existing open standard is the right solution.
+description: Creating open standards can be resource and time-intensive, so it’s worth first considering whether using an existing open standard is the right solution.
 gdoc: https://docs.google.com/document/d/1OoK8T5OtQriFARhb1cSFypAQNz24iEtgURd8YqfI-B0/edit?usp=sharing
 sidebar:
   sections:
     - title: Further reading
-      intro: Learn more about open standards for data
-      items:      
+      intro: More on open standards for data
+      items:
         -          
           title: What are open standards for data?
-          url: https://docs.google.com/document/d/1YcbKgtZAFjdeS6KiS_KGIi5GAUSwe1JTG4uRxhaWUQQ/edit?usp=sharing
+          url: /introduction/what-are-open-standards-for-data
         -          
           title: Types of open standards for data
           url: https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit?usp=sharing
         -          
           title: When to use open standards for data
-          url: https://docs.google.com/document/d/1L4xocfkgZC2D6d0z5uUTZGw6kJp76WpKdBwnzb11z1c/edit?usp=sharing
+          url: /introduction/when-to-use-open-standards-for-data
         -          
           title: How open standards are developed
-          url: https://docs.google.com/document/d/1kBsBph0bionPForwpriLMLY9MozSMHdviOandnK_hjM/edit?usp=sharing
-    - intro: Discover existing open standards for data
+          url: /introduction/how-open-standards-are-developed
+    - intro: Find existing open standards for data
       items:
         -          
           title: How to find open standards
@@ -35,7 +35,7 @@ sidebar:
         -          
           title: How to choose open standards checklist
           url: https://docs.google.com/document/d/1dPUhvQcv1MYcDMNeozNm-iPOfrqQyYFugVAg1Im5Eew/edit?usp=sharing
-    - intro: Read our research on open standards for data
+    - intro: Our research on open standards for data
       items:
         -          
           title: User experiences of open standards for data
@@ -65,7 +65,8 @@ The UK government provides useful guidance on assessing open standards: [how ope
 
 When what you need is still unclear — for example, your project is in the initial stages — creating a new standard right away may not be the best option. 
 
-You can begin by focusing on:
+<div class="callout" markdown="1">
+**You can begin by focusing on:**
 
 * **understanding the scope of the problem** — this tells you what your needs are and which are most important
 
@@ -74,6 +75,7 @@ You can begin by focusing on:
 * **commissioning a proof of concept to explore options** — this can help you find existing open standards and is a practical way to quickly test solutions to your problem
 
 * **working through a discovery phase** — this can help you investigate the problem and solutions, including finding and testing existing open standards
+</div>
 
 Owners of standards should [provide examples and metaphors to explain the value of standards](https://docs.google.com/document/d/1E5uARrZf5AJUIF_DJz-42_793EY_Dwk7n7B3bMn3x5A/edit#heading=h.zssu8xboua), [teach through experience](https://docs.google.com/document/d/1E5uARrZf5AJUIF_DJz-42_793EY_Dwk7n7B3bMn3x5A/edit#heading=h.rvc86fqdwk3z), and [be clear on the language used](https://docs.google.com/document/d/1E5uARrZf5AJUIF_DJz-42_793EY_Dwk7n7B3bMn3x5A/edit#heading=h.4yiivfrjkacx) to make open standards easier to understand and adopt.
 
@@ -91,13 +93,15 @@ See [types of open standards for data](https://docs.google.com/document/d/1LJfRC
 
 Open standards are reusable agreements developed collaboratively with a community. 
 
-Your community might be: 
+<div class="callout" markdown="1">
+**Your community might be:**
 
-* internal — for example a department or branches in your organisation
+* **internal** — for example a department or branches in your organisation
 
-* external — people and organisations in similar or complementary sectors 
+* **external** — people and organisations in similar or complementary sectors 
 
-* a mix — including internal and external stakeholders, the general public, governmental, public bodies and more
+* **a mix** — including internal and external stakeholders, the general public, governmental, public bodies and more
+</div>
 
 In our research, ‘[User experiences of open standards for data](https://docs.google.com/document/d/1E5uARrZf5AJUIF_DJz-42_793EY_Dwk7n7B3bMn3x5A/edit?usp=sharing)’, we found that poor consultation can impact success. Poorly designed consultation and governance can cause problems during standards development, leading to incorrect decisions or poorly timed feedback. 
 

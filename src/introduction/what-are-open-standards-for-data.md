@@ -2,26 +2,27 @@
 title: What are open standards for data?
 nav:
   order: 1
-description: Standards are documented, reusable agreements that affect us every day. When we address a letter, change a lightbulb, or look up train times we rely on standards. Open standards for data make it easier for people and organisations to publish, access, share and use better quality data. 
+description: Standards are documented, reusable agreements that affect us every day. Open standards for data make it easier for people and organisations to publish, access, share and use better quality data. 
+show_intro_sentence: false
 gdoc: https://docs.google.com/document/d/1YcbKgtZAFjdeS6KiS_KGIi5GAUSwe1JTG4uRxhaWUQQ/edit?usp=sharing
 sidebar:
   sections:
     - title: Further reading
-      intro: Learn more about open standards for data
+      intro: More on open standards for data
       items:
         -          
           title: Types of open standards for data
           url: https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit?usp=sharing
         -
           title: When to use open standards for data
-          url: https://docs.google.com/document/d/1L4xocfkgZC2D6d0z5uUTZGw6kJp76WpKdBwnzb11z1c/edit?usp=sharing
+          url: /introduction/when-to-use-open-standards-for-data
         -
           title: When not to create new standards
-          url: https://docs.google.com/document/d/1OoK8T5OtQriFARhb1cSFypAQNz24iEtgURd8YqfI-B0/edit?usp=sharing
+          url: /introduction/when-not-to-create-new-standards
         -
           title: How open standards are developed
-          url: https://docs.google.com/document/d/1kBsBph0bionPForwpriLMLY9MozSMHdviOandnK_hjM/edit?usp=sharing
-    - intro: Discover existing open standards for data
+          url: /introduction/how-open-standards-are-developed
+    - intro: Find existing open standards for data
       items:
         -          
           title: How to find open standards
@@ -104,6 +105,8 @@ Read about [types of open standards](https://docs.google.com/document/d/1LJfRC5w
 
 # Examples of open standards for data
 
+<div class="callout" markdown="1">
 * [General Transit Feed Specification (GTFS)](https://developers.google.com/transit/gtfs/), the *de facto* standard for public transit, makes it easy to find bus, train, and tram stops and schedules when you use apps like [Citymapper](https://citymapper.com), [Google Maps](https://maps.google.com/) or ride-sharing apps like [Park.io](https://www.parkio.co.uk/)
 * In England, [local planning authorities](https://docs.google.com/document/d/1Hv_g2wt3vJ42XJxK6nsLax0M_9c76rFC4JerFYm2x0U/edit#bookmark=id.x2fknj1by9n0) use the [Brownfield Site Register Open Data Standard](https://www.gov.uk/government/publications/brownfield-land-registers-data-standard) to share the location and condition of sites suitable for residential development
 * The US [Environmental Protection Agency (EPA)](https://www.epa.gov/) uses [open standards for environmental data](https://www.epa.gov/data-standards) and a central data exchange to significantly reduce the cost of collecting and sharing data with 65,000 active users
+</div>
