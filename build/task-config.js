@@ -46,7 +46,7 @@ module.exports = {
         './main.js'
       ],
     },
-    publicPath: "/assets/js",
+    publicPath: "/open-standards-guidebook/assets/js",
     extensions: ['js', 'vue', 'json'],
     alias: {
       '@': resolve('src/js'),

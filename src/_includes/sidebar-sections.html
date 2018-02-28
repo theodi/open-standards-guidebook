@@ -10,7 +10,7 @@
             <nav class="u-styled-lists">
                 <ul>
                     {% for item in section.items %}
-                        <li><a class="nav-item" href="{{ item.url }}">{{ item.title | improve }}</a></li>
+                        <li><a class="nav-item" href="{{ item.url | absolute_url }}">{{ item.title | improve }}</a></li>
                     {% endfor %}
                 </ul>
             </nav>
