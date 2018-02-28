@@ -1,24 +1,52 @@
 # Open Standards Guidebook
 
-Built with
+* [Technologies / dependencies](#technologies--dependencies)
+  * [Built with](#built-with)
+  * [Front end:](#front-end)
+  * [Linting](#linting)
+  * [Deployment](#deployment)
+* [Prerequisties:](#prerequisties)
+* [Project setup](#project-setup)
+* [Commands](#commands)
+  * [Run dev server](#run-dev-server)
+  * [Building for production](#building-for-production)
+  * [Building styleguide as static HTML](#building-styleguide-as-static-html)
+* [Release and deployment](#release-and-deployment)
+* [Project structure](#project-structure)
+* [Configuration](#configuration)
+  * [Jekyll](#jekyll)
+  * [Blendid](#blendid)
+* [Contributions application](#contributions-application)
+* [Hacks](#hacks)
+* [Other useful bits](#other-useful-bits)
+
+## Technologies / dependencies
+
+### Built with
 
 - [Jekyll](https://jekyllrb.com) - static site generator
 - [Blendid](https://github.com/vigetlabs/blendid) - Gulp + webpack build process
 - [Fractal](https://fractal.build/) Living styleguide
 - [Theo](https://github.com/salesforce-ux/theo) for handling [Design tokens](https://github.com/salesforce-ux/theo#overview)
+- [git flow](http://nvie.com/posts/a-successful-git-branching-model/) as a branching methodology
 
-Using:
+### Front end:
 
 - [Sass](http://sass-lang.com/) for stylesheets (compiled with node-sass)
 - [Babel](https://babeljs.io/) for JS transpilation
 - [Browsersync](https://www.browsersync.io/) for live reloading
 
-Linting
+### Linting
 
 - [ESlint](https://eslint.org/)
 - [sass-lint](https://github.com/sasstools/sass-lint)
 
-Hosted on [GH Pages](https://pages.github.com/) and deployed with [TravisCI](https://travis-ci.org/)
+
+### Deployment
+
+- Deployed with [TravisCI](https://travis-ci.org/)
+- Hosted on [GH Pages](https://pages.github.com/)
+
 
 ## Prerequisties:
 
@@ -26,6 +54,7 @@ Hosted on [GH Pages](https://pages.github.com/) and deployed with [TravisCI](htt
 - [Yarn](https://yarnpkg.com/en/docs/install#windows-tab)
 - [Ruby 2.5.0](https://www.ruby-lang.org/en/documentation/installation/) or greater
 - [bundler](https://bundler.io/)
+- [git-flow](https://github.com/nvie/gitflow) extensions (only required for release)
 
 ## Project setup
 
@@ -81,6 +110,23 @@ yarn generate-styleguide
 
 This builds the Fractal styleguide to static HTML and outputs it to a `component-library/` directory (gitignored) in the project root.
 
+## Release and deployment
+
+A release script is included for convenience. Use a [semver](https://semver.org/) compliant version.
+
+```
+./scripts/release <SEMVER>
+```
+
+This will:
+
+- Create a new release branch from `develop`
+- Bump the `VERSION` file and commit it
+- Merge back into `develop` and `master`
+- Tag the release
+- Push the release and tag to `origin/master`
+
+**NB** Release script requires [`git-flow`](https://github.com/nvie/gitflow) cli to be installed locally.
 
 ## Project structure
 
@@ -118,8 +164,6 @@ This builds the Fractal styleguide to static HTML and outputs it to a `component
 (Some files / dirs removed above for clarity)
 
 
-
-
 ## Configuration
 
 ### Jekyll
@@ -144,3 +188,7 @@ The `contributions/` directory contains a small [Sinatra](http://sinatrarb.com) 
 ## Hacks
 
 - The `jekyll-git_metadata` is monkey patched in `src/_plugins/git_metadata.rb` to handle the fact that we're running Jekyll in a subdirectory of the project
+
+## Other useful bits
+
+- Regenerate the table of content for this README.md (or any other) by running `./scripts/gh-md-toc README.md` and pasting in the output
