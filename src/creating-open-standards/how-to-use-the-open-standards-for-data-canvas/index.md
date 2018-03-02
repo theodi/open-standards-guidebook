@@ -42,7 +42,7 @@ The Open Standards for Data Canvas is not:
 
 * **a detailed document**: the canvas is high-level so you can quickly spot gaps and clarify assumptions
 
-* **a roadmap**: you can use the canvas to outline and share the initial solution to the problem you want to solve. The canvas will help you develop a roadmap during the later [scoping and starting stage](https://docs.google.com/document/d/1mpAgLM3OiO5FFanRYI4Qz5M3fXh2TYmeSIlde_hNFSM/edit?usp=sharing)
+* **a roadmap**: you can use the canvas to outline and share the initial solution to the problem you want to solve. The canvas will help you develop a roadmap during the later [scoping and starting stage](/developing-standards/scoping-and-starting)
 
 * **a complete guide**: the canvas focuses only on key areas to get you started so you can prepare more detailed documents as needed
 
