@@ -14,7 +14,7 @@ sidebar:
           url: /introduction/what-are-open-standards-for-data
         -          
           title: Types of open standards for data
-          url: https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit?usp=sharing
+          url: /introduction/types-of-open-standards-for-data
         -          
           title: When to use open standards for data
           url: /introduction/when-to-use-open-standards-for-data
@@ -25,16 +25,16 @@ sidebar:
       items:
         -          
           title: How to find open standards
-          url: https://docs.google.com/document/d/1KZBtsPd6Xf8YSL5q07brL2epKbJz-zi14VUEDdjI5Kg/edit?usp=sharing
+          url: /find-existing-standards/how-to-find-open-standards
         -          
           title: Tools to find open standards
-          url: https://docs.google.com/document/d/1iTCCFu7WRx5Ak11MtPvApphkutaaPVxOzy0L2NnwWYM/edit?usp=sharing
+          url: /find-existing-standards/tools-to-find-open-standards
         -          
           title: How to choose an open standard
-          url: https://docs.google.com/document/d/1iCYntYYX0lFVM-fm94siqPeMPU8dA_ctDQ2yewb9YQ8/edit?usp=sharing
+          url: /find-existing-standards/how-to-choose-an-open-standard
         -          
           title: How to choose open standards checklist
-          url: https://docs.google.com/document/d/1dPUhvQcv1MYcDMNeozNm-iPOfrqQyYFugVAg1Im5Eew/edit?usp=sharing
+          url: find-existing-standards/how-to-choose-an-open-standard-checklist
     - intro: Our research on open standards for data
       items:
         -          
@@ -55,11 +55,11 @@ As creating a standard is both time and resource intensive, we encourage owners 
 
 Check for existing standards through existing networks and directories such as the [open data standards directory](http://datastandards.directory/), [civic open data standards by Azavea](https://azavea.gitbooks.io/open-data-standards/content/), and the [UK government’s list of approved open standards](https://www.gov.uk/government/publications/open-standards-for-government). 
 
-Review our guidance on [tools to find open standards](https://docs.google.com/document/d/1iTCCFu7WRx5Ak11MtPvApphkutaaPVxOzy0L2NnwWYM/edit?usp=sharing) for more resources.
+Review our guidance on [tools to find open standards](/find-existing-standards/tools-to-find-open-standards) for more resources.
 
 Check whether any existing standard meets your needs. 
 
-The UK government provides useful guidance on assessing open standards: [how open standards are selected](https://www.gov.uk/guidance/how-open-standards-are-selected), which you can read alongside our guide on [how to choose an open standard](https://docs.google.com/document/d/1iCYntYYX0lFVM-fm94siqPeMPU8dA_ctDQ2yewb9YQ8/edit?usp=sharing).
+The UK government provides useful guidance on assessing open standards: [how open standards are selected](https://www.gov.uk/guidance/how-open-standards-are-selected), which you can read alongside our guide on [how to choose an open standard](/find-existing-standards/how-to-choose-an-open-standard).
 
 # Your needs are still unclear
 
@@ -87,7 +87,7 @@ Getting to know existing standard communities will help you make connections tha
 
 We encourage you to seek out  standards that might form the basis of your new standard or act as a template for data formats, vocabularies and more. 
 
-See [types of open standards for data](https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit?usp=sharing) for more on mixing and matching standards. 
+See [types of open standards for data](/introduction/types-of-open-standards-for-data) for more on mixing and matching standards. 
 
 # There is low community buy-in
 

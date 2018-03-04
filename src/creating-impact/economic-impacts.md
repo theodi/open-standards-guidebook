@@ -11,19 +11,19 @@ sidebar:
       items:      
         -
           title: Lessons learned in open standards development
-          url: https://docs.google.com/document/d/1XVbt4l0En2AeyC7l3WrgPTujGm5LkRNhQJ-7gzb_pGE/edit?usp=sharing
+          url: /creating-impact/lessons-learned-in-open-standards-development
         -
           title: Creating impact with open standards
-          url: https://docs.google.com/document/d/1DhhO7mCq6hIUJxLGT2gI3Y2brmFmUVf5PhgTNz7nYAo/edit?usp=sharing
+          url: /creating-impact/getting-started
         -
           title: Policy impacts of open standards
-          url: https://docs.google.com/document/d/1UiPJHT7qeSR5OBbyMNtjGx9IzHVpO7j96P3kTxPDRaU/edit?usp=sharing
+          url: /creating-impact/policy-impacts
         -
           title: Social impacts of open standards
-          url: https://docs.google.com/document/d/1k6z6Lx-WMig8Zk-5p1H-ciDdFE-VRIzoKq-BFOGcb_A/edit?usp=sharing
+          url: /creating-impact/social-impact
         -
           title: Technology impacts of open standards
-          url: https://docs.google.com/document/d/1iUfKlqT7I-jwR__kx0kUEiQCUGC7WmReFY5uKEXO-VQ/edit?usp=sharing
+          url: /creating-impact/technology-impacts
     - intro: New ecosystems and innovation
       items:
         -

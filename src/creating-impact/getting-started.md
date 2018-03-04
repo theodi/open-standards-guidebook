@@ -1,65 +1,111 @@
 ---
-title: Getting started
+title: Creating impact with open standards
+layout: content-page
+description: >-
+
+
+    Open standards can help drive collaboration, implement policy, create new ecosystems and more. 
+    Creating impact starts with understanding the ecosystem so you can solve clearly defined problems and engage with stakeholders.
+
 nav:
-  order: 1
-description: Open standards for data can help drive collaboration, implement policy, create new ecosystems and more. Creating impact starts with understanding the ecosystem so you can solve clearly defined problems and engage with stakeholders.
-gdoc: https://docs.google.com/document/d/1DhhO7mCq6hIUJxLGT2gI3Y2brmFmUVf5PhgTNz7nYAo/edit#heading=h.p90zzhc4jn26
+  order: 1 
+sidebar:
+  sections:
+    - title: Further reading
+      intro: Impacts and lessons learned from open standards for data
+      items:
+        -          
+          title: Lessons learned in open standards development
+          url: https://docs.google.com/document/d/1XVbt4l0En2AeyC7l3WrgPTujGm5LkRNhQJ-7gzb_pGE/edit?usp=sharing
+        -          
+          title: Policy impacts of open standards
+          url: https://docs.google.com/document/d/1UiPJHT7qeSR5OBbyMNtjGx9IzHVpO7j96P3kTxPDRaU/edit?usp=sharing
+        -          
+          title: Economic impacts of open standards
+          url: https://docs.google.com/document/d/1xyrbv_VTbDVElqwvp9Pov4iYT9ftUKXHzd9ifvW5yqE/edit?usp=sharing
+        -          
+          title: Social impacts of open standards
+          url: https://docs.google.com/document/d/1k6z6Lx-WMig8Zk-5p1H-ciDdFE-VRIzoKq-BFOGcb_A/edit?usp=sharing
+        -          
+          title: Technology impacts of open standards
+          url: https://docs.google.com/document/d/1iUfKlqT7I-jwR__kx0kUEiQCUGC7WmReFY5uKEXO-VQ/edit?usp=sharing
+    - intro: Discover more about open standards for data
+      items:
+        -          
+          title: When to use open standards
+          url: https://docs.google.com/document/d/1L4xocfkgZC2D6d0z5uUTZGw6kJp76WpKdBwnzb11z1c/edit?usp=sharing
+
+        -          
+          title: Types of open standards for data
+          url: https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit?usp=sharing
+
+    - intro: Our research on open standards for data
+      items:
+        -          
+          title: User experiences of open standards for data
+          url: https://docs.google.com/document/d/1E5uARrZf5AJUIF_DJz-42_793EY_Dwk7n7B3bMn3x5A/edit?usp=sharing
+
+        -          
+          title: Exploring the development and impact of open standards for data
+          url: https://docs.google.com/document/d/1Sab5YMVj4PVqLjZD35hX8FTnMeeP6gLGG0xszuRMIaM/edit?usp=sharing
+
+    - intro: Find existing open standards for data
+      items:
+        -          
+          title: How To Find Open Standards
+          url: https://docs.google.com/document/d/1KZBtsPd6Xf8YSL5q07brL2epKbJz-zi14VUEDdjI5Kg/edit?usp=sharing
 ---
 
-# Understand The Ecosystem
+# Understand the ecosystem
 
-Understanding the ecosystem your standard will operate in can help establish what’s valued by stakeholders. Ecosystem maps help you understand where and how value is created, and what can be done to support value creation.
+Understanding the ecosystem your standard will operate in can help establish what stakeholders value. Ecosystem maps help you understand where and how value is created, and what can be done to support value creation. 
 
-Ecosystem maps help identify players, environmental conditions and the relationships between them. Once the ecosystem is mapped, you can establish where your open standard fits and the value it can provide. By providing value to stakeholders, your open standard is more likely to be adopted and create impact.
+Ecosystem maps help identify players, environmental conditions and the relationships between them. When you have mapped the ecosystem, you can establish where your open standard fits and the value it can provide. By providing value to stakeholders, your open standard is more likely to be adopted and create impact.
 
-# Solve Clearly Defined Problems
+Ensure that the players you identify include a wide variety of people and organisations who will use or be affected by the standard or its outputs, including data and models. Stakeholders can include:
 
-In our research, [User Experiences of Open Standards for Data](https://docs.google.com/document/d/1E5uARrZf5AJUIF_DJz-42_793EY_Dwk7n7B3bMn3x5A/edit?usp=sharing), we found that a successful standard is a useful standard. The people we interviewed suggested that a successful open standard for data focuses on solving a particular problem or need.
+* **data publishers who produce and share data** based on [data exchange standards](https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit#heading=h.gquw9huwsj6k); for example, the [International Federation of Red Cross and Red Crescent Societies](http://www.ifrc.org/en/) (IFRC) is using the [Humanitarian Exchange Language](http://hxlstandard.org/) (HXL) to [increase access to safe water and sanitation to 30 million people by 2025](http://media.ifrc.org/ifrc/2017/04/10/data-ifrc-locally-driven-data-via-3-projects-14/) 
 
-The suggestions are supported by our research, [Exploring the Development and Impact of Open Standards for Data](https://docs.google.com/document/d/1Sab5YMVj4PVqLjZD35hX8FTnMeeP6gLGG0xszuRMIaM/edit?usp=sharing), where we found active open standards with thriving communities focused on solving particular problems.
+* **data modellers who model environments and systems** nto understand information flows using [guidance standards](https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit#heading=h.756ycxwioez5); for example, the research body, [Cooperative Research Centre for Low Carbon Living](http://lowcarbonlivingcrc.com.au) (CRCLCL), recently developed the [Precinct Information Model ](http://lowcarbonlivingcrc.com.au/research/program-2-low-carbon-precincts/rp2011-pim-open-digital-information-standard-throughout)(PIM) to support 3D modelling and data sharing for urban development
 
-For example, Google’s [General Transit Feed Specification](https://developers.google.com/transit/gtfs/) (GTFS) focuses on making it easy to share and use public transit information and the [Open Contracting Data Standard](http://standard.open-contracting.org/) focuses on disclosing public procurement information.
+* **data users who agree on meaning and share information consistently** using [shared vocabularies](https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit#heading=h.36hd992dzujg); for example, the [Office of National Statistics](https://www.ons.gov.uk/)’ [ethnicity classifications](https://www.ons.gov.uk/methodology/classificationsandstandards/measuringequality/ethnicgroupnationalidentityandreligion#ethnic-group) are widely used for capturing information about ethnicity, which makes this data easier to reuse and compare
 
-# Work With Other Standards
+* **developers who produce tools that support data publishers**, from data validation to gap analysis and from data conversion between formats to platforms for data and model publication. For example, the [Humanitarian Data Exchange](https://data.humdata.org/) (HDX) is a platform to find, share, and use humanitarian data
 
-Open standards are part of an ecosystem which means there are likely competing and complementary standards already in use. Ensuring your standard works well with others not only makes it interoperable, it increases the value of the standard to stakeholders.
+* **developers who produce tools that support the use of data or models** produced using the standard, from apps to research and from visualisations to physical and digital products. For example, [OpenCorporates](https://opencorporates.com/) makes it easy to find information on companies in many jurisdictions around the world
 
-An open standard can work with other standards by using their:
+* **standards developers who develop and maintain standards** on behalf of standards owners; for example, [iStandUK](http://istanduk.org/) developed the [Brownfield Site Register Open Data Standard](https://www.gov.uk/government/publications/brownfield-land-registers-data-standard)
 
-* **established vocabulary** rather than creating new language, identifiers or codes - the [International Aid Transparency Initiative](http://iatistandard.org/) (IATI) open standard for aid transparency re-uses [Organisation Registration Agency ](http://iatistandard.org/202/codelists/OrganisationRegistrationAgency/)codes from a number of authoritative and established registrars including the UK’s [Companies House](https://www.gov.uk/government/organisations/companies-house)
+* **policy groups who develop and implement policy** that is affected by or supported by open standards for data, including businesses, non-profit organisations and public bodies
 
-* **technical formats**, adopting supported open formats like csv or json over proprietary formats - the [Fiscal Data Package](https://frictionlessdata.io/specs/fiscal-data-package/#overview) standard for government budgets uses the [json](https://json.org/) format for packages and plain text [csv](https://theodi.org/blog/the-status-of-csvs-on-datagovuk) format for data files
+# Solve clearly defined problems
 
-* **models** developed to map and understand ecosystems and information flow - the [Open311](http://www.open311.org/learn/) collaborative model for civic issue tracking has been adapted by City of Chicago, with the help of [Code for America](http://codeforamerica.org/) to meet the city’s needs
+In our research, [User experiences of open standards for data](https://docs.google.com/document/d/1E5uARrZf5AJUIF_DJz-42_793EY_Dwk7n7B3bMn3x5A/edit?usp=sharing), we found that a successful standard is a useful standard. The people we interviewed suggested that a successful open standard for data focuses on solving a particular problem or need. This is supported by our research, [Exploring the development and impact of open standards for data](https://docs.google.com/document/d/1Sab5YMVj4PVqLjZD35hX8FTnMeeP6gLGG0xszuRMIaM/edit?usp=sharing), where we found active open standards with thriving communities focused on solving particular problems. 
 
-Open standards can also treat other standards as ways to extend the features available to stakeholders. For example, governments disclose public procurement information such as tenders, awards and contracts. They also disclose budgets and spending.
+Understanding the ecosystem is one way to ensure that the problem or need exists and is clearly articulated. Using clear language is also important when engaging with people and organisations. To ensure you are solving the right problem, everyone should understand what is being discussed. This means agreeing on concepts, meaning and definitions and avoiding jargon.
 
-Including all of this information in a single standard would make it verbose and dilute its focus. Instead, governments can use the [Open Contracting Data Standard](http://standard.open-contracting.org/) to disclose public procurement and the [Fiscal Data Package](https://frictionlessdata.io/specs/fiscal-data-package/#overview) standard to disclose budgets. Both disclosures can be linked using reference numbers allowing developers to easily link procurement and budgets.
+Google’s [General Transit Feed Specification](https://developers.google.com/transit/gtfs/) (GTFS), for example,  focuses on making it easy to share and use public transit information, while the [Open Contracting Data Standard](http://standard.open-contracting.org/) focuses on disclosing public procurement information for the public good.
 
-# Deliver A Robust Product
+# Work with other standards
 
-An emerging theme from our user research was the robustness of open standards: open standards developed collaboratively with a variety of people and organisations and tested to ensure it is fit for purpose.
+Open standards are part of an ecosystem, which means there are likely to be competing and complementary standards already in use. Where possible, use or extend an existing open standard rather than create a new one. If you do decide to create a new open standard, ensure it works with or is based on existing standards. This not only makes it interoperable, but also increases the value of the standard to stakeholders.
 
-Including a wide variety of stakeholders ensures the open standard isn’t focused too narrowly and provides a required solution. Testing the standard ensures that assumptions are clarified and errors are spotted early. A robust standard does not need to be verbose - it focuses on the core and critical features stakeholders need to adopt and use the standard. This allows the standard to launch, be adopted by stakeholders and evolve with their needs.
+An open standard can work with other standards by:
 
-# Further Reading
+* **using an established vocabulary** rather than creating new language, identifiers or codes. The [International Aid Transparency Initiative](http://iatistandard.org/) (IATI) open standard for aid transparency re-uses [Organisation Registration Agency ](http://iatistandard.org/202/codelists/OrganisationRegistrationAgency/)codes from a number of authoritative and established registrars including the UK’s [Companies House](https://www.gov.uk/government/organisations/companies-house)
 
-Read this guide to discover more about open standards for data:
+* **adopting supported open formats** like CSV or JSON instead of proprietary formats — the [Fiscal Data Package](https://frictionlessdata.io/specs/fiscal-data-package/#overview) standard for government budgets uses the [JSON](https://www.json.org/) format for packages and plain text [CSV](https://tools.ietf.org/html/rfc4180) format for data files
 
-**[When To Use Open Standard**s](https://docs.google.com/document/d/1L4xocfkgZC2D6d0z5uUTZGw6kJp76WpKdBwnzb11z1c/edit?usp=sharing)
+* **using models** developed to map and understand ecosystems and information flow — the [Open311](http://www.open311.org/learn/) collaborative model for civic issue tracking has been adapted by City of Chicago, with the help of [Code for America](http://codeforamerica.org/), to meet the city’s needs
 
-**[Types of Open Standards for Dat**a](https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit?usp=sharing)
+* **reusing established standards** as building blocks for a new standard — the [360](http://www.threesixtygiving.org/)[Giving](http://www.threesixtygiving.org/) standard for charitable grant making is based on schemas from [schema.org](http://schema.org/), the collaborative standard for structured data on the internet.
 
-Read our research on open standards for data:
+Open standards can also treat other standards as ways to extend the features available to stakeholders. For example, governments disclose public procurement information such as tenders, awards and contracts. They also disclose budgets and spending. Including all of this information in a single standard would make it verbose and would dilute its focus. 
 
-**[User Experiences of Open Standards for Dat**a](https://docs.google.com/document/d/1E5uARrZf5AJUIF_DJz-42_793EY_Dwk7n7B3bMn3x5A/edit?usp=sharing)
+Instead, governments can use the [Open Contracting Data Standard](http://standard.open-contracting.org/) to disclose public procurement and the [Fiscal Data Package](https://frictionlessdata.io/specs/fiscal-data-package/#overview) standard to disclose budgets. Both disclosures can be linked using reference numbers allowing developers to easily link procurement and budgets.
 
-**[Exploring the Development and Impact of Open Standards for Dat**a](https://docs.google.com/document/d/1Sab5YMVj4PVqLjZD35hX8FTnMeeP6gLGG0xszuRMIaM/edit?usp=sharing)
+# Deliver a robust product
 
-Discover open standards for data:
+An emerging theme from our user research was the robustness of open standards: open standards developed collaboratively with a variety of people and organisations and tested to ensure they are fit for purpose. 
 
-**[Open Data Standards Director**y](http://datastandards.directory/)** **
-
-**[Civic Open Data Standards by Azave**a](https://azavea.gitbooks.io/open-data-standards/content/)**, **
-
-**[UK Government List of Approved Open Standard**s](https://www.gov.uk/government/publications/open-standards-for-government)** **
+Including a wide variety of stakeholders ensures the open standard is not focused too narrowly and provides a needed solution. Testing the standard and outputs, including data and models, ensures that the standard works in real-life, assumptions are clarified, and errors are spotted early. A robust standard does not need to be verbose; it can focus on the core and critical features needed for adoption and use. This allows the standard to launch, be adopted by people and organisations and then evolve with their needs.
