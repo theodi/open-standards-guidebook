@@ -55,7 +55,6 @@
 @import 'atoms/link/link';
 @import 'atoms/aside/aside';
 @import 'atoms/pill/pill';
-@import 'atoms/list/list';
 @import 'atoms/meta-title/meta-title';
 @import 'atoms/paragraph/paragraph';
 @import 'atoms/brand/brand';
@@ -67,12 +66,13 @@
 @import 'atoms/nav-item/nav-item';
 @import 'atoms/callout/callout';
 @import 'atoms/share-item/share-item';
+@import 'atoms/list/list';
 
 // Molecules
 @import 'molecules/accordion/accordion';
 @import 'molecules/breadcrumb/breadcrumb';
-@import 'molecules/hero-home/hero-home';
 @import 'molecules/hero/hero';
+@import 'molecules/hero-home/hero-home';
 @import 'molecules/nav-tray/nav-tray';
 @import 'molecules/nav-mobile/nav-mobile';
 @import 'molecules/masthead/masthead';

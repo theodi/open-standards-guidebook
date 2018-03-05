@@ -25,8 +25,12 @@ hero:
                     {{ content | improve }}
                 </article>
                 <aside class="g__cell g__cell-12 g__cell-4--medium u-hide-print">
-                    {% include sidebar-sections.html %}
-                    {% include commit-info.html %}
+                    <div class="island island--grey">
+                        <div class="pad-left pad-right pad-top pad-bottom">
+                            {% include sidebar-sections.html %}
+                            {% include commit-info.html %}
+                        </div>
+                    </div>
                 </aside>
             </div>
         </div>

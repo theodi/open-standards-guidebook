@@ -35,7 +35,7 @@
                             {% assign itemPage = site.pages | where:'path', path | first %}
                         {% endif %}
                         {% if itemPage %}
-                            <a href="{{ itemPage.url }} " class="nav-item nav-item--large ">{{ itemPage.title }}</a>
+                            <a href="{{ itemPage.url | absolute_url }} " class="nav-item nav-item--large ">{{ itemPage.title }}</a>
                         {% endif %}
                     {% endfor %}
                 </nav>

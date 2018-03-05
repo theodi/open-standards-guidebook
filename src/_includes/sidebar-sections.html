@@ -7,11 +7,13 @@
             <p><strong>{{ section.intro | improve }}</strong></p>
         {% endif %}
         {% if section.items %}
-            <nav>
-            {% for item in section.items %}
-               <a class="nav-item" href="{{ item.url }}">{{ item.title | improve }}</a>
-            {% endfor %}
-        </nav>
+            <nav class="u-styled-lists">
+                <ul>
+                    {% for item in section.items %}
+                        <li><a class="nav-item" href="{{ item.url | absolute_url }}">{{ item.title | improve }}</a></li>
+                    {% endfor %}
+                </ul>
+            </nav>
         {% endif %}
     </div>
 {% endfor %}

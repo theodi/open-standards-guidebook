@@ -14,14 +14,14 @@
         padding-top: spacing(1);
 
         &:before {
-            content: "";
+            display: block;
             width: rem-calc(13);
             height: rem-calc(13);
             border: rem-calc(2) solid lighten(palette(black), 80%);
-            display: block;
             position: absolute;
             top: 0;
             left: 0;
+            content: "";
         }
 
         &:hover {

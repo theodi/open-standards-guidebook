@@ -3,9 +3,9 @@ import bindToggles from './toggle';
 const pageContainer = document.querySelector('[data-page-container]');
 const blurClass = 'is--modal-active';
 
-const opts = {
+const options = {
     beforeIn({ opts }) {
-        opts.activeElement =  document.activeElement;
+        opts.activeElement = document.activeElement;
     },
     afterIn: ({ target }) => {
         pageContainer.classList.add(blurClass);
@@ -24,6 +24,6 @@ const opts = {
     },
 };
 
-export default function() {
-    bindToggles('[data-modal]', opts);
+export default function () {
+    bindToggles('[data-modal]', options);
 }

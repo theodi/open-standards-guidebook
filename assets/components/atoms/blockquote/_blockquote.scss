@@ -1,7 +1,7 @@
 blockquote {
+    margin: spacing(25 4);
     text-align: left;
     font-weight: bold;
-    margin: spacing(25 4);
 
     &:before, &:after {
         font-size: ms(1);
@@ -10,15 +10,17 @@ blockquote {
             font-size: ms(1, $thread: desktop);
         }
     }
-
-    &:before {
-        content: "“";
+    &:before,
+    &:after {
         display: inline;
+    }
+
+    &:before, {
+        content: "“";
     }
 
     &:after {
         content: "”";
-        display: inline;
     }
 
     > p {

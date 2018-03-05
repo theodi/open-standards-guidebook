@@ -3,8 +3,10 @@
 // ==========================================================================
 
 .m-hero-home {
-    padding-bottom: 0 !important;
-    padding-top: 0 !important;
+    padding-bottom: 0;
+    @include respond-to(medium) {
+        padding-top: 0; // override
+    };
     background: palette(grey);
 
     .wrapper {
