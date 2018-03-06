@@ -41,6 +41,14 @@ defined in site.data.snippets.intro_sentence
 
 It can also be disabled on a per page basis (see next section)
 
+
+```
+robots: noindex, follow
+```
+
+Override the `meta name="robots"` value for a page (otherwise inherits from site.robots)
+
+
 ## Disabling component output
 
 The following default to true, and only need setting explicitly if you want to set them as false
