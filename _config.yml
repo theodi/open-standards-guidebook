@@ -19,7 +19,8 @@ exclude: ['_templates']
 # Meta
 #
 ###
-url: https://theodi.github.io/open-standards-guidebook # @todo update for live
+url: https://theodi.github.io
+baseurl: /open-standards-guidebook # @todo update for live
 name: Open Standards for Data Guidebook
 
 issue_app_url: 'https://open-standards-guidebook.herokuapp.com/'

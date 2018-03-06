@@ -14,7 +14,7 @@ sidebar:
           url: /introduction/what-are-open-standards-for-data
         -
           title: Types of open standards for data
-          url: https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit?usp=sharing
+          url: /introduction/types-of-open-standards-for-data
         -
           title: When not to create new standards
           url: /introduction/when-not-to-create-new-standards
@@ -25,16 +25,16 @@ sidebar:
       items:
         -
           title: How to find open standards
-          url: https://docs.google.com/document/d/1KZBtsPd6Xf8YSL5q07brL2epKbJz-zi14VUEDdjI5Kg/edit?usp=sharing
+          url: /find-existing-standards/how-to-find-open-standards
         -
           title: Tools to find open standards
-          url: https://docs.google.com/document/d/1iTCCFu7WRx5Ak11MtPvApphkutaaPVxOzy0L2NnwWYM/edit?usp=sharing
+          url: /find-existing-standards/tools-to-find-open-standards
         -
           title: How to choose an open standard
-          url: https://docs.google.com/document/d/1iCYntYYX0lFVM-fm94siqPeMPU8dA_ctDQ2yewb9YQ8/edit?usp=sharing
+          url: /find-existing-standards/how-to-choose-an-open-standard
         -
           title: How to choose open standards checklist
-          url: https://docs.google.com/document/d/1dPUhvQcv1MYcDMNeozNm-iPOfrqQyYFugVAg1Im5Eew/edit?usp=sharing=
+          url: find-existing-standards/how-to-choose-an-open-standard-checklist=
     - intro: Examples of existing open standards
       items:
         -
@@ -115,7 +115,7 @@ For example, local authorities in the UK must publish their spending over £500 
 
 Use an open standard when policy or legislation leads to the production of data, or can be supported by the use of good quality data or guidance. 
 
-For more information, read about the [policy impacts of open standards](https://docs.google.com/document/d/1UiPJHT7qeSR5OBbyMNtjGx9IzHVpO7j96P3kTxPDRaU/edit?usp=sharing).
+For more information, read about the [policy impacts of open standards](/creating-impact/policy-impacts).
 
 ## To fill gaps in a data infrastructure
 

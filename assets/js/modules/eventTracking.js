@@ -11,7 +11,7 @@
  * @param  {DOMNode} node
  * @return {Boolean}
  */
-const isLink = node => node.nodeName == 'A';
+const isLink = node => node.nodeName === 'A';
 
 /**
  * isInternalLink helper
@@ -21,7 +21,7 @@ const isLink = node => node.nodeName == 'A';
  * @param  {DOMNode} node
  * @return {Boolean}
  */
-const isInternalLink = (node) => (node.hostname === document.location.hostname);
+const isInternalLink = node => (node.hostname === document.location.hostname);
 
 /**
  * isExternalLink helper
@@ -31,7 +31,7 @@ const isInternalLink = (node) => (node.hostname === document.location.hostname);
  * @param  {DOMNode} node
  * @return {Boolean}
  */
-const isExternalLink = (node) => !isInternalLink(node);
+const isExternalLink = node => !isInternalLink(node);
 
 /**
  * isInPageLink helper
@@ -41,7 +41,7 @@ const isExternalLink = (node) => !isInternalLink(node);
  * @param  {DOMNode} node
  * @return {Boolean}
  */
-const isInPageLink = (node) => isLink(node)
+const isInPageLink = node => isLink(node)
                                 && isInternalLink(node)
                                 && node.pathname === document.location.pathname
                                 && node.hash.length;
@@ -54,20 +54,22 @@ const isInPageLink = (node) => isLink(node)
  * @param  {DOMNode} node
  * @return {Boolean}
  */
-const isDownloadLink = (node) => node.hasAttribute('download');
+const isDownloadLink = node => node.hasAttribute('download');
 
 
 /**
  * Track an event
  * @param  {Object} opts Params for ga.track
  */
-const track = ({ category, action = 'click', label = null, value = null }) => {
+const track = ({
+    category, action = 'click', label = null, value = null,
+}) => {
     if (window.ga) {
         window.ga('send', 'event', category, action, label, value);
     } else {
         console.log('[ga-debug] send', 'event', category, action, label, value);
     }
-}
+};
 
 /**
  * Track external link clicks
@@ -105,25 +107,25 @@ const handleDownloadClick = (e) => {
 const handleTocClick = (e) => {
     const node = e.target;
 
-    if(isInPageLink(node)) {
+    if (isInPageLink(node)) {
         track({
             category: 'TOC link',
             label: `${document.location.pathname}${node.hash}`,
         });
     }
-}
+};
 
 /**
  * Bind to DOM
  */
-export default function() {
-    document.addEventListener('click', (e) => handleExternalClick(e));
+export default function () {
+    document.addEventListener('click', e => handleExternalClick(e));
 
-    document.addEventListener('click', (e) => handleDownloadClick(e));
+    document.addEventListener('click', e => handleDownloadClick(e));
 
     const toc = document.querySelector('#toc');
 
     if (toc) {
-        toc.addEventListener('click', (e) => handleTocClick(e));
+        toc.addEventListener('click', e => handleTocClick(e));
     }
-};
+}

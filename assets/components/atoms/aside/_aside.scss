@@ -6,7 +6,12 @@ aside {
     }
 }
 
-aside > *:first-child {
+aside > .island > .pad-top > *:first-child {
     margin-top: 0;
     padding-top: 0;
+}
+
+aside > .island {
+    border-top: 2px solid darken(palette(grey), 4%);
+    border-bottom: 2px solid darken(palette(grey), 4%);
 }

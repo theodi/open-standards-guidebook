@@ -46,7 +46,7 @@ module.exports = {
         './main.js'
       ],
     },
-    publicPath: "/assets/js",
+    publicPath: "/open-standards-guidebook/assets/js",
     extensions: ['js', 'vue', 'json'],
     alias: {
       '@': resolve('src/js'),
@@ -57,7 +57,7 @@ module.exports = {
       {
         test: /\.(js|vue)$/,
         loader: 'eslint-loader',
-        include: [resolve('src')],
+        include: [resolve('assets')],
         exclude: [resolve('node_modules')],
         enforce: 'pre',
         options: {

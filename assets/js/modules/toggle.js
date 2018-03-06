@@ -7,7 +7,6 @@ function toggle({ trigger, target, opts }) {
         opts.beforeOut({ trigger, target, opts });
     }
 
-
     trigger.classList.toggle(opts.triggerActiveClass);
     target.classList.toggle(opts.targetActiveClass);
     target.setAttribute('aria-hidden', !wasHidden);
@@ -20,26 +19,25 @@ function toggle({ trigger, target, opts }) {
 }
 
 function bindToggle(trigger, opts) {
-
     const targetAttribute = opts.selector.slice(1, -1);
     const targetSelector = trigger.getAttribute(targetAttribute);
     const target = document.querySelector(targetSelector);
 
-    trigger.addEventListener('click', function(e) {
+    trigger.addEventListener('click', (e) => {
         e.preventDefault();
         toggle({ trigger, target, opts });
     });
 }
 
-export default function initToggle(selector = '[data-toggle]', opts){
+export default function initToggle(selector = '[data-toggle]', opts) {
     const defaults = {
         targetActiveClass: 'is--open',
         triggerActiveClass: 'is--active',
-        beforeIn:() => {},
+        beforeIn: () => {},
         afterIn: () => {},
         beforeOut: () => {},
-        afterOut:() => {},
-        selector: selector,
+        afterOut: () => {},
+        selector,
     };
 
     const options = Object.assign({}, defaults, opts);

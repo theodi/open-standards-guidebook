@@ -19,21 +19,21 @@ sidebar:
       items:
         -
           title: Policy impacts of open standards
-          url: https://docs.google.com/document/d/1UiPJHT7qeSR5OBbyMNtjGx9IzHVpO7j96P3kTxPDRaU/edit?usp=sharing        
+          url: /creating-impact/policy-impacts        
         -
           title: Economic impacts of open standards
-          url: https://docs.google.com/document/d/1xyrbv_VTbDVElqwvp9Pov4iYT9ftUKXHzd9ifvW5yqE/edit?usp=sharing
+          url: /creating-impact/economic-impacts
         -
           title: Social impacts of open standards
-          url: https://docs.google.com/document/d/1k6z6Lx-WMig8Zk-5p1H-ciDdFE-VRIzoKq-BFOGcb_A/edit?usp=sharing
+          url: /creating-impact/social-impact
         -
           title: Technology impacts of open standards
-          url: https://docs.google.com/document/d/1iUfKlqT7I-jwR__kx0kUEiQCUGC7WmReFY5uKEXO-VQ/edit?usp=sharing    
+          url: /creating-impact/technology-impacts    
     - intro: The Open Standards for Data Canvas for capturing stakeholders’ needs
       items:
         -
           title: How to use the Open Standards for Data Canvas
-          url: https://docs.google.com/document/d/1iQMpmYFEYHgNQ7OYdbaz663H7DLzkLslLkbw9XipysM/edit?usp=sharing    
+          url: /creating-open-standards/how-to-use-the-open-standards-for-data-canvas/index    
     - intro: Collective impact for social change
       items:
         -
@@ -50,7 +50,7 @@ Open standards for data might seem like a purely technical exercise. But develop
 
 Stakeholders can include the owner of the standard, the sponsor funding the standard, the developers of the standard and others who work together to create the standard. Stakeholders also include the people and organisations who implement the standard, use any data or models published to the standard, provide third-party support, develop new businesses based on the standard, and many more.
 
-With facilitation and guidance, multi-stakeholder collaboration improves open standards at every stage, from the first idea to [scoping and starting](https://docs.google.com/document/d/1mpAgLM3OiO5FFanRYI4Qz5M3fXh2TYmeSIlde_hNFSM/edit?usp=sharing) the standard’s development, through the [development](https://docs.google.com/document/d/1XdcoJa3Gj7-J1SOzH1OBfPSKTYM_xvB0XPnfFqBM_gA/edit?usp=sharing) stage to [launch and adoption](https://docs.google.com/document/d/12m2cBdI1kqFwvv2JgLz7OkZSs-yBp336WTULqKr75EI/edit?usp=sharing), regular [reviews](https://docs.google.com/document/d/1YTyei9hnjvxlKCLcHFOP2bmHj04jY2xx4PnTCxUhg1w/edit?usp=sharing) and [updates](https://docs.google.com/document/d/1mRXWd1yJRenV-xFbW3iTTs4zKGiCLLXkMYWiMlXoexw/edit?usp=sharing), and finally the standard being withdrawn, [retired](https://docs.google.com/document/d/1mRXWd1yJRenV-xFbW3iTTs4zKGiCLLXkMYWiMlXoexw/edit?usp=sharing) or abandoned. 
+With facilitation and guidance, multi-stakeholder collaboration improves open standards at every stage, from the first idea to [scoping and starting](/developing-standards/scoping-and-starting) the standard’s development, through the [development](/developing-standards/development) stage to [launch and adoption](/developing-standards/launch-and-adoption), regular [reviews](/developing-standards/review) and [updates](/developing-standards/update-or-retire), and finally the standard being withdrawn, [retired](/developing-standards/update-or-retire) or abandoned. 
 
 Outside the development cycle, multi-stakeholder collaboration connects people and organisations working in the sector. Data publishers are interested in who else publishes data using standards so they can understand how issues were overcome and improve their processes. Data users are interested in connecting with other data users with similar goals or issues. 
 

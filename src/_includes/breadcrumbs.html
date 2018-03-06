@@ -3,7 +3,7 @@
 
 <div class="wrapper m-breadcrumb__wrapper">
     <div class="m-breadcrumb">
-        <a class="m-breadcrumb__item" href="/">Home</a>
+        <a class="m-breadcrumb__item" href="{{ site.baseurl }}/">Home</a>
         {% for i in (1..range) %}
             {% assign part_url = parts | slice:1,i | join:'/' | append:'/' | prepend:'/' %}
             {% assign part_page = site.pages | where:'url',part_url | first %}
@@ -16,7 +16,7 @@
             {% if forloop.last %}
                 <span class="m-breadcrumb__item is--active">{{ title }}</span>
             {% else %}
-                <a class="m-breadcrumb__item" href="{{ part_page.url }}">{{ title }}</a>
+                <a class="m-breadcrumb__item" href="{{ part_page.url  | absolute_url }}">{{ title }}</a>
           {% endif %}
         {% endfor %}
     </div>

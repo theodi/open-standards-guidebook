@@ -25,16 +25,16 @@ sidebar:
       items:
         -
           title: How to find open standards
-          url: https://docs.google.com/document/d/1KZBtsPd6Xf8YSL5q07brL2epKbJz-zi14VUEDdjI5Kg/edit?usp=sharing
+          url: /find-existing-standards/how-to-find-open-standards
         -
           title: Tools to find open standards
-          url: https://docs.google.com/document/d/1iTCCFu7WRx5Ak11MtPvApphkutaaPVxOzy0L2NnwWYM/edit?usp=sharing
+          url: /find-existing-standards/tools-to-find-open-standards
         -
           title: How to choose an open standard
-          url: https://docs.google.com/document/d/1iCYntYYX0lFVM-fm94siqPeMPU8dA_ctDQ2yewb9YQ8/edit?usp=sharing
+          url: /find-existing-standards/how-to-choose-an-open-standard
         -
           title: How to choose open standards checklist
-          url: https://docs.google.com/document/d/1dPUhvQcv1MYcDMNeozNm-iPOfrqQyYFugVAg1Im5Eew/edit?usp=sharing
+          url: find-existing-standards/how-to-choose-an-open-standard-checklist
     - intro: Examples of existing open standards
       items:
         -
@@ -245,7 +245,7 @@ Many standards for exchanging data reuse existing standards, for example, a list
 
 More complex shared vocabularies like ontologies, can reference simpler shared vocabularies like lists, for example, [Popolo](http://www.popoloproject.com/), the international open government data specifications standard reuses the list of genders from the [vCard format specification](https://tools.ietf.org/html/rfc6350#section-6.2.7) rather than creating a new list. Standards for guidance can help people and organisations design models to be used with existing standards.
 
-![We can standardise](/introduction/we-can-standardise-open-data-institute.jpg)
+![We can standardise](../we-can-standardise-open-data-institute.jpg)
 *Source: The Open Data Institute*
 
 For example, the [Brownfield Site Register Standard](https://docs.google.com/document/d/1Hv_g2wt3vJ42XJxK6nsLax0M_9c76rFC4JerFYm2x0U/edit) for sites in England, suitable for residential redevelopment, includes shared vocabularies like agreements on specific words, taxonomies, identifiers and units. The standard uses a CSV format that describes how data is structured for publication. The [Water Point Data Exchange Standard](https://www.waterpointdata.org/about-wpdx-standard) (WPDx) uses existing geospatial and ISO standards and extends them for specialist use by their community. 

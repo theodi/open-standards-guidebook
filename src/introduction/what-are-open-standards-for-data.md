@@ -12,7 +12,7 @@ sidebar:
       items:
         -          
           title: Types of open standards for data
-          url: https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit?usp=sharing
+          url: /introduction/types-of-open-standards-for-data
         -
           title: When to use open standards for data
           url: /introduction/when-to-use-open-standards-for-data
@@ -26,16 +26,16 @@ sidebar:
       items:
         -          
           title: How to find open standards
-          url: https://docs.google.com/document/d/1KZBtsPd6Xf8YSL5q07brL2epKbJz-zi14VUEDdjI5Kg/edit?usp=sharing
+          url: /find-existing-standards/how-to-find-open-standards
         -
           title: Tools to find open standards
-          url: https://docs.google.com/document/d/1iTCCFu7WRx5Ak11MtPvApphkutaaPVxOzy0L2NnwWYM/edit?usp=sharing
+          url: /find-existing-standards/tools-to-find-open-standards
         -
           title: How to choose an open standard
-          url: https://docs.google.com/document/d/1iCYntYYX0lFVM-fm94siqPeMPU8dA_ctDQ2yewb9YQ8/edit?usp=sharing
+          url: /find-existing-standards/how-to-choose-an-open-standard
         -
           title: "How to choose open standards: Checklist"
-          url: https://docs.google.com/document/d/1dPUhvQcv1MYcDMNeozNm-iPOfrqQyYFugVAg1Im5Eew/edit?usp=sharing
+          url: find-existing-standards/how-to-choose-an-open-standard-checklist
     - intro: Examples of existing open standards
       items:
         -          
@@ -98,9 +98,9 @@ Open standards may produce [open data](https://theodi.org/what-is-open-data) (da
 
 Open standards support better data across the [Data Spectrum](https://theodi.org/data-spectrum). The outputs of an open standard can be data or a model that supports better quality data. 
 
-Read about [types of open standards](https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit?usp=sharing).
+Read about [types of open standards](/introduction/types-of-open-standards-for-data).
 
-![The data spectrum](/introduction/data-spectrum-open-data-institute.png)
+![The data spectrum](../data-spectrum-open-data-institute.png)
 *Image source: The Open Data Institute*
 
 # Examples of open standards for data

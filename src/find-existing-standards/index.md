@@ -1,5 +1,26 @@
 ---
 title: Find existing standards
 layout: listing
-description: Find existing standards. Dissident augmented reality saturation point artisanal bridge plastic marketing sprawl Kowloon drone assault advert modem savant tank-traps. Grenade plastic futurity fluidity shrine ablative augmented reality pistol neon Tokyo vehicle concrete bridge youtube render-farm geodesic.
+description: >- 
+
+
+    This section of the guidebook explores how to find and assess existing open standards for data.
+sections:
+  items:
+    - type: grid # full, grid, short
+      meta: Find
+      title: Finding open standards
+      description: >-
+        How to find existing open standards
+      items:
+        - find-existing-standards/how-to-find-open-standards
+        - find-existing-standards/tools-to-find-open-standards
+    - type: grid # full, grid, short
+      meta: Assess
+      title: Choosing open standards
+      description: >-
+        How to assess existing open standards
+      items:
+        - find-existing-standards/how-to-choose-an-open-standard
+        - find-existing-standards/how-to-choose-an-open-standard-checklist
 ---

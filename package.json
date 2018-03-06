@@ -9,7 +9,11 @@
   "scripts": {
     "start": "concurrently 'JEKYLL_ENV=development bundle exec jekyll serve --config _config.yml,_config.dev.yml' 'BLENDID_CONFIG_PATH=./build yarn run blendid' 'cd contributions && bundle exec foreman start'",
     "build": "BLENDID_CONFIG_PATH='./build' NODE_ENV='production' yarn run blendid build && JEKYLL_ENV='production' bundle exec jekyll build",
-    "generate-styleguide": "fractal build"
+    "generate-styleguide": "fractal build",
+    "lint-styles": "yarn sass-lint -v",
+    "lint-js": "yarn eslint -o ./linters/eslint.html assets/js/",
+    "lint": "yarn lint-styles && yarn lint-js",
+    "toc": "./scripts/gh-md-toc README.md"
   },
   "engines": {
     "node": "~8.9.3"
@@ -49,6 +53,7 @@
     "eslint-plugin-html": "^4.0.0",
     "eslint-plugin-import": "^2.8.0",
     "gulp-theo": "^1.0.0-beta.1",
+    "husky": "^0.15.0-rc.8",
     "hygen": "^1.4.9",
     "immutable": "^3.8.2",
     "jest": "^21.2.1",
