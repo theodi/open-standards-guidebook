@@ -18,7 +18,7 @@ description: >-
 # (prose will do this by default)
 image: ./example-infographic.jpg
 # Optionally add a high resolution version of this image - if provided it will be used for the download link
-hires_image: ./example-infographic.jpg?hi-res=1
+hires_image: ./example-infographic.jpg
 
 
 # The Hero contents
