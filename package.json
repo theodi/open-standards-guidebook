@@ -14,7 +14,7 @@
     "lint-js": "yarn eslint -o ./linters/eslint.html assets/js/",
     "lint": "yarn lint-styles && yarn lint-js",
     "toc": "./scripts/gh-md-toc README.md",
-    "html-proofer": "bundle exec rake check_html"
+    "html-proofer": "yarn build && bundle exec rake check_html"
   },
   "engines": {
     "node": "~8.9.3"

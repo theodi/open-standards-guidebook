@@ -8,9 +8,9 @@ require 'html-proofer'
 task :check_html do
   options = {
     :assume_extension => true,
-    # :url_swap => {
-    #     '^/open-standards-guidebook/(.*)' => '/$1',
-    # },
+    :url_swap => {
+        '^/open-standards-guidebook/(.*)' => '/$1',
+    },
     :internal_domains => ['https://theodi.github.io'],
     :http_status_ignore => [406],
     :allow_hash_href => true,

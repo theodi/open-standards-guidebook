@@ -133,6 +133,30 @@ yarn generate-styleguide
 
 This builds the Fractal styleguide to static HTML and outputs it to a `component-library/` directory (gitignored) in the project root.
 
+
+#### Check HTML links (WIP)
+
+```
+yarn html-proofer
+```
+
+This runs [html-proofer](https://github.com/gjtorikian/html-proofer) with options configured via a [rake task](./Rakefile).
+
+This task is currently designed to be run locally (i.e. not in CI)
+
+Because we're currently deploying the site to a subdirectory, it also requires some temporary changes to `_config.yml` or it will throw a large number of false positives:
+
+Required:
+
+- comment out the `url` and `baseurl` keys. This is required so that Jekyll writes out links in a way that html-proofer can resolve. This can probably be worked around using html-proofer's `url_swap` feature, but we have not currently got that working correctly.
+
+Optional:
+
+- Change `env` to `development` (not required but will disable html minification making the build _much_ faster)
+
+
+
+
 ## Release and deployment
 
 A release script is included for convenience. Use a [semver](https://semver.org/) compliant version.
