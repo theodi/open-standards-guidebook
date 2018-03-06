@@ -9,6 +9,7 @@ cache:
   directories:
     - node_modules # NPM packages
     - '.rvm'
+    - $TRAVIS_BUILD_DIR/tmp/.htmlproofer
 
 git:
   depth: false
