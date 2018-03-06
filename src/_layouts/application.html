@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="dns-prefetch" href="https://cdn.polyfill.io">
-    <link rel="stylesheet" href="{{ 'assets/styles/main.css' | rev | absolute_url }}">
+    <link rel="stylesheet" href="{{ 'assets/styles/main.css' | rev | relative_url }}">
 
     <title>{{ page.title }} | {{ site.name }}</title>
     {% comment %}
@@ -82,7 +82,7 @@
 
                     {% if itemPage %}
                         <div class="g__cell g__cell-12 g__cell-6--medium g__cell-4--large">
-                            <a class="link link--black" href="{{ itemPage.url | absolute_url }}"><strong>{{ itemPage.title | improve  }}</strong></a>
+                            <a class="link link--black" href="{{ itemPage.url | relative_url }}"><strong>{{ itemPage.title | improve  }}</strong></a>
                             <p>{{ itemPage.description | improve  }}</p>
                         </div>
                     {% endif %}
@@ -102,7 +102,7 @@
 
 
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
-<script src="{{ 'assets/js/app.js' | rev | absolute_url }}"></script>
+<script src="{{ 'assets/js/app.js' | rev | relative_url }}"></script>
 
 {% if site.ga and jekyll.environment == 'production' %}
 <script>

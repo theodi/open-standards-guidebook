@@ -1,5 +1,11 @@
 #!/bin/bash
 
+. "$(git --exec-path)/git-sh-setup"
+
+DIR="${BASH_SOURCE%/*}"
+
+if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
+
 # Use Git Flow cli to create and push
 #
 
@@ -10,15 +16,49 @@ fi
 
 version=$1
 
-pwd
+echo "Checking for clean working tree"
+require_clean_work_tree
+
+git checkout master
+git pull origin master
+git checkout develop
+
+
+UPSTREAM=@
+LOCAL=$(git rev-parse @)
+REMOTE=$(git rev-parse "$UPSTREAM")
+BASE=$(git merge-base @ "$UPSTREAM")
+
+
+echo "Update from origin remote"
+git remote update origin
+
+
+echo "Checking up to date with remote"
+if [ $LOCAL = $REMOTE ]; then
+    echo "Up-to-date"
+elif [ $LOCAL = $BASE ]; then
+    echo "Need to pull"
+    exit 1
+elif [ $REMOTE = $BASE ]; then
+    echo "Need to push"
+    exit 1
+else
+    echo "Diverged"
+    exit 1
+fi
+
+# Go for launch
 echo "Starting release $version"
 git flow release start $version
 
+# Version
 echo "Updating VERSION"
 echo $version > VERSION
 git add VERSION
 git commit -m "$version release"
 
+# Finish and push
 echo "Finishing release $version"
-git flow release finish -p -m "v.$(version)" $version
+git flow release finish -m -p "v.$(version)" $version
 git flow release publish $version

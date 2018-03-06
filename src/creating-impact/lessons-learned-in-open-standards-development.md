@@ -55,7 +55,7 @@ sidebar:
           url: http://www.opennorth.ca/2017/12/21/from-development-to-adoption-lessons-from-three-open-standards.html
         -          
           title: "W3C: Study of practices and tooling for web data standardisation"
-          url: https://www.w3.org/2017/12/odi-study/)
+          url: https://www.w3.org/2017/12/odi-study/
 ---
 
 

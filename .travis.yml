@@ -9,9 +9,14 @@ cache:
   directories:
     - node_modules # NPM packages
     - '.rvm'
+    - $TRAVIS_BUILD_DIR/tmp/.htmlproofer
 
 git:
   depth: false
+
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
 
 before_install:
   - . $HOME/.nvm/nvm.sh
@@ -33,4 +38,4 @@ deploy:
   local-dir: dist
   verbose: true
   on:
-    branch: develop
+    branch: master

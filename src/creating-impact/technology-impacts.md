@@ -7,7 +7,6 @@ description: >-
     Open standards for data have impacts on technology including producing better quality data and encouraging the development of new tools and services.
 nav:
   order: 6
-description: 
 gdoc: https://docs.google.com/document/d/1iUfKlqT7I-jwR__kx0kUEiQCUGC7WmReFY5uKEXO-VQ/edit?usp=sharing
 sidebar:
   sections:
