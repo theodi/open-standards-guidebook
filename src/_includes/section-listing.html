@@ -40,7 +40,7 @@
                     {% if section.type == 'short' %}
                     <div class="u-trim--all pad-bottom-small">
                     {% endif %}
-                        <h4 class="m-section-listing__title"><a class="link" href="{{ itemPage.url | relative_url }}">{{ itemPage.title | improve }}</a></h4>
+                        <h4 class="m-section-listing__title"><a class="link" href="{{ itemPage.url | strip | relative_url }}">{{ itemPage.title | improve }}</a></h4>
                     {% if section.type == 'short' %}
                         </div>
                     {% endif %}
