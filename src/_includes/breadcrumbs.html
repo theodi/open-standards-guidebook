@@ -16,7 +16,7 @@
             {% if forloop.last %}
                 <span class="m-breadcrumb__item is--active">{{ title }}</span>
             {% else %}
-                <a class="m-breadcrumb__item" href="{{ part_page.url  | absolute_url }}">{{ title }}</a>
+                <a class="m-breadcrumb__item" href="{{ part_page.url  | relative_url }}">{{ title }}</a>
           {% endif %}
         {% endfor %}
     </div>

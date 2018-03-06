@@ -52,7 +52,7 @@ Determine the base page for this nav
 {% endif %}
 
 {% if base_page %}
-    <h4 class="meta-title"><a href="{{ base_page.url | absolute_url }}">{{ section_name }}</a></h4>
+    <h4 class="meta-title"><a href="{{ base_page.url | relative_url }}">{{ section_name }}</a></h4>
 {% endif %}
 
 <nav>
@@ -86,7 +86,7 @@ Determine the base page for this nav
                         {% if node.nav.title %}
                             {% assign title = node.nav.title %}
                         {% endif %}
-                        <a class="nav-item nav-item--large {{ activeClass }}" href="{{ node.url | absolute_url }}">{{ title | improve }}</a>
+                        <a class="nav-item nav-item--large {{ activeClass }}" href="{{ node.url | relative_url }}">{{ title | improve }}</a>
                     {% endif %}
                 {% endif %}
             {% endif %}

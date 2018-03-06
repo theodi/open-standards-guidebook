@@ -14,7 +14,7 @@
                 <div class="u-text-color--white">
                     <nav>
                         {% for item in site.data.top_aux_nav %}
-                            <a href="{{ item.url | absolute_url }}" class="nav-item nav-item--inline
+                            <a href="{{ item.url | relative_url }}" class="nav-item nav-item--inline
                             {% if page.url contains item.url %}is--active{% endif %}
                             ">{{ item.title | improve }}</a>
                         {% endfor %}
@@ -28,7 +28,7 @@
                 <div class="is-hidden is-visible--medium">
                     <nav class="m-masthead-nav">
                         {% for item in site.data.main_nav %}
-                            <a href="{{ item.url | absolute_url }}" class="m-masthead-nav__item
+                            <a href="{{ item.url | relative_url }}" class="m-masthead-nav__item
                             {% if page.url contains item.url %}is--active{% endif %}
                             ">{{ item.title | improve }}</a>
                         {% endfor %}
@@ -53,13 +53,13 @@
 <div class="is-visible is-hidden--medium">
     <nav class="m-nav-mobile" id="mobile-nav" aria-hidden="true">
         {% for item in site.data.main_nav %}
-            <a href="{{ item.url | absolute_url }}" class="m-nav-mobile__item
+            <a href="{{ item.url | relative_url }}" class="m-nav-mobile__item
             {% if page.url contains item.url %}is--active{% endif %}
             ">{{ item.title | improve }}</a>
         {% endfor %}
         <hr>
         {% for item in site.data.top_aux_nav %}
-            <a href="{{ item.url | absolute_url }}" class="m-nav-mobile__item
+            <a href="{{ item.url | relative_url }}" class="m-nav-mobile__item
             {% if page.url contains item.url %}is--active{% endif %}
             ">{{ item.title | improve }}</a>
         {% endfor %}
