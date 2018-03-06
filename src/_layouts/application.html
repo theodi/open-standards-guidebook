@@ -32,6 +32,14 @@
     <meta property="twitter:image" content="{{ site.url}}/twitter-card.png" />
     <meta property="og:image" content="{{ site.url}}/twitter-card.png" />
     <meta name="twitter:creator" content="@{{ site.twitter.username }}" />
+    {% capture robots %}
+        {% if page.robots %}
+            {{ page.robots }}
+        {% else %}
+            {{ site.robots }}
+        {% endif %}
+    {% endcapture %}
+    <meta name="robots" content="{{ robots | strip }}">
 
     {% include favicons.html %}
 </head>
