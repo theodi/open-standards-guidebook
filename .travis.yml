@@ -37,4 +37,4 @@ deploy:
   local-dir: dist
   verbose: true
   on:
-    branch: develop
+    branch: master
