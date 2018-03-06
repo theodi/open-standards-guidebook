@@ -4,7 +4,10 @@ layout: listing
 nav:
   order: 1
   title: Introduction
-description: This section of the guidebook explores what an open standards for data is and when to use or create one.
+description: >- 
+
+
+    This section of the guidebook explores what an open standards for data is and when to use or create one.
 sections:
   items:
     - type: grid # full, grid, short
