@@ -2,7 +2,8 @@
 title: How to use the open standards for data canvas
 layout: content-page
 description: Open standards for data are reusable agreements that make it easier for people and organisations to publish, access, share and use better quality data. A good starting point when developing an open standard is a shared understanding of why it is needed and what it will cover. The canvas is a way of documenting and sharing that understanding.
-
+nav:
+    order: 4
 downloads:
   items:
   - title: Where to find the canvas
