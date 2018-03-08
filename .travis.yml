@@ -29,6 +29,7 @@ install:
 
 script:
   - yarn build
+  # - bundle exec rake check_html # Deliberately disabled for now
 
 deploy:
   provider: pages
