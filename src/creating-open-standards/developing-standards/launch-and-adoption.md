@@ -1,8 +1,11 @@
 ---
-title: 'Developing standards: launch & adoption'
+title: 'Developing standards: launch and adoption'
 nav:
-    title: Launch & Adoption
+    title: Launch and adoption
     order: 4
-description: 'Once a stable version of the open standard is ready, a launch promotes it to a wider audience. Focus can shift to understanding how the standard is used in practice.'
+description: >- 
+    
+    
+    Share the standard with an open license to a wider audience and help others use it.
 gdoc: 'https://docs.google.com/document/d/12m2cBdI1kqFwvv2JgLz7OkZSs-yBp336WTULqKr75EI/edit'
 ---
