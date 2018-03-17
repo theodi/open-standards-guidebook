@@ -57,12 +57,6 @@ This portal focuses on a detailed, searchable list of standards for the food and
 
 **Use this for**: food and agriculture sectors, general open standards
 
-# [Ireland government open standards](https://data.gov.ie/openstandard)
-
-The government of the Republic of Ireland maintains a short list of open standards on their open data portal [data.gov.ie](https://data.gov.ie). It features a mix of vocabularies and formats used by the government.
-
-**Use this for**: civic sector, government accountability
-
 # [Linked open vocabularies](http://lov.okfn.org/dataset/lov/about)
 
 This list of vocabularies is hosted by the [Open Knowledge Foundation](http://okfn.org/). It focuses on helping people and organisations discover new vocabularies that use [linked data](http://linkeddata.org/), assessing the vocabularies and adding new vocabularies as needed.

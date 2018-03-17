@@ -41,7 +41,7 @@ sidebar:
           url: http://os4d.opendataservices.coop/
         -          
           title: "OpenNorth: From development to adoption – lessons from three open standards"
-          url: http://www.opennorth.ca/2017/12/21/from-development-to-adoption-lessons-from-three-open-standards.html        -          
+          url: http://www.opennorth.ca/2017/12/21/from-development-to-adoption-lessons-from-three-open-standards.html
         -          
           title: "Bibiana McHugh, Pioneering open data standards: the GTFS story"
           url: http://beyondtransparency.org/chapters/part-2/pioneering-open-data-standards-the-gtfs-story/
