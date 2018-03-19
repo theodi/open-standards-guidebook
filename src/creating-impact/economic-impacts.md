@@ -40,7 +40,7 @@ sidebar:
           url: http://www.theopenprotocol.org/)
         -
           title: "White paper: Using data to take an open approach to investment banking"
-          url: https://theodi.org/an-openapproach-to-investmentbanking
+          url: https://theodi.org/article/using-data-to-take-an-open-approach-to-investment-banking/
     - intro: The open standards development lifecycle
       items:
         -

@@ -12,9 +12,9 @@ downloads:
     - title: Open Standards for Data Canvas
       url: https://docs.google.com/document/d/1Uk7ocfFGwt_43O9Qhv_ixP4s0MDCOi1Sncl_t-Nn6wg/edit?usp=sharing
     - title: "Open Standards for Data Canvas"
-      url: ./open-standards-for-data.pdf
+      url: /creating-open-standards/how-to-use-the-open-standards-for-data-canvas/open-standards-for-data-canvas.pdf
     - title: "GTFS Example"
-      url: ./gtfs-example.pdf
+      url: /creating-open-standards/how-to-use-the-open-standards-for-data-canvas/open-standards-for-data-canvas-gtfs-example.pdf
 ---
 
 # Who is it for?
