@@ -67,13 +67,13 @@ Review ‘[How open standards are developed](https://docs.google.com/document/d/
 
 # Before you begin
 
-In ‘[Scoping and starting](https://docs.google.com/document/d/1mpAgLM3OiO5FFanRYI4Qz5M3fXh2TYmeSIlde_hNFSM/edit?usp=sharing)’, we explored researching, planning and approving the goals, features, budget, schedule and resources to develop your open standard. 
+In ‘[Scoping and starting](https://docs.google.com/document/d/1mpAgLM3OiO5FFanRYI4Qz5M3fXh2TYmeSIlde_hNFSM/edit?usp=sharing)’, we explore researching, planning and approving the goals, features, budget, schedule and resources to develop your open standard. 
 
 With an approved development plan and method selected, you can begin development.
 
 The development method you selected will strongly influence how you develop the open standard. 
 
-In this section we will focus on how you can  develop your open standard collaboratively and in the open.
+In this section we focus on how you can  develop your open standard collaboratively and in the open.
 
 # Assemble your team
 
@@ -103,7 +103,7 @@ In the [‘Standards community’](/community) section, we include organisation 
 
 # Set up your infrastructure
 
-In ‘[Scoping and starting](https://docs.google.com/document/d/1mpAgLM3OiO5FFanRYI4Qz5M3fXh2TYmeSIlde_hNFSM/edit?usp=sharing)’, we recommended choosing a development infrastructure to support the development team and share progress with the standards community.
+In ‘[Scoping and starting](https://docs.google.com/document/d/1mpAgLM3OiO5FFanRYI4Qz5M3fXh2TYmeSIlde_hNFSM/edit?usp=sharing)’, we recommend choosing a development infrastructure to support the development team and share progress with the standards community.
 
 For the development infrastructure, consider a repository or platform that:
 
@@ -155,7 +155,7 @@ For example, development may involve turning conceptual models (described in ‘
 
 In our research, ‘[User experiences of open standard](https://docs.google.com/document/d/1E5uARrZf5AJUIF_DJz-42_793EY_Dwk7n7B3bMn3x5A/edit?usp=sharing)’, we found that a successful open standard is one that has been tested and implemented. 
 
-In ‘[Scoping and starting](https://docs.google.com/document/d/1mpAgLM3OiO5FFanRYI4Qz5M3fXh2TYmeSIlde_hNFSM/edit?usp=sharing)’, we recommended making testing part of the development plan. 
+In ‘[Scoping and starting](https://docs.google.com/document/d/1mpAgLM3OiO5FFanRYI4Qz5M3fXh2TYmeSIlde_hNFSM/edit?usp=sharing)’, we recommend making testing part of the development plan. 
 
 Testing helps make your open standard more robust, which can improve trust and confidence and result in increased  adoption rates. 
 
