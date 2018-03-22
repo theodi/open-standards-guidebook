@@ -73,7 +73,7 @@ Open standards tend to have dedicated websites to help potential adopters find s
 
 For example, [Open Referral](https://openreferral.org/) for community resources, the [Open Contracting Data Standard](http://standard.open-contracting.org/) for disclosing public procurement and the [Humanitarian Exchange Standard](http://hxlstandard.org/) for humanitarian crises, all of which have dedicated websites.
 
-Some open standards are listed by the governments and public bodies who support them, for example the [UK government list of approved open standards](https://www.gov.uk/government/publications/open-standards-for-government), the [U.S. Data Federation](https://federation.data.gov/) and [Ireland’s open standards](https://data.gov.ie/openstandard).
+Some open standards are listed by the governments and public bodies who support them, for example the [UK government list of approved open standards](https://www.gov.uk/government/publications/open-standards-for-government) and the [U.S. Data Federation](https://federation.data.gov/).
 
 Finding open standards then working out if they are right for you can be time consuming. 
 
