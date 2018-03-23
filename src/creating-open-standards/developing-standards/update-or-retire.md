@@ -16,19 +16,19 @@ sidebar:
       items:
         -          
           title: "Developing standards: scoping and starting"
-          url: https://docs.google.com/document/d/1mpAgLM3OiO5FFanRYI4Qz5M3fXh2TYmeSIlde_hNFSM/edit?usp=sharing
+          url: /creating-open-standards/developing-standards/scoping-and-starting
         -          
           title: "Developing standards: development"
-          url: https://docs.google.com/document/d/1XdcoJa3Gj7-J1SOzH1OBfPSKTYM_xvB0XPnfFqBM_gA/edit?usp=sharing
+          url: /creating-open-standards/developing-standards/development
         -          
           title: "Developing standards: launch and adoption"
-          url: https://docs.google.com/document/d/12m2cBdI1kqFwvv2JgLz7OkZSs-yBp336WTULqKr75EI/edit?usp=sharing
+          url: /creating-open-standards/developing-standards/launch-and-adoption
         -          
           title: "Developing standards: review"
-          url: https://docs.google.com/document/d/1YTyei9hnjvxlKCLcHFOP2bmHj04jY2xx4PnTCxUhg1w/edit?usp=sharing
+          url: /creating-open-standards/developing-standards/review
         -          
           title: "Developing standards: update or retire"
-          url: https://docs.google.com/document/d/1mRXWd1yJRenV-xFbW3iTTs4zKGiCLLXkMYWiMlXoexw/edit?usp=sharing
+          url: /creating-open-standards/developing-standards/update-or-retire
     - intro: Read about updating standards
       items:
         -          
@@ -49,23 +49,23 @@ sidebar:
 
 Developing an open standard can follow a variety of paths to the same goal: to produce a robust, successful and reusable shared agreement that helps produce better quality data. 
 
-This section, ‘[Developing standards](https://docs.google.com/document/d/1p2o3pn8l1j-AKnIIx0mY-RpNdgz33ujJzUCQVWUi8Gg/edit?usp=sharing)’, is intended as a guide to the activities, documents and resources to consider in developing a successful open standard. 
+This section, ‘[Developing standards](/creating-open-standards/developing-standards)’, is intended as a guide to the activities, documents and resources to consider in developing a successful open standard. 
 
 This is not a set of rules to follow, but a guide to help you make the right choices for your open standard.
 
-Review ‘[How open standards are developed](https://docs.google.com/document/d/1kBsBph0bionPForwpriLMLY9MozSMHdviOandnK_hjM/edit?usp=sharing)’ for an overview and ‘[Creating open standards: Getting started](https://docs.google.com/document/d/11y7VRSIsOXhMlVxfKlBnwYk3QU_uppb_RMN0wzXF6mg/edit?usp=sharing)’ to explore what to consider before developing an open standard.
+Review ‘[How open standards are developed](/introduction/how-open-standards-are-developed)’ for an overview and ‘[Creating open standards: Getting started](/creating-open-standards/getting-started)’ to explore what to consider before developing an open standard.
 
 # Before you begin
 
-In ‘[Review](https://docs.google.com/document/d/1YTyei9hnjvxlKCLcHFOP2bmHj04jY2xx4PnTCxUhg1w/edit?usp=sharing)’, we explore what to consider when assessing the impact of the open standard and what changes (if any) are needed for the standard to be effective, including doing nothing, updating the standard, and retirement. 
+In ‘[Review](/creating-open-standards/developing-standards/review)’, we explore what to consider when assessing the impact of the open standard and what changes (if any) are needed for the standard to be effective, including doing nothing, updating the standard, and retirement. 
 
 With a consensus from the standard’s community on the next steps, the standard can be updated or actively retired.
 
 # Update the standard
 
-Processes in the updates stage are similar to those in the ‘[Development](https://docs.google.com/document/d/1XdcoJa3Gj7-J1SOzH1OBfPSKTYM_xvB0XPnfFqBM_gA/edit?usp=sharing)’ stage with some key differences. During development, the standard is new, so decisions focus on the features necessary for a robust and stable product. 
+Processes in the updates stage are similar to those in the ‘[Development](/creating-open-standards/developing-standards/development)’ stage with some key differences. During development, the standard is new, so decisions focus on the features necessary for a robust and stable product. 
 
-At the ‘[Review](https://docs.google.com/document/d/1YTyei9hnjvxlKCLcHFOP2bmHj04jY2xx4PnTCxUhg1w/edit?usp=sharing)’ stage, the standard is in use, so changes will impact a wide variety of adopters – people and organisations using or supporting the standard, data produced using the standard, and models produced using guidance.
+At the ‘[Review](/creating-open-standards/developing-standards/review)’ stage, the standard is in use, so changes will impact a wide variety of adopters – people and organisations using or supporting the standard, data produced using the standard, and models produced using guidance.
 
 The impact of proposed changes should be carefully considered. 
 
@@ -117,7 +117,7 @@ Typical activities when updating an open standard include:
 
 * **announcing changes in good time,** allowing adopters to assess and plan for changes internally where needed
 
-Once the scope and management of updates has been decided and agreed, work can begin on [development](https://docs.google.com/document/d/1XdcoJa3Gj7-J1SOzH1OBfPSKTYM_xvB0XPnfFqBM_gA/edit?usp=sharing) of the new version.
+Once the scope and management of updates has been decided and agreed, work can begin on [development](/creating-open-standards/developing-standards/development) of the new version.
 
 # Choose active retirement
 

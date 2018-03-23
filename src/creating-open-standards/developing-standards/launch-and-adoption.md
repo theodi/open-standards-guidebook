@@ -15,19 +15,19 @@ sidebar:
       items:
         -          
           title: "Developing standards: scoping and starting"
-          url: https://docs.google.com/document/d/1mpAgLM3OiO5FFanRYI4Qz5M3fXh2TYmeSIlde_hNFSM/edit?usp=sharing
+          url: /creating-open-standards/developing-standards/scoping-and-starting
         -          
           title: "Developing standards: development"
-          url: https://docs.google.com/document/d/1XdcoJa3Gj7-J1SOzH1OBfPSKTYM_xvB0XPnfFqBM_gA/edit?usp=sharing
+          url: /creating-open-standards/developing-standards/development
         -          
           title: "Developing standards: launch and adoption"
-          url: https://docs.google.com/document/d/12m2cBdI1kqFwvv2JgLz7OkZSs-yBp336WTULqKr75EI/edit?usp=sharing
+          url: /creating-open-standards/developing-standards/launch-and-adoption
         -          
           title: "Developing standards: review"
-          url: https://docs.google.com/document/d/1YTyei9hnjvxlKCLcHFOP2bmHj04jY2xx4PnTCxUhg1w/edit?usp=sharing
+          url: /creating-open-standards/developing-standards/review
         -          
           title: "Developing standards: update or retire"
-          url: https://docs.google.com/document/d/1mRXWd1yJRenV-xFbW3iTTs4zKGiCLLXkMYWiMlXoexw/edit?usp=sharing
+          url: /creating-open-standards/developing-standards/update-or-retire
     - intro: Read other people’s experiences of launching products and monitoring adoption
       items:
         -          
@@ -47,15 +47,15 @@ sidebar:
 
 Developing an open standard can follow a variety of paths to the same goal: to produce a robust, successful and reusable shared agreement that helps produce better quality data. 
 
-This section, ‘[Developing standards](https://docs.google.com/document/d/1p2o3pn8l1j-AKnIIx0mY-RpNdgz33ujJzUCQVWUi8Gg/edit?usp=sharing)’, is intended as a guide to the activities, documents and resources to consider in developing a successful open standard. 
+This section, ‘[Developing standards](/creating-open-standards/developing-standards)’, is intended as a guide to the activities, documents and resources to consider in developing a successful open standard. 
 
 This is not a set of rules to follow, but a guide to help you make the right choices for your open standard.
 
-Review ‘[How open standards are developed](https://docs.google.com/document/d/1kBsBph0bionPForwpriLMLY9MozSMHdviOandnK_hjM/edit?usp=sharing)’ for an overview and ‘[Creating open standards: Getting started](https://docs.google.com/document/d/11y7VRSIsOXhMlVxfKlBnwYk3QU_uppb_RMN0wzXF6mg/edit?usp=sharing)’ to explore what to consider before developing an open standard.
+Review ‘[How open standards are developed](/introduction/how-open-standards-are-developed)’ for an overview and ‘[Creating open standards: Getting started](/creating-open-standards/getting-started)’ to explore what to consider before developing an open standard.
 
 # Before you begin
 
-In ‘[Development](https://docs.google.com/document/d/1XdcoJa3Gj7-J1SOzH1OBfPSKTYM_xvB0XPnfFqBM_gA/edit?usp=sharing)’, we explore how to develop your open standard collaboratively and in the open. 
+In ‘[Development](/creating-open-standards/developing-standards/development)’, we explore how to develop your open standard collaboratively and in the open. 
 
 With a stable version of the open standard and supporting resources developed, you can launch your standard and monitor its impact.
 
@@ -65,11 +65,11 @@ In this section we focus on how you can use the launch of your open standard to 
 
 Launching a successful open standard means sharing a stable version with a wide audience. 
 
-You should also share resources that make it easier for people and organisations to adopt and use the open standard – for example guides, test suites of data or models, tools, and code libraries. Review the ‘Expected outputs’ section of ‘[Developing standards: development](https://docs.google.com/document/d/1XdcoJa3Gj7-J1SOzH1OBfPSKTYM_xvB0XPnfFqBM_gA/edit?usp=sharing)’ for related resources.
+You should also share resources that make it easier for people and organisations to adopt and use the open standard – for example guides, test suites of data or models, tools, and code libraries. Review the ‘Expected outputs’ section of ‘[Developing standards: development](/creating-open-standards/developing-standards/development)’ for related resources.
 
 The launch event can be the start of widespread engagement, advocacy and adoption. 
 
-In ‘[Creating open standards: getting started](https://docs.google.com/document/d/11y7VRSIsOXhMlVxfKlBnwYk3QU_uppb_RMN0wzXF6mg/edit?usp=sharing)’, we recommend you begin engaging the community as early in the development process as possible to build relationships with your stakeholders – the people and organisations who will adopt, use or be affected your open standard. 
+In ‘[Creating open standards: getting started](/creating-open-standards/getting-started)’, we recommend you begin engaging the community as early in the development process as possible to build relationships with your stakeholders – the people and organisations who will adopt, use or be affected your open standard. 
 
 We explore why the community of stakeholders is wider than adopters of the open standard. Review the ‘Identify the community’ section to understand why it’s important to engage with a variety of stakeholders.
 
@@ -121,7 +121,7 @@ Other people and organisations affected by the open standard may also need suppo
 
 As your open standard is adopted and used, funders or stakeholders may want to understand who is using the standard, its impact and how it’s being used. 
 
-You can choose to monitor a variety of stakeholders and scenarios. This information is useful at ‘[Review](https://docs.google.com/document/d/1YTyei9hnjvxlKCLcHFOP2bmHj04jY2xx4PnTCxUhg1w/edit?usp=sharing)’ stage, where it can help you decide to ‘[Update or retire](https://docs.google.com/document/d/1mRXWd1yJRenV-xFbW3iTTs4zKGiCLLXkMYWiMlXoexw/edit?usp=sharing)’ the standard.
+You can choose to monitor a variety of stakeholders and scenarios. This information is useful at ‘[Review](/creating-open-standards/developing-standards/review)’ stage, where it can help you decide to ‘[Update or retire](/creating-open-standards/developing-standards/update-or-retire)’ the standard.
 
 <div class="callout" markdown="1">
 **To monitor adoption, you can:**

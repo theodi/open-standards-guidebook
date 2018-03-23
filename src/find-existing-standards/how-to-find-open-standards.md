@@ -14,13 +14,13 @@ sidebar:
       items:
         -          
           title: When not to create new standards
-          url: https://docs.google.com/document/d/1OoK8T5OtQriFARhb1cSFypAQNz24iEtgURd8YqfI-B0/edit?usp=sharing
+          url: /introduction/when-not-to-create-new-standards
         -          
           title: How to choose an open standard
-          url: https://docs.google.com/document/d/1iCYntYYX0lFVM-fm94siqPeMPU8dA_ctDQ2yewb9YQ8/edit?usp=sharing
+          url: /find-existing-standards/how-to-choose-an-open-standard
         -          
           title: Tools to find open standards
-          url: https://docs.google.com/document/d/1iTCCFu7WRx5Ak11MtPvApphkutaaPVxOzy0L2NnwWYM/edit?usp=sharing
+          url: /find-existing-standards/tools-to-find-open-standards
     - intro: Read our research on open standards for data
       items:
         -          
@@ -79,4 +79,4 @@ Finding open standards then working out if they are right for you can be time co
 
 Resources like directories and case studies have been developed to make the research process easier. The [Open data standards directory](http://datastandards.directory/), the [Civic open data standards by Azavea](https://azavea.gitbooks.io/open-data-standards/content/) and [GeoThink’s dashboard for open data standards](https://docs.google.com/spreadsheets/d/12wcUhE6waDz0RPT81E5aebcJf58AH92FstMZQKy5kRc/edit#gid=1514863604) are useful resources that help you search for and assess open standards.
 
-More resources are listed in our guide ‘[Tools to find open standards](https://docs.google.com/document/d/1iTCCFu7WRx5Ak11MtPvApphkutaaPVxOzy0L2NnwWYM/edit?usp=sharing)’.
+More resources are listed in our guide ‘[Tools to find open standards](/find-existing-standards/tools-to-find-open-standards)’.

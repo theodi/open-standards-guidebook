@@ -15,16 +15,16 @@ sidebar:
       items:
         -          
           title: "Developing standards: scoping and starting"
-          url: https://docs.google.com/document/d/1mpAgLM3OiO5FFanRYI4Qz5M3fXh2TYmeSIlde_hNFSM/edit?usp=sharing
+          url: /creating-open-standards/developing-standards/scoping-and-starting
         -          
           title: "Developing standards: development"
-          url: https://docs.google.com/document/d/1XdcoJa3Gj7-J1SOzH1OBfPSKTYM_xvB0XPnfFqBM_gA/edit?usp=sharing
+          url: /creating-open-standards/developing-standards/development
         -          
           title: "Developing standards: launch and adoption"
-          url: https://docs.google.com/document/d/12m2cBdI1kqFwvv2JgLz7OkZSs-yBp336WTULqKr75EI/edit?usp=sharing
+          url: /creating-open-standards/developing-standards/launch-and-adoption
         -          
           title: "Developing standards: update or retire"
-          url: https://docs.google.com/document/d/1mRXWd1yJRenV-xFbW3iTTs4zKGiCLLXkMYWiMlXoexw/edit?usp=sharing
+          url: /creating-open-standards/developing-standards/update-or-retire
     - intro: Read about reviewing standards
       items:
         -          
@@ -43,15 +43,15 @@ sidebar:
 
 Developing an open standard can follow a variety of paths to the same goal: to produce a robust, successful and reusable shared agreement that helps produce better quality data. 
 
-‘[Developing standards](https://docs.google.com/document/d/1p2o3pn8l1j-AKnIIx0mY-RpNdgz33ujJzUCQVWUi8Gg/edit?usp=sharing)’, is a guide to the activities, documents and resources to consider in developing a successful open standard. 
+‘[Developing standards](/creating-open-standards/developing-standards)’, is a guide to the activities, documents and resources to consider in developing a successful open standard. 
 
 This is not a set of rules to follow, but a guide to help you make the right choices for your open standard.
 
-Review ‘[How open standards are developed](https://docs.google.com/document/d/1kBsBph0bionPForwpriLMLY9MozSMHdviOandnK_hjM/edit?usp=sharing)’ for an overview and ‘[Creating open standards: Getting started](https://docs.google.com/document/d/11y7VRSIsOXhMlVxfKlBnwYk3QU_uppb_RMN0wzXF6mg/edit?usp=sharing)’ to explore what to consider before developing an open standard.
+Review ‘[How open standards are developed](/introduction/how-open-standards-are-developed)’ for an overview and ‘[Creating open standards: Getting started](/creating-open-standards/getting-started)’ to explore what to consider before developing an open standard.
 
 # Before you begin
 
-In ‘[Launch and adoption](https://docs.google.com/document/d/12m2cBdI1kqFwvv2JgLz7OkZSs-yBp336WTULqKr75EI/edit?usp=sharing)’, we explore planning a successful launch to share the standard with a wide audience and promote adoption. 
+In ‘[Launch and adoption](/creating-open-standards/developing-standards/launch-and-adoption)’, we explore planning a successful launch to share the standard with a wide audience and promote adoption. 
 
 With a robust, tested, open standard launched, a review is useful to assess its performance and impact. 
 
@@ -61,7 +61,7 @@ In this section we focus on how to review an open standard so you can make the d
 
 As your standard is adopted and used, errors, requests for changes and new features could emerge. The landscape around the standard may also change: new standards, regulations, and other changes could lead to the standard needing an update or retirement.
 
-At the [scoping and starting](https://docs.google.com/document/d/1mpAgLM3OiO5FFanRYI4Qz5M3fXh2TYmeSIlde_hNFSM/edit?usp=sharing) stage, the owner of the standard can decide when the standard will be reviewed. The review may be scheduled or triggered when certain conditions are met, for example:
+At the [scoping and starting](/creating-open-standards/developing-standards/scoping-and-starting) stage, the owner of the standard can decide when the standard will be reviewed. The review may be scheduled or triggered when certain conditions are met, for example:
 
 * a new policy or legislation is announced
 
@@ -69,7 +69,7 @@ At the [scoping and starting](https://docs.google.com/document/d/1mpAgLM3OiO5FFa
 
 * a number of changes are requested
 
-To build trust and confidence in the open standard, it’s useful to have clear guidance on how and when the review will happen. This guidance is part of the standard’s [governance process](https://docs.google.com/document/d/18E_-dxiHzDJVPI2Ib8SkqtChsxJ3MllDhTVPZRgx540/edit?usp=sharing).
+To build trust and confidence in the open standard, it’s useful to have clear guidance on how and when the review will happen. This guidance is part of the standard’s [governance process](/creating-open-standards/managing-change-in-open-standards).
 
 <div class="callout" markdown="1">
 **When deciding to review, it’s useful to:**
@@ -95,11 +95,11 @@ Other development processes, for example, [agile methods](https://www.gov.uk/ser
 
 The process of reviewing the standard might include:
 
-* **agreeing on the need for review** in line with the standard’s [governance process](https://docs.google.com/document/d/18E_-dxiHzDJVPI2Ib8SkqtChsxJ3MllDhTVPZRgx540/edit?usp=sharing)
+* **agreeing on the need for review** in line with the standard’s [governance process](/creating-open-standards/managing-change-in-open-standards)
 
 * **deciding who will perform the review** and who will make the final decision to do nothing, update or retire the standard
 
-* **deciding on the process** to follow in line with the standard’s [governance process](https://docs.google.com/document/d/18E_-dxiHzDJVPI2Ib8SkqtChsxJ3MllDhTVPZRgx540/edit?usp=sharing)
+* **deciding on the process** to follow in line with the standard’s [governance process](/creating-open-standards/managing-change-in-open-standards)
 
 * **prioritising what to review** from feature requests, error reports or feedback
 
@@ -109,17 +109,17 @@ The process of reviewing the standard might include:
 
 * **deciding on the next steps to take**: do nothing, update or retire the standard. 
 
-During the review, it’s useful to focus on the aims and objectives developed while [scoping and starting](https://docs.google.com/document/d/1mpAgLM3OiO5FFanRYI4Qz5M3fXh2TYmeSIlde_hNFSM/edit?usp=sharing). Questions should focus on real-world use and check: 
+During the review, it’s useful to focus on the aims and objectives developed while [scoping and starting](/creating-open-standards/developing-standards/scoping-and-starting). Questions should focus on real-world use and check: 
 
-* **How well was the standard adopted?** In our research ‘[User experiences of open standards for data](https://docs.google.com/document/d/1E5uARrZf5AJUIF_DJz-42_793EY_Dwk7n7B3bMn3x5A/edit#)’, we found that the number of people using an open standard was one common indicator of success. You may have targets for types of adopters rather than overall numbers – for example, focusing on national governments or companies of a particular size.
+* **How well was the standard adopted?** In our research ‘[User experiences of open standards for data](https://docs.google.com/document/d/1E5uARrZf5AJUIF_DJz-42_793EY_Dwk7n7B3bMn3x5A/edit?usp=sharing)’, we found that the number of people using an open standard was one common indicator of success. You may have targets for types of adopters rather than overall numbers – for example, focusing on national governments or companies of a particular size.
 
 * **How easy was it to adopt the standard?** Feedback from adopters can highlight where the standard is difficult to implement or use. To improve adoption, you can focus on changes that support easy implementation.
 
-* **What impact has the standard made?** In ‘[Creating impact with open standards](https://docs.google.com/document/d/1DhhO7mCq6hIUJxLGT2gI3Y2brmFmUVf5PhgTNz7nYAo/edit?usp=sharing)’, we explore delivering a robust open standard by focusing on a clear problem and understanding its ecosystem. In the review, assess the impact the standard has had by examining how well the standard has solved the problem and how the ecosystem has changed since the standard was launched.
+* **What impact has the standard made?** In ‘[Creating impact with open standards](/creating-impact/getting-started)’, we explore delivering a robust open standard by focusing on a clear problem and understanding its ecosystem. In the review, assess the impact the standard has had by examining how well the standard has solved the problem and how the ecosystem has changed since the standard was launched.
 
 * **How well does the standard work with other standards?** To make your open standard easier to adopt and use, we recommend making it interoperable – allowing it to work well with other standards. Assess how well your open standard supports sharing data, open formats, and existing shared vocabularies. 
 
-* **What errors were reported?** In ‘[Development](https://docs.google.com/document/d/1XdcoJa3Gj7-J1SOzH1OBfPSKTYM_xvB0XPnfFqBM_gA/edit?usp=sharing)’,  we highlight the importance of a robust standard that has been rigorously tested. At review, consider any errors that have been reported. What changes are needed to fix the errors and improve the testing process?
+* **What errors were reported?** In ‘[Development](/creating-open-standards/developing-standards/development)’,  we highlight the importance of a robust standard that has been rigorously tested. At review, consider any errors that have been reported. What changes are needed to fix the errors and improve the testing process?
 
 * **What changes were requested?** Data publishers, data users, guidance users, developers and others using the standard, its products or services may ask for new features or changes to existing features. 
 
@@ -140,7 +140,7 @@ Decision makers may be the standard’s owner or, for example, a governance boar
 
 * **update the standard** by investing funding and resources in improvements
 
-* **refine the standard** by revisiting the ‘[Scoping and starting](https://docs.google.com/document/d/1mpAgLM3OiO5FFanRYI4Qz5M3fXh2TYmeSIlde_hNFSM/edit?usp=sharing)’ stage if adoption is low or the standard doesn’t provide the intended solutions
+* **refine the standard** by revisiting the ‘[Scoping and starting](/creating-open-standards/developing-standards/scoping-and-starting)’ stage if adoption is low or the standard doesn’t provide the intended solutions
 
 * **retire the standard** if changes in the landscape (new regulations, loss of funding, new standards) mean updates to the standard are no longer necessary.
 </div>

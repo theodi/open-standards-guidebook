@@ -15,16 +15,16 @@ sidebar:
       items:
         -          
           title: Policy impacts of open standards
-          url: https://docs.google.com/document/d/1UiPJHT7qeSR5OBbyMNtjGx9IzHVpO7j96P3kTxPDRaU/edit?usp=sharing
+          url: /creating-impact/policy-impacts
         -          
           title: Economic impacts of open standards
-          url: https://docs.google.com/document/d/1xyrbv_VTbDVElqwvp9Pov4iYT9ftUKXHzd9ifvW5yqE/edit?usp=sharing
+          url: /creating-impact/economic-impacts
         -          
           title: Social impacts of open standards
-          url: https://docs.google.com/document/d/1k6z6Lx-WMig8Zk-5p1H-ciDdFE-VRIzoKq-BFOGcb_A/edit?usp=sharing
+          url: /creating-impact/social-impact
         -          
           title: Technology impacts of open standards
-          url: https://docs.google.com/document/d/1iUfKlqT7I-jwR__kx0kUEiQCUGC7WmReFY5uKEXO-VQ/edit?usp=sharing
+          url: /creating-impact/technology-impacts
     - intro: What data publishers need
       items:
         -          

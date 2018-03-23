@@ -16,32 +16,32 @@ sidebar:
       items:
         -          
           title: How open standards are developed
-          url: https://docs.google.com/document/d/1kBsBph0bionPForwpriLMLY9MozSMHdviOandnK_hjM/edit?usp=sharing
+          url: /introduction/how-open-standards-are-developed
         -          
           title: "Creating open standards: getting started"
-          url: https://docs.google.com/document/d/11y7VRSIsOXhMlVxfKlBnwYk3QU_uppb_RMN0wzXF6mg/edit?usp=sharing)        -          
+          url: /creating-open-standards/getting-started
         -          
           title: "Developing standards: development"
-          url: https://docs.google.com/document/d/1XdcoJa3Gj7-J1SOzH1OBfPSKTYM_xvB0XPnfFqBM_gA/edit?usp=sharing)        -          
+          url: /creating-open-standards/developing-standards/development
         -          
           title: "Developing standards: launch and adoption"
-          url: https://docs.google.com/document/d/12m2cBdI1kqFwvv2JgLz7OkZSs-yBp336WTULqKr75EI/edit?usp=sharing)        -          
+          url: /creating-open-standards/developing-standards/launch-and-adoption
         -          
           title: "Developing standards: review"
-          url: https://docs.google.com/document/d/1YTyei9hnjvxlKCLcHFOP2bmHj04jY2xx4PnTCxUhg1w/edit?usp=sharing)        -          
+          url: /creating-open-standards/developing-standards/review
         -          
           title: "Developing standards: update or retire"
-          url: https://docs.google.com/document/d/1mRXWd1yJRenV-xFbW3iTTs4zKGiCLLXkMYWiMlXoexw/edit?usp=sharing)        -          
+          url: /creating-open-standards/developing-standards/update-or-retire
     - intro: Read about types of open standards
       items:
         -          
           title: Types of open standards for data
-          url: https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit?usp=sharing
+          url: /introduction/types-of-open-standards-for-data
     - intro: Read about creating impact with open standards
       items:
         -          
           title: Creating impact with open standards
-          url: https://docs.google.com/document/d/1DhhO7mCq6hIUJxLGT2gI3Y2brmFmUVf5PhgTNz7nYAo/edit?usp=sharing
+          url: /creating-impact/getting-started
 
 ---
 
@@ -49,11 +49,11 @@ sidebar:
 
 Developing an open standard can follow a variety of paths to the same goal: to produce a robust, successful and reusable shared agreement that helps ensure better quality data. 
 
-This section, ‘[Developing standards](https://docs.google.com/document/d/1p2o3pn8l1j-AKnIIx0mY-RpNdgz33ujJzUCQVWUi8Gg/edit?usp=sharing)’, is intended as a guide to the activities, documents and resources to consider so you can develop a successful open standard. 
+This section, ‘[Developing standards](/creating-open-standards/developing-standards)’, is intended as a guide to the activities, documents and resources to consider so you can develop a successful open standard. 
 
 This is not a set of rules to follow, but a guide to help you make the right choices for your open standard.
 
-Before you begin, review ‘[How open standards are developed](https://docs.google.com/document/d/1kBsBph0bionPForwpriLMLY9MozSMHdviOandnK_hjM/edit?usp=sharing)’ for an overview of developing open standards and ‘[Creating open standards: Getting started](https://docs.google.com/document/d/11y7VRSIsOXhMlVxfKlBnwYk3QU_uppb_RMN0wzXF6mg/edit?usp=sharing)’.
+Before you begin, review ‘[How open standards are developed](/introduction/how-open-standards-are-developed)’ for an overview of developing open standards and ‘[Creating open standards: Getting started](/creating-open-standards/getting-started)’.
 
 # Decide on aims and objectives
 
@@ -85,7 +85,7 @@ Typical activities to help you decide aims and define objectives:
 
 Your research, aims and objectives will help you select the right development method for your standard. 
 
-In ‘[How open standards are developed](https://docs.google.com/document/d/1kBsBph0bionPForwpriLMLY9MozSMHdviOandnK_hjM/edit?usp=sharing)’, we explored the variety of people, organisations and processes involved in developing open standards for data.
+In ‘[How open standards are developed](/introduction/how-open-standards-are-developed)’, we explored the variety of people, organisations and processes involved in developing open standards for data.
 
 For example, [BSI](https://www.bsigroup.com/en-GB/), the national body for standards in the UK, favour formal development, using their [principles of standardisation](https://www.bsigroup.com/Documents/30342351.pdf) method. 
 
@@ -121,7 +121,7 @@ The development plan should give everyone involved with the project an idea of t
 
 Activities to help plan development include:
 
-* **Prioritise and test the core or essential features** to produce a robust open standard. In ‘[Lessons learned in open standards development](https://docs.google.com/document/d/1XVbt4l0En2AeyC7l3WrgPTujGm5LkRNhQJ-7gzb_pGE/edit?usp=sharing)’, we found it useful to develop use cases, scenarios to understand what is core or essential, and what is optional and may be excluded. 
+* **Prioritise and test the core or essential features** to produce a robust open standard. In ‘[Lessons learned in open standards development](/creating-impact/lessons-learned-in-open-standards-development)’, we found it useful to develop use cases, scenarios to understand what is core or essential, and what is optional and may be excluded. 
 
     Core features may include supporting a number of file formats, translations, providing human and machine-readable documents, making the standard easy to adapt and extend, and interoperable (work well with existing standards).
 
@@ -133,9 +133,9 @@ Activities to help plan development include:
 
 * **Develop [conceptual models](https://airbrake.io/blog/sdlc/conceptual-model)** or other diagrams if necessary to ensure everyone involved in development and testing understands the underlying concepts, flow of information and scenarios. This understanding can help identify core features for development and keep development on track.
 
-* **Decide on phases of work** in line with your development method. You may decide upfront or at a later date what work to complete in each phase, how to test the product and data, and who will sign off the tests. Your chosen [governance method](https://docs.google.com/document/d/18E_-dxiHzDJVPI2Ib8SkqtChsxJ3MllDhTVPZRgx540/edit?usp=sharing) will help to manage changes as the standard is developed.
+* **Decide on phases of work** in line with your development method. You may decide upfront or at a later date what work to complete in each phase, how to test the product and data, and who will sign off the tests. Your chosen [governance method](/creating-open-standards/managing-change-in-open-standards) will help to manage changes as the standard is developed.
 
-* **Choose the development infrastructure** that will support your development team’s work. These are the tools and platforms where your development will happen and how you will share progress and resources with your community. Consider platforms that support sharing test data and test models. Read ‘[How to set up a W3C community group](https://docs.google.com/document/d/1Ddkg-u4L84XpIyhT5M9OOv_mOlstlxXJje2Bqxqwvag/edit?usp=sharing)’ for examples of a community platform. 
+* **Choose the development infrastructure** that will support your development team’s work. These are the tools and platforms where your development will happen and how you will share progress and resources with your community. Consider platforms that support sharing test data and test models. Read ‘[How to set up a W3C community group](/creating-open-standards/how-to-set-up-a-w3c-community-group)’ for examples of a community platform. 
 
 # Get approval for development
 

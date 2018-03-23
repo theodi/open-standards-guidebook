@@ -44,7 +44,7 @@ Governance makes it clear who will manage change and how. There are many ways to
 
 # Choosing the right governance process
 
-This depends on the nature of the open standard. A good place to start while [scoping and starting the standard](https://docs.google.com/document/d/1mpAgLM3OiO5FFanRYI4Qz5M3fXh2TYmeSIlde_hNFSM/edit?usp=sharing) is with lightweight governance that provides simple guidelines. You can develop more formal and complex processes through the standard development cycle with the standard’s stakeholders.
+This depends on the nature of the open standard. A good place to start while [scoping and starting the standard](/creating-open-standards/developing-standards/scoping-and-starting) is with lightweight governance that provides simple guidelines. You can develop more formal and complex processes through the standard development cycle with the standard’s stakeholders.
 
 <div class="callout" markdown="1">
 **To decide if you need a more a formal process, ask:**
@@ -53,7 +53,7 @@ This depends on the nature of the open standard. A good place to start while [sc
 
 * **How many people and organisations develop, use or are affected by the standard?** The variety of people and organisations involved in developing and using a standard or outputs from standard can affect how complex governance needs to be. A more a formal governance process could make it easier to develop, update, adopt, implement and use the open standard if there is a wide variety of stakeholders.
 
-* **How complex is the open standard?** As part of our research into [user experiences of open standards for data](https://docs.google.com/document/d/1E5uARrZf5AJUIF_DJz-42_793EY_Dwk7n7B3bMn3x5A/edit#), we found lightweight standards are more quickly adopted and more easily used. Here, governance can also be simpler and more lightweight. As the standard becomes more complex, you may need a formal governance process to manage change.
+* **How complex is the open standard?** As part of our research into [user experiences of open standards for data](https://docs.google.com/document/d/1E5uARrZf5AJUIF_DJz-42_793EY_Dwk7n7B3bMn3x5A/edit?usp=sharing), we found lightweight standards are more quickly adopted and more easily used. Here, governance can also be simpler and more lightweight. As the standard becomes more complex, you may need a formal governance process to manage change.
 
 * **How mature is the open standard?** Starting with a lightweight process can mean governance isn’t seen as red tape and it supports rather than detracts from the development of the standard. As the standard matures and is reviewed, a more formal governance process can replace lightweight processes where they no longer work. 
 </div>
@@ -62,7 +62,7 @@ This depends on the nature of the open standard. A good place to start while [sc
 
 These are the people or the organisation responsible for managing change. The team can be an independent organisation separate from the standard’s owner and developers, where independent governance improves trust and confidence in the standard. The team can develop governance themselves or delegate responsibility, for example to an independent governance board or groups in the standard’s community. 
 
-Governance boards tend to be populated by independent experts. You can establish them either during or just after [scoping and starting the standard](https://docs.google.com/document/d/1mpAgLM3OiO5FFanRYI4Qz5M3fXh2TYmeSIlde_hNFSM/edit?usp=sharing). 
+Governance boards tend to be populated by independent experts. You can establish them either during or just after [scoping and starting the standard](/creating-open-standards/developing-standards/scoping-and-starting). 
 
 <div class="callout" markdown="1">
 **Governance boards can:**
@@ -76,7 +76,7 @@ Governance boards tend to be populated by independent experts. You can establish
 
 # Developing good governance principles
 
-These set the stage for developing good governance. They outline the key things to consider when managing change in your open standard. Ideally, the governance principles will align with the vision you developed for the standard when [scoping and starting the standard](https://docs.google.com/document/d/1mpAgLM3OiO5FFanRYI4Qz5M3fXh2TYmeSIlde_hNFSM/edit?usp=sharing).
+These set the stage for developing good governance. They outline the key things to consider when managing change in your open standard. Ideally, the governance principles will align with the vision you developed for the standard when [scoping and starting the standard](/creating-open-standards/developing-standards/scoping-and-starting).
 
 <div class="callout" markdown="1">
 **Important questions to ask when developing good governance principles include:**
