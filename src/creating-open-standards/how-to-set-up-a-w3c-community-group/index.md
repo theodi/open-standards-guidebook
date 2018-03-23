@@ -18,10 +18,10 @@ sidebar:
       items:
         -          
           title: Managing change in open standards
-          url: https://docs.google.com/document/d/18E_-dxiHzDJVPI2Ib8SkqtChsxJ3MllDhTVPZRgx540/edit?usp=sharing
+          url: /creating-open-standards/managing-change-in-open-standards
         -          
           title: "Creating open standards: Getting started"
-          url: https://docs.google.com/document/d/11y7VRSIsOXhMlVxfKlBnwYk3QU_uppb_RMN0wzXF6mg/edit?usp=sharing
+          url: /creating-open-standards/getting-started
     - intro: Our research into open standards
       items:
         -          
@@ -42,7 +42,7 @@ With a [W3C community group](https://www.w3.org/community/about/#cg), you get a 
 
 The [W3C community group](https://www.w3.org/community/about/#cg) platform comes with a number of free features including mailing lists, wikis for sharing ideas, and blogs for publishing reports, updates and more. To help manage the group effectively, you can add a charter setting out your community’s scope and aims. Make sure these align with your standard’s governance. 
 
-For more on the governance of open standards, review [Managing change](https://docs.google.com/document/d/18E_-dxiHzDJVPI2Ib8SkqtChsxJ3MllDhTVPZRgx540/edit?usp=sharing).
+For more on the governance of open standards, review [Managing change](/creating-open-standards/managing-change-in-open-standards).
 
 The platform also has optional features which may be useful as your community grows and their needs become clearer. There are also some areas that need improvement, for example making community groups more user-friendly, which the [W3C](https://www.w3.org/) are considering.
 

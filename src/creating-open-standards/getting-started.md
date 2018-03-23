@@ -23,13 +23,13 @@ sidebar:
       items:
         -          
           title: Types of open standards for data
-          url: https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit?usp=sharing
+          url: /introduction/types-of-open-standards-for-data
         -          
           title: Developing standards
-          url: https://docs.google.com/document/d/1p2o3pn8l1j-AKnIIx0mY-RpNdgz33ujJzUCQVWUi8Gg/edit?usp=sharing
+          url: /creating-open-standards/developing-standards
         -          
           title: Managing change in open standards
-          url: https://docs.google.com/document/d/18E_-dxiHzDJVPI2Ib8SkqtChsxJ3MllDhTVPZRgx540/edit?usp=sharing
+          url: /creating-open-standards/managing-change-in-open-standards
     - intro: Other people’s experiences of creating open standards
       items:
         -          
@@ -61,7 +61,7 @@ Framing the problem will mean engaging with people and organisations who have th
 Identify the type of open standard that will deliver the most benefits, or what features might be combined from each. 
 
 <div class="callout" markdown="1">
-**We identified three [types of open standards for data](https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit?usp=sharing) that can be used to:**
+**We identified three [types of open standards for data](/introduction/types-of-open-standards-for-data) that can be used to:**
 
 * **share vocabularies** and language using common models, attributes and definitions, with outputs like: registers, taxonomies, vocabularies and ontologies
 
@@ -76,7 +76,7 @@ When framing the problem, it is useful to understand the ecosystem the standard 
 
 Understanding the ecosystem can help clarify the problem and position of the open standard. A tool like an ecosystem map, can help you understand where and how data is produced and used, and what can be done to support better quality data. 
 
-You can combine the ecosystem map with the [open standard for data canvas](https://docs.google.com/document/d/1iQMpmYFEYHgNQ7OYdbaz663H7DLzkLslLkbw9XipysM/edit?usp=sharing), itself designed to give a single view of the pillars that support your open standard: the problem, solution, resources, risks and impacts. 
+You can combine the ecosystem map with the [open standard for data canvas](/creating-open-standards/how-to-use-the-open-standards-for-data-canvas), itself designed to give a single view of the pillars that support your open standard: the problem, solution, resources, risks and impacts. 
 
 Working through the canvas will help you outline how your standard will deliver benefits to stakeholders and what you need to begin development. 
 
@@ -132,7 +132,7 @@ Once the standard’s community is identified, decide who the  early adopters wi
 
 Early adopters may include people who can engage with and persuade executives, management and other decision-makers to contribute to the standard. 
 
-In our research into [user experiences of open standards for data](https://docs.google.com/document/d/1E5uARrZf5AJUIF_DJz-42_793EY_Dwk7n7B3bMn3x5A/edit?usp=sharing), we discovered anxieties around politics, monopolies and control of standards. Engaging early and often with early adopters and [clarifying who will own and maintain the standard](https://docs.google.com/document/d/18E_-dxiHzDJVPI2Ib8SkqtChsxJ3MllDhTVPZRgx540/edit?usp=sharing) can help to ease these concerns.
+In our research into [user experiences of open standards for data](https://docs.google.com/document/d/1E5uARrZf5AJUIF_DJz-42_793EY_Dwk7n7B3bMn3x5A/edit?usp=sharing), we discovered anxieties around politics, monopolies and control of standards. Engaging early and often with early adopters and [clarifying who will own and maintain the standard](/creating-open-standards/managing-change-in-open-standards) can help to ease these concerns.
 
 # Consider sustainability
 
@@ -146,7 +146,7 @@ Where a new open standard is necessary, consider collaborating or fundraising wi
 
 You should consider creating a lightweight standard that’s tested, robust and focuses on the core features to solve the problem or meet the need. In our research ‘[User experiences of open standards for data](https://docs.google.com/document/d/1E5uARrZf5AJUIF_DJz-42_793EY_Dwk7n7B3bMn3x5A/edit?usp=sharing)’, users suggested that a successful open standard is robust and simple. Simplicity also makes the standard easier to manage. 
 
-Once your standard has been developed, tested and launched, it may require updates to keep it relevant. Stakeholders can make requests for new or updated features, errors may be unearthed, or changes in the wider landscape (like new legislation or resources) can prompt a [review of the standard](https://docs.google.com/document/d/1YTyei9hnjvxlKCLcHFOP2bmHj04jY2xx4PnTCxUhg1w/edit?usp=sharing). 
+Once your standard has been developed, tested and launched, it may require updates to keep it relevant. Stakeholders can make requests for new or updated features, errors may be unearthed, or changes in the wider landscape (like new legislation or resources) can prompt a [review of the standard](/creating-open-standards/developing-standards/review). 
 
 Stakeholders may also need help with adopting the standard and guidance, or other documentation may need to be refreshed. Take into account the level of technical expertise adopters will have and how much support they will need.
 
@@ -154,7 +154,7 @@ Consider how changes to the standard will be managed by deciding what the govern
 
 Governance can be lightweight or more formal. When choosing a governance process, balance the expectations from the people and organisations using the standard, with the resources available. 
 
-Choosing a lightweight governance process to start with could make your standard more sustainable. See ‘[Managing change in open standards](https://docs.google.com/document/d/18E_-dxiHzDJVPI2Ib8SkqtChsxJ3MllDhTVPZRgx540/edit?usp=sharing)’ for more on the governance of open standards.
+Choosing a lightweight governance process to start with could make your standard more sustainable. See ‘[Managing change in open standards](/creating-open-standards/managing-change-in-open-standards)’ for more on the governance of open standards.
 
 # Include advice for data publishers
 

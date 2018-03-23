@@ -15,22 +15,22 @@ sidebar:
       items:
         -          
           title: Types of open standards for data
-          url: https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit?usp=sharing
+          url: /introduction/types-of-open-standards-for-data
         -          
           title: "Developing standards: scoping and starting"
-          url: https://docs.google.com/document/d/1mpAgLM3OiO5FFanRYI4Qz5M3fXh2TYmeSIlde_hNFSM/edit?usp=sharing
+          url: /creating-open-standards/developing-standards/scoping-and-starting
         -          
           title: "Developing standards: development"
-          url: https://docs.google.com/document/d/1XdcoJa3Gj7-J1SOzH1OBfPSKTYM_xvB0XPnfFqBM_gA/edit?usp=sharing
+          url: /creating-open-standards/developing-standards/development
         -          
           title: "Developing standards: launch and adoption"
-          url: https://docs.google.com/document/d/12m2cBdI1kqFwvv2JgLz7OkZSs-yBp336WTULqKr75EI/edit?usp=sharing
+          url: /creating-open-standards/developing-standards/launch-and-adoption
         -          
           title: "Developing standards: review"
-          url: https://docs.google.com/document/d/1YTyei9hnjvxlKCLcHFOP2bmHj04jY2xx4PnTCxUhg1w/edit?usp=sharing
+          url: /creating-open-standards/developing-standards/review
         -          
           title: "Developing standards: update or retire"
-          url: https://docs.google.com/document/d/1mRXWd1yJRenV-xFbW3iTTs4zKGiCLLXkMYWiMlXoexw/edit?usp=sharing
+          url: /creating-open-standards/developing-standards/update-or-retire
     - intro: Read other people’s experiences and how they create open standards
       items:
         -          
@@ -59,15 +59,15 @@ sidebar:
 
 Developing an open standard can follow a variety of paths to the same goal: to produce a robust, successful and reusable shared agreement that helps produce better quality data. 
 
-This section, ‘[Developing standards](https://docs.google.com/document/d/1p2o3pn8l1j-AKnIIx0mY-RpNdgz33ujJzUCQVWUi8Gg/edit?usp=sharing)’, is intended as a guide to the activities, documents and resources to consider in developing a successful open standard. 
+This section, ‘[Developing standards](/creating-open-standards/developing-standards)’, is intended as a guide to the activities, documents and resources to consider in developing a successful open standard. 
 
 This is not a set of rules to follow, but a  guide to help you make the right choices for your open standard.
 
-Review ‘[How open standards are developed](https://docs.google.com/document/d/1kBsBph0bionPForwpriLMLY9MozSMHdviOandnK_hjM/edit?usp=sharing)’ for an overview and ‘[Creating open standards: Getting started](https://docs.google.com/document/d/11y7VRSIsOXhMlVxfKlBnwYk3QU_uppb_RMN0wzXF6mg/edit?usp=sharing)’ to explore what to consider before developing an open standard.
+Review ‘[How open standards are developed](/introduction/how-open-standards-are-developed)’ for an overview and ‘[Creating open standards: Getting started](/creating-open-standards/getting-started)’ to explore what to consider before developing an open standard.
 
 # Before you begin
 
-In ‘[Scoping and starting](https://docs.google.com/document/d/1mpAgLM3OiO5FFanRYI4Qz5M3fXh2TYmeSIlde_hNFSM/edit?usp=sharing)’, we explore researching, planning and approving the goals, features, budget, schedule and resources to develop your open standard. 
+In ‘[Scoping and starting](/creating-open-standards/developing-standards/scoping-and-starting)’, we explore researching, planning and approving the goals, features, budget, schedule and resources to develop your open standard. 
 
 With an approved development plan and method selected, you can begin development.
 
@@ -83,7 +83,7 @@ Having contributions from people with different skills and backgrounds can bring
 
 To create a successful open standard, consider involving:
 
-* **researchers** to continue research from [scoping and starting](https://docs.google.com/document/d/1mpAgLM3OiO5FFanRYI4Qz5M3fXh2TYmeSIlde_hNFSM/edit?usp=sharing), including how adopters find and use the standard and data produced using the standard
+* **researchers** to continue research from [scoping and starting](/creating-open-standards/developing-standards/scoping-and-starting), including how adopters find and use the standard and data produced using the standard
 
 * **developers, data modellers and data experts** to create the technical documents which will make up the standard, including schemas, specifications, models, and vocabularies
 
@@ -103,7 +103,7 @@ In the [‘Standards community’](/community) section, we include organisation 
 
 # Set up your infrastructure
 
-In ‘[Scoping and starting](https://docs.google.com/document/d/1mpAgLM3OiO5FFanRYI4Qz5M3fXh2TYmeSIlde_hNFSM/edit?usp=sharing)’, we recommend choosing a development infrastructure to support the development team and share progress with the standards community.
+In ‘[Scoping and starting](/creating-open-standards/developing-standards/scoping-and-starting)’, we recommend choosing a development infrastructure to support the development team and share progress with the standards community.
 
 For the development infrastructure, consider a repository or platform that:
 
@@ -133,11 +133,11 @@ It is useful to consult your development team or the owner of the standard as th
 
 With your team assembled and development method and infrastructure in place, you can start developing youropen standard. 
 
-Depending on the [type of open standard](https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit?usp=sharing) being developed, this can mean drafting guidance, creating a dataset of shared vocabularies, or creating a format for data exchange. 
+Depending on the [type of open standard](/introduction/types-of-open-standards-for-data) being developed, this can mean drafting guidance, creating a dataset of shared vocabularies, or creating a format for data exchange. 
 
 As open standards can be mixed and matched, your open standard may use features from each of these types to achieve the intended impact.
 
-For example, development may involve turning conceptual models (described in ‘[Scoping and starting](https://docs.google.com/document/d/1mpAgLM3OiO5FFanRYI4Qz5M3fXh2TYmeSIlde_hNFSM/edit?usp=sharing)’) into technical documents like specifications, schemas, and models. 
+For example, development may involve turning conceptual models (described in ‘[Scoping and starting](/creating-open-standards/developing-standards/scoping-and-starting)’) into technical documents like specifications, schemas, and models. 
 
 <div class="callout" markdown="1">
 **Other ways of turning the identified problem or need into a reusable agreement include:**
@@ -155,7 +155,7 @@ For example, development may involve turning conceptual models (described in ‘
 
 In our research, ‘[User experiences of open standard](https://docs.google.com/document/d/1E5uARrZf5AJUIF_DJz-42_793EY_Dwk7n7B3bMn3x5A/edit?usp=sharing)’, we found that a successful open standard is one that has been tested and implemented. 
 
-In ‘[Scoping and starting](https://docs.google.com/document/d/1mpAgLM3OiO5FFanRYI4Qz5M3fXh2TYmeSIlde_hNFSM/edit?usp=sharing)’, we recommend making testing part of the development plan. 
+In ‘[Scoping and starting](/creating-open-standards/developing-standards/scoping-and-starting)’, we recommend making testing part of the development plan. 
 
 Testing helps make your open standard more robust, which can improve trust and confidence and result in increased  adoption rates. 
 
@@ -187,7 +187,7 @@ To make standards easier to find, adopt and use, you can create guides and resou
 
 An open standard for data will affect more than data users and data publishers. 
 
-Your audience may include people and organisations involved in policy, legislation, technology and more. Read ‘[Creating impact with open standards](https://docs.google.com/document/d/1DhhO7mCq6hIUJxLGT2gI3Y2brmFmUVf5PhgTNz7nYAo/edit?usp=sharing)’ to understand who open standards affect.
+Your audience may include people and organisations involved in policy, legislation, technology and more. Read ‘[Creating impact with open standards](/creating-impact/getting-started)’ to understand who open standards affect.
 
 When creating guides, consider who will use them, the language you use needs of the potential user. 
 

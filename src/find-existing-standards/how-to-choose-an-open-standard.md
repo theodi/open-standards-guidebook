@@ -15,10 +15,10 @@ sidebar:
       items:
         -          
           title: When to use open standards
-          url: https://docs.google.com/document/d/1L4xocfkgZC2D6d0z5uUTZGw6kJp76WpKdBwnzb11z1c/edit?usp=sharing
+          url: /introduction/when-to-use-open-standards-for-data
         -          
           title: When not to create new standards
-          url: https://docs.google.com/document/d/1OoK8T5OtQriFARhb1cSFypAQNz24iEtgURd8YqfI-B0/edit?usp=sharing
+          url: /introduction/when-not-to-create-new-standards
         -          
           title: How an open standards proposal is assessed
           url: https://www.gov.uk/guidance/how-an-open-standards-proposal-is-assessed
@@ -121,6 +121,6 @@ To check if a standard provides the right guidance for you, it is useful to ask:
 
 * **Is the guidance in my language?** Some standards are aimed at a specific geographic area and guidance may only be available in local languages. Where a standard is aimed at an international audience, it is useful to have the standard and guidance in multiple languages. Consider supporting translation through funding or contributing translation resources where a standard otherwise meets your needs.
 
-Alongside these questions, it’s useful to consider [when to use open standards](https://docs.google.com/document/d/1L4xocfkgZC2D6d0z5uUTZGw6kJp76WpKdBwnzb11z1c/edit?usp=sharing) and [when not to create new standards](https://docs.google.com/document/d/1OoK8T5OtQriFARhb1cSFypAQNz24iEtgURd8YqfI-B0/edit?usp=sharing). 
+Alongside these questions, it’s useful to consider [when to use open standards](/introduction/when-to-use-open-standards-for-data) and [when not to create new standards](/introduction/when-not-to-create-new-standards). 
 
 For more in-depth assessment, the UK government publish a guide that explains the questions and process used to assess an open standard proposal. The ’[How an open standards proposal is assessed](https://www.gov.uk/guidance/how-an-open-standards-proposal-is-assessed)’ guide can be adapted to your needs.

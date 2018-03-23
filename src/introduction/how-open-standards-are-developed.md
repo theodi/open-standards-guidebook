@@ -15,21 +15,21 @@ sidebar:
       items:
         -          
           title: What are open standards for data?
-          url: https://docs.google.com/document/d/1YcbKgtZAFjdeS6KiS_KGIi5GAUSwe1JTG4uRxhaWUQQ/edit?usp=sharing
+          url: /introduction/what-are-open-standards-for-data
         -          
           title: Types of open standards for data
-          url: https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit?usp=sharing
+          url: /introduction/types-of-open-standards-for-data
         -          
           title: When to use open standards for data
-          url: https://docs.google.com/document/d/1L4xocfkgZC2D6d0z5uUTZGw6kJp76WpKdBwnzb11z1c/edit?usp=sharing
+          url: /introduction/when-to-use-open-standards-for-data
         -          
           title: When not to create new standards
-          url: https://docs.google.com/document/d/1OoK8T5OtQriFARhb1cSFypAQNz24iEtgURd8YqfI-B0/edit?usp=sharing
+          url: /introduction/when-not-to-create-new-standards
     - intro: How to create an open standard for data
       items:
         -          
           title: Developing standards
-          url: https://docs.google.com/document/d/1p2o3pn8l1j-AKnIIx0mY-RpNdgz33ujJzUCQVWUi8Gg/edit?usp=sharing
+          url: /creating-open-standards/developing-standards
         -          
           title: Open Stand principles
           url: https://open-stand.org/about-us/principles/
@@ -137,9 +137,9 @@ These standards can become *de facto* due to the standard owner’s influence, e
 
 Most open standards development processes fall somewhere between highly formal and informal. 
 
-Despite differences in formality, all standards processes follow similar stages. Most standards development processes involve a trigger to **[scope and start](https://docs.google.com/document/d/1mpAgLM3OiO5FFanRYI4Qz5M3fXh2TYmeSIlde_hNFSM/edit?usp=sharing)** the standards development, then a **[development](https://docs.google.com/document/d/1XdcoJa3Gj7-J1SOzH1OBfPSKTYM_xvB0XPnfFqBM_gA/edit?usp=sharing)** stage followed by a **[launch and adoption](https://docs.google.com/document/d/12m2cBdI1kqFwvv2JgLz7OkZSs-yBp336WTULqKr75EI/edit?usp=sharing)**. 
+Despite differences in formality, all standards processes follow similar stages. Most standards development processes involve a trigger to **[scope and start](/creating-open-standards/developing-standards/scoping-and-starting)** the standards development, then a **[development](/creating-open-standards/developing-standards/development)** stage followed by a **[launch and adoption](/creating-open-standards/developing-standards/launch-and-adoption)**. 
 
-If your standard is adopted, it may be regularly **[reviewed](https://docs.google.com/document/d/1YTyei9hnjvxlKCLcHFOP2bmHj04jY2xx4PnTCxUhg1w/edit?usp=sharing)** and **[updated](https://docs.google.com/document/d/1mRXWd1yJRenV-xFbW3iTTs4zKGiCLLXkMYWiMlXoexw/edit?usp=sharing)**. When a standard is poorly adopted or no longer needed, it may be withdrawn, **[retired](https://docs.google.com/document/d/1mRXWd1yJRenV-xFbW3iTTs4zKGiCLLXkMYWiMlXoexw/edit?usp=sharing)** or abandoned. 
+If your standard is adopted, it may be regularly **[reviewed](/creating-open-standards/developing-standards/review)** and **[updated](/creating-open-standards/developing-standards/update-or-retire)**. When a standard is poorly adopted or no longer needed, it may be withdrawn, **[retired](/creating-open-standards/developing-standards/update-or-retire)** or abandoned. 
 
 While this seems linear, there may be cycles of activity with stages repeated or being worked on at the same time – for example, ongoing development and launch or repeated reviews. 
 
