@@ -36,7 +36,7 @@ sidebar:
       items:
         -
           title: Developing standards
-          url: https://docs.google.com/document/d/1p2o3pn8l1j-AKnIIx0mY-RpNdgz33ujJzUCQVWUi8Gg/edit?usp=sharing
+          url: /creating-open-standards/developing-standards
 ---
 
 # Standards can support implementation of policy

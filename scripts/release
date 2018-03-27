@@ -17,12 +17,12 @@ fi
 version=$1
 
 echo "Checking for clean working tree"
-require_clean_work_tree
+require_clean_work_tree 'release'
 
 git checkout master
 git pull origin master
 git checkout develop
-
+git pull origin master
 
 UPSTREAM=@
 LOCAL=$(git rev-parse @)
@@ -60,5 +60,5 @@ git commit -m "$version release"
 
 # Finish and push
 echo "Finishing release $version"
-git flow release finish -m -p "v.$(version)" $version
+git flow release finish -m -p "$version" $version
 git flow release publish $version

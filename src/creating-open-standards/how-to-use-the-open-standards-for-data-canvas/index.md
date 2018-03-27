@@ -12,9 +12,9 @@ downloads:
     - title: Open Standards for Data Canvas
       url: https://docs.google.com/document/d/1Uk7ocfFGwt_43O9Qhv_ixP4s0MDCOi1Sncl_t-Nn6wg/edit?usp=sharing
     - title: "Open Standards for Data Canvas"
-      url: ./open-standards-for-data.pdf
+      url: /creating-open-standards/how-to-use-the-open-standards-for-data-canvas/open-standards-for-data-canvas.pdf
     - title: "GTFS Example"
-      url: ./gtfs-example.pdf
+      url: /creating-open-standards/how-to-use-the-open-standards-for-data-canvas/open-standards-for-data-canvas-gtfs-example.pdf
 ---
 
 # Who is it for?
@@ -43,7 +43,7 @@ The Open Standards for Data Canvas is not:
 
 * **a detailed document**: the canvas is high-level so you can quickly spot gaps and clarify assumptions
 
-* **a roadmap**: you can use the canvas to outline and share the initial solution to the problem you want to solve. The canvas will help you develop a roadmap during the later [scoping and starting stage](/developing-standards/scoping-and-starting)
+* **a roadmap**: you can use the canvas to outline and share the initial solution to the problem you want to solve. The canvas will help you develop a roadmap during the later [scoping and starting stage](/creating-open-standards/developing-standards/scoping-and-starting)
 
 * **a complete guide**: the canvas focuses only on key areas to get you started so you can prepare more detailed documents as needed
 

@@ -12,6 +12,8 @@ const sassImporter = require('node-sass-magic-importer');
 
 const resolve = require('./lib/resolve');
 
+const shouldRevAssets = process.env.REV_ASSETS !== '0';
+
 module.exports = {
   html: false,
   images: true,
@@ -91,7 +93,7 @@ module.exports = {
   },
   // Specify additional environment specific configuration to be merged in with Blendid's defaults
   production: {
-    rev: true, // revision filenames when running the production `build` task?
+    rev: shouldRevAssets, // revision filenames when running the production `build` task?
     devtool: 'source-map',
     // plugins: [], // production only webpack plugins
   },

@@ -5,7 +5,8 @@
 			"path": ".",
 			"file_exclude_patterns":
             [
-                ".scssc"
+                ".scssc",
+                ".jekyll-metadata"
             ],
             "folder_exclude_patterns":
             [
@@ -13,7 +14,8 @@
                 "node_modules",
                 "dist",
                 ".git-metadata",
-                "component-library"
+                "component-library",
+                "tmp"
             ]
 		}
 	]

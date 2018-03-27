@@ -40,12 +40,12 @@ sidebar:
           url: http://www.theopenprotocol.org/)
         -
           title: "White paper: Using data to take an open approach to investment banking"
-          url: https://theodi.org/an-openapproach-to-investmentbanking
+          url: https://theodi.org/article/using-data-to-take-an-open-approach-to-investment-banking/
     - intro: The open standards development lifecycle
       items:
         -
           title: Developing standards
-          url: https://docs.google.com/document/d/1p2o3pn8l1j-AKnIIx0mY-RpNdgz33ujJzUCQVWUi8Gg/edit?usp=sharing    
+          url: /creating-open-standards/developing-standards    
 ---
 
 # Standards create new commercial ecosystems

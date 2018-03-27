@@ -15,32 +15,32 @@ sidebar:
       items:
         -          
           title: Creating impact with open standards
-          url: https://docs.google.com/document/d/1DhhO7mCq6hIUJxLGT2gI3Y2brmFmUVf5PhgTNz7nYAo/edit?usp=sharing
+          url: /creating-impact/getting-started
         -          
           title: Policy impacts of open standards
-          url: https://docs.google.com/document/d/1UiPJHT7qeSR5OBbyMNtjGx9IzHVpO7j96P3kTxPDRaU/edit?usp=sharing
+          url: /creating-impact/policy-impacts
         -          
           title: Economic impacts of open standards
-          url: https://docs.google.com/document/d/1xyrbv_VTbDVElqwvp9Pov4iYT9ftUKXHzd9ifvW5yqE/edit?usp=sharing
+          url: /creating-impact/economic-impacts
         -          
           title: Social impacts of open standards
-          url: https://docs.google.com/document/d/1k6z6Lx-WMig8Zk-5p1H-ciDdFE-VRIzoKq-BFOGcb_A/edit?usp=sharing
+          url: /creating-impact/social-impact
         -          
           title: Technology impacts of open standards
-          url: https://docs.google.com/document/d/1iUfKlqT7I-jwR__kx0kUEiQCUGC7WmReFY5uKEXO-VQ/edit?usp=sharing
+          url: /creating-impact/technology-impacts
     - intro: Understanding when to use open standards
       items:
         -          
           title: When to use open standards
-          url: https://docs.google.com/document/d/1L4xocfkgZC2D6d0z5uUTZGw6kJp76WpKdBwnzb11z1c/edit?usp=sharing
+          url: /introduction/when-to-use-open-standards-for-data
         -          
           title: When not to create new standards
-          url: https://docs.google.com/document/d/1OoK8T5OtQriFARhb1cSFypAQNz24iEtgURd8YqfI-B0/edit?usp=sharing
+          url: /introduction/when-not-to-create-new-standards
     - intro: Experiences of developing and researching open standards
       items:
         -          
           title: "ODI: What we learned researching open standards for data"
-          url: https://docs.google.com/document/d/19U6QBwIbYConLJ1VHBSTa2LutmbzmEVk-otk93NTlMk/edit?usp=sharing
+          url: https://theodi.org/article/open-standards-for-data-adoption-approaches-and-impact/
         -          
           title: "Porism: Boring, boring standards: Why they matter and how we can make them work"
           url: https://medium.com/porism/boring-boring-standards-8843b2ea1f85
@@ -65,13 +65,13 @@ Open standards for data are useful when you need an agreement from more than one
 
 If a standard exists that meets your needs, you are not yet clear on your needs, or cannot convene a community around your standard, creating a new open standard may not be the best option. Focusing on understanding the scope of the problem and potential solutions by commissioning a proof of concept to explore options, or working through a discovery phase to investigate the problem and solutions, can lead to a better result. 
 
-Read [When not to create new standards](https://docs.google.com/document/d/1OoK8T5OtQriFARhb1cSFypAQNz24iEtgURd8YqfI-B0/edit?usp=sharing) for more about making a decision to create, adopt, or extend open standards.
+Read [When not to create new standards](/introduction/when-not-to-create-new-standards) for more about making a decision to create, adopt, or extend open standards.
 
 # Follow Open Stand principles
 
 Adopt the five [Open Stand principles](https://open-stand.org/about-us/principles/), ensuring your open standard is developed fairly, transparently and cooperatively. An added advantage of open participation is engaging the community around your open standard before you launch to ensure there is sufficient interest.
 
-Read [Creating impact with open standards](https://docs.google.com/document/d/1DhhO7mCq6hIUJxLGT2gI3Y2brmFmUVf5PhgTNz7nYAo/edit?usp=sharing) for more about creating impact through wide engagement.
+Read [Creating impact with open standards](/creating-impact/getting-started) for more about creating impact through wide engagement.
 
 # Remember that language matters
 
@@ -115,7 +115,7 @@ Producing consistent data is a goal of all open standards for data. Depending on
 
 Clearly articulating the purpose of the open standard provides the basis for engaging the community consistently, brings focus to developing supporting tools and resources, and ensures the standard stays on track.
 
-Read [How to use the Open Standards for Data Canvas](https://docs.google.com/document/d/1iQMpmYFEYHgNQ7OYdbaz663H7DLzkLslLkbw9XipysM/edit?usp=sharing); this tool will help you document and share your understanding of the primary and secondary purpose of the standard.
+Read [How to use the Open Standards for Data Canvas](/creating-open-standards/how-to-use-the-open-standards-for-data-canvas); this tool will help you document and share your understanding of the primary and secondary purpose of the standard.
 
 # Know your community
 
@@ -123,7 +123,7 @@ Open standards for data affect a wider community than data users and data publis
 
 It is important to understand the known roles in an open standard community and identify the key stakeholders. This will make engaging the community easier and will ensure you consider their technical, tool, communication and resource needs, including their levels of digital literacy, access to physical and digital spaces and anything else you might need to successfully engage with them.
 
-Read [Creating impact with open standards](https://docs.google.com/document/d/1DhhO7mCq6hIUJxLGT2gI3Y2brmFmUVf5PhgTNz7nYAo/edit?usp=sharing) for more on understanding who open standards affect.
+Read [Creating impact with open standards](/creating-impact/getting-started) for more on understanding who open standards affect.
 
 # Consider who is missing
 
@@ -137,7 +137,7 @@ Read the [consult or fail](https://docs.google.com/document/d/1E5uARrZf5AJUIF_DJ
 
 Clear and visible descriptions of the standard’s governance process and roadmap will increase the community’s trust and confidence. These do not have to be long documents: Google’s GTFS relies on a short set of [guiding principles](https://developers.google.com/transit/gtfs/guides/guiding-principles) written in plain English.
 
-Read [Managing change in open standards](https://docs.google.com/document/d/18E_-dxiHzDJVPI2Ib8SkqtChsxJ3MllDhTVPZRgx540/edit?usp=sharing) to find out more about governance.
+Read [Managing change in open standards](/creating-open-standards/managing-change-in-open-standards) to find out more about governance.
 
 # Agree ownership and copyright
 

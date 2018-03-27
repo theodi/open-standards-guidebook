@@ -16,28 +16,28 @@ sidebar:
       items:
         -          
           title: Lessons learned in open standards development
-          url: https://docs.google.com/document/d/1XVbt4l0En2AeyC7l3WrgPTujGm5LkRNhQJ-7gzb_pGE/edit?usp=sharing
+          url: /creating-impact/lessons-learned-in-open-standards-development
         -          
           title: Policy impacts of open standards
-          url: https://docs.google.com/document/d/1UiPJHT7qeSR5OBbyMNtjGx9IzHVpO7j96P3kTxPDRaU/edit?usp=sharing
+          url: /creating-impact/policy-impacts
         -          
           title: Economic impacts of open standards
-          url: https://docs.google.com/document/d/1xyrbv_VTbDVElqwvp9Pov4iYT9ftUKXHzd9ifvW5yqE/edit?usp=sharing
+          url: /creating-impact/economic-impacts
         -          
           title: Social impacts of open standards
-          url: https://docs.google.com/document/d/1k6z6Lx-WMig8Zk-5p1H-ciDdFE-VRIzoKq-BFOGcb_A/edit?usp=sharing
+          url: /creating-impact/social-impact
         -          
           title: Technology impacts of open standards
-          url: https://docs.google.com/document/d/1iUfKlqT7I-jwR__kx0kUEiQCUGC7WmReFY5uKEXO-VQ/edit?usp=sharing
+          url: /creating-impact/technology-impacts
     - intro: Discover more about open standards for data
       items:
         -          
           title: When to use open standards
-          url: https://docs.google.com/document/d/1L4xocfkgZC2D6d0z5uUTZGw6kJp76WpKdBwnzb11z1c/edit?usp=sharing
+          url: /introduction/when-to-use-open-standards-for-data
 
         -          
           title: Types of open standards for data
-          url: https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit?usp=sharing
+          url: /introduction/types-of-open-standards-for-data
 
     - intro: Our research on open standards for data
       items:
@@ -53,7 +53,7 @@ sidebar:
       items:
         -          
           title: How To Find Open Standards
-          url: https://docs.google.com/document/d/1KZBtsPd6Xf8YSL5q07brL2epKbJz-zi14VUEDdjI5Kg/edit?usp=sharing
+          url: /find-existing-standards/how-to-find-open-standards
 ---
 
 # Understand the ecosystem
