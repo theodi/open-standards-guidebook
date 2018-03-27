@@ -2,7 +2,10 @@
 title: Economic impacts of open standards
 nav:
   order: 4
-description: Open standards can create new commercial opportunities and provide competitive advantage to organisations that adopt them.
+description: >-  
+
+
+    Open standards can create new commercial opportunities and provide competitive advantage to organisations that adopt them.
 gdoc: https://docs.google.com/document/d/1xyrbv_VTbDVElqwvp9Pov4iYT9ftUKXHzd9ifvW5yqE/edit?usp=sharing
 sidebar:
   sections:

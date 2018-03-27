@@ -135,7 +135,7 @@ Activities to help plan development include:
 
 * **Decide on phases of work** in line with your development method. You may decide upfront or at a later date what work to complete in each phase, how to test the product and data, and who will sign off the tests. Your chosen [governance method](/creating-open-standards/managing-change-in-open-standards) will help to manage changes as the standard is developed.
 
-* **Choose the development infrastructure** that will support your development team’s work. These are the tools and platforms where your development will happen and how you will share progress and resources with your community. Consider platforms that support sharing test data and test models. Read ‘[How to set up a W3C community group](/creating-open-standards/how-to-set-up-a-w3c-community-group)’ for examples of a community platform. 
+* **Choose the development infrastructure** that will support your development team’s work. These are the tools and platforms where your development will happen and how you will share progress and resources with your community. Consider platforms that support sharing test data and test models. Read ‘[How to set up a W3C community group](/useful-tools/how-to-set-up-a-w3c-community-group)’ for examples of a community platform. 
 
 # Get approval for development
 
@@ -183,6 +183,6 @@ By the end of the scoping and starting stage, you should have:
 
 # Useful tools
 
-* The [open standard for data canvas](https://docs.google.com/document/d/1Uk7ocfFGwt_43O9Qhv_ixP4s0MDCOi1Sncl_t-Nn6wg/edit?usp=sharing) can help you think through why the standard is needed, who it is for and how it will work. Clearly articulating the purpose of the standard will keep it on track – see ‘[How to use the canvas](https://drive.google.com/open?id=1iQMpmYFEYHgNQ7OYdbaz663H7DLzkLslLkbw9XipysM)’
+* The [open standard for data canvas](https://docs.google.com/document/d/1Uk7ocfFGwt_43O9Qhv_ixP4s0MDCOi1Sncl_t-Nn6wg/edit) can help you think through why the standard is needed, who it is for and how it will work. Clearly articulating the purpose of the standard will keep it on track – see ‘[How to use the canvas](/useful-tools/how-to-use-the-open-standards-for-data-canvas)’
 
 * An [empathy map](https://medium.com/the-xplane-collection/updated-empathy-map-canvas-46df22df3c8a) to consider who will use the standard and how. The outputs will impact the types of tools, guidance and support needed by users of the standard

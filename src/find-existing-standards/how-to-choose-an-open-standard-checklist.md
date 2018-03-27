@@ -1,5 +1,5 @@
 ---
-title: How to choose an open standard checklist
+title: A checklist for choosing open standards
 layout: content-page
 description: >- 
 
