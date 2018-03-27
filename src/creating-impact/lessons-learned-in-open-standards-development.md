@@ -115,7 +115,7 @@ Producing consistent data is a goal of all open standards for data. Depending on
 
 Clearly articulating the purpose of the open standard provides the basis for engaging the community consistently, brings focus to developing supporting tools and resources, and ensures the standard stays on track.
 
-Read [How to use the Open Standards for Data Canvas](/creating-open-standards/how-to-use-the-open-standards-for-data-canvas); this tool will help you document and share your understanding of the primary and secondary purpose of the standard.
+Read [How to use the Open Standards for Data Canvas](/useful-tools/how-to-use-the-open-standards-for-data-canvas); this tool will help you document and share your understanding of the primary and secondary purpose of the standard.
 
 # Know your community
 

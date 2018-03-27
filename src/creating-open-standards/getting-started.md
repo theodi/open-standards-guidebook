@@ -1,5 +1,5 @@
 ---
-title: 'Creating open standards: Getting started'
+title: 'Getting started'
 layout: content-page
 description: >- 
 
@@ -76,7 +76,7 @@ When framing the problem, it is useful to understand the ecosystem the standard 
 
 Understanding the ecosystem can help clarify the problem and position of the open standard. A tool like an ecosystem map, can help you understand where and how data is produced and used, and what can be done to support better quality data. 
 
-You can combine the ecosystem map with the [open standard for data canvas](/creating-open-standards/how-to-use-the-open-standards-for-data-canvas), itself designed to give a single view of the pillars that support your open standard: the problem, solution, resources, risks and impacts. 
+You can combine the ecosystem map with the [open standard for data canvas](/useful-tools/how-to-use-the-open-standards-for-data-canvas), itself designed to give a single view of the pillars that support your open standard: the problem, solution, resources, risks and impacts. 
 
 Working through the canvas will help you outline how your standard will deliver benefits to stakeholders and what you need to begin development. 
 
@@ -101,11 +101,11 @@ In our research ‘[User experiences of open standards for data](https://docs.go
 <div class="callout" markdown="1">
 **Stakeholders can include:**
 
-* **data publishers who produce and share data** based on [data exchange standards](https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit#heading=h.gquw9huwsj6k) – for example, the [International Federation of Red Cross and Red Crescent Societies](http://www.ifrc.org/en/) (IFRC) is using the [Humanitarian Exchange Language](http://hxlstandard.org/) (HXL) to [increase access to safe water and sanitation to 30 million people by 2025](http://media.ifrc.org/ifrc/2017/04/10/data-ifrc-locally-driven-data-via-3-projects-14/) 
+* **data publishers who produce and share data** based on [standards for data exchange](/introduction/types-of-open-standards-for-data/#standards-to-exchange-data)  – for example, the [International Federation of Red Cross and Red Crescent Societies](http://www.ifrc.org/en/) (IFRC) is using the [Humanitarian Exchange Language](http://hxlstandard.org/) (HXL) to [increase access to safe water and sanitation to 30 million people by 2025](http://media.ifrc.org/ifrc/2017/04/10/data-ifrc-locally-driven-data-via-3-projects-14/) 
 
-* **data modellers who model environments and systems** to understand information flows using [guidance standards](https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit#heading=h.756ycxwioez5) – for example, the research body, [Cooperative Research Centre for Low Carbon Living](http://lowcarbonlivingcrc.com.au) (CRCLCL) recently developed the [Precinct Information Model ](http://lowcarbonlivingcrc.com.au/research/program-2-low-carbon-precincts/rp2011-pim-open-digital-information-standard-throughout)(PIM) to support 3D modelling and data sharing for urban development
+* **data modellers who model environments and systems** to understand information flows using [standards for guidance](/introduction/types-of-open-standards-for-data/#standards-for-guidance) – for example, the research body, [Cooperative Research Centre for Low Carbon Living](http://lowcarbonlivingcrc.com.au) (CRCLCL) recently developed the [Precinct Information Model ](http://lowcarbonlivingcrc.com.au/research/program-2-low-carbon-precincts/rp2011-pim-open-digital-information-standard-throughout)(PIM) to support 3D modelling and data sharing for urban development
 
-* **data users who agree on meaning and share information consistently** using [shared vocabularies](https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit#heading=h.36hd992dzujg) – for example, the [Office of National Statistics](https://www.ons.gov.uk/)’ [ethnicity classifications](https://www.ons.gov.uk/methodology/classificationsandstandards/measuringequality/ethnicgroupnationalidentityandreligion#ethnic-group) are widely used for capturing information about ethnicity, which makes this data easier to reuse and compare
+* **data users who agree on meaning and share information consistently** using [standards to share vocabulary](/introduction/types-of-open-standards-for-data/#standards-to-share-vocabulary) – for example, the [Office of National Statistics](https://www.ons.gov.uk/)’ [ethnicity classifications](https://www.ons.gov.uk/methodology/classificationsandstandards/measuringequality/ethnicgroupnationalidentityandreligion#ethnic-group) are widely used for capturing information about ethnicity, which makes this data easier to reuse and compare
 
 * **developers who produce tools that support data publishers**, from data validation to gap analysis, and from data conversion between formats to platforms for data and model publication – for example, the [Humanitarian Data Exchange](https://data.humdata.org/) (HDX) is a platform to find, share, and use humanitarian data
 

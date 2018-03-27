@@ -2,7 +2,10 @@
 title: When not to create new standards
 nav:
   order: 4
-description: Creating open standards can be resource and time-intensive, so it’s worth first considering whether using an existing open standard is the right solution.
+description: >-  
+
+
+    Creating open standards can be resource and time-intensive, so it’s worth first considering whether using an existing open standard is the right solution.
 gdoc: https://docs.google.com/document/d/1OoK8T5OtQriFARhb1cSFypAQNz24iEtgURd8YqfI-B0/edit?usp=sharing
 sidebar:
   sections:
@@ -77,7 +80,7 @@ When what you need is still unclear — for example, your project is in the init
 * **working through a discovery phase** — this can help you investigate the problem and solutions, including finding and testing existing open standards
 </div>
 
-Owners of standards should [provide examples and metaphors to explain the value of standards](https://docs.google.com/document/d/1E5uARrZf5AJUIF_DJz-42_793EY_Dwk7n7B3bMn3x5A/edit#heading=h.zssu8xboua), [teach through experience](https://docs.google.com/document/d/1E5uARrZf5AJUIF_DJz-42_793EY_Dwk7n7B3bMn3x5A/edit#heading=h.rvc86fqdwk3z), and [be clear on the language used](https://docs.google.com/document/d/1E5uARrZf5AJUIF_DJz-42_793EY_Dwk7n7B3bMn3x5A/edit#heading=h.4yiivfrjkacx) to make open standards easier to understand and adopt.
+Owners of standards should [provide examples and metaphors to explain the value of standards](https://docs.google.com/document/d/1E5uARrZf5AJUIF_DJz-42_793EY_Dwk7n7B3bMn3x5A/edit#heading=h.y5kridhwfwq7), [teach through experience](https://docs.google.com/document/d/1E5uARrZf5AJUIF_DJz-42_793EY_Dwk7n7B3bMn3x5A/edit#heading=h.whlnwt6nduct), and [be clear on the language used](https://docs.google.com/document/d/1E5uARrZf5AJUIF_DJz-42_793EY_Dwk7n7B3bMn3x5A/edit#heading=h.mgei71ffc7zi) to make open standards easier to understand and adopt.
 
 We encourage anyone interested in open standards to engage with those that already exist before creating new open standards. 
 

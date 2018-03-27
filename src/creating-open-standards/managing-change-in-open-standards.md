@@ -2,12 +2,9 @@
 title: Managing change in open standards
 layout: content-page
 description: >- 
-
-
-    Developing an open standard is a technical project that changes over time and involves a number of people and organisations. 
+  
     
-    
-    Managing that change is a process that develops as the open standard matures. Being clear about who manages change, and how, will increase trust and confidence in the standard. 
+    Being clear about who manages change, and how, will increase trust and confidence in the open standard as it matures.
 nav:
     order: 3
 gdoc: https://docs.google.com/document/d/18E_-dxiHzDJVPI2Ib8SkqtChsxJ3MllDhTVPZRgx540/edit?usp=sharing

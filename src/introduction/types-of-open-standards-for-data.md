@@ -2,7 +2,13 @@
 title: Types of open standards for data
 nav:
   order: 2
-description: There are thousands of open standards in use around the world. We have divided them into three broad categories. Open standards can fall into a single category or draw features from multiple categories to achieve their aims.
+description: >-  
+
+
+    There are thousands of open standards in use around the world. We have divided them into three broad categories. 
+    
+    
+    Open standards can fall into a single category or draw features from multiple categories to achieve their aims.
 gdoc: https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit?usp=sharing
 sidebar:
   sections:
@@ -45,7 +51,7 @@ sidebar:
           url: https://docs.google.com/document/d/1xsz1NqZGCz9ilkFEvQLsLKFsxXusfMZSd0phZ_LzHMw/edit?usp=sharing
         -
           title: Brownfield Site Register Open Data Standard case study
-          url: https://docs.google.com/document/d/1Hv_g2wt3vJ42XJxK6nsLax0M_9c76rFC4JerFYm2x0U/edit?usp=sharing)      
+          url: https://docs.google.com/document/d/1Hv_g2wt3vJ42XJxK6nsLax0M_9c76rFC4JerFYm2x0U/edit?usp=sharing      
 ---
 
 
@@ -248,5 +254,5 @@ More complex shared vocabularies like ontologies, can reference simpler shared v
 ![We can standardise](../we-can-standardise-open-data-institute.jpg)
 *Source: The Open Data Institute*
 
-For example, the [Brownfield Site Register Standard](https://docs.google.com/document/d/1Hv_g2wt3vJ42XJxK6nsLax0M_9c76rFC4JerFYm2x0U/edit) for sites in England, suitable for residential redevelopment, includes shared vocabularies like agreements on specific words, taxonomies, identifiers and units. The standard uses a CSV format that describes how data is structured for publication. The [Water Point Data Exchange Standard](https://www.waterpointdata.org/about-wpdx-standard) (WPDx) uses existing geospatial and ISO standards and extends them for specialist use by their community. 
+For example, the [Brownfield Site Register Open Data Standard](https://www.gov.uk/government/publications/brownfield-land-registers-data-standard) for sites in England, suitable for residential redevelopment, includes shared vocabularies like agreements on specific words, taxonomies, identifiers and units. The standard uses a CSV format that describes how data is structured for publication. The [Water Point Data Exchange Standard](https://www.waterpointdata.org/about-wpdx-standard) (WPDx) uses existing geospatial and ISO standards and extends them for specialist use by their community. 
 
