@@ -7,15 +7,17 @@
                         {% include hero-text.html %}
 
                         <div class="pad-top-small">
-                            <a href="#site-content" class="link u-hide-print">Skip to transcript</a>
+                            <a href="#site-content" class="link u-hide-print">Skip to content</a>
                         </div>
                     </div>
                 </div>
             </div>
 
+            {% if page.show_nav %}
             <div class="g__cell g__cell-12 g__cell-4--medium pad-top-medium pad-top-reset--medium align-right u-hide-print">
                 {% include section-nav.html %}
             </div>
+            {% endif %}
         </div>
 
         {% if page.soundcloud %}

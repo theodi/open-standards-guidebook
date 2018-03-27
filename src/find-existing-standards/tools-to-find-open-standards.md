@@ -9,7 +9,6 @@ nav:
   order: 2
 gdoc: https://docs.google.com/document/d/1iTCCFu7WRx5Ak11MtPvApphkutaaPVxOzy0L2NnwWYM/edit?usp=sharing
 show_toc: false
-show_nav: false
 sidebar:
   sections:
     - title: Further reading
