@@ -107,6 +107,6 @@ Read about [types of open standards](/introduction/types-of-open-standards-for-d
 
 <div class="callout" markdown="1">
 * [General Transit Feed Specification (GTFS)](https://developers.google.com/transit/gtfs/), the *de facto* standard for public transit, makes it easy to find bus, train, and tram stops and schedules when you use apps like [Citymapper](https://citymapper.com), [Google Maps](https://maps.google.com/) or ride-sharing apps like [Park.io](https://www.parkio.co.uk/)
-* In England, [local planning authorities](https://docs.google.com/document/d/1Hv_g2wt3vJ42XJxK6nsLax0M_9c76rFC4JerFYm2x0U/edit#bookmark=id.x2fknj1by9n0) use the [Brownfield Site Register Open Data Standard](https://www.gov.uk/government/publications/brownfield-land-registers-data-standard) to share the location and condition of sites suitable for residential development
+* In England, [local planning authorities](https://web.archive.org/web/20071011210324/http://www.pas.gov.uk/pas/core/page.do?pageId=12397) use the [Brownfield Site Register Open Data Standard](https://www.gov.uk/government/publications/brownfield-land-registers-data-standard) to share the location and condition of sites suitable for residential development
 * The US [Environmental Protection Agency (EPA)](https://www.epa.gov/) uses [open standards for environmental data](https://www.epa.gov/data-standards) and a central data exchange to significantly reduce the cost of collecting and sharing data with 65,000 active users
 </div>

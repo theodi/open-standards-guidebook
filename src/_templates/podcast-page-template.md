@@ -16,7 +16,7 @@ soundcloud: http://soundcloud.com
 # show_intro_sentence: false # Show / hide the intro sentence
 # intro_sentence: This is a custom intro sentence that will be used in preference to the global one
 #   defined in site.data.snippets.intro_sentence
-
+# image is 400x400
 people:
   - name: Edafe Onerhime
     role: Consultant Data Scientist

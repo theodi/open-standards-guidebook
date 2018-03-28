@@ -75,13 +75,13 @@ Changes to the standard may not affect on most adopters, but in some cases might
 
 Typically, a major change is a departure from the current standard that introduces *breaking changes*, which means:
 
-* existing tools based on the current version of a [data exchange standard](https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit#heading=h.gquw9huwsj6k) or  [shared vocabulary](https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit#heading=h.36hd992dzujg) may not work with the new version
+* existing tools based on the current version of a [standard for data exchange](/introduction/types-of-open-standards-for-data/#standards-to-exchange-data) or [standard to share vocabulary](/introduction/types-of-open-standards-for-data/#standards-to-share-vocabulary) may not work with the new version
 
-* the structure of data produced using the new version of a [data exchange standard](https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit#heading=h.gquw9huwsj6k) may be different from that using the current version
+* the structure of data produced using the new version of a [standard for data exchange](/introduction/types-of-open-standards-for-data/#standards-to-exchange-data) may be different from that using the current version
 
-* new versions of [shared vocabularies](https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit#heading=h.36hd992dzujg) such as lists and ontologies may include significant, new or updated entries, classifications or hierarchies
+* new versions of [standard to share vocabulary](/introduction/types-of-open-standards-for-data/#standards-to-share-vocabulary) such as lists and ontologies may include significant, new or updated entries, classifications or hierarchies
 
-* models produced using [guidance standards](https://docs.google.com/document/d/1LJfRC5wKrHuV4FDMk4RyL_mgoIdRdnis5rZg8NYGT1Y/edit#heading=h.756ycxwioez5) may vary between versions of the open standard.
+* models produced using [standards for guidance](/introduction/types-of-open-standards-for-data/#standards-for-guidance) may vary between versions of the open standard.
 
 While updating an open standard means investing in changes to the [data infrastructure](https://theodi.org/topic/data-infrastructure/), when done right, these changes can make the standard easier to adopt and use. 
 

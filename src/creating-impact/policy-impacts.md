@@ -2,7 +2,10 @@
 title: Policy impacts of open standards
 nav:
   order: 3
-description: Open standards for data can support the implementation of policy and embody policy when they are developed and/or adopted. 
+description: >-  
+
+
+    Open standards for data can support the implementation of policy and embody policy when they are developed and/or adopted. 
 gdoc: https://docs.google.com/document/d/1UiPJHT7qeSR5OBbyMNtjGx9IzHVpO7j96P3kTxPDRaU/edit?usp=sharing
 sidebar:
   sections:

@@ -4,10 +4,10 @@ layout: listing
 description: >- 
 
 
-    This section of the guidebook explores how to find and assess existing open standards for data.
+    This section explores how to find and assess existing open standards for data.
 sections:
   items:
-    - type: grid # full, grid, short
+    - type: full # full, grid, short
       meta: Find
       title: Finding open standards
       description: >-
@@ -15,7 +15,7 @@ sections:
       items:
         - find-existing-standards/how-to-find-open-standards
         - find-existing-standards/tools-to-find-open-standards
-    - type: grid # full, grid, short
+    - type: full # full, grid, short
       meta: Assess
       title: Choosing open standards
       description: >-
