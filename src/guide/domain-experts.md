@@ -9,7 +9,7 @@ sections:
   items:
     - type: grid # full, grid, short
       meta: Overview
-      title: Getting Started
+      title: Getting started
       description: >-
       items:
         - introduction/what-are-open-standards-for-data
@@ -28,7 +28,7 @@ sections:
         - creating-impact/lessons-learned-in-open-standards-development.md
     - type: grid # full, grid, short
       meta: Reference
-      title: Further Reading
+      title: Further reading
       description: >-
           Learn more about standards creation and the experiences of the standards community 
       items:
