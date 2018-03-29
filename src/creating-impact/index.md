@@ -25,7 +25,7 @@ sections:
       items:
         - creating-impact/policy-impacts.md      
         - creating-impact/economic-impacts.md
-        - creating-impact/social-impacts.md
+        - creating-impact/social-impact.md
         - creating-impact/technology-impacts.md        
 ---
 
