@@ -11,7 +11,6 @@ description: >-
 sections:
   items:
     - type: grid # full, grid, short
-      meta: Process
       title: Getting started
       description: >-
         An introduction to open standards for data
@@ -21,4 +20,5 @@ sections:
         - introduction/when-to-use-open-standards-for-data        
         - introduction/when-not-to-create-new-standards
         - introduction/how-open-standards-are-developed
+        - introduction/how-to-make-the-case-for-open-standards
 ---
