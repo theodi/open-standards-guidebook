@@ -21,24 +21,24 @@ sections:
   - type: full # full, grid, short
     title: Open standards and you
     description: >-
-      Resources to help you develop and adopt open standards, including the organnisations and communities that can help
+      Some suggested starting points for different types of users
     items:
-      - title: Organisations developing standards
-        url: '#'
-        description: >-
-          Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
       - title: Policy specialists
-        url: '#'
+        url: '/guide/policy'
         description: >-
-          Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
+          For policy specialists looking for an overview of standards for data and how they might be used to support public policy
       - title: Domain experts
-        url: '#'
+        url: '/guide/domain-experts'
         description: >-
-         Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
+          For subject matter experts looking to understand the different types of standards, their benefits and more information about how they are developed
       - title: Data publishers and consumers
-        url: '#'
+        url: '/guide/data-users'
         description: >-
-         Short description nulla eu molestie massa. Pellentesque fermentum urna pretium nulla lacinia gravida. Aenean in aliquet mauris.
+          Looking for support in adopting existing data standards or advice on developing new standards?
+      - title: Organisations developing standards
+        url: '/guide/standards-organisations'
+        description: >-
+          Tools, guidance and support for organisations involved in developing and supporting open standards for data
   - type: grid # full, grid, short
     title: Find existing standards
     description: >-
