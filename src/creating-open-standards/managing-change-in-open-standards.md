@@ -95,7 +95,7 @@ Good examples of governance principles include:
 
 Policy, regulations or legislation can affect the activities and products in a standard’s development. For example, contributors may need to assign or transfer intellectual property rights to contribute to the standard’s development. You will need to decide who retains the copyright and how branding is used for the standard. 
 
-Data or models produced using the open standard will also have intellectual property rights. You may need to decide which licences are recommended for use with data or models published using the open standard.
+Data or models produced using the open standard will also have intellectual property rights. You may need to decide which licences are recommended for use with data or models published using the open standard. Adopters of your open standard may need to consider governance of data or models they create, including deciding where the data falls in the ‘[Data Spectrum](https://theodi.org/about-the-odi/the-data-spectrum/)’ - consider what advice and support you can provide to help them.
 
 Policy, regulation and legislation can affect governance by dictating how often the standard is revised, who can make decisions, if a governance board is needed and more. The [Brownfield Site Register Open Data Standard](https://www.gov.uk/government/publications/brownfield-land-registers-data-standard), for example,  is openly licensed under the [Open Government Licence](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) for public sector information (OGL v3) developed to help organisations adhere to [The Re-use of Public Sector Information Regulations 2015](http://www.legislation.gov.uk/uksi/2015/1415/contents/made). This licence allows reuse of all content except logos without charge in any format or medium.
 
@@ -149,7 +149,7 @@ This lightweight governance process allows GTFS to continue to evolve and suppor
 
 The [Open Contracting Data Standard](http://standard.open-contracting.org/) (OCDS) is an open standard for sharing public procurement information. Its governance has evolved from a lightweight process as the standard continues to grow.
 
-Governance includes stewardship from the [Open Contracting Partnership](https://www.open-contracting.org/) (OCP) and a process that encourages community participation and supports the [Open Stand 5 principles](https://open-stand.org/about-us/principles/) of due process, broad consensus, transparency, balance and openness.
+Governance includes stewardship from the [Open Contracting Partnership](https://www.open-contracting.org/) (OCP) and a process that encourages community participation and supports the [Open Stand principles](https://open-stand.org/about-us/principles/) of due process, broad consensus, transparency, balance and openness.
 
 Anyone can raise issues using the [GitHub repository](https://github.com/open-contracting/standard) or through the mailing list. The technical team reviews the issues and proposed updates are peer reviewed by members of the standard’s community.A working group comprising OCP staff representatives, a multi-stakeholder advisory board and the technical team approve the updates.
 
