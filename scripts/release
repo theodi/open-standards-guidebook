@@ -60,5 +60,5 @@ git commit -m "$version release"
 
 # Finish and push
 echo "Finishing release $version"
-git flow release finish -m "$version" $version
+git flow release finish  -p -m "$version" $version
 git flow release publish $version
