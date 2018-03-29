@@ -83,6 +83,8 @@ We explore why the community of stakeholders is wider than adopters of the open 
 * **extend the stakeholder mapping** to include potential supporters by taking note of who else is interested in or impacted by your open standard – focus on people and organisations who can support the adopters of your open standard such as policy advisors, developers of tools for publishing and using data, and industry or sector specialists
 
 * **promote stories that demonstrate the impact of your open standard** with early adopters – this could include media-friendly data visualisations, infographics, case studies, blogs, podcasts, tool demos, and academic research
+
+* **consider adoption by a standards body** to support sustainability and improve the changes of international adoption - organisations like the [Open Geospatial Consortium](http://www.opengeospatial.org/) (OGC) provide support, policies and procedures to endorse external, ‘[community standards](http://www.opengeospatial.org/blog/2543)’.
 </div>
 
 # Support adoption
