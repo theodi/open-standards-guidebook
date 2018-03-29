@@ -67,13 +67,15 @@ According to our research, ‘[User experiences of open standards for data](http
 * websites, blogs or social media
 
 * open source projects or repositories like [Github](https://github.com/)
+
+* public procurement policies
 </div>
 
 Open standards tend to have dedicated websites to help potential adopters find standards using search engines. 
 
 For example, [Open Referral](https://openreferral.org/) for community resources, the [Open Contracting Data Standard](http://standard.open-contracting.org/) for disclosing public procurement and the [Humanitarian Exchange Standard](http://hxlstandard.org/) for humanitarian crises, all of which have dedicated websites.
 
-Some open standards are listed by the governments and public bodies who support them, for example the [UK government list of approved open standards](https://www.gov.uk/government/publications/open-standards-for-government) and the [U.S. Data Federation](https://federation.data.gov/).
+Some open standards are listed by the governments and public bodies who support them, for example the [UK government list of approved open standards](https://www.gov.uk/government/publications/open-standards-for-government) and the [U.S. Data Federation](https://federation.data.gov/). Vendors involved in public procurement may also check government policies on public procurement to identify supported standards. As a standards owner or standards developer, it's useful to consider gaining official recognition of your open standard to support adoption.
 
 Finding open standards then working out if they are right for you can be time consuming. 
 

@@ -36,7 +36,7 @@ sidebar:
           title: How to choose an open standard
           url: /find-existing-standards/how-to-choose-an-open-standard
         -          
-          title: How to choose open standards checklist
+          title: A checklist for choosing open standards
           url: find-existing-standards/how-to-choose-an-open-standard-checklist
     - intro: Our research on open standards for data
       items:
