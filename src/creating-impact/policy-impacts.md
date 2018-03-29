@@ -23,7 +23,7 @@ sidebar:
           url: /creating-impact/economic-impacts
         -
           title: Social impacts of open standards
-          url: /creating-impact/social-impact
+          url: /creating-impact/social-impacts
         -
           title: Technology impacts of open standards
           url: /creating-impact/technology-impacts

@@ -10,29 +10,28 @@ sections:
   items:
     - type: grid # full, grid, short
       meta: Background
-      title: Overview
+      title: Getting Started
       description: >-
       items:
         - introduction/what-are-open-standards-for-data
         - introduction/types-of-open-standards-for-data
         - introduction/when-to-use-open-standards-for-data        
         - introduction/when-not-to-create-new-standards
-        - introduction/how-open-standards-are-developed
     - type: grid # full, grid, short
-      meta: Find
-      title: Finding open standards
+      meta: Adopt
+      title: Finding and adopting open standards
       description: >-
-        How to find existing open standards
+        How to find and adopt existing open standards
       items:
         - find-existing-standards/how-to-find-open-standards
         - find-existing-standards/tools-to-find-open-standards
+        - find-existing-standards/how-to-choose-an-open-standard       
     - type: grid # full, grid, short
-      meta: Assess
-      title: Choosing open standards
+      meta: Reference
+      title: Further reading
       description: >-
-        How to assess existing open standards
+          Learn more about the benefits of standards and how they are developed 
       items:
-        - find-existing-standards/how-to-choose-an-open-standard
-        - find-existing-standards/how-to-choose-an-open-standard-checklist
-
+        - creating-impact/index.md      
+        - introduction/how-open-standards-are-developed.md
 ---
