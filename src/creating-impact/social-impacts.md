@@ -27,9 +27,6 @@ sidebar:
           title: Economic impacts of open standards
           url: /creating-impact/economic-impacts
         -
-          title: Social impacts of open standards
-          url: /creating-impact/social-impact
-        -
           title: Technology impacts of open standards
           url: /creating-impact/technology-impacts    
     - intro: The Open Standards for Data Canvas for capturing stakeholders’ needs

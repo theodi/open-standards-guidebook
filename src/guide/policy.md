@@ -9,7 +9,7 @@ sections:
   items:
     - type: grid # full, grid, short
       meta: Overview
-      title: Getting Started
+      title: Getting started
       description: >-
       items:
         - introduction/what-are-open-standards-for-data

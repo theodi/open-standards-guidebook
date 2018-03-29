@@ -140,9 +140,11 @@ Successful engagement with the right people is essential for a successful open s
 
 **Step seven**: In the KEY STAKEHOLDERS pillar, make a note of the key stakeholders. These are the people and organisations that will own, fund and develop the standard as well as those who will share and use the guide, vocabulary, format or data produced.
 
+<div class="callout" markdown="1">
 * *Google: Owner, developer and sponsor*
 * *Consumers: Transit Developers, i.e. people or organisations using transit information*
 * *Producers: Transit Agencies, i.e. organisations that run or manage transit services*
+</div>
 
 For GTFS, there are two main groups to consider besides Google, who are the primary owner, developer and sponsor of the standard. [GTFS Example [pdf]](/useful-tools/open-standards-for-data-canvas-gtfs-example.pdf)
 
@@ -191,11 +193,11 @@ These should focus on things that could derail the development or adoption of th
 Include technical, legal, social, environmental, or political challenges or weaknesses. Where possible, briefly describe how risks will be mitigated.
 
 <div class="callout" markdown="1">
-*Perceived lack of benefits to transit agencies – demonstrate universal use*
+* *Perceived lack of benefits to transit agencies – demonstrate universal use*
 
-*Complex technical formats for files – keep a simple format*
+* *Complex technical formats for files – keep a simple format*
 
-*Closed licensing of transit data – focus on benefits of open data*
+* *Closed licensing of transit data – focus on benefits of open data*
 </div>
 
 From [Pioneering Open Data Standards: The GTFS Story](http://beyondtransparency.org/chapters/part-2/pioneering-open-data-standards-the-gtfs-story/), the main risks were one stakeholder gaining all the benefits (social), keeping file formats simple (technical) and ensuring transit data was open (legal). [GTFS Example [pdf]](/useful-tools/open-standards-for-data-canvas-gtfs-example.pdf)
@@ -205,13 +207,13 @@ From [Pioneering Open Data Standards: The GTFS Story](http://beyondtransparency.
 Use the 'Key Resources' pillar to share the main resources that the open standard will need to deliver the key solutions.
 
 <div class="callout" markdown="1">
-*Funding – Google*
+* *Funding – Google*
 
-*Transit Expertise – TriMet Portland*
+* *Transit Expertise – TriMet Portland*
 
-*Open Format License – Creative Commons Attribution 3.0 License and Apache 2.0 License*
+* *Open Format License – Creative Commons Attribution 3.0 License and Apache 2.0 License*
 
-*Transit Developer – Google Maps*
+* *Transit Developer – Google Maps*
 </div>
 
 The above list reflects the key resources for the alpha or first release of GTFS, where Google provided the funding and TriMet Portland the expertise. [GTFS Example [pdf]](/useful-tools/open-standards-for-data-canvas-gtfs-example.pdf)
@@ -221,4 +223,3 @@ Once you have completed the canvas, you will have an overview of your open stand
 Sharing the canvas for comment either as a public document or directly with key stakeholders and early adopters will open you up to useful feedback early on. 
 
 It’s worth returning to the canvas as you progress to keep your development on track. 
-
