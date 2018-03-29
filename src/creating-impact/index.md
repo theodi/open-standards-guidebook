@@ -10,22 +10,22 @@ description: >-
 sections:
   items:
     - type: full # full, grid, short
-      meta: Getting started
+      meta: Introduction
       title: Creating impact with open standards
       description: >-
         How to create impact with open standards
       items:
-        - creating-impact/getting-started.md
-        - creating-impact/lessons-learned-in-open-standards-development.md
+        - creating-impact/getting-started
+        - creating-impact/lessons-learned-in-open-standards-development
     - type: grid # full, grid, short
       meta: Case studies
       title: Impact of open standards
       description: >-
         Explore the impact and benefits of open standards
       items:
-        - creating-impact/policy-impacts.md      
-        - creating-impact/economic-impacts.md
-        - creating-impact/social-impact.md
-        - creating-impact/technology-impacts.md        
+        - creating-impact/policy-impacts
+        - creating-impact/economic-impacts
+        - creating-impact/social-impacts
+        - creating-impact/technology-impacts
 ---
 

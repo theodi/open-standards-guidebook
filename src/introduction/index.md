@@ -11,7 +11,6 @@ description: >-
 sections:
   items:
     - type: grid # full, grid, short
-      meta: Process
       title: Getting started
       description: >-
         An introduction to open standards for data

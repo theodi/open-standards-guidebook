@@ -24,10 +24,10 @@ sections:
         url: useful-tools/data-ecosystem-mapping-for-open-standards
         description: >-
           This is a placeholder
-      - title: Open Standards for Data Canvas
-        url: https://docs.google.com/document/d/1Uk7ocfFGwt_43O9Qhv_ixP4s0MDCOi1Sncl_t-Nn6wg/edit?usp=sharing
+      - title: A checklist for typical outputs and activities
+        url: useful-tools/typical-outputs-and-activities-checklist
         description: >-
-          Develop a single view of an open standard when you use or develop an open standard          
+          Use this checklist to track typical activities and outputs for each stage of development
       - title: How to use the Open Standards for Data Canvas
         url: useful-tools/how-to-use-the-open-standards-for-data-canvas
         description: >-
