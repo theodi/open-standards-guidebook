@@ -20,4 +20,5 @@ sections:
         - introduction/when-to-use-open-standards-for-data        
         - introduction/when-not-to-create-new-standards
         - introduction/how-open-standards-are-developed
+        - introduction/how-to-make-the-case-for-open-standards
 ---
