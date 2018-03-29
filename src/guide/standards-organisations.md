@@ -9,14 +9,16 @@ description: >-
 sections:
   items:
   - type: grid # full, grid, short
-    title: Getting started
+    meta: Community
+    title: Peer Networking
     description: >-
-      Getting started with creating an open standard and managing change
+      Peer networking between teams working on open standards for data can help us to all create better outcomes
     items:
-      - creating-open-standards/getting-started
-      - creating-open-standards/developing-standards/index
-      - creating-open-standards/managing-change-in-open-standards
+      - creating-impact/lessons-learned-in-open-standards-development.md
+      - community/community-voices/index.md
+      - community/case-studies/index.md
   - type: grid # full, grid, short
+    meta: Reference
     title: Useful tools
     description: >-
       Tools and resources to help you develop an open standard
