@@ -1,6 +1,5 @@
 ---
 title: Policy specialists
-show_nav: false
 layout: listing
 description: >- 
 
@@ -9,8 +8,8 @@ description: >-
 sections:
   items:
     - type: grid # full, grid, short
-      meta: Background
-      title: Overview
+      meta: Overview
+      title: Getting Started
       description: >-
       items:
         - introduction/what-are-open-standards-for-data
@@ -24,8 +23,18 @@ sections:
           Explore the impact and benefits of open standards 
       items:
         - creating-impact/policy-impacts.md      
+        - creating-impact/social-impact.md        
         - creating-impact/economic-impacts.md
-        - creating-impact/social-impacts.md
         - creating-impact/technology-impacts.md 
-
+        - community/case-studies/index.md
+    - type: grid # full, grid, short
+      meta: Reference
+      title: Further reading
+      description: >-
+          Learn more about standards creation and the experiences of the standards community 
+      items:
+        - introduction/how-open-standards-are-developed.md
+        - creating-impact/lessons-learned-in-open-standards-development.md
+        - find-existing-standards/how-to-find-open-standards.md
+        - community/index.md
 ---

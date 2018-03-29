@@ -1,7 +1,7 @@
 ---
 title: "Case Studies"
 layout: listing
-description: This is a placeholder
+description: Case studies describing the development and adoption of existing standards
 ---
 
 Content coming soon
