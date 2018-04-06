@@ -67,9 +67,9 @@ For example, [local planning authorities](http://www.legislation.gov.uk/ukpga/20
 
 **Enabling aggregation** by decreasing the cost and complexity of combining similar data from multiple sources. 
 
-Open standards encourage the [publication of new data](https://docs.google.com/document/d/1iUfKlqT7I-jwR__kx0kUEiQCUGC7WmReFY5uKEXO-VQ/edit#heading=h.iihewgm30kxe) and [better quality data](https://docs.google.com/document/d/1iUfKlqT7I-jwR__kx0kUEiQCUGC7WmReFY5uKEXO-VQ/edit#heading=h.57dkqekrn8fc) structured in a similar way, making it easier to combine them. 
+Open standards encourage the [publication of new data](/creating-impact/technology-impacts/#standards-enable-publication-of-new-data) and [better quality data](/creating-impact/technology-impacts/#standards-produce-better-quality-data) structured in a similar way, making it easier to combine them. 
 
-Open standards [encourage the creation of new tools and services](https://docs.google.com/document/d/1iUfKlqT7I-jwR__kx0kUEiQCUGC7WmReFY5uKEXO-VQ/edit#heading=h.l084pwlc88x3) to take advantage of data that conforms to the standard.
+Open standards [encourage the creation of new tools and services](/creating-impact/technology-impacts/#standards-encourage-creation-of-new-tools-and-services) to take advantage of data that conforms to the standard.
 
 For example, the [US Environmental Protection Agency](https://www.epa.gov/) (EPA) collects environmental data in its role as a federal agency protecting human health and the environment. To form a national picture, information from individual states, local agencies, tribes, and other organisations are aggregated using [open standards for environmental data](https://www.epa.gov/data-standards).
 
