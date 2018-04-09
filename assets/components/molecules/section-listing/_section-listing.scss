@@ -21,10 +21,18 @@
 
 .m-section-listing__title {
     font-size: ms(0);
+    margin-top: spacing(10) !important; // Stop this being overridden by first of type page-content modifier
+    margin-bottom: spacing(5);
+    padding-bottom: spacing(0);
 
     @include respond-to(medium) {
         font-size: ms(1, $thread: desktop);
     }
+}
+
+.m-section-listing__title + p {
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .m-section-listing--short {

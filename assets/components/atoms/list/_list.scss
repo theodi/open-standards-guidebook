@@ -131,6 +131,7 @@ ul {
 
 .u-styled-lists {
     ul {
+        padding-left: spacing(10);
         @include list--styled();
         list-style-position: outside;
     }

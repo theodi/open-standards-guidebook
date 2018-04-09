@@ -27,3 +27,15 @@
         font-size: ms(4, $thread: desktop);
     }
 }
+
+// If the breadcrumbs are enabled we want to space the pill away from it
+.m-breadcrumb__wrapper + .m-hero {
+    .pill {
+        margin-top: spacing(8);
+
+        @include respond-to(medium) {
+            margin-top: spacing(15);
+        }
+    }
+}
+

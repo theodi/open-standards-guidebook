@@ -12,7 +12,11 @@
 .m-breadcrumb__item {
     @include link() {
         font-weight: bold;
-        font-size: ms(0, $thread: desktop);
+        font-size: ms(-1);
+
+        @include respond-to(medium) {
+            font-size: ms(0, $thread: desktop);
+        }
         color: palette(grey-dark);
     }
 
