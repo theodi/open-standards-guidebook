@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://standards.theodi.org/community/who-can-i-work-with/360-giving/</loc>
+</url>
+<url>
+<loc>https://standards.theodi.org/community/who-can-i-work-with/bsi/</loc>
+</url>
+<url>
 <loc>https://standards.theodi.org/about/contact/</loc>
 </url>
 <url>
@@ -20,6 +26,9 @@
 </url>
 <url>
 <loc>https://standards.theodi.org/creating-impact/economic-impacts/</loc>
+</url>
+<url>
+<loc>https://standards.theodi.org/community/who-can-i-work-with/future-cities-catapult/</loc>
 </url>
 <url>
 <loc>https://standards.theodi.org/creating-impact/getting-started/</loc>
@@ -109,6 +118,9 @@
 <loc>https://standards.theodi.org/community/who-can-i-work-with/open-data-services/</loc>
 </url>
 <url>
+<loc>https://standards.theodi.org/community/who-can-i-work-with/opennorth/</loc>
+</url>
+<url>
 <loc>https://standards.theodi.org/creating-impact/policy-impacts/</loc>
 </url>
 <url>
@@ -170,10 +182,10 @@
 </url>
 <url>
 <loc>https://standards.theodi.org/useful-tools/open-standards-for-data-canvas-gtfs-example.pdf</loc>
-<lastmod>2018-03-29T15:27:33+01:00</lastmod>
+<lastmod>2018-04-11T21:06:40+01:00</lastmod>
 </url>
 <url>
 <loc>https://standards.theodi.org/useful-tools/open-standards-for-data-canvas.pdf</loc>
-<lastmod>2018-03-29T15:27:33+01:00</lastmod>
+<lastmod>2018-04-11T21:06:40+01:00</lastmod>
 </url>
 </urlset>
