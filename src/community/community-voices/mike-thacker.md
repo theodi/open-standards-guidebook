@@ -12,7 +12,7 @@ soundcloud: 418236460
 people:
   - name: Mike Thacker
     role: Owner
-    twitter: tim_mcgarr
+    twitter: MikeThacker
     website: 'https://porism.com/'
   - name: Anna Scott
     role: Head of Content
