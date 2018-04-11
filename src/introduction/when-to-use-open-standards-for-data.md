@@ -80,6 +80,14 @@ For example, the [local authorities in England](https://local-authority-eng.regi
 
 The codes in the register are used by [360Giving](http://www.threesixtygiving.org/), the standard for grant making in the UK, to identify grants awarded to or by local authorities. To provide more insight, developers using this data can extend the information available to include data from this or other registers.
 
+<div class="callout" markdown="1">
+**You should develop or adopt an open standard when you need to** 
+
+* increase interoperability and comparability of data
+* enable aggregation and linking of data from multiple sources
+</div>
+
+
 # Common uses of open standards for data
 
 Open standards are a key tool in helping create a strong [data infrastructure](https://theodi.org/what-is-data-infrastructure). A data infrastructure consists of data assets, the organisations that operate and maintain them, and guides describing how to use and manage the data. 

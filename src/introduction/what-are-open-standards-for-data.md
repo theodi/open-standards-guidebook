@@ -69,15 +69,17 @@ Standards are used in industries and sectors across the world to document agreem
 * standard sizes for nuts and bolts so buying and selling are more cost-effective 
 </div>
 
-# What are open standards for data?
+# What are open standards?
 
 An open standard is a standard that’s available for anyone to access, use or share. 
-
-Open standards for data make it easier for people and organisations to publish, access, share and use better quality data. 
 
 [ITU](https://www.itu.int/en/about/Pages/default.aspx), the United Nations specialised agency for information and communication technologies, provides a useful definition of open standards from their telecommunication standardisation sector group ([ITU-T](https://www.itu.int/en/ITU-T/ipr/Pages/open.aspx)). 
 
 >Open Standards are standards made available to the general public and are developed (or approved) and maintained via a collaborative and consensus-driven process.  – ITU-T
+
+# What are open standards for data?
+
+Open standards for data are documented, reusable agreements that help people and organisations to publish, access, share and use better quality data. 
 
 <div class="callout" markdown="1">
 **Open standards may be developed to:**
@@ -91,8 +93,6 @@ Open standards for data make it easier for people and organisations to publish, 
 </div>
 
 # Open standards and open data
-
-Open standards for data are documented, reusable agreements that help people and organisations to publish, access, share and use better quality data. 
 
 Open standards may produce [open data](https://theodi.org/what-is-open-data) (data that anyone can access, use or share), as well as shared or closed data. 
 
