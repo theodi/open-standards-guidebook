@@ -60,7 +60,7 @@ sidebar:
 There are thousands of open standards for data in use every day around the world. To help make sense of them, we grouped standards according to their main purpose and products.
 
 <div class="callout" markdown="1">
-**Open standards include:**
+**With open standards for data, you can:**
 
 * **share vocabularies** and common language using common models, attributes and definitions, with outputs like: registers, taxonomies, vocabularies and ontologies
 
@@ -69,7 +69,7 @@ There are thousands of open standards for data in use every day around the world
 * **provide guidance** and recommendations for sharing better quality data, understanding processes and information flow, with outputs like: models, protocols, and guides
 </div>
 
-All open standards share common features, for example being available for anyone to access, use or share. Depending on the purpose and products of a given open standard, some features are more relevant than others.For example, it is important when using a data exchange standard to check that data has been produced correctly by checking the data against the standard’s rules. 
+All open standards share common features, for example being available for anyone to access, use or share. Depending on the purpose and products of a given open standard, some features are more relevant than others. For example, it is important when using a data exchange standard to check that data has been produced correctly by checking the data against the standard’s rules. 
 
 This isn’t necessary for standards focused on guidance or a shared vocabulary because using these standards doesn’t produce new data.
 
