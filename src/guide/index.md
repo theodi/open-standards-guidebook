@@ -23,6 +23,6 @@ resources that will be relevant no matter your experience.
 
 On top of providing useful background and case studies, we've also provided pointers to help you [find existing standards](/find-existing-standards/). 
 
-Other parts of the guidebook will be most relevant when you're engaged in the processing of [scoping and designing new standards](/creating-open-standards/).
+Other parts of the guidebook will be most relevant when you're engaged in the process of [scoping and designing new standards](/creating-open-standards/).
 
 If you can't find something you're looking for, or have some feedback, then please [get in touch](/about/contact/).

@@ -55,7 +55,7 @@ Questions to ask about the licensing include:
 
 * **Is there a licence for the standard and is it easy to find?** You will want to know what you can and can’t do with the standard. If it isn’t easy to find, it’s worth alerting the standard owner.
 
-* **Is the licence an ****[open licenc**e](http://opendefinition.org/guide/)**?** An open licence means anyone can use the standard, avoiding the issues highlighted above. If the standard doesn’t use an open licence, is the standard owner amenable to changing it?
+* **Is the licence an *[open licence](http://opendefinition.org/guide/)*?** An open licence means anyone can use the standard, avoiding the issues highlighted above. If the standard doesn’t use an open licence, is the standard owner amenable to changing it?
 
 * **Is it clear who owns the copyright?** The standard may be licensed for use by anyone, however the brand, trademarks and other intellectual property are usually owned by a standard owner. Knowing who owns the copyright can help you understand who ultimately owns the standard.
 
@@ -85,7 +85,7 @@ In general, it is useful to ask the following questions:
 
 * **Can the standard be extended or customised to meet my needs?** A successful open standard focuses on solving a particular problem or meeting a specific need. This is usually reflected in the core features of the standard, however, additional features may be added for other stakeholders in the form of extensions or additional features.
 
-Some standards encourage the community to engage with the standards developer and request features or contribute changes directly to the standard.Check with the standard owner if this is possible 
+Some standards encourage the community to engage with the standards developer and request features or contribute changes directly to the standard. Check with the standard owner if this is possible 
 
 ## Is this standard actively maintained?
 

@@ -58,9 +58,9 @@ sidebar:
 
 # Understand the ecosystem
 
-Understanding the ecosystem your standard will operate in can help establish what stakeholders value. Ecosystem maps help you understand where and how value is created, and what can be done to support value creation. 
+Understanding the ecosystem your standard will operate in can help establish what stakeholders value. [Ecosystem maps](/useful-tools/data-ecosystem-mapping-for-open-standards) help you understand where and how value is created, and what can be done to support value creation. 
 
-Ecosystem maps help identify players, environmental conditions and the relationships between them. When you have mapped the ecosystem, you can establish where your open standard fits and the value it can provide. By providing value to stakeholders, your open standard is more likely to be adopted and create impact.
+[Ecosystem maps](/useful-tools/data-ecosystem-mapping-for-open-standards) help identify players, environmental conditions and the relationships between them. When you have mapped the ecosystem, you can establish where your open standard fits and the value it can provide. By providing value to stakeholders, your open standard is more likely to be adopted and create impact.
 
 Ensure that the players you identify include a wide variety of people and organisations who will use or be affected by the standard or its outputs, including data and models. Stakeholders can include:
 
@@ -82,7 +82,7 @@ Ensure that the players you identify include a wide variety of people and organi
 
 In our research, [User experiences of open standards for data](https://docs.google.com/document/d/1E5uARrZf5AJUIF_DJz-42_793EY_Dwk7n7B3bMn3x5A/edit?usp=sharing), we found that a successful standard is a useful standard. The people we interviewed suggested that a successful open standard for data focuses on solving a particular problem or need. This is supported by our research, [Exploring the development and impact of open standards for data](https://docs.google.com/document/d/1Sab5YMVj4PVqLjZD35hX8FTnMeeP6gLGG0xszuRMIaM/edit?usp=sharing), where we found active open standards with thriving communities focused on solving particular problems. 
 
-Understanding the ecosystem is one way to ensure that the problem or need exists and is clearly articulated. Using clear language is also important when engaging with people and organisations. To ensure you are solving the right problem, everyone should understand what is being discussed. This means agreeing on concepts, meaning and definitions and avoiding jargon.
+[Understanding the ecosystem](/useful-tools/data-ecosystem-mapping-for-open-standards) is one way to ensure that the problem or need exists and is clearly articulated. Using clear language is also important when engaging with people and organisations. To ensure you are solving the right problem, everyone should understand what is being discussed. This means agreeing on concepts, meaning and definitions and avoiding jargon.
 
 Google’s [General Transit Feed Specification](https://developers.google.com/transit/gtfs/) (GTFS), for example,  focuses on making it easy to share and use public transit information, while the [Open Contracting Data Standard](http://standard.open-contracting.org/) focuses on disclosing public procurement information for the public good.
 

@@ -49,7 +49,7 @@ Policy affects the norms, environments and operation of communities, organisatio
 <div class="callout" markdown="1">
 * **Improved consumer experience** interventions, such as a standard for bin collection days, create better lives for citizens, in particular (but not limited to) their interactions with state service provision
 * **Efficient delivery** interventions, such as the [Open Contracting Data Standard](http://standard.open-contracting.org/latest/en/#), make providing services or fulfilling regulatory requirements by government more efficient and effective
-* **Market interventions**, such as the UK’s [Open Banking standard](https://www.openbanking.org.uk/),** **make data available to correct for market failures, such as by breaking down monopolies and promoting competition
+* **Market interventions**, such as the UK’s [Open Banking standard](https://www.openbanking.org.uk/), make data available to correct for market failures, such as by breaking down monopolies and promoting competition
 * **Better data management** interventions, such as standards for collecting statistics, help government manage the data that it relies on more effectively and efficiently and with wider societal and economic benefits
 </div>
 
@@ -66,7 +66,7 @@ Standards are increasingly important in delivering policy. In the past, policyma
 
 * make data more usable
 * provide clear guidance on how to disclose data
-* automate compliance checks, data aggregation and reporting. 
+* automate compliance checks, data aggregation and reporting 
 </div>
 
 Open standards for data provide clarity to data publishers, the opportunity for stakeholder engagement and help ensure consistent and comparable results.

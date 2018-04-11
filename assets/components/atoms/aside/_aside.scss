@@ -15,3 +15,18 @@ aside > .island {
     border-top: 2px solid darken(palette(grey), 4%);
     border-bottom: 2px solid darken(palette(grey), 4%);
 }
+
+aside {
+    nav {
+        .nav-item {
+            @include link() {
+                @include respond-to(medium) {
+                    font-size: ms(-1);
+                }
+                @include respond-to(large) {
+                    font-size: ms(0);
+                }
+            }
+        }
+    }
+}

@@ -67,9 +67,9 @@ For example, [local planning authorities](http://www.legislation.gov.uk/ukpga/20
 
 **Enabling aggregation** by decreasing the cost and complexity of combining similar data from multiple sources. 
 
-Open standards encourage the [publication of new data](https://docs.google.com/document/d/1iUfKlqT7I-jwR__kx0kUEiQCUGC7WmReFY5uKEXO-VQ/edit#heading=h.iihewgm30kxe) and [better quality data](https://docs.google.com/document/d/1iUfKlqT7I-jwR__kx0kUEiQCUGC7WmReFY5uKEXO-VQ/edit#heading=h.57dkqekrn8fc) structured in a similar way, making it easier to combine them. 
+Open standards encourage the [publication of new data](/creating-impact/technology-impacts/#standards-enable-publication-of-new-data) and [better quality data](/creating-impact/technology-impacts/#standards-produce-better-quality-data) structured in a similar way, making it easier to combine them. 
 
-Open standards [encourage the creation of new tools and services](https://docs.google.com/document/d/1iUfKlqT7I-jwR__kx0kUEiQCUGC7WmReFY5uKEXO-VQ/edit#heading=h.l084pwlc88x3) to take advantage of data that conforms to the standard.
+Open standards [encourage the creation of new tools and services](/creating-impact/technology-impacts/#standards-encourage-creation-of-new-tools-and-services) to take advantage of data that conforms to the standard.
 
 For example, the [US Environmental Protection Agency](https://www.epa.gov/) (EPA) collects environmental data in its role as a federal agency protecting human health and the environment. To form a national picture, information from individual states, local agencies, tribes, and other organisations are aggregated using [open standards for environmental data](https://www.epa.gov/data-standards).
 
@@ -79,6 +79,14 @@ For example, the [US Environmental Protection Agency](https://www.epa.gov/) (EPA
 For example, the [local authorities in England](https://local-authority-eng.register.gov.uk/) register is an authoritative list published by the UK government. 
 
 The codes in the register are used by [360Giving](http://www.threesixtygiving.org/), the standard for grant making in the UK, to identify grants awarded to or by local authorities. To provide more insight, developers using this data can extend the information available to include data from this or other registers.
+
+<div class="callout" markdown="1">
+**You should develop or adopt an open standard when you need to** 
+
+* increase interoperability and comparability of data
+* enable aggregation and linking of data from multiple sources
+</div>
+
 
 # Common uses of open standards for data
 

@@ -95,7 +95,7 @@ Understand how your organisation works with data by asking:
 
 Developing or adopting an open standard can change your organisation’s role in the [data infrastructure](https://theodi.org/topic/data-infrastructure/) (existing data assets, the organisations that operate and maintain them, and guides describing how to use and manage the data.) 
 
-Consider what role your organisation plays in the [data ecosystem](https://theodi.org/article/mapping-data-ecosystems/) and what could change if an open standard is adopted or developed. 
+Consider what role your organisation plays in the [data ecosystem](/useful-tools/data-ecosystem-mapping-for-open-standards) and what could change if an open standard is adopted or developed. 
 
 <div class="callout" markdown="1">
 **Your organisation could access, share and use data with:**
