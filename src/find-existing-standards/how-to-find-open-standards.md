@@ -79,6 +79,6 @@ Some open standards are listed by the governments and public bodies who support 
 
 Finding open standards then working out if they are right for you can be time consuming. 
 
-Resources like directories and case studies have been developed to make the research process easier. The [Open data standards directory](http://datastandards.directory/), the [Civic open data standards by Azavea](https://azavea.gitbooks.io/open-data-standards/content/) and [GeoThink’s dashboard for open data standards](https://docs.google.com/spreadsheets/d/12wcUhE6waDz0RPT81E5aebcJf58AH92FstMZQKy5kRc/edit#gid=1514863604) are useful resources that help you search for and assess open standards.
+Resources like directories and case studies have been developed to make the research process easier. The [Open data standards directory](http://datastandards.directory/) and the [Civic open data standards by Azavea](https://azavea.gitbooks.io/open-data-standards/content/) are both useful resources that help you search for and assess open standards.
 
 More resources are listed in our guide ‘[Tools to find open standards](/find-existing-standards/tools-to-find-open-standards)’.

@@ -76,14 +76,6 @@ A list of sources is also available on a seperate tab.
 
 **Use this for**: general open standards
 
-# [NIST standards.gov](https://www.nist.gov/standardsgov/resources/useful-links)
-
-Administered by the Standards Coordination Office (SCO) at the US National Institute of Standards and Technology (NIST),, the site provides resources and information on the use of standards. It is focused on the US and general standardisation, however resources are widely reusable. 
-
-NIST also provides links to standard resources in it's useful links section.
-
-**Use this for**: civic sector, general open standards
-
 # [Open data standards directory](http://datastandards.directory/) 
 
 This joint directory from [GovEx](https://govex.jhu.edu/) and [GeoThink](http://geothink.ca/) is a detailed, searchable list of open standards categorised by subject. The main focus is on civic domains, though other domains are covered. 
