@@ -8,7 +8,7 @@ sections:
       - type: grid # full, grid, short
         title: Peer Networks
         description: >-
-          [Peer networks](https://theodi.org/topic/peer-networks/) are a popular way of [developing leadership and sharing knowledge](https://theodi.org/article/peer-networks-for-open-data-leaders/) across communities.
+          Peer networks are a popular way of developing leadership and sharing knowledge across communities.
           <br/><br/>
           In the process of developing this guidebook we were able to bring together a diverse set of people working with open standards for data. The insight generated 
           from those discussions demonstrated the value of encouraging more peer networking across that community.
