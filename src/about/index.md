@@ -33,7 +33,7 @@ This guidebook is the end result of the hard work and enthusiasm of a large team
 * [Edafe Onerhime](https://twitter.com/rosebotanic) for her thorough approach to user research and commitment to developing clear, accessible guidance
 * Our four project partners: [Porism](https://porism.com/), [OpenNorth](http://www.opennorth.ca/), [Open Data Services](http://www.opendataservices.coop/) and the [W3C](https://www.w3.org/)
 * [Text Matters](http://www.textmatters.com/) for reviewing and improving the guidebook content
-* [Made By Kind](https://madebykind.com/) for creating an excellent publishing framework and design for the website
+* [Kind](https://madebykind.com/) for creating an excellent publishing framework and design for the website
 * [Freya Hellier](http://freyahellier.com/) for recording and editing our "Community Voices" podcasts
 * [Ian Dutnall](http://www.dutnall.com/) for designing the infographics 
 
