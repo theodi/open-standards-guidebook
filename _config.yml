@@ -22,7 +22,7 @@ exclude: ['_templates']
 url: https://standards.theodi.org
 name: Open Standards for Data Guidebook
 # Meta robots value
-robots: noindex, follow # @todo remove this for golive
+robots: index, follow # change to noindex to block
 issue_app_url: 'https://open-standards-guidebook.herokuapp.com/'
 
 ###
@@ -41,8 +41,8 @@ twitter:
 
 # @todo update pre live
 # # Verify website ownership
-# webmaster_verifications:
-#   google: 1234
+webmaster_verifications:
+   google: RYpjO4rKTfQgqBT7wWc4t-cK0bVSWLEFhZbecJ8ZapE
 #   bing: 1234
 #   alexa: 1234
 #   yandex: 1234

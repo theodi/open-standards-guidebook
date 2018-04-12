@@ -16,10 +16,10 @@ sections:
     items:
       - creating-impact/lessons-learned-in-open-standards-development.md
       - community/community-voices/index.md
-      - community/case-studies/index.md
+      - community/index.md
   - type: grid # full, grid, short
-    meta: Reference
     title: Useful tools
+    meta: Reference
     description: >-
       Tools and resources to help you develop an open standard
     items:
@@ -27,10 +27,10 @@ sections:
         url: useful-tools/data-ecosystem-mapping-for-open-standards
         description: >-
           This is a placeholder
-      - title: Open Standards for Data Canvas
-        url: https://docs.google.com/document/d/1Uk7ocfFGwt_43O9Qhv_ixP4s0MDCOi1Sncl_t-Nn6wg/edit?usp=sharing
+      - title: A checklist for typical outputs and activities
+        url: useful-tools/typical-outputs-and-activities-checklist
         description: >-
-          Develop a single view of an open standard when you use or develop an open standard          
+          Use this checklist to track typical activities and outputs for each stage of development
       - title: How to use the Open Standards for Data Canvas
         url: useful-tools/how-to-use-the-open-standards-for-data-canvas
         description: >-
@@ -46,6 +46,6 @@ sections:
       - title: "Stages in standards development (infographic)"
         url: introduction/stages-in-standards-development-open-data-institute.jpg
         description: >-
-          The typical stages in developng an open standard for data                      
+          The typical stages in developng an open standard for data                  
 
 ---
