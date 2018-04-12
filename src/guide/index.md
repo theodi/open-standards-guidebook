@@ -18,7 +18,7 @@ The guidebook isn't intended to be read from start to finish. Instead we've focu
 resources that will be relevant no matter your experience.
 
 * Are you news to standards? Then we suggest reading through our [non-technical introduction to standards](/introduction/).
-* We've also identified [some user journeys through the site](/) to help you find relevant content.
+* We've also identified [some user journeys through the site](/#site-content) to help you find relevant content.
 * Listening to our "[Community Voices](/community/community-voices/)" podcast series will also provide you with some useful insight into the experiences of standards developers from across the open data community.
 
 On top of providing useful background and case studies, we've also provided pointers to help you [find existing standards](/find-existing-standards/). 
