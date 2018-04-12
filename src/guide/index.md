@@ -7,6 +7,8 @@ show_nav: false
 description: 'There are a number of ways for you to learn more about the creation, development and adoption of open standards for data.'
 ---
 
+# For Readers
+
 Standards for data are often seen as a technical topic that is only relevant to developers and other technologists.
 
 Using this guidebook we hope to highlight that standards are an important tool that are worthy of wider attention. 
@@ -26,3 +28,23 @@ On top of providing useful background and case studies, we've also provided poin
 Other parts of the guidebook will be most relevant when you're engaged in the process of [scoping and designing new standards](/creating-open-standards/).
 
 If you can't find something you're looking for, or have some feedback, then please [get in touch](/about/contact/).
+
+We're also happy to hear from you if you've found the guidebook useful. [Let us know](/about/contact/) if it has helped you in your work.
+
+# For Contributors
+
+We are happy to take suggested updates and contributions from the community.
+
+There is a link on every page that will let you "Suggest a change or addition". 
+
+Here are some ways in which you might contribute:
+
+* submit links to new resources that we should be referencing from the guide
+* suggest wording improvements to the existing site content
+* suggest and contribute content for new pages or tools
+* if your organisation supports or developers open standards for data, then you can submit [an organisation profile](/community/who-can-i-work-with/)
+* record a podcast that we can add to our "[Community Voices](/community/community-voices/)" series
+
+We hope that this guidebook will become a resource that is collaboratively maintained and improved by the community. 
+
+The full source code and content for the site is [available on github](https://github.com/theodi/open-standards-guidebook).
