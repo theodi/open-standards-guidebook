@@ -29,8 +29,10 @@
             {% if itemPage %}
                 <div class="g__cell
                             g__cell-12
-                            g__cell-10--medium
-                            g__cell-8--large
+                            {% if section.type == 'full' %}
+                                g__cell-10--medium
+                                g__cell-8--large
+                            {% endif %}
                             {% if section.type != 'short' and section.type != 'full' %}
                                 g__cell-6--medium
                                 g__cell-4--large
