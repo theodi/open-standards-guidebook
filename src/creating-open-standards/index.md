@@ -23,7 +23,7 @@ sections:
       - title: Data ecosystem mapping for open standards
         url: useful-tools/data-ecosystem-mapping-for-open-standards
         description: >-
-          This is a placeholder
+          Mapping a data ecosystem can help you to identify where standards could add value and identify which stakeholders to engage with
       - title: A checklist for typical outputs and activities
         url: useful-tools/typical-outputs-and-activities-checklist
         description: >-
