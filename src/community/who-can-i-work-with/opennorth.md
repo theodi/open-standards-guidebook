@@ -9,7 +9,7 @@ sidebar:
           title: "Jean-Noé Landry"
           url: mailto:jeannoe@opennorth.ca
         -          
-          title: "opennorth.ca"
+          title: "http://opennorth.ca"
           url: http://www.opennorth.ca/
     - title: Podcast
       items:

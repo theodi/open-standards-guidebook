@@ -91,12 +91,12 @@ ul {
     counter-reset: list;
 
     li {
-        padding-left: rem-calc(15);
+        padding-left: rem-calc(20);
         position: relative;
 
         &:before {
             position: absolute;
-            top: rem-calc(10);
+            top: rem-calc(2);
             left: 0;
             counter-increment: list;
             content: counters(list, ".") ".";
@@ -124,6 +124,10 @@ ul {
     }
 }
 
+ol {
+    @include list--numbered;
+    padding-left: spacing(10);
+}
 
 .list--numbered {
     @include list--numbered;
@@ -137,6 +141,7 @@ ul {
     }
     ol {
         @include list--numbered();
+        padding-left: spacing(10);
         list-style-position: outside;
     }
 }
