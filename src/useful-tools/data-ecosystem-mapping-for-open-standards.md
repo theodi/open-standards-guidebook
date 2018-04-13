@@ -3,7 +3,7 @@ title: Data ecosystem mapping for open standards
 layout: content-page
 description: >- 
   
-   Mapping a data ecosystem can help you to identify where standards could add value and which stakeholders to engage with.
+   Mapping a data ecosystem can help you to identify where standards could add value and identify which stakeholders to engage with.
 nav:
     order: 5
 ---
