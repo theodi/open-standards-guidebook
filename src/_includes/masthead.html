@@ -57,7 +57,7 @@
             {% if page.url contains item.url %}is--active{% endif %}
             ">{{ item.title | improve }}</a>
         {% endfor %}
-        <hr>
+        <hr class="m-nav-mobile__seperator">
         {% for item in site.data.top_aux_nav %}
             <a href="{{ item.url | relative_url }}" class="m-nav-mobile__item
             {% if page.url contains item.url %}is--active{% endif %}
