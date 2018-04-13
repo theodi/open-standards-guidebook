@@ -34,7 +34,7 @@ This guidebook is the end result of the hard work and enthusiasm of a large team
 In addition to the in-house team working on the project, we would like to thank:
 
 * [Rose Rees-Jones](https://twitter.com/rosebotanic) for leading the user research phase of the project
-* [Edafe Onerhime](https://twitter.com/rosebotanic) for her thorough approach to user research and commitment to developing clear, accessible guidance
+* [Edafe Onerhime](https://twitter.com/ekoner) for her thorough approach to user research and commitment to developing clear, accessible guidance
 * Our four project partners: [Porism](https://porism.com/), [OpenNorth](http://www.opennorth.ca/), [Open Data Services](http://www.opendataservices.coop/) and the [W3C](https://www.w3.org/)
 * [Text Matters](http://www.textmatters.com/) for editing and improving the guidebook content
 * [Kind](https://madebykind.com/) for creating an excellent design and publishing framework for the website
