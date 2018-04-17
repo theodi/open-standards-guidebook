@@ -148,7 +148,7 @@ For example, development may involve turning conceptual models (described in ‘
 
 * drafting documents using rules from a formal standards organisation — for example, the BSI’s [rules for the structure and drafting of UK standards](https://www.bsigroup.com/LocalFiles/en-GB/standards/bs0-pas0/BSI-PAS0-Principles-of-PAS-UK-EN.pdf)
 
-* designing standards to exchange data using vocabularies like [JSON schema](http://json-schema.org/),  [XML schema](https://www.w3.org/XML/Schema), or [database schemas](https://www.brentozar.com/archive/2010/05/why-use-schemas/)
+* designing standards to exchange data using vocabularies like [JSON schema](http://json-schema.org/),  [XML schema](https://www.w3.org/XML/Schema), [database schemas](https://www.brentozar.com/archive/2010/05/why-use-schemas/), or [Data Packages](https://frictionlessdata.io/data-packages/).
 </div>
 
 # Test the standard
