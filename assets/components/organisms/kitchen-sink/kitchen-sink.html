@@ -1,0 +1,68 @@
+<pre style="padding-bottom:20px">Headings</pre>
+
+{% render '@headings' %}
+<hr>
+<pre style="padding-bottom:20px">Lede</pre>
+
+{% render '@lede' %}
+<hr>
+<pre style="padding-bottom:20px">Blockquote</pre>
+
+{% render '@blockquote' %}
+<hr>
+<pre style="padding-bottom:20px">Links</pre>
+
+<div style="margin-bottom:20px">
+    {% render '@link--plain' %}
+</div>
+<div style="margin-bottom:20px">
+    {% render '@link--black' %}
+</div>
+<div style="margin-bottom:20px">
+    {% render '@link--secondary' %}
+</div>
+<div style="margin-bottom:20px">
+    {% render '@link--block' %}
+</div>
+<hr>
+<pre style="padding-bottom:20px">List</pre>
+
+{% render '@list' %}
+<!-- Bulleted List -->
+<ul class="list list--bullet">
+    <li>This is a bullet list item</li>
+    <li>This is a bullet list item</li>
+    <li>This is a bullet list item</li>
+    <li>This is a bullet list item</li>
+</ul>
+
+<!-- Numbered List -->
+<ul class="list list--numbered">
+    <li>This is a numbered list item</li>
+    <li>This is a numbered list item</li>
+    <li>This is a numbered list item</li>
+    <li>This is a numbered list item</li>
+</ul>
+
+<hr>
+<pre style="padding-bottom:20px">Paragraph</pre>
+
+{% render '@paragraph' %}
+<hr>
+<pre style="padding-bottom:20px">Meta</pre>
+
+{% render '@meta-title' %}
+<hr>
+<pre style="padding-bottom:20px">Checklist heading</pre>
+
+{% render '@checklist-heading' %}
+<hr>
+<pre style="padding-bottom:20px">Btn</pre>
+
+<div style="margin-bottom: 20px">{% render '@btn' %}</div>
+<div style="margin-bottom: 20px">{% render '@btn--primary' %}</div>
+<div style="margin-bottom: 20px">{% render '@btn--secondary' %}</div>
+<div style="margin-bottom: 20px">{% render '@btn--naked' %}</div>
+<div style="margin-bottom: 20px">{% render '@btn--small' %}</div>
+<div style="margin-bottom: 20px">{% render '@btn--block' %}</div>
+<div style="margin-bottom: 20px">{% render '@btn--disabled' %}</div>
