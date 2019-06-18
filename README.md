@@ -66,8 +66,8 @@ Linting is enforced on a pre-push hook via [Husky](https://github.com/typicode/h
 git clone git@github.com:theodi/open-standards-guidebook.git
 cd open-standards-guidebook
 yarn install
-bundle install
-cd contributions && bundle install # install the deps for the the contributions form app
+bundle install --path vendor/bundle
+cd contributions && bundle install --path vendor/bundle # install the deps for the the contributions form app
 cd ..
 ```
 
