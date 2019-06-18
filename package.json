@@ -17,7 +17,7 @@
     "html-proofer": "yarn build && bundle exec rake check_html"
   },
   "engines": {
-    "node": "~8.9.3"
+    "node": "^8.9.3"
   },
   "dependencies": {
     "@mise-en-place/tools.clearfix": "^3.0.0",
