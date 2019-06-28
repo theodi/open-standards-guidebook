@@ -100,7 +100,7 @@ Some standards developers don’t follow a set development method at all.
 
 * **how clear the requirements are** – formal development favours completing the design before development. This is more successful when requirements are clear and straightforward. Where requirements are less clear, an agile method may be more suitable. The UK government [Service ](https://www.gov.uk/service-manual/agile-delivery)[manual](https://www.gov.uk/service-manual/agile-delivery) for example, favours agile delivery to support discovering and clarifying requirements
 
-* **how well the team understand the development method** – a good understanding of the method and good project management or product ownership skills will help make development easier to manage
+* **how well the team understand the development method** – a good understanding of the method, clarifying [roles and responsibilities](/creating-open-standards/roles-and-responsibilities), and providing project management or product ownership skills will help make development easier to manage
 
 * **expectations of the funder and adopters** — the people and organisations using or funding the standard may have preferences or expectations about the development method. A formal standards body may be the preferred development partner as they can bring expertise, contacts and a tested method. Alternatively, agile methods may already be in use or familiar
 
