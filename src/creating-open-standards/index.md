@@ -14,6 +14,8 @@ sections:
     items:
       - creating-open-standards/getting-started
       - creating-open-standards/developing-standards/index
+      - creating-open-standards/roles-and-responsibilities
+      - creating-open-standards/managing-expectations
       - creating-open-standards/managing-change-in-open-standards
   - type: grid # full, grid, short
     title: Useful tools

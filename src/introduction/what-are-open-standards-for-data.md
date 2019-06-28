@@ -77,6 +77,15 @@ An open standard is a standard that’s available for anyone to access, use or s
 
 >Open Standards are standards made available to the general public and are developed (or approved) and maintained via a collaborative and consensus-driven process.  – ITU-T
 
+This definition implies that open standards are not just available for anyone to read and implement, but the process of creating them is itself open to participation. 
+
+In practice the definition of open standard is widely interpreted. Some are designed by a small group of organisations in commercial consortia. Others are created using open processes that encourage broad participation. Some standards are voluntarily adopted, others are mandated by regulators.
+
+A specification created by a single organisation that is available for anyone to 
+freely use and which has been broadly adopted might also be be considered an open standard.
+
+In this guidebook we recommend that standards are openly licensed and are collaboratively designed using open, public processes.
+
 # What are open standards for data?
 
 Open standards for data are documented, reusable agreements that help people and organisations to publish, access, share and use better quality data. 
