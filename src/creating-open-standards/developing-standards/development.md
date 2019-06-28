@@ -99,6 +99,9 @@ To create a successful open standard, consider involving:
 
 * **standards developing organisations** to provide expertise in open standards development
 
+It is important to ensure that everyone is clear on their role and responsibilities when developing a standard. 
+We've identified and documented some key roles involved in developing a standard, including the [chair, authors, testers and other contributors](/creating-open-standards/roles-and-responsibilities).  
+
 In the [‘Standards community’](/community) section, we include organisation profiles of standards developing organisations. The [ISO](https://www.iso.org/) shares lists of nationally or internationally recognised [formal standards bodies](https://www.iso.org/members.html) who may be able to support your standards development.
 
 # Set up your infrastructure
