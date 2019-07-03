@@ -89,7 +89,7 @@ Part of understanding the ecosystem is checking for existing standards or other 
 
 * **using common models or shared vocabularies** like identifiers or code to ensure it works with existing standards – [360Giving](http://www.threesixtygiving.org/), the standard for grant making in the UK, uses codes from a number of authoritative and established registrars including the UK’s [Companies House](https://www.gov.uk/government/organisations/companies-house)
 
-* **adopting open formats** that describe how data is structured for sharing or storage like CSV (comma-separated values), JSON (JavaScript Object Notation) and XML (eXtensible Markup Language) over proprietary formats – the [Fiscal Data Package](https://frictionlessdata.io/specs/fiscal-data-package/#overview) standard for government budgets uses the JSON format for packages and plain text CSV format for data files
+* **adopting open formats** that describe how data is structured for sharing or storage like CSV (comma-separated values), JSON (JavaScript Object Notation) and XML (eXtensible Markup Language) over proprietary formats – the [Fiscal Data Package (FDP)](https://frictionlessdata.io/specs/fiscal-data-package/#overview) standard for government budgets uses the JSON format for packages and plain text CSV format for data files. The [Data Package](https://frictionlessdata.io/data-packages/) container standard FDP is built on makes it even easier to create a new interoperable open standard.
 </div>
 
 # Identify the community
