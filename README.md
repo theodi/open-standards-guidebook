@@ -55,7 +55,7 @@ Linting is enforced on a pre-push hook via [Husky](https://github.com/typicode/h
 
 ## Prerequisites:
 
-- [NodeJS runtime](https://nodejs.org/en/) - ~8.9.3 LTS release:
+- [NodeJS runtime](https://nodejs.org/en/) - ~10.x.x LTS release:
 - [Yarn](https://yarnpkg.com/en/docs/install#windows-tab)
 - [Ruby 2.3.0](https://www.ruby-lang.org/en/documentation/installation/) or greater
 - [bundler](https://bundler.io/)
