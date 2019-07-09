@@ -8,7 +8,7 @@
   * [Front end:](#front-end)
   * [Linting](#linting)
   * [Deployment](#deployment)
-* [Prerequisties:](#prerequisties)
+* [Prerequisites:](#prerequisites)
 * [Project setup](#project-setup)
 * [Commands](#commands)
   * [Run dev server](#run-dev-server)
@@ -53,7 +53,7 @@ Linting is enforced on a pre-push hook via [Husky](https://github.com/typicode/h
 - Deployed with [TravisCI](https://travis-ci.org/)
 - Hosted on [GH Pages](https://pages.github.com/)
 
-## Prerequisties:
+## Prerequisites:
 
 - [NodeJS runtime](https://nodejs.org/en/) - ~8.9.3 LTS release:
 - [Yarn](https://yarnpkg.com/en/docs/install#windows-tab)
