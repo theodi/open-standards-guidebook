@@ -5,6 +5,6 @@
 # See package.json scripts for details of command
 #
 ###
-incremental: False
+incremental: true
 env: development
 issue_app_url: 'http://localhost:5000/'
