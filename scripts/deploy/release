@@ -1,0 +1,102 @@
+#!/usr/bin/env node
+
+// Creates a new semver release, tag it and push to origin
+
+require("dotenv").config();
+require("colors");
+
+const jsonfile = require("jsonfile");
+const inquirer = require("inquirer");
+const fs = require("fs");
+const semver = require('semver');
+const shell = require('shelljs');
+
+
+const pkg = jsonfile.readFileSync("package.json");
+const currentVersion = pkg.version;
+
+console.log(`Current version is ${currentVersion}`.green);
+
+const newVersion = (releaseType) => semver.inc(currentVersion, releaseType);
+
+const applyVersion = (version) => {
+  pkg.version = version;
+
+  jsonfile.writeFileSync("package.json", pkg, {spaces: 2});
+
+  console.log(`Wrote new version ${version} to package.json`.green);
+
+};
+
+const gitFlowRelease = (releaseType) => {
+
+  const version = newVersion(releaseType);
+
+  console.log(`Starting release`);
+  if (shell.exec(`git flow release start ${version}`).code !== 0) {
+    shell.echo('Error: creating git flow release failed');
+    shell.exit(1);
+  } else {
+    console.log(`Completing release`);
+    applyVersion(version);
+    shell.exec(`git add package.json`);
+    shell.exec(`git commit -m "bump version to ${version}"`);
+    shell.exec(`git flow release finish -p -m "${version}" ${version}`);
+    shell.exit(0);
+  }
+};
+
+
+const release = () => {
+
+  const { stdout: currentBranch, } = shell.exec(`git symbolic-ref --short HEAD`, { silent: true });
+
+  if (currentBranch.trim() !== 'develop') {
+    console.log(`This command must be run from the develop branch`.red);
+
+    shell.exit(1);
+  }
+
+
+  inquirer.prompt([
+    {
+      type: "list",
+      name: "releaseType",
+      message: "What type of release is this?",
+      choices: [
+        "patch",
+        "minor",
+        "major",
+        "prerelease"
+      ],
+      default: "patch",
+    },{
+      type: "confirm",
+      name: "confirmed",
+      message({ releaseType }) {
+        return `You selected ${releaseType}. The new version number will be ${newVersion(releaseType)}. Does that look correct?`;
+      },
+    }
+  ]).then(({ confirmed, releaseType }) => {
+
+    if (confirmed) {
+      gitFlowRelease(releaseType);
+    } else {
+      console.log(`Version number rejected, exiting`.red);
+      shell.exit(1);
+    }
+});
+
+}
+
+release();
+
+
+// echo "Starting release $version"
+// git flow release start $version
+
+// echo "Updating VERSION"
+
+// echo "Finishing release $version"
+// git flow release finish -p -m "v.$(version)" $version
+// # git flow release publish $version

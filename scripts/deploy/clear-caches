@@ -1,0 +1,7 @@
+#!/bin/bash
+
+./craft clear-caches/compiled-templates
+./craft clear-caches/data
+./craft clear-caches/temp-files
+./craft clear-caches/template-caches
+./craft clear-caches/upper-purge-all
