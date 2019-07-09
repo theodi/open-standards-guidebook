@@ -1,9 +1,14 @@
 const path = require('path');
+const fs = require('fs');
 const ManifestPlugin = require('webpack-manifest-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 // const whitelister = require("purgecss-whitelister");
 const sane = require('sane');
 const CopyPlugin = require('copy-webpack-plugin');
+const theo = require('theo');
+const globby = require('globby');
+
+const resolve = (subPath) => path.resolve(process.env.PWD, subPath);
 
 const isProduction = process.env.NODE_ENV === 'production';
 
@@ -43,6 +48,36 @@ const config = {
     },
 };
 
+
+const getDesignTokens = (dir) => globby.sync(resolve(dir));
+
+const transformDesignToken = (filePath, opts) => {
+
+    const{
+        abs,
+    } = {
+        abs: false,
+        ...opts,
+    };
+
+    const filename = path.basename(filePath);
+    const slug = filename.split('.')[0];
+
+    theo.convert({
+        transform: {
+            type: "web",
+            file: abs ? filePath : resolve(`design/${filePath}`),
+        },
+        format: {
+            type: "map.scss"
+        }
+    })
+        .then(scss => {
+            fs.writeFileSync(resolve(`assets/styles/design/${slug}.map.scss`), scss);
+            console.log(`Wrote design token ${slug} to Scss`);
+        });
+}
+
 module.exports = {
     runtimeCompiler: false,
     outputDir: 'jekyll/dist',
@@ -61,11 +96,19 @@ module.exports = {
         headers: { 'Access-Control-Allow-Origin': '*' },
         disableHostCheck: true,
         before(app, server) {
-            const watcher = sane(path.join(__dirname, config.watchDir), { glob: ['**/*'] });
-            watcher.on('change', (filepath) => {
+
+            getDesignTokens('design/*.yml').map(filePath => transformDesignToken(filePath, { abs: true }));
+
+            const jekyllWatcher = sane(path.join(__dirname, config.watchDir), { glob: ['**/*'] });
+
+            jekyllWatcher.on('change', (filepath) => {
                 console.log('  File saved:', filepath);
                 server.sockWrite(server.sockets, 'content-changed');
             });
+
+            const designTokenWatcher = sane(path.join(__dirname, 'design'));
+
+            designTokenWatcher.on('change', transformDesignToken);
         },
     },
 
