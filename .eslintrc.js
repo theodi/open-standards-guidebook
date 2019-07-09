@@ -46,7 +46,6 @@ module.exports = {
         'function-paren-newline': 0,
         'generator-star-spacing': 0,
         'implicit-arrow-linebreak': 0,
-        'indent': 0,
         'key-spacing': 0,
         'keyword-spacing': 0,
         'linebreak-style': 0,

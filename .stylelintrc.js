@@ -9,15 +9,7 @@ module.exports = {
         indentation: 2,
         'string-quotes': 'double',
         'max-empty-lines': null,
-        // "plugin/selector-bem-pattern": {
-        //   "componentName": "[a-z]+",
-        //   "componentSelectors": {
-        //     "initial": "^\\.{componentName}(?:-[a-z]+)?$",
-        //     // "combined": "^\\.combined-{componentName}-[a-z]+$"
-        //   },
-        //   "utilitySelectors": "^\\.u-[a-z]+$"
-        // },
-        // ...
+
         // "at-rule-no-unknown": [
         //   true,
         //   {
