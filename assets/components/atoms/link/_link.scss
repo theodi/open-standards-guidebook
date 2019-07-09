@@ -3,78 +3,79 @@
 // ==========================================================================
 a,
 .link {
-    text-decoration: underline;
-    text-decoration-skip: ink;
+  text-decoration: underline;
+  text-decoration-skip: ink;
 
-    @include link() {
-        color: palette(primary);
-    }
+  @include link() {
+    color: palette(primary);
+  }
 
-    @include link-hover() {
-        color: palette(grey-dark);
-    }
+  @include link-hover() {
+    color: palette(grey-dark);
+  }
 }
 
 a,
 .link,
 button {
-    &:focus {
-        outline: 1px dotted palette('secondary');
-    }
-    &:active {
-        outline: none;
-    }
+  &:focus {
+    outline: 1px dotted palette("secondary");
+  }
+
+  &:active {
+    outline: none;
+  }
 }
 
 .link--block {
-    display: block;
+  display: block;
 }
 
 .link--bold {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .link--plain {
-    text-decoration: none;
-    text-decoration-skip: none;
+  @include link-hover() {}
 
-    @include link() {
-        color: palette(black);
-    }
+  text-decoration: none;
+  text-decoration-skip: none;
 
-    @include link-hover() {}
+  @include link() {
+    color: palette(black);
+  }
 }
 
 .link--black {
-    @include link() {
-        color: palette(black);
-    }
+  @include link() {
+    color: palette(black);
+  }
 
-    @include link-hover() {
-        color: palette(primary);
-    }
+  @include link-hover() {
+    color: palette(primary);
+  }
 }
 
 .link--white {
-    @include link() {
-        color: palette(white);
-    }
+  @include link() {
+    color: palette(white);
+  }
 
-    @include link-hover() {
-        color: tint(palette(white), 'darken');
-    }
+  @include link-hover() {
+    color: tint(palette(white), "darken");
+  }
 }
 
 .link--secondary {
-    @include link() {
-        color: palette(secondary);
-    }
+  @include link() {
+    color: palette(secondary);
+  }
 
-    @include link-hover() {
-        color: tint(palette(secondary), 'darken');
-    }
+  @include link-hover() {
+    color: tint(palette(secondary), "darken");
+  }
 }
 
 .link--break {
-    word-break: break-word;
+  word-break: break-word;
 }

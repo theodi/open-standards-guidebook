@@ -3,16 +3,18 @@
 // ==========================================================================
 
 .lede {
-    &, > p {
-        line-height: 1.43;
-        font-size: ms(0);
-        font-weight: 500;
+  &,
+  > p {
+    font-size: ms(0);
+    font-weight: 500;
+    line-height: 1.43;
 
-        @include respond-to(medium) {
-            font-size: ms(1, $thread: desktop);
-        }
+    @include respond-to(medium) {
+      font-size: ms(1, $thread: desktop);
     }
-    > *:first-child {
-        margin-top: 0;
-    }
+  }
+
+  > *:first-child {
+    margin-top: 0;
+  }
 }

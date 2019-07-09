@@ -3,90 +3,96 @@
 // ==========================================================================
 
 .nav-item {
-    &, & > a {
-        @include link() {
-            display: block;
-            color: palette(grey-dark);
-            font-size: ms(-1);
-            margin-bottom: spacing(5);
-            line-height: 1.33;
+  &,
+  & > a {
+    @include link() {
+      display: block;
+      margin-bottom: spacing(5);
+      color: palette(grey-dark);
+      font-size: ms(-1);
+      line-height: 1.33;
 
-            @include respond-to(medium) {
-                font-size: ms(0, $thread: desktop);
-            }
-        }
-
-        @include link-hover() {
-            color: palette(primary);
-            outline: none;
-        }
+      @include respond-to(medium) {
+        font-size: ms(0, $thread: desktop);
+      }
     }
 
-    &.is--active {
-        &, & > a {
-            @include link() {
-                text-decoration: none;
-                font-weight: bold;
-            }
-        }
+    @include link-hover() {
+      color: palette(primary);
+      outline: none;
     }
+  }
+
+  &.is--active {
+    &,
+    & > a {
+      @include link() {
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 .nav-item--large {
-    &, & > a {
-        @include link() {
-            font-size: ms(0);
-            margin-bottom: spacing(11);
+  &,
+  & > a {
+    @include link() {
+      margin-bottom: spacing(11);
+      font-size: ms(0);
 
-            @include respond-to(medium) {
-                font-size: ms(1);
-            }
-        }
+      @include respond-to(medium) {
+        font-size: ms(1);
+      }
     }
+  }
 }
 
 .nav-item--inline {
-    &, & > a {
-        @include link() {
-            display: inline-block;
-            margin-right: spacing(8);
+  &,
+  & > a {
+    @include link() {
+      display: inline-block;
+      margin-right: spacing(8);
 
-            &:last-of-type {
-                margin-right: 0;
-            }
-        }
+      &:last-of-type {
+        margin-right: 0;
+      }
     }
+  }
 }
 
 .nav-item--white {
-    &, & > a {
-        @include link() {
-            display: block;
-            color: white;
-            margin-right: spacing(8);
-            font-size: ms(-1);
-            margin-bottom: spacing(5);
+  &,
+  & > a {
+    @include link() {
+      display: block;
+      margin-right: spacing(8);
+      margin-bottom: spacing(5);
+      color: white;
+      font-size: ms(-1);
 
-            @include respond-to(medium) {
-                font-size: ms(0, $thread: desktop);
-            }
+      @include respond-to(medium) {
+        font-size: ms(0, $thread: desktop);
+      }
 
-            &:last-of-type {
-                margin-right: 0;
-            }
-        }
-
-        @include link-hover() {
-            color: tint(white, 'darken');
-        }
+      &:last-of-type {
+        margin-right: 0;
+      }
     }
 
-    &.is--active {
-        &, & > a {
-            @include link() {
-                text-decoration: none;
-                font-weight: bold;
-            }
-        }
+    @include link-hover() {
+      color: tint(white, "darken");
     }
+  }
+
+  &.is--active {
+    &,
+    & > a {
+      @include link() {
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+  }
 }

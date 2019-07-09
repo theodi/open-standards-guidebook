@@ -3,39 +3,39 @@
 // ==========================================================================
 
 .m-hero__wrapper {
-    background-color: palette(grey);
-    padding-bottom: spacing(base);
+  padding-bottom: spacing(base);
+  background-color: palette(grey);
 
-    @include respond-to(medium) {
-        padding-bottom: spacing(xlarge);
-    }
+  @include respond-to(medium) {
+    padding-bottom: spacing(xlarge);
+  }
 }
 
 .m-hero {
-    padding-top: spacing(45);
+  padding-top: spacing(45);
 
-    @include respond-to(medium) {
-        padding-top: spacing(88);
-    }
+  @include respond-to(medium) {
+    padding-top: spacing(88);
+  }
 }
 
 .m-hero__title {
-    font-size: ms(4);
+  font-size: ms(4);
 
-    @include respond-to(medium) {
-        margin: 1em 0 0.25em;
-        font-size: ms(4, $thread: desktop);
-    }
+  @include respond-to(medium) {
+    margin: 1em 0 0.25em;
+    font-size: ms(4, $thread: desktop);
+  }
 }
 
 // If the breadcrumbs are enabled we want to space the pill away from it
 .m-breadcrumb__wrapper + .m-hero {
-    .pill {
-        margin-top: spacing(8);
+  .pill {
+    margin-top: spacing(8);
 
-        @include respond-to(medium) {
-            margin-top: spacing(15);
-        }
+    @include respond-to(medium) {
+      margin-top: spacing(15);
     }
+  }
 }
 

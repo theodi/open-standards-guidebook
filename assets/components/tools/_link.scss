@@ -17,11 +17,11 @@
 
 
 @mixin link() {
-    &,
-    &:link,
-    &:visited {
-        @content;
-    }
+  &,
+  &:link,
+  &:visited {
+    @content;
+  }
 }
 
 /// Applies :focus and :hover
@@ -34,18 +34,18 @@
 ///   }
 
 @mixin link-hover() {
-    &:hover,
-    &:focus {
-        @content;
-    }
+  &:hover,
+  &:focus {
+    @content;
+  }
 }
 
 @mixin link-plain() {
-    color: currentColor;
-    background-image: none;
-    text-decoration: none !important;
+  background-image: none;
+  color: currentColor;
+  text-decoration: none !important;
 
-    @include link-hover {
-        background-image: none;
-    }
+  @include link-hover {
+    background-image: none;
+  }
 }

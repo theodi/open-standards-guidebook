@@ -3,14 +3,15 @@
 // ==========================================================================
 
 .brand {
-    display: block;
-    margin: 0;
-    font-size: ms(3);
-    line-height: 1.15;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    @include respond-to(medium) {
-        font-size: ms(4, $thread: desktop);
-    }
+  display: block;
+  margin: 0;
+  color: white;
+  font-size: ms(3);
+  font-weight: bold;
+  line-height: 1.15;
+  text-decoration: none;
+
+  @include respond-to(medium) {
+    font-size: ms(4, $thread: desktop);
+  }
 }

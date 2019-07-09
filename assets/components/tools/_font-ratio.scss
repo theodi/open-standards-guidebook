@@ -1,11 +1,10 @@
-@import '~modularscale-sass/stylesheets/modularscale';
+@import "~modularscale-sass/stylesheets/modularscale";
 
 $modularscale: (
+  base: 17px,
+  ratio: 1.2,
+  desktop: (
     base: 17px,
-    ratio: 1.200,
-
-    desktop: (
-        base: 17px,
-        ratio: 1.333,
-    )
+    ratio: 1.333,
+  )
 );

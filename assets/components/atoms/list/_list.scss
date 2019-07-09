@@ -3,145 +3,152 @@
 // ==========================================================================
 
 %list-base {
-    margin: 1em 0 0.5em;
-    list-style: none;
-    line-height: 1.44;
+  padding-left: 0;
+  margin: 1em 0 0.5em;
+  font-size: ms(0);
+  line-height: 1.44;
+  list-style: none;
+
+  li {
+    margin-bottom: spacing(5);
     font-size: ms(0);
-    padding-left: 0;
 
-    li {
-        margin-bottom: spacing(5);
-        font-size: ms(0);
-
-        @include respond-to(medium) {
-            font-size: ms(0, $thread: desktop);
-        }
-
-        &:before {
-            left: 0;
-        }
+    @include respond-to(medium) {
+      font-size: ms(0, $thread: desktop);
     }
+
+    &::before {
+      left: 0;
+    }
+  }
 }
 
 ul {
-    @extend %list-base;
+  @extend %list-base;
 }
 
 
 @mixin list--bullet {
-    @extend %list-base;
-    list-style-position: outside;
+  @extend %list-base;
 
-    li {
-        margin-bottom: spacing(10);
-        padding-left: rem-calc(15);
-        position: relative;
+  list-style-position: outside;
 
-        &:before {
-            display: block;
-            position: absolute;
-            top: rem-calc(10);
-            left: 0;
-            margin-bottom: rem-calc(4);
-            margin-right: rem-calc(8);
-            content: " ";
-            width: 4px;
-            height: 4px;
-            border-radius: 100%;
-            background-color: palette(black);
-        }
+  li {
+    position: relative;
+    padding-left: rem-calc(15);
+    margin-bottom: spacing(10);
 
-        p {
-            display: inline;
-        }
+    &::before {
+      position: absolute;
+      top: rem-calc(10);
+      left: 0;
+      display: block;
+      width: 4px;
+      height: 4px;
+      margin-right: rem-calc(8);
+      margin-bottom: rem-calc(4);
+      background-color: palette(black);
+      border-radius: 100%;
+      content: " ";
     }
+
+    p {
+      display: inline;
+    }
+  }
 }
 
 
 @mixin list--styled {
-    @extend %list-base;
+  @extend %list-base;
 
-    li {
-        margin-bottom: spacing(10);
-        padding-left: rem-calc(15);
-        position: relative;
+  li {
+    position: relative;
+    padding-left: rem-calc(15);
+    margin-bottom: spacing(10);
 
-        &:before {
-            @include chevron;
-            margin-bottom: rem-calc(2);
-            margin-right: rem-calc(8);
-            content: ' ';
-            position: absolute;
-            top: rem-calc(10);
-            left: 0;
-            border-left: rem-calc(4) solid transparent;
-            border-right: rem-calc(4) solid transparent;
-            border-top: rem-calc(5) solid palette(black);
-            transform: rotate(-90deg);
-        }
+    &::before {
+      @include chevron;
+
+      position: absolute;
+      top: rem-calc(10);
+      left: 0;
+      border-top: rem-calc(5) solid palette(black);
+      border-right: rem-calc(4) solid transparent;
+      border-left: rem-calc(4) solid transparent;
+      margin-right: rem-calc(8);
+      margin-bottom: rem-calc(2);
+      content: " ";
+      transform: rotate(-90deg);
     }
+  }
 }
 
 .list--bullet {
-    @include list--bullet;
+  @include list--bullet;
 }
 
 @mixin list--numbered {
-    @extend %list-base;
+  @extend %list-base;
+
+  counter-reset: list;
+
+  li {
+    position: relative;
+    padding-left: rem-calc(20);
+
+    &::before {
+      position: absolute;
+      top: rem-calc(2);
+      left: 0;
+      margin-right: rem-calc(12);
+      color: palette(black);
+      content: counters(list, ".") ".";
+      counter-increment: list;
+      font-size: ms(-1);
+    }
+  }
+
+  ol {
     counter-reset: list;
-
-    li {
-        padding-left: rem-calc(20);
-        position: relative;
-
-        &:before {
-            position: absolute;
-            top: rem-calc(2);
-            left: 0;
-            counter-increment: list;
-            content: counters(list, ".") ".";
-            color: palette(black);
-            margin-right: rem-calc(12);
-            font-size: ms(-1);
-        }
-    }
-
-    ol {
-        counter-reset: list;
-    }
+  }
 }
 
 .task-list {
-    .task-list-item {
-        &:before {
-            display: none;
-            padding: none;
-        }
-
-        input[type="checkbox"] {
-            margin-right: spacing(10);
-        }
+  .task-list-item {
+    &::before {
+      display: none;
+      padding: none;
     }
+
+    input[type="checkbox"] {
+      margin-right: spacing(10);
+    }
+  }
 }
 
 ol {
-    @include list--numbered;
-    padding-left: spacing(10);
+  @include list--numbered;
+
+  padding-left: spacing(10);
 }
 
 .list--numbered {
-    @include list--numbered;
+  @include list--numbered;
 }
 
 .u-styled-lists {
-    ul {
-        @include list--styled();
-        padding-left: spacing(10);
-        list-style-position: outside;
-    }
-    ol {
-        @include list--numbered();
-        padding-left: spacing(10);
-        list-style-position: outside;
-    }
+  ul {
+    @include list--styled();
+
+    padding-left: spacing(10);
+    list-style-position: outside;
+  }
+
+  ol {
+    @include list--numbered();
+
+    padding-left: spacing(10);
+    list-style-position: outside;
+  }
 }

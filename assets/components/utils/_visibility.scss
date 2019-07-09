@@ -2,69 +2,75 @@
 // Visibility Utility
 // ==========================================================================
 
-.js, // wrapping classes required to match specificity of [1]
+// wrapping classes required to match specificity of [1]
+.js,
 .no-js {
-    .is-hidden {
+  .is-hidden {
+    display: none;
+  }
+}
+
+.js {
+  .is-js-hidden {
+    display: none;
+  }
+}
+
+.no-js {
+  .is-no-js-hidden {
+    display: none; // [1]
+  }
+}
+
+.js-loaded {
+  .is-js-loaded-visible {
+    display: block;
+  }
+}
+
+.no-js {
+  .is-no-js-visible {
+    display: block;
+  }
+}
+
+
+// wrapping classes required to match specificity of [1]
+.js,
+.no-js {
+  @each $bp, $config in $breakpoints-map {
+    @include respond-to($bp) {
+      .is-hidden--#{$bp} {
         display: none;
-    }
-}
+      }
 
-.js  {
-    .is-js-hidden {
-        display: none;
-    }
-}
-
-.no-js {
-    .is-no-js-hidden {
-        display: none; // [1]
-    }
-}
-
-.js-loaded  {
-    .is-js-loaded-visible {
+      .is-visible--#{$bp} {
         display: block;
+      }
     }
-}
-
-.no-js {
-    .is-no-js-visible {
-        display: block;
-    }
-}
-
-
-.js, // wrapping classes required to match specificity of [1]
-.no-js {
-    @each $bp, $config in $breakpoints-map {
-        @include respond-to($bp) {
-            .is-hidden--#{$bp} {
-                display: none;
-            }
-            .is-visible--#{$bp} {
-                display: block;
-            }
-        }
-    }
+  }
 }
 
 @each $bp, $config in $breakpoints-map {
-    @include respond-to($bp) {
-        .js {
-            .is-js-hidden--#{$bp} {
-                display: none;
-            }
-            .is-js-visible--#{$bp} {
-                display: block;
-            }
-        }
-        .no-js {
-            .is-no-js-hidden--#{$bp} {
-                display: none;
-            }
-            .is-no-js-visible--#{$bp} {
-                display: block;
-            }
-        }
+  @include respond-to($bp) {
+    .js {
+      .is-js-hidden--#{$bp} {
+        display: none;
+      }
+
+      .is-js-visible--#{$bp} {
+        display: block;
+      }
     }
+
+    .no-js {
+      .is-no-js-hidden--#{$bp} {
+        display: none;
+      }
+
+      .is-no-js-visible--#{$bp} {
+        display: block;
+      }
+    }
+  }
 }

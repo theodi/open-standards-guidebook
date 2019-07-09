@@ -1,30 +1,38 @@
 @mixin inverse() {
+  color: white;
+
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3,
+  h4,
+  .h4 {
     color: white;
-    h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
-        color: white;
+  }
+
+  a {
+    color: white;
+  }
+
+  li {
+    &::before {
+      // sass-lint:disable no-important
+      // Overwrite all ul, ol
+      background-color: white !important;
+    }
+  }
+
+  a,
+  .link {
+    @include link() {
+      color: white;
+      text-decoration: underline;
     }
 
-    a {
-        color: white;
+    @include link-hover() {
+      color: white;
     }
-
-    li {
-        &:before {
-            // sass-lint:disable no-important
-            // Overwrite all ul, ol
-            background-color: white !important;
-        }
-    }
-
-    a,
-    .link {
-        @include link() {
-            color: white;
-            text-decoration: underline;
-        }
-
-        @include link-hover() {
-            color: white;
-        }
-    }
+  }
 }

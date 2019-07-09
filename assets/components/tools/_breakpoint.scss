@@ -6,19 +6,19 @@
 
 
 @mixin breakpoint-load($breakpoints) {
-    // use ems as the unit when outputting media queries
-    @include breakpoint-set('to ems', true);
+  // use ems as the unit when outputting media queries
+  @include breakpoint-set("to ems", true);
 
 
-    // Build mobile first, width-based breakpoints from the config
-    @each $bp, $width in $breakpoints {
-        @include add-breakpoint($bp, ($width * 1px, 'no-query' true));
-    }
+  // Build mobile first, width-based breakpoints from the config
+  @each $bp, $width in $breakpoints {
+    @include add-breakpoint($bp, ($width * 1px, "no-query" true));
+  }
 
-    // Make som enon-width queries available
-    @include add-breakpoint('high resolution', min-resolution 1.5dppx);
-    @include add-breakpoint('landscape', orientation landscape);
-    @include add-breakpoint('portrait', orientation portrait);
+  // Make som enon-width queries available
+  @include add-breakpoint("high resolution", min-resolution 1.5dppx);
+  @include add-breakpoint("landscape", orientation landscape);
+  @include add-breakpoint("portrait", orientation portrait);
 }
 
 

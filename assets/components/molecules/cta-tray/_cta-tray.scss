@@ -3,50 +3,50 @@
 // ==========================================================================
 
 .m-cta-tray {
-    background: palette(white);
-    padding: spacing(15 0);
-    width: 100%;
-    text-align: left;
+  width: 100%;
+  padding: spacing(15 0);
+  background: palette(white);
+  text-align: left;
 
-    @include link-hover() {
-        cursor: pointer;
-    }
+  @include link-hover() {
+    cursor: pointer;
+  }
 
-    &.is--open {
+  &.is--open {
 
-    }
+  }
 }
 
 .m-cta-tray__title {
-    color: palette(secondary);
-    font-size: ms(0, $thread: desktop);
-    text-decoration: underline;
-    text-decoration-skip: ink;
-    font-weight: bold;
+  color: palette(secondary);
+  font-size: ms(0, $thread: desktop);
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-skip: ink;
 
-    .chevron {
-        margin-left: spacing(3);
-        margin-bottom: spacing(2);
-    }
+  .chevron {
+    margin-bottom: spacing(2);
+    margin-left: spacing(3);
+  }
 }
 
 .m-cta-tray__close {
-    display: none;
-    font-size: ms(0, $thread: desktop);
+  display: none;
+  font-size: ms(0, $thread: desktop);
 
-    @include respond-to(medium) {
-        display: block;
-    }
+  @include respond-to(medium) {
+    display: block;
+  }
 }
 
 
 .m-cta-tray__inner {
-    display: none;
-    background: palette(secondary);
-    padding: spacing(15 0);
-    color: white;
+  display: none;
+  padding: spacing(15 0);
+  background: palette(secondary);
+  color: white;
 
-    &.is--open {
-        display: block;
-    }
+  &.is--open {
+    display: block;
+  }
 }

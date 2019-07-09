@@ -1,70 +1,71 @@
 .footnotes {
-    background: palette(grey);
-    padding: spacing(small);
+  padding: spacing(small);
+  background: palette(grey);
 }
 
 .littlefoot-footnote__button {
+  left: 4px;
+  background: palette(primary);
+  border-radius: rem-calc(2);
+  font-size: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all ease 150ms;
+
+  @include link() {
+    border: solid 1px palette(primary);
     background: palette(primary);
-    text-decoration: none;
-    text-align: center;
-    border-radius: rem-calc(2);
-    transition: all ease 150ms;
-    text-transform: uppercase;
-    font-size: 10px;
-    left: 4px;
+    background-image: linear-gradient(to bottom, tint(palette(primary), "lighten"), palette(primary));
+    color: white;
+  }
 
-    @include link() {
-        background: palette(primary);
-        color: white;
-        background-image: linear-gradient(to bottom, tint(palette(primary), 'lighten'), palette(primary));
-        border: solid 1px palette(primary);
-    }
-
-    @include link-hover() {
-        background: tint(palette(primary), 'darken');
-        border-color: tint(palette(primary), 'darken');
-    }
+  @include link-hover() {
+    border-color: tint(palette(primary), "darken");
+    background: tint(palette(primary), "darken");
+  }
 }
 
 .littlefoot-footnote {
-    box-shadow: none;
-    border-radius: 0;
-    padding: 0;
-    background: palette(primary);
-    border: none;
-    transition: none;
+  padding: 0;
+  border: none;
+  background: palette(primary);
+  border-radius: 0;
+  box-shadow: none;
+  transition: none;
 }
 
 .littlefoot-footnote.is-active {
-    opacity: 1;
+  opacity: 1;
 }
 
 .littlefoot-footnote__content {
-    background: palette(primary);
+  background: palette(primary);
+  color: white;
+
+  > * {
     color: white;
+  }
 
-    > * {
-        color: white;
+  a {
+    @include link() {
+      color: white;
     }
-
-    a {
-        @include link() {
-            color: white;
-        }
-    }
+  }
 }
 
 .littlefoot-footnote .littlefoot-footnote__wrapper {
-    margin: 0;
-    border-radius: 0;
-    background: palette(primary);
-    border: none;
+  border: none;
+  margin: 0;
+  background: palette(primary);
+  border-radius: 0;
 
-    &:before, &:after {
-        display: none;
-    }
+  &::before,
+  &::after {
+    display: none;
+  }
 }
 
 .littlefoot-footnote__tooltip {
-    display: none;
+  display: none;
 }

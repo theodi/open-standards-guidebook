@@ -3,103 +3,104 @@
 // ==========================================================================
 
 .m-nav-tray__toggle {
-    background: palette(primary);
-    padding: spacing(15 0);
-    width: 100%;
-    text-align: left;
+  width: 100%;
+  padding: spacing(15 0);
+  background: palette(primary);
+  text-align: left;
 
-    @include link-hover() {
-        cursor: pointer;
+  @include link-hover() {
+    cursor: pointer;
+  }
+
+  &.is--active {
+    .m-nav-tray__title {
+      color: palette(white);
+
+      .chevron {
+        margin-bottom: spacing(3);
+        transform: rotate(-180deg);
+      }
     }
-
-    &.is--active {
-        .m-nav-tray__title {
-            color: palette(white);
-
-            .chevron {
-                margin-bottom: spacing(3);
-                transform: rotate(-180deg);
-            }
-        }
-    }
+  }
 }
 
 .m-nav-tray__title {
-    color: palette(white);
-    font-size: ms(-1);
-    font-weight: 600;
+  color: palette(white);
+  font-size: ms(-1);
+  font-weight: 600;
 
-    @include respond-to(medium) {
-        font-size: ms(0, $thread: desktop);
-    }
+  @include respond-to(medium) {
+    font-size: ms(0, $thread: desktop);
+  }
 
-    .chevron {
-        margin-left: spacing(3);
-        margin-bottom: spacing(2);
-    }
+  .chevron {
+    margin-bottom: spacing(2);
+    margin-left: spacing(3);
+  }
 }
 
 
 .m-nav-tray__inner {
-    display: none;
-    background: tint(palette(primary), 'darken');
-    padding: spacing(25 0);
+  display: none;
+  padding: spacing(25 0);
+  background: tint(palette(primary), "darken");
 
-    &.is--open {
-        display: block;
+  &.is--open {
+    display: block;
+  }
+
+
+  // Gross list overrides cos we can't reach into inner markup in this section
+  ul {
+    width: 100%;
+    padding: 0;
+    margin: spacing(5 0 10 0);
+
+    @include respond-to(medium) {
+      column-count: 2;
     }
 
+    li {
+      break-inside: avoid;
+      font-size: ms(0);
 
-    // Gross list overrides cos we can't reach into inner markup in this section
+      @include respond-to(medium) {
+        font-size: ms(0);
+      }
+    }
+
     ul {
-        margin: spacing(5 0 10 0);
-        width: 100%;
-        padding: 0;
+      display: block;
+      padding: 0;
+      margin: spacing(12 0 0 0);
+      column-count: 1;
 
-        @include respond-to(medium) {
-            column-count: 2;
+
+      li {
+        break-inside: auto;
+
+        &::before {
+          margin-right: rem-calc(5);
+          margin-bottom: rem-calc(3);
+          content: "\00BB";
         }
 
-        li {
-            font-size: ms(0);
-            break-inside: avoid;
-
-            @include respond-to(medium) {
-                font-size: ms(0);
-            }
+        a {
+          @include link() {
+            display: inline-block;
+          }
         }
-
-        ul {
-            display: block;
-            margin: spacing(12 0 0 0);
-            column-count: 1;
-            padding: 0;
-
-
-            li {
-                break-inside: auto;
-                &:before {
-                    margin-bottom: rem-calc(3);
-                    margin-right: rem-calc(5);
-                    content: "\00BB";
-                }
-
-                a {
-                    @include link() {
-                        display: inline-block;
-                    }
-                }
-            }
-        }
+      }
     }
+  }
 }
 
 .m-nav-tray__close {
-    color: palette(white);
-    font-size: ms(-1);
-    font-weight: 600;
+  color: palette(white);
+  font-size: ms(-1);
+  font-weight: 600;
 
-    @include respond-to(medium) {
-        font-size: ms(0, $thread: desktop);
-    }
+  @include respond-to(medium) {
+    font-size: ms(0, $thread: desktop);
+  }
 }

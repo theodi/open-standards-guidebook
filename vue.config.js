@@ -3,7 +3,6 @@ const ManifestPlugin = require('webpack-manifest-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 // const whitelister = require("purgecss-whitelister");
 const sane = require('sane');
-const autoprefixer = require('autoprefixer');
 const CopyPlugin = require('copy-webpack-plugin');
 
 const isProduction = process.env.NODE_ENV === 'production';
@@ -12,7 +11,6 @@ require('colors');
 
 const pkg = require('./package.json');
 
-const isHotReloaded = process.argv.includes('serve');
 
 if (!pkg.buildConfig) {
     console.error("Error: looks like this project hasn't been configured yet".red);
@@ -44,23 +42,6 @@ const config = {
         cssUserFileExtensions: ['html', 'md', 'vue'],
     },
 };
-
-// Custom PurgeCSS extractor for Tailwind that allows special characters in
-// class names.
-// https://github.com/FullHuman/purgecss#extractor
-class TailwindExtractor {
-    static extract(content) {
-        return content.match(/[A-z0-9-:/]+/g) || [];
-    }
-}
-
-class TailwindVueExtractor {
-    static extract(content) {
-        const contentWithoutStyleBlocks = content.replace(/<style[^]+?<\/style>/gi, '');
-        return contentWithoutStyleBlocks.match(/[A-Za-z0-9-_:/]+/g) || [];
-    }
-}
-
 
 module.exports = {
     runtimeCompiler: false,

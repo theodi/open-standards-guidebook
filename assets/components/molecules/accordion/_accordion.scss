@@ -1,32 +1,32 @@
 .m-accordion__content {
-    display: none;
+  display: none;
 
-    &.is--open,
-    .no-js & {
-        display: block;
-    }
+  &.is--open,
+  .no-js & {
+    display: block;
+  }
 }
 
 .m-accordion__title {
-    @include link() {
-        display: block;
-        color: palette(primary);
-        border-bottom: 1px solid palette(grey);
-        padding: spacing(10 0);
-        text-decoration: none;
-    }
+  @include link() {
+    display: block;
+    padding: spacing(10 0);
+    border-bottom: 1px solid palette(grey);
+    color: palette(primary);
+    text-decoration: none;
+  }
 
-    @include link-hover() {
-        color: tint(palette(primary), 'darken');
-    }
+  @include link-hover() {
+    color: tint(palette(primary), "darken");
+  }
 
-    .chevron {
-        margin: rem-calc(6 0 0 0);
-        float: left;
-    }
+  .chevron {
+    margin: rem-calc(6 0 0 0);
+    float: left;
+  }
 }
 
 .m-accordion__title-text {
-    margin: 0;
-    padding-left: rem-calc(18);
+  padding-left: rem-calc(18);
+  margin: 0;
 }

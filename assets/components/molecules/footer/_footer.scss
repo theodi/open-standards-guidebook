@@ -3,12 +3,12 @@
 // ==========================================================================
 
 .m-footer {
-    margin-top: 2px;
-    background: palette(grey-dark);
-    padding-top: spacing(50);
-    padding-bottom: spacing(50);
+  padding-top: spacing(50);
+  padding-bottom: spacing(50);
+  margin-top: 2px;
+  background: palette(grey-dark);
 
-    @media print {
-        display: none;
-    }
+  @media print {
+    display: none;
+  }
 }

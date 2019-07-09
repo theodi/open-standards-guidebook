@@ -3,30 +3,30 @@
 // ==========================================================================
 
 .share-item {
+  display: inline-block;
+
+  @include link() {
     display: inline-block;
+    padding: spacing(7 15);
+    border: solid 2px palette(primary);
+    margin-top: rem-calc(5);
+    background: palette(primary);
+    // @todo extract
+    background-image: linear-gradient(to bottom, tint(palette(primary), "lighten"), palette(primary));
+    border-radius: rem-calc(2);
+    color: white;
+    font-size: rem-calc(12);
+    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all ease 150ms;
+  }
 
-    @include link() {
-        display: inline-block;
-        text-decoration: none;
-        font-weight: 500;
-        letter-spacing: 0.2px;
-        text-align: center;
-        border-radius: rem-calc(2);
-        padding: spacing(7 15);
-        font-weight: 600;
-        transition: all ease 150ms;
-        text-transform: uppercase;
-        background: palette(primary);
-        color: white;
-        font-size: rem-calc(12);
-        // @todo extract
-        background-image: linear-gradient(to bottom, tint(palette(primary), 'lighten'), palette(primary));
-        border: solid 2px palette(primary);
-        margin-top: rem-calc(5);
-    }
-
-    @include link-hover() {
-        background: tint(palette(primary), 'darken');
-        border-color: tint(palette(primary), 'darken');
-    }
+  @include link-hover() {
+    border-color: tint(palette(primary), "darken");
+    background: tint(palette(primary), "darken");
+  }
 }

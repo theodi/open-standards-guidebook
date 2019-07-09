@@ -4,14 +4,15 @@
 
 // Prevent a container from being scrollable :eg used on body when mobile
 .u-scroll-none {
-    overflow: hidden;
-    position: fixed;
+  position: fixed;
+  overflow: hidden;
 }
+
 body.u-scroll-none {
-    // fix for safari mac
-    width: 100%;
+  // fix for safari mac
+  width: 100%;
 }
 
 .u-scroll-auto {
-    overflow: auto;
+  overflow: auto;
 }

@@ -30,32 +30,34 @@
 
 @function rem-calc($target) {
 
-    $max: length($target);
-    $values: ();
-    $context: 16;
+  $max: length($target);
+  $values: ();
+  $context: 16;
 
 
-    @for $i from 1 through $max {
-        // Export REM value of $target depending on base-font-size
+  @for $i from 1 through $max {
+    // Export REM value of $target depending on base-font-size
 
-        $x: nth($target, $i);
-        $y: 0;
+    $x: nth($target, $i);
+    $y: 0;
 
-        @if $x == auto or $x == inherit {
-            $values: append($values, $x);
-        } @else {
-            $y: ($x / $context) * 1rem;
-
-            @if strip-units(abs($y)) == 0 {
-                $values: append($values, 0);
-            } @else {
-                $values: append($values, $y);
-            }
-
-        }
-
+    @if $x == auto or $x == inherit {
+      $values: append($values, $x);
     }
-    @return $values;
 
+    @else {
+      $y: ($x / $context) * 1rem;
+
+      @if strip-units(abs($y)) == 0 {
+        $values: append($values, 0);
+      }
+
+      @else {
+        $values: append($values, $y);
+      }
+    }
+  }
+
+  @return $values;
 }
 

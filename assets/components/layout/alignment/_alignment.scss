@@ -3,29 +3,29 @@
 // ==========================================================================
 
 .align-end {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+  justify-content: flex-end;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
 }
 
 .align-end {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+  justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
 }
 
 .align-right {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .align-v-top {
-    align-items: flex-start;
+  align-items: flex-start;
 }
 
 .align-v-bottom {
-    align-items: flex-end;
+  align-items: flex-end;
 }
 
 .align-v-center {
-    align-items: center;
+  align-items: center;
 }

@@ -1,19 +1,19 @@
-@import '../tools/map-get-if-exists';
-@import '../tools/map-deep-get-set';
+@import "../tools/map-get-if-exists";
+@import "../tools/map-deep-get-set";
 
-$__font-size: () !default  !global;
+$__font-size: () !default !global;
 
 @mixin fontsize-load($fontsizes-map) {
-    $__font-size: $fontsizes-map !global;
+  $__font-size: $fontsizes-map !global;
 }
 
 
 @function fontsize($size) {
-    $size: quote($size);
+  $size: quote($size);
 
-    @return map-get-if-exists($__font-size, $size);
+  @return map-get-if-exists($__font-size, $size);
 }
 
 @function get-fontsize() {
-    @return $__font-size;
+  @return $__font-size;
 }

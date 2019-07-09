@@ -1,17 +1,21 @@
 @mixin placeholder {
-    &::-webkit-input-placeholder {
-        @content;
-    }
-    &::-moz-placeholder { // Firefox 19+
-        @content;
-    }
-    &:-ms-input-placeholder {
-        @content;
-    }
-    &:-moz-placeholder { // Firefox 18-
-        @content;
-    }
-    &::placeholder {
-        @content;
-    }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  &::-moz-placeholder { // Firefox 19+
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder { // Firefox 18-
+    @content;
+  }
+
+  &::placeholder {
+    @content;
+  }
 }

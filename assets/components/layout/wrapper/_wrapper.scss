@@ -10,13 +10,11 @@ $_wrapper-max-width: 1200;
 $_wrapper-padding: 25;
 
 .wrapper {
-    margin: 0 auto;
-    clear: both;
-    position: relative;
-
-    padding-left: rem-calc($_wrapper-padding);
-    padding-right: rem-calc($_wrapper-padding);
-
-    width: 100%;
-    max-width: rem-calc($_wrapper-max-width);
+  position: relative;
+  width: 100%;
+  max-width: rem-calc($_wrapper-max-width);
+  padding-right: rem-calc($_wrapper-padding);
+  padding-left: rem-calc($_wrapper-padding);
+  margin: 0 auto;
+  clear: both;
 }

@@ -17,21 +17,21 @@
 // **NB** You need to call `@include load-palette($palettes);` in your main Sass file to load the palette before using this fn.
 
 
-@import '../tools/map-get-if-exists';
-@import '../tools/map-deep-get-set';
+@import "../tools/map-get-if-exists";
+@import "../tools/map-deep-get-set";
 
-$__palette: () !default  !global;
+$__palette: () !default !global;
 
 @mixin palette-load($palette-map) {
-    $__palette: $palette-map !global;
+  $__palette: $palette-map !global;
 }
 
 @function palette($color) {
-    $color: quote($color);
+  $color: quote($color);
 
-    @return map-get-if-exists($__palette, $color);
+  @return map-get-if-exists($__palette, $color);
 }
 
 @function get-palette() {
-    @return $__palette;
+  @return $__palette;
 }

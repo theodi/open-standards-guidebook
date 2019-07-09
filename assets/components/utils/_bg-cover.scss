@@ -2,7 +2,7 @@
 // Background Cover
 // ==========================================================================
 
-/*doc
+/* doc
 ---
 title: Background-cover
 name: bg_cover
@@ -14,5 +14,5 @@ Sets the background image of an element to be positioned centrally and covered a
 */
 
 .u-bg-cover {
-    @include bg-cover();
+  @include bg-cover();
 }

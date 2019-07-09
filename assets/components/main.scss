@@ -1,127 +1,133 @@
-@import '~littlefoot/styles/littlefoot';
+@import "~littlefoot/styles/littlefoot";
 
 // Global Tools
-@import 'tools/bg-cover';
-@import 'tools/clearfix';
-@import 'tools/font-ratio';
-@import 'tools/inverse';
-@import 'tools/link';
-@import 'tools/map-deep-get-set';
-@import 'tools/map-get-if-exists';
-@import 'tools/placeholder';
-@import 'tools/rem-calc';
-@import 'tools/strip-units';
-@import 'tools/tint';
-@import 'tools/trim';
+@import "tools/bg-cover";
+@import "tools/clearfix";
+@import "tools/font-ratio";
+@import "tools/inverse";
+@import "tools/link";
+@import "tools/map-deep-get-set";
+@import "tools/map-get-if-exists";
+@import "tools/placeholder";
+@import "tools/rem-calc";
+@import "tools/strip-units";
+@import "tools/tint";
+@import "tools/trim";
 
 // Palette Tool Load
-@import 'tools/palette';
-@import 'design/colours.map';
+@import "tools/palette";
+@import "design/colours.map";
+
 @include palette-load($colours-map);
 
 // Breakpoint Tool Load
-@import 'tools/breakpoint';
-@import 'design/breakpoints.map';
+@import "tools/breakpoint";
+@import "design/breakpoints.map";
+
 @include breakpoint-load($breakpoints-map);
 
 // Font Size Tool Load
-@import 'tools/font-size';
-@import 'design/fontsizes.map';
+@import "tools/font-size";
+@import "design/fontsizes.map";
+
 @include fontsize-load($fontsizes-map);
 
 // Spacing Tool Load
-@import 'tools/spacing';
-@import 'design/spacing.map';
+@import "tools/spacing";
+@import "design/spacing.map";
+
 @include spacing-load($spacing-map);
 
 // Normalize
-@import 'normalize';
+@import "normalize";
 
 // Layout
-@import 'layout/wrapper/wrapper';
-@import 'layout/alignment/alignment';
-@import 'layout/grid/grid';
+@import "layout/wrapper/wrapper";
+@import "layout/alignment/alignment";
+@import "layout/grid/grid";
 
 // Forms
 
 // Atoms
-@import 'atoms/headings/headings';
-@import 'atoms/checklist-heading/checklist-heading';
-@import 'atoms/island/island';
-@import 'atoms/lede/lede';
-@import 'atoms/blockquote/blockquote';
-@import 'atoms/table/table';
-@import 'atoms/link/link';
-@import 'atoms/aside/aside';
-@import 'atoms/pill/pill';
-@import 'atoms/meta-title/meta-title';
-@import 'atoms/paragraph/paragraph';
-@import 'atoms/brand/brand';
-@import 'atoms/burger/burger';
-@import 'atoms/logo/logo';
-@import 'atoms/btn/btn';
-@import 'atoms/chevron/chevron';
-@import 'atoms/citation/citation';
-@import 'atoms/nav-item/nav-item';
-@import 'atoms/callout/callout';
-@import 'atoms/share-item/share-item';
-@import 'atoms/list/list';
+@import "atoms/headings/headings";
+@import "atoms/checklist-heading/checklist-heading";
+@import "atoms/island/island";
+@import "atoms/lede/lede";
+@import "atoms/blockquote/blockquote";
+@import "atoms/table/table";
+@import "atoms/link/link";
+@import "atoms/aside/aside";
+@import "atoms/pill/pill";
+@import "atoms/meta-title/meta-title";
+@import "atoms/paragraph/paragraph";
+@import "atoms/brand/brand";
+@import "atoms/burger/burger";
+@import "atoms/logo/logo";
+@import "atoms/btn/btn";
+@import "atoms/chevron/chevron";
+@import "atoms/citation/citation";
+@import "atoms/nav-item/nav-item";
+@import "atoms/callout/callout";
+@import "atoms/share-item/share-item";
+@import "atoms/list/list";
 
 // Molecules
-@import 'molecules/accordion/accordion';
-@import 'molecules/breadcrumb/breadcrumb';
-@import 'molecules/hero/hero';
-@import 'molecules/hero-home/hero-home';
-@import 'molecules/nav-tray/nav-tray';
-@import 'molecules/nav-mobile/nav-mobile';
-@import 'molecules/masthead/masthead';
-@import 'molecules/masthead-nav/masthead-nav';
-@import 'molecules/footer/footer';
-@import 'molecules/cta/cta';
-@import 'molecules/cta-tray/cta-tray';
-@import 'molecules/section-listing/section-listing';
-@import 'molecules/modal/modal';
-@import 'molecules/person/person';
+@import "molecules/accordion/accordion";
+@import "molecules/breadcrumb/breadcrumb";
+@import "molecules/hero/hero";
+@import "molecules/hero-home/hero-home";
+@import "molecules/nav-tray/nav-tray";
+@import "molecules/nav-mobile/nav-mobile";
+@import "molecules/masthead/masthead";
+@import "molecules/masthead-nav/masthead-nav";
+@import "molecules/footer/footer";
+@import "molecules/cta/cta";
+@import "molecules/cta-tray/cta-tray";
+@import "molecules/section-listing/section-listing";
+@import "molecules/modal/modal";
+@import "molecules/person/person";
 
 // Forms
-@import 'forms/form/form';
-@import 'forms/control/control';
-@import 'forms/input/input';
-@import 'forms/label/label';
-@import 'forms/select/select';
-@import 'forms/checkbox/checkbox';
+@import "forms/form/form";
+@import "forms/control/control";
+@import "forms/input/input";
+@import "forms/label/label";
+@import "forms/select/select";
+@import "forms/checkbox/checkbox";
 
 // Utilities
-@import 'utils/bg-cover';
-@import 'utils/hide-print';
-@import 'utils/inverse';
-@import 'utils/scroll';
-@import 'utils/spacing';
-@import 'utils/text-center';
-@import 'utils/text-color';
-@import 'utils/trim';
-@import 'utils/uppercase';
-@import 'utils/visibility';
+@import "utils/bg-cover";
+@import "utils/hide-print";
+@import "utils/inverse";
+@import "utils/scroll";
+@import "utils/spacing";
+@import "utils/text-center";
+@import "utils/text-color";
+@import "utils/trim";
+@import "utils/uppercase";
+@import "utils/visibility";
 
 
 
 body.debug {
-    &:after { // fixed elem that shows which bp the viewport is at
-        background-color: rgba(0,0,0,.3);
-        color: white;
-        text-transform: uppercase;
-        padding: 17px 25px;
-        position: fixed;
-        font-size: 15px;
-        font-weight: 700;
-        bottom: 0;
-        right: 0;
-        z-index: 999;
-        @each $config in $breakpoints-map {
-            $name: nth($config, 1);
-            @include respond-to($name) {
-                content: $name;
-            }
-        }
+  &::after { // fixed elem that shows which bp the viewport is at
+    position: fixed;
+    z-index: 999;
+    right: 0;
+    bottom: 0;
+    padding: 17px 25px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @each $config in $breakpoints-map {
+      $name: nth($config, 1);
+
+      @include respond-to($name) {
+        content: $name;
+      }
     }
+  }
 }

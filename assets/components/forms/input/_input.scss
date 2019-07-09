@@ -3,45 +3,45 @@
 // ==========================================================================
 
 .input {
-    display: block;
-    width: 100%;
-    outline: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: 2px solid lighten(palette(black), 60%);
-    padding: spacing(13 15);
-    font-size: ms(0, $thread: desktop);
-    font-family: -apple-system, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-    box-sizing: border-box;
-    border-radius: rem-calc(3);
-    margin-bottom: rem-calc(5);
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: spacing(13 15);
+  border: 2px solid lighten(palette(black), 60%);
+  margin-bottom: rem-calc(5);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: rem-calc(3);
+  font-family: -apple-system, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: ms(0, $thread: desktop);
+  outline: none;
 
-    @include placeholder {
-        color: lighten(black, 60%);
-    }
+  @include placeholder {
+    color: lighten(black, 60%);
+  }
 
-    &:active,
-    &:focus {
-        border-color: palette(primary);
-    }
+  &:active,
+  &:focus {
+    border-color: palette(primary);
+  }
 
-    &.has--error {
-        border-color: palette(warning);
-        color: palette(warning);
-    }
+  &.has--error {
+    border-color: palette(warning);
+    color: palette(warning);
+  }
 
-    &.has--success {
-        border-color: palette(success);
-        color: palette(success);
-    }
+  &.has--success {
+    border-color: palette(success);
+    color: palette(success);
+  }
 }
 
 .input[type="password"] {
-    font-size: ms(2);
-    padding: spacing(8 15);
+  padding: spacing(8 15);
+  font-size: ms(2);
 
-    @include placeholder {
-        display: none;
-    }
+  @include placeholder {
+    display: none;
+  }
 }
