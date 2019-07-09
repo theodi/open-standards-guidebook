@@ -1,6 +1,6 @@
 {
   "name": "open-standard-for-data",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "main": "index.js",
   "repository": "git@github.com:theodi/open-standards-guidebook.git",
   "author": "Kind <dev@madebykind.com>",
@@ -9,12 +9,11 @@
   "scripts": {
     "build": "yarn build:assets && yarn build:jekyll",
     "build:assets": "vue-cli-service build",
-    "build:jeykll": "JEKYLL_ENV='production' bundle exec jekyll build",
+    "build:jekyll": "JEKYLL_ENV='production' bundle exec jekyll build",
     "build:fractal": "yarn build:assets && fractal build",
     "docs:toc": "./scripts/docs/gh-md-toc README.md",
     "generate:component": "hygen fractal-component new",
     "lint": "concurrently \"vue-cli-service lint --fix && vue-cli-service lint:style\"",
-    "lint-styles": "yarn sass-lint -v",
     "lint:config-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
     "lint:html": "yarn build && bundle exec rake check_html",
     "lint:js": "vue-cli-service lint --fix",
