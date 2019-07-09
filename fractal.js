@@ -40,7 +40,7 @@ fractal.set('project.version', pkg.version);
  */
 
 // Set path to components
-fractal.components.set('path', path.join(srcPath, 'components'));
+fractal.components.set('path', path.join(srcPath, 'styles'));
 
 
 // Set path to documentation pages

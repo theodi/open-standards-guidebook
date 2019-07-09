@@ -184,7 +184,7 @@ This will:
 ├── _config.yml # Main Jekyll config
 ├── _templates/ # Generator templates for front end components - ignore!
 ├── assets/ # Front end assets - consumed by build process
-│   ├── components/ # Components for Fractal styleguide
+│   ├── styles/ # Components for Fractal styleguide
 │   ├── images/ # images - filenames will be revved on build so use rev filter in liquid
 │   └── js/ # JavaScript goes here, use ES6 as transpiled with webpack
 ├── build/ # Build scripts and config

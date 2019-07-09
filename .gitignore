@@ -16,7 +16,7 @@ yarn-error.log
 ###################
 /dist/
 .sass-cache/
-/assets/components/design/
+/assets/styles/design/
 /assets/js/design/
 /jekyll/.jekyll-metadata
 /jekyll/dist/

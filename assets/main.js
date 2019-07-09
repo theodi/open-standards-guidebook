@@ -1,10 +1,10 @@
-import './components/main.scss';
+import './styles/main.scss';
 
 import bindFootnotes from 'littlefoot';
-import bindToggles from './modules/toggle';
-import bindModals from './modules/modals';
-import bindAjaxForms from './modules/ajaxForm';
-import bindEventTracking from './modules/eventTracking';
+import bindToggles from './js/toggle';
+import bindModals from './js/modals';
+import bindAjaxForms from './js/ajaxForm';
+import bindEventTracking from './js/eventTracking';
 
 function init() {
     bindToggles();
