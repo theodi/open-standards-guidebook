@@ -5,8 +5,8 @@ require 'json'
 module Jekyll
   module RevFilter
 
-    @@manifest_path =  "#{Dir.getwd}/src/assets/rev-manifest.json"
-    @@asset_base_path = "assets/"
+    @@manifest_path =  "#{Dir.getwd}/jekyll/dist/manifest.json"
+    @@asset_base_path = "dist/"
 
     def rev(asset_path)
       if File.exist?(@@manifest_path)
@@ -20,13 +20,7 @@ module Jekyll
       manifest = self.read_json_file(@@manifest_path)
       asset_path = self.clean_asset_path(asset_path)
 
-      if manifest.key?(asset_path)
-        rev_path = manifest[asset_path]
-      else
-        rev_path = asset_path
-      end
-
-      "/#{@@asset_base_path}#{rev_path}"
+      manifest.key?(asset_path) ? manifest[asset_path] : asset_path
     end
 
     def read_json_file(file_name)
@@ -41,8 +35,8 @@ module Jekyll
       if asset_path.start_with?('/')
         asset_path = asset_path[1..-1]
       end
-      if asset_path.start_with?('assets/')
-        asset_path.slice!('assets/')
+      if asset_path.start_with?('dist/')
+        asset_path.slice!('dist/')
       end
 
       asset_path

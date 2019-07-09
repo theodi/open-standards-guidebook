@@ -1,11 +1,14 @@
+
+
 <!doctype html>
 <html class="no-js" lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="dns-prefetch" href="https://cdn.polyfill.io">
-    <link rel="stylesheet" href="{{ 'assets/styles/main.css' | rev | relative_url }}">
+    {% if site.isBuild %}
+        <link rel="stylesheet" href="{{ 'app.css' | rev | relative_url }}">
+    {% endif %}
 
     <title>{{ page.title }} | {{ site.name }}</title>
     {% comment %}
@@ -29,8 +32,8 @@
     {% comment %}
     Needs to be revved so can't use seo tag to output{% endcomment %}
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:image" content="{{ site.url}}/twitter-card.png" />
-    <meta property="og:image" content="{{ site.url}}/twitter-card.png" />
+    <meta property="twitter:image" content="{{ site.url}}{{ 'img/twitter-card.png' | rev | relative_url }}" />
+    <meta property="og:image" content="{{ site.url}}{{ 'img/twitter-card.png' | rev | relative_url }}" />
     <meta name="twitter:creator" content="@{{ site.twitter.username }}" />
     {% capture robots %}
         {% if page.robots %}
@@ -110,7 +113,16 @@
 
 
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
-<script src="{{ 'assets/js/app.js' | rev | relative_url }}"></script>
+<script src="{{ 'app.js' | rev | relative_url }}"></script>
+
+{% if site.isBuild %}
+  <script src="{{ 'chunk-vendors.js' | rev | path }}"></script>
+  <script src="{{ 'app.js' | rev | path }}"></script>
+{% else %}
+  <script src="http://localhost:{{ site.env['ASSET_SERVER_PORT'] }}/app.js"></script>
+{% endif %}
+
+
 
 {% if site.ga and jekyll.environment == 'production' %}
 <script>
