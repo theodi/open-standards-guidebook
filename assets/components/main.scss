@@ -1,19 +1,18 @@
-@import '~@mise-en-place/tools.link';
-@import '~@mise-en-place/tools.strip-units';
-@import '~@mise-en-place/tools.trim';
-@import '~@mise-en-place/utilities.bg-cover';
-@import '~@mise-en-place/utilities.scroll';
-@import '~@mise-en-place/utilities.uppercase';
-@import 'littlefoot/styles/littlefoot';
+@import '~littlefoot/styles/littlefoot';
 
 // Global Tools
-@import 'tools/rem-calc';
-@import 'tools/map-get-if-exists';
-@import 'tools/map-deep-get-set';
+@import 'tools/bg-cover';
+@import 'tools/clearfix';
 @import 'tools/font-ratio';
-@import 'tools/placeholder';
-@import 'tools/tint';
 @import 'tools/inverse';
+@import 'tools/link';
+@import 'tools/map-deep-get-set';
+@import 'tools/map-get-if-exists';
+@import 'tools/placeholder';
+@import 'tools/rem-calc';
+@import 'tools/strip-units';
+@import 'tools/tint';
+@import 'tools/trim';
 
 // Palette Tool Load
 @import 'tools/palette';
@@ -93,15 +92,16 @@
 @import 'forms/checkbox/checkbox';
 
 // Utilities
-@import 'utils/text-color';
-@import 'utils/uppercase';
-@import 'utils/text-center';
-@import 'utils/inverse';
-@import 'utils/spacing';
-@import 'utils/trim';
+@import 'utils/bg-cover';
 @import 'utils/hide-print';
+@import 'utils/inverse';
+@import 'utils/scroll';
+@import 'utils/spacing';
+@import 'utils/text-center';
+@import 'utils/text-color';
+@import 'utils/trim';
+@import 'utils/uppercase';
 @import 'utils/visibility';
-
 
 
 

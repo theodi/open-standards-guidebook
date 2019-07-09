@@ -2,6 +2,8 @@ title: "Resource Listing Layout"
 status: "ready"
 
 context:
+  preview:
+    noPad: true
   # Hero Context
   hero:
     heading: Open Standards Organisations

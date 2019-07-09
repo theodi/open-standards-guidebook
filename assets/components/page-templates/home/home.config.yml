@@ -2,6 +2,8 @@ title: "Home Page Layout"
 status: "ready"
 
 context:
+  preview:
+    noPad: true
   # Hero Context
   hero:
     lowernav: true

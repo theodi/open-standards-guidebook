@@ -2,7 +2,7 @@
 // Breakpoint Config
 // ==========================================================================
 
-@import "breakpoint-sass/stylesheets/breakpoint";
+@import "~breakpoint-sass/stylesheets/breakpoint";
 
 
 @mixin breakpoint-load($breakpoints) {

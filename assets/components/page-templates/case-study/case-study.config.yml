@@ -2,6 +2,8 @@ title: "Case Study Layout"
 status: "ready"
 
 context:
+  preview:
+    noPad: true
   # Hero Context
   hero:
     heading: General Transit Feed Specification (GTFS)

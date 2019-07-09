@@ -2,6 +2,8 @@ title: "Listing Page - Short Layout"
 status: "ready"
 
 context:
+  preview:
+    noPad: true
   # Hero Context
   hero:
     lowernav: true

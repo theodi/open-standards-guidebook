@@ -1,0 +1,18 @@
+// ==========================================================================
+// Strip Units Tool
+// ==========================================================================
+
+////
+/// @group Functions
+////
+
+/// Strip the unit from a dimensional value.
+///
+/// @example scss - Basic Usage Sass
+///    .im-naked {
+///        padding: strip-units(0px); // returns 0
+///    }
+
+@function strip-units($number) {
+    @return $number / ($number * 0 + 1);
+}

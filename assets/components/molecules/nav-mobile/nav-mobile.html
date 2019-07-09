@@ -1,4 +1,4 @@
-<div class="m-nav-mobile {% if nav.open %}is--open{% endif %}">
+<div class="m-nav-mobile {% if nav.open %}is--open{% endif %}" id="mobile-nav">
     {% for item in nav.items %}
         <a href="#" class="m-nav-mobile__item {% if item.active %}is--active{% endif %}">{{ item.title }}</a>
     {% endfor %}
