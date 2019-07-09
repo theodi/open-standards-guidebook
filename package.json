@@ -25,18 +25,14 @@
     "serve": "concurrently 'yarn serve:assets' 'yarn serve:fractal' 'yarn serve:jekyll'",
     "serve:jekyll": "JEKYLL_ENV=development bundle exec jekyll serve --config _config.yml,_config.dev.yml",
     "serve:assets": "vue-cli-service serve",
-    "serve:fractal": "fractal start",
-    "test:coverage": "jest --coverage",
-    "test:unit": "vue-cli-service test:unit",
-    "test:watch": "vue-cli-service test:unit --watch"
+    "serve:fractal": "fractal start"
   },
   "engines": {
     "node": "^10.15.3"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint",
-      "pre-push": "yarn test:unit"
+      "pre-commit": "yarn lint"
     }
   },
   "dependencies": {
