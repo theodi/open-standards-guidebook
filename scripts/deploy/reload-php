@@ -1,3 +1,0 @@
-#!/bin/bash
-echo 'Reloading php-fpm'
-service php7.3-fpm reload
