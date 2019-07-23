@@ -22,7 +22,6 @@
 * [Configuration](#configuration)
   * [Jekyll](#jekyll)
   * [Vue CLI](#vue-cli)
-* [Contributions application](#contributions-application)
 * [Hacks](#hacks)
 * [Other useful bits](#other-useful-bits)
 
@@ -184,7 +183,6 @@ This will:
 │   ├── js/ # JavaScript goes here, use ES6 as transpiled with webpack
 │   └── docs/ # Markdown formatted documentation for Fractal styleguide
 │
-├── contributions/ # Sinatra app, handles creating GH issue from form submissions
 ├── dist/ # Built site goes here
 │
 ├── jekyll/ # The Jekyll part of the project
@@ -227,10 +225,6 @@ We also have the following custom Jekyll plugins (in `jekyll/_plugins`)
 ### Vue CLI
 
 The asset build process is configured / customised via the `vue.config.js` in the project root.
-
-## Contributions application
-
-The `contributions/` directory contains a small [Sinatra](http://sinatrarb.com) application that takes form submissions and turns them into issues / PRs on the GitHub repo via the GH api. For full details of this component of the project see [`contributions/README.md`](blob/develop/contributions/README.md).
 
 ## Hacks
 

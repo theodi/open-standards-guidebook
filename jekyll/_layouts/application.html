@@ -54,17 +54,6 @@
 
 
 <div data-page-container>
-    {% comment %} Global CTA with default content injected {% endcomment %}
-    {% capture cta_text %}
-        <div class="u-trim--all">
-            <p>Something missing? <a class="link link--bold link--secondary" href="{{ site.data.contributing.repo_url }}/issues" data-modal="#modal-suggestion">{{ site.data.contributing.cta_text }}</a></p>
-        </div>
-    {% endcapture %}
-    {% comment %} Global CTA Above Masthead {% endcomment %}
-    <div class="is-hidden is-visible--medium">
-    {% include cta.html content=cta_text color="white" %}
-    </div>
-
     {% comment %} Global Masthead {% endcomment %}
     {% include masthead.html %}
 
@@ -108,8 +97,6 @@
     {% comment %} Global Footer {% endcomment %}
     {% include footer.html %}
 </div>
-
-{% include modal.html %}
 
 
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
