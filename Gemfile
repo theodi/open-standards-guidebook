@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', '3.8.5'
+gem 'jekyll', '3.8.6'
 gem 'json' # required for custom RevFilter plugin
 gem 'rake'
 gem 'html-proofer'
