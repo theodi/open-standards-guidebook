@@ -2,14 +2,10 @@ import './styles/main.scss';
 
 import bindFootnotes from 'littlefoot';
 import bindToggles from './js/toggle';
-import bindModals from './js/modals';
-import bindAjaxForms from './js/ajaxForm';
 import bindEventTracking from './js/eventTracking';
 
 function init() {
     bindToggles();
-    bindModals();
-    bindAjaxForms();
     bindEventTracking();
     bindFootnotes();
 
