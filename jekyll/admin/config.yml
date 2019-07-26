@@ -49,7 +49,7 @@ collections:
           - label: "Navigation Items"
             name: "items"
             widget: "list"
-              fields:
+            fields:
                 - label: Path
                   name: path
                   widget: string
