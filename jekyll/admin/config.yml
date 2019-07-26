@@ -21,9 +21,9 @@ collections:
               name: "items",
               widget: "list",
               fields:
-                - {label: Title, name: title, widget: string}
-                - {label: Url, name: url, widget: string}
-            }    - label: "Main nav"
+                - { label: Title, name: title, widget: string }
+                - { label: Url, name: url, widget: string }
+            }
 
       - label: "Top auxillary nav"
         name: "top_aux_nav"
@@ -34,8 +34,8 @@ collections:
               name: "items",
               widget: "list",
               fields:
-                - {label: Title, name: title, widget: string}
-                - {label: Url, name: url, widget: string}
+                - { label: Title, name: title, widget: string }
+                - { label: Url, name: url, widget: string }
             }
 
       - label: "Footer auxillary nav"
@@ -47,7 +47,7 @@ collections:
               name: "items",
               widget: "list",
               fields:
-                - {label: Path, name: path, widget: string}
+                - { label: Path, name: path, widget: string }
             }
 
       - label: "Snippets"
