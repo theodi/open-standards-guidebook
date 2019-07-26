@@ -98,7 +98,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
-    rouge (3.6.0)
+    rouge (3.7.0)
     ruby_dep (1.5.0)
     rubypants (0.7.0)
     safe_yaml (1.0.5)
@@ -136,4 +136,4 @@ DEPENDENCIES
   rake
 
 BUNDLED WITH
-   2.0.2
+   2.0.1
