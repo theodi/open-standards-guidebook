@@ -16,46 +16,48 @@ collections:
         name: "main_nav"
         file: "_data/main_nav.yml"
         fields:
-          - {
-              label: "Navigation Items",
-              name: "items",
-              widget: "list",
-              fields:
-                - { label: Title, name: title, widget: string }
-                - { label: Url, name: url, widget: string }
-            }
+          - label: "Navigation Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              -  label: Url
+                name: url
+                widget: string
 
       - label: "Top auxillary nav"
         name: "top_aux_nav"
         file: "_data/top_aux_nav.yml"
         fields:
-          - {
-              label: "Navigation Items",
-              name: "items",
-              widget: "list",
-              fields:
-                - { label: Title, name: title, widget: string }
-                - { label: Url, name: url, widget: string }
-            }
+          - label: "Navigation Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Url
+                name: url
+                widget: string
 
       - label: "Footer auxillary nav"
         name: "footer_aux_nav"
         file: "_data/footer_aux_nav.yml"
         fields:
-          - {
-              label: "Navigation Items",
-              name: "items",
-              widget: "list",
+          - label: "Navigation Items"
+            name: "items"
+            widget: "list"
               fields:
-                - { label: Path, name: path, widget: string }
-            }
+                - label: Path
+                  name: path
+                  widget: string
 
       - label: "Snippets"
         name: "snippets"
         file: "_data/snippets.yml"
         fields:
-          - {
-              label: "Intro sentence",
-              name: "intro_sentence",
-              widget: "text",
-            }
+          - label: "Intro sentence"
+            name: "intro_sentence"
+            widget: "text"
