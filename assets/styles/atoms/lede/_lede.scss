@@ -1,0 +1,20 @@
+// ==========================================================================
+// Lede Atom
+// ==========================================================================
+
+.lede {
+  &,
+  > p {
+    font-size: ms(0);
+    font-weight: 500;
+    line-height: 1.43;
+
+    @include respond-to(medium) {
+      font-size: ms(1, $thread: desktop);
+    }
+  }
+
+  > *:first-child {
+    margin-top: 0;
+  }
+}

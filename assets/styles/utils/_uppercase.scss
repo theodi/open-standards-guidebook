@@ -1,0 +1,22 @@
+// ==========================================================================
+// Uppercase Utility
+// ==========================================================================
+
+/* doc
+---
+title: Uppercase
+name: uppercase
+category: utilities
+---
+
+The uppercase utility modifies the text like so:
+
+```html_example
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quo, beatae maxime eum natus atque omnis aliquam dicta laudantium accusamus, modi rerum nam, asperiores non. Repellendus obcaecati fuga inventore deleniti!</p>
+<p class="u-uppercase">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quo, beatae maxime eum natus atque omnis aliquam dicta laudantium accusamus, modi rerum nam, asperiores non. Repellendus obcaecati fuga inventore deleniti!</p>
+```
+*/
+
+.u-uppercase {
+  text-transform: uppercase;
+}

@@ -16,13 +16,12 @@ yarn-error.log
 ###################
 /dist/
 .sass-cache/
-/assets/components/design/
+/assets/styles/design/
 /assets/js/design/
-/src/.jekyll-metadata
-/src/assets/
-src/.git-metadata/
-/linters/
-/component-library/
+/jekyll/.jekyll-metadata
+/jekyll/dist/
+/jekyll/.git-metadata/
+/styleguide/
 
 ###################
 # Backups
@@ -34,6 +33,7 @@ src/.git-metadata/
 # Editor
 ###################
 *.sublime-workspace
+*.sublime-project
 .idea
 .Rhistory
 

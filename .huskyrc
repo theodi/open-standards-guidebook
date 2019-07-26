@@ -1,3 +1,0 @@
----
-hooks:
-  pre-push: yarn lint

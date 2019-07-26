@@ -7,14 +7,14 @@
 ###
 # Build
 ###
-source: src
+source: jekyll
 destination: dist
 timezone: Europe/London
 lang: en_GB
 permalink: pretty
 env: production
 exclude: ['_templates']
-
+keep_files: ['dist']
 ###
 # Meta
 #

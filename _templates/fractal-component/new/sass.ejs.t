@@ -1,5 +1,5 @@
 ---
-to: assets/components/<%= type %>s/<%= slug %>/_<%= slug %>.scss
+to: assets/styles/<%= type %>s/<%= slug %>/_<%= slug %>.scss
 ---
 // ==========================================================================
 // <%= h.capitalize(slug) %> <%= type %>

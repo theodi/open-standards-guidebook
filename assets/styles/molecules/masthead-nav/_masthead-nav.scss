@@ -1,0 +1,44 @@
+// ==========================================================================
+// Masthead Nav Molecule
+// ==========================================================================
+
+.m-masthead-nav {
+  margin-top: spacing(15);
+  background: palette(grey-dark);
+}
+
+.m-masthead-nav__item {
+  @include link() {
+    display: inline-block;
+    padding: spacing(4 8 6 8);
+    border: 2px solid transparent;
+    margin-right: spacing(2);
+    color: palette(white);
+    font-size: ms(0);
+    font-weight: bold;
+    text-decoration: none;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    &.is--active {
+      display: inline-block;
+      padding: spacing(4 8 6 8);
+      border: solid 2px palette(primary);
+      background: palette(primary);
+      background-image: linear-gradient(to bottom, tint(palette(primary), "lighten"), palette(primary));
+      border-radius: rem-calc(2);
+      color: white;
+      font-weight: 500;
+      font-weight: 600;
+      text-align: center;
+      text-decoration: none;
+      transition: all ease 150ms;
+    }
+  }
+
+  @include link-hover {
+    color: tint(palette(white), "darken");
+  }
+}

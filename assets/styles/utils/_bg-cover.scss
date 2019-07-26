@@ -1,0 +1,18 @@
+// ==========================================================================
+// Background Cover
+// ==========================================================================
+
+/* doc
+---
+title: Background-cover
+name: bg_cover
+category: utilities
+---
+
+Sets the background image of an element to be positioned centrally and covered and no-repeat.
+
+*/
+
+.u-bg-cover {
+  @include bg-cover();
+}

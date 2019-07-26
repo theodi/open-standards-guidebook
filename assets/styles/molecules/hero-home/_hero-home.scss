@@ -1,0 +1,59 @@
+// ==========================================================================
+// Hero HomeMolecule
+// ==========================================================================
+
+.m-hero-home {
+  padding-bottom: 0;
+  background: palette(grey);
+
+  @include respond-to(medium) {
+    padding-top: 0; // override
+  }
+
+  .wrapper {
+    padding-top: spacing(base);
+    padding-bottom: 90%;
+    background-image: url("../images/hero-illustration.svg");
+    background-position: bottom -20px right 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    @include respond-to(medium) {
+      padding-top: spacing(xlarge);
+      padding-bottom: spacing(xlarge);
+      background-position: bottom -20px right -200px;
+      background-size: rem-calc(475);
+
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        background-position: bottom -20px right -200px;
+        background-size: rem-calc(880);
+      }
+    }
+
+    @include respond-to(large) {
+      background-position: bottom -20px right -100px;
+      background-size: rem-calc(550);
+
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        background-image: url("../images/hero-illustration.svg");
+        background-position: bottom -20px right -200px;
+        background-size: rem-calc(920);
+      }
+    }
+
+    @include respond-to(xlarge) {
+      background-position: bottom -20px right 0;
+      background-size: rem-calc(575);
+
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        background-position: bottom -20px right -200px;
+        background-size: rem-calc(1080);
+      }
+    }
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      padding-bottom: spacing(medium);
+      background-image: none;
+    }
+  }
+}

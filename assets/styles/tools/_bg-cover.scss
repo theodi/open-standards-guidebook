@@ -1,0 +1,10 @@
+// ==========================================================================
+// BACKGROUND COVER MIXIN
+// ==========================================================================
+
+@mixin bg-cover() {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: cover;
+}

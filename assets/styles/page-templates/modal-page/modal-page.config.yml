@@ -1,0 +1,6 @@
+title: "Modal Page Template"
+status: "ready"
+
+context:
+  preview:
+    noPad: true

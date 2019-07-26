@@ -1,0 +1,116 @@
+#!/usr/bin/env node
+
+// This script:
+// - Interactively collects configuration information from the user
+// - Stores that data in the the `buildConfig` key in the project's package.json
+//
+// see /scripts/project/apply-env for how this gets applied to a project instance
+
+require("dotenv").config();
+require("colors");
+
+const jsonfile = require("jsonfile");
+const inquirer = require("inquirer");
+
+const pkg = jsonfile.readFileSync("package.json");
+
+if (pkg.buildConfig) {
+  console.error("Error: Project has previously been configured".red);
+  console.error("Remove project buildConfig from package.json to start again");
+  console.error("Exiting");
+  process.exit();
+}
+
+// Config
+const config = {
+  assetPort: {
+    min: 8080,
+    max: 8999,
+  },
+  fractalPort: {
+    min: 4000,
+    max: 4999,
+  },
+};
+
+// Helpers
+
+const dashCase = (str) => str.replace(/[^A-Za-z09]+/g, "-").toLowerCase();
+
+const isInt = (value) => !isNaN(value) && parseInt(Number(value)) == value &&  !isNaN(parseInt(value, 10));
+
+const getRandomArbitraryInt = (min, max) => Math.floor(Math.random() * (Math.floor(max) - Math.ceil(min) + 1)) + Math.ceil(min);
+
+const inRange = (value, min, max) => (parseInt(value) >= min && parseInt(value) <= max);
+
+
+// Outputs
+
+const applySettingsToPackage = (answers) => {
+  jsonfile.writeFileSync("package.json", pkg, {spaces: 2})
+
+  pkg.name = answers.projectHandle;
+
+  pkg.version = "1.0.0";
+
+  pkg.buildConfig = {
+    title: answers.projectTitle,
+    siteName: answers.siteName,
+    adminEmail: answers.adminEmail,
+    ports: {
+      assets: answers.projectAssetPort,
+      fractal: answers.projectFractalPort,
+    },
+  };
+
+  jsonfile.writeFileSync("package.json", pkg, {spaces: 2});
+
+  console.log("Success! config saved".green);
+  console.log("NB the config is not applied automatically. Run ",
+            "yarn project:apply-env".green,
+            " to apply your new configuration");
+}
+
+
+inquirer.prompt([
+    {
+      type: "input",
+      name: "projectTitle",
+      message: "What should we use as the title for this project?",
+      validate: (input) => input ? true : "Project title is required",
+    },
+    {
+      type: "input",
+      name: "projectHandle",
+      message: "What should we use as the handle for this project?",
+      default: ({ projectTitle }) => dashCase(projectTitle),
+    },
+    {
+      type: "input",
+      name: "siteName",
+      message: "What should we use as the Site Name for this project?",
+      default: ({ projectTitle }) => projectTitle,
+    },
+    {
+      type: "input",
+      name: "projectAssetPort",
+      message: "What local port we use for the asset server? ",
+      default: getRandomArbitraryInt(config.assetPort.min, config.assetPort.max),
+      validate: (input) => isInt(input) && inRange(input, config.assetPort.min, config.assetPort.max)
+                          ? true
+                          : "Enter an integer value of 8080 or above",
+    },{
+      type: "input",
+      name: "projectFractalPort",
+      message: "What local port we use for the local Fractal server? ",
+      default: getRandomArbitraryInt(config.fractalPort.min, config.fractalPort.max),
+      validate: (input) => isInt(input) && inRange(input, config.fractalPort.min, config.fractalPort.max)
+                          ? true
+                          : "Enter an integer value of 8080 or above",
+    },
+  ]).then(answers => {
+
+    applySettingsToPackage(answers);
+
+  });
+

@@ -1,0 +1,54 @@
+// ==========================================================================
+// Breadcrumb Molecule
+// ==========================================================================
+
+.m-breadcrumb {
+  @media print {
+    display: none;
+  }
+
+  margin-bottom: spacing(8);
+}
+
+.m-breadcrumb__item {
+  @include link() {
+    color: palette(grey-dark);
+    font-size: ms(-1);
+    font-weight: bold;
+
+    @include respond-to(medium) {
+      font-size: ms(0, $thread: desktop);
+    }
+  }
+
+  @include link-hover() {
+    color: lighten(palette(grey-dark), 25%);
+    outline: none;
+  }
+
+  &.is--active {
+    @include link() {
+      font-weight: normal;
+    }
+  }
+}
+
+.m-breadcrumb__seperator {
+  font-weight: bold;
+}
+
+.m-breadcrumb__wrapper + .m-hero {
+  padding-top: 0;
+
+  @include respond-to(medium) {
+    padding-top: 0;
+  }
+}
+
+.m-breadcrumb__wrapper {
+  padding-top: spacing(base);
+
+  @include respond-to(medium) {
+    padding-top: spacing(xlarge);
+  }
+}

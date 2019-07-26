@@ -1,0 +1,18 @@
+// ==========================================================================
+// Scroll Utility
+// ==========================================================================
+
+// Prevent a container from being scrollable :eg used on body when mobile
+.u-scroll-none {
+  position: fixed;
+  overflow: hidden;
+}
+
+body.u-scroll-none {
+  // fix for safari mac
+  width: 100%;
+}
+
+.u-scroll-auto {
+  overflow: auto;
+}

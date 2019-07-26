@@ -1,0 +1,26 @@
+// ==========================================================================
+// Input Form Atom
+// ==========================================================================
+
+.input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: spacing(13 20);
+  border: 2px solid lighten(palette(secondary), 40%);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: -apple-system, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: ms(0, $thread: desktop);
+  outline: none;
+
+  @include placeholder {
+    color: lighten(black, 60%);
+  }
+
+  &:active,
+  &:focus {
+    border-color: palette(secondary);
+  }
+}

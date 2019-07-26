@@ -1,0 +1,63 @@
+// ==========================================================================
+// REM FUNCTION
+// ==========================================================================
+//
+//
+// Depending on the capabilities of the browser, this mixin will calculate REM
+// values from a pixel value.
+//
+// EXAMPLES
+//
+// h1 {
+//    margin-bottom: rem-calc(30);
+// }
+//
+// h1 {
+//    margin-bottom: 1.875rem;
+// }
+//
+// h2 {
+//    margin: rem-calc(10 20 30 40);
+// }
+//
+// h2 {
+//    margin-bottom: 0.625rem 1.25rem 1.875rem 2.5rem;
+// }
+//
+// $target: (required) Required pixel size. Multiple sizes as a list
+// Returns: Rem value
+//
+
+@function rem-calc($target) {
+
+  $max: length($target);
+  $values: ();
+  $context: 16;
+
+
+  @for $i from 1 through $max {
+    // Export REM value of $target depending on base-font-size
+
+    $x: nth($target, $i);
+    $y: 0;
+
+    @if $x == auto or $x == inherit {
+      $values: append($values, $x);
+    }
+
+    @else {
+      $y: ($x / $context) * 1rem;
+
+      @if strip-units(abs($y)) == 0 {
+        $values: append($values, 0);
+      }
+
+      @else {
+        $values: append($values, $y);
+      }
+    }
+  }
+
+  @return $values;
+}
+

@@ -1,0 +1,15 @@
+// ==========================================================================
+// Label Form Atom
+// ==========================================================================
+
+.label {
+  display: block;
+  margin-bottom: rem-calc(5);
+  font-size: ms(0, $thread: desktop);
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+label.label {
+  cursor: pointer;
+}

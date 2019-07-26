@@ -1,0 +1,124 @@
+// ==========================================================================
+// Burger Atom
+// ==========================================================================
+
+// Burger parts
+// (---) top    -> &::before
+// [---] middle -> &
+// (---) bottom -> &::after
+
+// Burger
+@mixin burger($width: 20px, $height: 2px, $gutter: 3px, $color: palette(white), $border-radius: 0, $transition-duration: 250ms) {
+  $burger-height: $height !global;
+  $burger-gutter: $gutter !global;
+
+  position: relative;
+  margin-top: $height + $gutter;
+  margin-bottom: $height + $gutter;
+  user-select: none;
+
+  // 1. Fixes jagged edges in Firefox, see issue #10.
+  &,
+  &::before,
+  &::after {
+    display: block;
+    width: $width;
+    height: $height;
+    background-color: $color;
+    outline: 1px solid transparent; // 1
+
+    @if $border-radius != 0 {
+      border-radius: $border-radius;
+    }
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+  }
+
+  &::before {
+    top: -($height + $gutter);
+  }
+
+  &::after {
+    top: $height + $gutter;
+  }
+}
+
+
+// Select parts of the burger
+@mixin burger-parts {
+  &,
+  &::before,
+  &::after {
+    @content;
+  }
+}
+
+@mixin burger-top {
+  &::before {
+    @content;
+  }
+}
+
+@mixin burger-middle {
+  & {
+    @content;
+  }
+}
+
+@mixin burger-bottom {
+  &::after {
+    @content;
+  }
+}
+
+
+// Burger animations
+@mixin burger-to-cross($color: auto) {
+  & {
+    background-color: transparent;
+  }
+
+  @if ($color != auto) {
+    &::before,
+    &::after {
+      background-color: $color;
+    }
+  }
+
+  &::before {
+    transform: translateY($burger-gutter + $burger-height) rotate(45deg);
+  }
+
+  &::after {
+    transform: translateY(-($burger-gutter + $burger-height)) rotate(-45deg);
+  }
+}
+
+.burger {
+  display: inline-block;
+  padding: 0.3em;
+  background: palette(grey-dark);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.burger__text {
+  padding-left: spacing(4);
+  color: palette(white);
+  font-size: ms(-1);
+  font-weight: bold;
+}
+
+.burger__icon {
+  @include burger;
+}
+
+.burger.is--active .burger__icon {
+  @include burger-to-cross;
+}

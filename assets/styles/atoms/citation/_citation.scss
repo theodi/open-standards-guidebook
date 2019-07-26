@@ -1,0 +1,71 @@
+.footnotes {
+  padding: spacing(small);
+  background: palette(grey);
+}
+
+.littlefoot-footnote__button {
+  left: 4px;
+  background: palette(primary);
+  border-radius: rem-calc(2);
+  font-size: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all ease 150ms;
+
+  @include link() {
+    border: solid 1px palette(primary);
+    background: palette(primary);
+    background-image: linear-gradient(to bottom, tint(palette(primary), "lighten"), palette(primary));
+    color: white;
+  }
+
+  @include link-hover() {
+    border-color: tint(palette(primary), "darken");
+    background: tint(palette(primary), "darken");
+  }
+}
+
+.littlefoot-footnote {
+  padding: 0;
+  border: none;
+  background: palette(primary);
+  border-radius: 0;
+  box-shadow: none;
+  transition: none;
+}
+
+.littlefoot-footnote.is-active {
+  opacity: 1;
+}
+
+.littlefoot-footnote__content {
+  background: palette(primary);
+  color: white;
+
+  > * {
+    color: white;
+  }
+
+  a {
+    @include link() {
+      color: white;
+    }
+  }
+}
+
+.littlefoot-footnote .littlefoot-footnote__wrapper {
+  border: none;
+  margin: 0;
+  background: palette(primary);
+  border-radius: 0;
+
+  &::before,
+  &::after {
+    display: none;
+  }
+}
+
+.littlefoot-footnote__tooltip {
+  display: none;
+}
