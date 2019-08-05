@@ -7,6 +7,8 @@ gem 'html-proofer'
 gem 'dotenv'
 gem 'tzinfo-data' if Gem.win_platform?
 gem 'wdm' if Gem.win_platform?
+gem 'activesupport', '~> 5.2', '>= 5.2.3'
+
 
 group :jekyll_plugins do
   gem 'jekyll-git_metadata'

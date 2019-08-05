@@ -143,6 +143,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activesupport (~> 5.2, >= 5.2.3)
   dotenv
   html-proofer
   jekyll (= 3.8.6)
