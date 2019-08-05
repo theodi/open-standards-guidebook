@@ -15,13 +15,19 @@
       add a .js class to the html element
     {% endcomment %}
     <script>
-        window.OSD = {
-            CONFIG: {
-                SITE_URL: '{{ site.url }}',
-                GA: '{{ site.ga }}'  ,
-            },
-        };
         (function(){
+            window.APP = {
+                CONFIG: {
+                    SITE_URL: '{{ site.url }}',
+                    GA: '{{ site.ga }}',
+                    ALGOLIA: {
+                        APPLICATION_ID: {{ site.env['ALGOLIA_APPLICATION_ID'] | jsonify }},
+                        API_KEY: {{ site.env['ALGOLIA_SEARCH_API_KEY'] | jsonify }},
+                        INDEX_NAME: {{ site.env['ALGOLIA_INDEX_NAME'] | jsonify }},
+                    },
+                },
+            };
+
             var doc = document.documentElement;
             doc.classList.remove('no-js');
             doc.classList.add('js', 'js-loading');
@@ -67,6 +73,8 @@
 
     {% comment %} Global Masthead {% endcomment %}
     {% include masthead.html %}
+    {% comment %} @todo @mat Will get replaced by search {% endcomment %}
+    <div id="search"></div>
 
     {% comment %} Site Content {% endcomment %}
     <main id="site-body">
