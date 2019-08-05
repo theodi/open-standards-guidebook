@@ -2,3 +2,4 @@
 # contributing.yml: data relating to contributing to this guide
 ####
 repo_url: 'https://github.com/theodi/open-standards-guidebook'
+cta_text: 'Suggest a change or addition'
