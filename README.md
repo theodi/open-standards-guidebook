@@ -33,6 +33,7 @@
 - [Vue CLI](https://cli.vuejs.org/) - webpack-based build process
 - [Fractal](https://fractal.build/) Living styleguide
 - [git flow](http://nvie.com/posts/a-successful-git-branching-model/) as a branching methodology
+- [Theo](https://github.com/salesforce-ux/theo) for managing [Design Tokens](https://uxdesign.cc/design-tokens-for-dummies-8acebf010d71)
 
 ### Front end:
 
@@ -49,8 +50,7 @@ Linting is enforced on a pre-push hook via [Husky](https://github.com/typicode/h
 
 ### Deployment
 
-- Deployed with [TravisCI](https://travis-ci.org/)
-- Hosted on [GH Pages](https://pages.github.com/)
+- Deployed and hosted with [Netlify](https://www.netlify.com/)
 
 ## Prerequisites:
 
@@ -71,6 +71,22 @@ bundle install --path vendor/bundle
 yarn serve
 ```
 
+## Design Tokens
+
+This project uses [Design Tokens](https://uxdesign.cc/design-tokens-for-dummies-8acebf010d71) to manage shared values such as colours, font families, breakpoints and other size values, so that they can be shared easily accross projects and formats ((S)css, JS) while maintaining a single source of truth.
+
+That single source of truth is held in Design Token files ([spec](https://github.com/salesforce-ux/theo#spec)) in the `design/` directory.
+
+The project uses the YAML formatting option for its design tokens for both ease of use and consistency with Jekyll metadata
+
+## Component-centred design and the Fractal living styleguide
+
+This project takes a [component-based approach](https://www.uxpin.com/studio/design-systems/create-component-based-websites-with-design-systems/) to its design and development. Components are located in the `assets/styles` directory and are documented using the [Fractal](https://fractal.build/) living styleguide tool.
+
+Components are implemented in Fractal in the first instance, using the styleguide as a "workbench" to develop and test components and content scenarios for them before they are integrated into the Jekyll site.
+
+**NB** As a Liquid templating adaptor was not available for Fractal at the time of development, the Fractal templates are written using the very similar **but not identical** [Twig templating language](https://github.com/twigjs/twig.js/wiki)
+
 ## Commands
 
 All commands are via node package scripts.
@@ -89,16 +105,47 @@ This command does several things concurrently:
 - Starts the Fractal styleguide on a port defined in `package.json` under  `buildConfig.ports.assets`
 
 
+You can run/debug each of these tasks separately via:
+
+```
+yarn serve:jekyll
+yarn serve:assets
+yarn serve:fractal
+```
+
+(the top level `yarn serve` task runs each of these tasks concurrently with one another)
+
+
 ### Building for production
 
 ```
 yarn build
 ```
 
+- Compiles the design tokens via Theo
 - Builds the revved assets via `yarn build:assets`
 - Builds  the Jeykll site via  `yarn build:jekyll` / `JEKYLL_ENV='production' bundle exec jekyll build`
-- The built site is output to `dist/`
 
+The built site is output to `dist/`, which is used as the web root directory on deployment
+
+
+You can run/debug each of these tasks separately via:
+
+```
+yarn build:design-tokens
+yarn build:assets
+yarn build:jekyll
+```
+
+### Building the living styleguide to static HTML
+
+You can compile the Fractal styleguide to static HTML via
+
+```
+yarn build:fractal
+```
+
+This will build the styleguide to a `styleguide/` directory in the project root
 
 ### Secondary tasks
 
@@ -150,7 +197,15 @@ Optional:
 
 
 
-## Release and deployment
+## Hosting, release and deployment
+
+
+### Hosting
+
+The site is hosted on [Netlify](https://www.netlify.com/), and is configured to build automatically on push to the `master` branch of the GitHub repo, via the Netlify GH app.
+
+
+### Creating a new release
 
 A release script is included for convenience. Use a [semver](https://semver.org/) compliant version.
 
@@ -168,6 +223,27 @@ This will:
 - Push the release and tag to `origin/master`
 
 **NB** Release script requires [`git-flow`](https://github.com/nvie/gitflow) cli to be installed locally.
+
+### Deployment
+
+[Netlify](https://www.netlify.com/) is configured to automatically build the site on push to the `master` branch of the GitHub repo, via the Netlify GH app.
+
+An environment variable of `JEKYLL_ENV=production` is set via the Netlify web UI in order to trigger Jekyll to use the production configuration when building the static pages for the site.
+
+The command run by netlify is:
+
+```
+yarn build
+```
+
+Which unpacks to:
+
+```shell
+yarn build:design-tokens # Compile the abstract design tokens to scss/json
+yarn build:assets # Build the Image, CSS and JS assets for the site via webpack / Vue CLI
+yarn build:jekyll # Build the site's HTML via Jekyll
+```
+
 
 ## Project structure
 
