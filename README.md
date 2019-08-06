@@ -2,26 +2,32 @@
 
 ## Table of Contents
 
-* [Table of Contents](#table-of-contents)
 * [Technologies / dependencies](#technologies--dependencies)
-  * [Built with](#built-with)
-  * [Front end:](#front-end)
-  * [Linting](#linting)
-  * [Deployment](#deployment)
+ * [Built with](#built-with)
+ * [Front end:](#front-end)
+ * [Linting](#linting)
+ * [Deployment](#deployment)
 * [Prerequisites:](#prerequisites)
 * [Project setup](#project-setup)
+* [Design Tokens](#design-tokens)
+* [Component-centred design and the Fractal living styleguide](#component-centred-design-and-the-fractal-living-styleguide)
+* [Search integration](#search-integration)
 * [Commands](#commands)
-  * [Run dev server](#run-dev-server)
-  * [Building for production](#building-for-production)
-  * [Secondary tasks](#secondary-tasks)
-  * [Linting](#linting-1)
+ * [Run dev server](#run-dev-server)
+ * [Building for production](#building-for-production)
+ * [Building the living styleguide to static HTML](#building-the-living-styleguide-to-static-html)
+ * [Secondary tasks](#secondary-tasks)
+ * [Linting](#linting-1)
     * [Building styleguide as static HTML](#building-styleguide-as-static-html)
     * [Check HTML links (WIP)](#check-html-links-wip)
-* [Release and deployment](#release-and-deployment)
+* [Hosting, release and deployment](#hosting-release-and-deployment)
+ * [Hosting](#hosting)
+ * [Creating a new release](#creating-a-new-release)
+ * [Deployment](#deployment-1)
 * [Project structure](#project-structure)
 * [Configuration](#configuration)
-  * [Jekyll](#jekyll)
-  * [Vue CLI](#vue-cli)
+ * [Jekyll](#jekyll)
+ * [Vue CLI](#vue-cli)
 * [Hacks](#hacks)
 * [Other useful bits](#other-useful-bits)
 
@@ -62,10 +68,15 @@ Linting is enforced on a pre-push hook via [Husky](https://github.com/typicode/h
 
 ## Project setup
 
-```
+```shell
 git clone git@github.com:theodi/open-standards-guidebook.git
 cd open-standards-guidebook
 cp .env.example .env
+```
+Now populate Algolia environment variables in `.env` [see Deployment](#deployment-1), then
+
+
+```shell
 yarn install
 bundle install --path vendor/bundle
 yarn serve
@@ -86,6 +97,10 @@ This project takes a [component-based approach](https://www.uxpin.com/studio/des
 Components are implemented in Fractal in the first instance, using the styleguide as a "workbench" to develop and test components and content scenarios for them before they are integrated into the Jekyll site.
 
 **NB** As a Liquid templating adaptor was not available for Fractal at the time of development, the Fractal templates are written using the very similar **but not identical** [Twig templating language](https://github.com/twigjs/twig.js/wiki)
+
+## Search integration
+
+Search is provided via [Algolia](https://www.algolia.com/), using [jekyll-algolia](https://community.algolia.com/jekyll-algolia/) to index the site at build time in Netlify, and Algolia's [vue-instantsearch](https://github.com/algolia/vue-instantsearch) library to build the reactive JS search UI. Because of the static nature of the site, there is no fallback search for users without JavaScript.
 
 ## Commands
 
@@ -230,10 +245,22 @@ This will:
 
 An environment variable of `JEKYLL_ENV=production` is set via the Netlify web UI in order to trigger Jekyll to use the production configuration when building the static pages for the site.
 
+Additionally the following environment variables are set to enable the Algolia integration:
+
+```
+ALGOLIA_API_KEY
+ALGOLIA_APPLICATION_ID
+ALGOLIA_INDEX_NAME
+ALGOLIA_SEARCH_API_KEY
+```
+
+Values for all these can be found in the Algolia dashboard under API keys, with the exception of the Application ID, which is listed in the sidebar of the Algolia UI.
+
+
 The command run by netlify is:
 
 ```
-yarn build
+yarn build && yarn algolia:index
 ```
 
 Which unpacks to:
@@ -242,6 +269,7 @@ Which unpacks to:
 yarn build:design-tokens # Compile the abstract design tokens to scss/json
 yarn build:assets # Build the Image, CSS and JS assets for the site via webpack / Vue CLI
 yarn build:jekyll # Build the site's HTML via Jekyll
+yarn algolia:index # index the built site in Algolia
 ```
 
 
