@@ -1,0 +1,96 @@
+// ==========================================================================
+// Button Atom
+// ==========================================================================
+
+.btn {
+  display: inline-block;
+  padding: spacing(16 35);
+  border-radius: rem-calc(2);
+  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all ease 150ms;
+
+
+  @include respond-to(medium) {
+    font-size: rem-calc(fontsize(regular));
+  }
+
+  @include link() {
+    border: solid 2px palette(primary);
+    background: palette(primary);
+    // @todo extract
+    background-image: linear-gradient(to bottom, tint(palette(primary), "lighten"), palette(primary));
+    color: white;
+    font-size: ms(-1);
+  }
+
+  @include link-hover() {
+    border-color: tint(palette(primary), "darken");
+    background: tint(palette(primary), "darken");
+  }
+}
+
+.btn--primary {
+  @include link() {
+    border: solid 2px palette(primary);
+    background: palette(primary);
+    // @todo extract
+    background-image: linear-gradient(to bottom, tint(palette(primary), "lighten"), palette(primary));
+    color: white;
+  }
+
+  @include link-hover() {
+    border-color: tint(palette(primary), "darken");
+    background: tint(palette(primary), "darken");
+  }
+}
+
+.btn--secondary {
+  @include link() {
+    border: solid 2px palette(secondary);
+    background: palette(secondary);
+    background-image: linear-gradient(to bottom, tint(palette(secondary), "lighten"), palette(secondary));
+    color: white;
+  }
+
+  @include link-hover() {
+    border-color: tint(palette(secondary), "darken");
+    background: tint(palette(secondary), "darken");
+  }
+}
+
+.btn--naked {
+  @include link() {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: none;
+    color: palette(primary);
+  }
+
+  @include link-hover() {
+    color: black;
+  }
+}
+
+.btn--block {
+  display: block;
+}
+
+.btn--small {
+  padding: spacing(7 15);
+
+  @include link() {
+    font-size: rem-calc(12);
+  }
+}
+
+.btn[disabled] {
+  border: none;
+  background: palette(grey);
+  color: darken(palette(grey), 25%);
+  cursor: not-allowed;
+}

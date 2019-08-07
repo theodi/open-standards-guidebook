@@ -1,0 +1,63 @@
+// ==========================================================================
+// Checklist Heading Atom
+// ==========================================================================
+
+.h-checkbox {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+
+  & + label {
+    position: relative;
+    padding: 0;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  & + label::before {
+    display: inline-block;
+    width: rem-calc(18);
+    height: rem-calc(18);
+    border: 3px solid palette(primary);
+    margin-top: rem-calc(3);
+    margin-right: 10px;
+    background: white;
+    border-radius: rem-calc(3);
+    content: "";
+    vertical-align: text-top;
+
+    @include respond-to(medium) {
+      margin-top: rem-calc(5);
+    }
+  }
+
+  &:checked + label::after {
+    position: absolute;
+    top: rem-calc(13);
+    left: rem-calc(6);
+    width: 3px;
+    height: 3px;
+    background: palette(primary);
+    box-shadow:
+      2px 0 0 palette(primary),
+      4px 0 0 palette(primary),
+      4px -2px 0 palette(primary),
+      4px -4px 0 palette(primary),
+      4px -6px 0 palette(primary),
+      4px -8px 0 palette(primary);
+    content: "";
+    transform: rotate(45deg);
+
+    @include respond-to(medium) {
+      top: rem-calc(15);
+    }
+  }
+
+  &:checked + label {
+    text-decoration: line-through;
+    text-decoration-color: palette(primary);
+  }
+}

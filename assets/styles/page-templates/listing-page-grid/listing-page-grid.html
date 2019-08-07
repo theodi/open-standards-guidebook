@@ -1,0 +1,19 @@
+<style>
+  body {
+    padding: 0;
+    margin: 0;
+  }
+</style>
+
+{% render '@cta-tray' %}
+{% render '@masthead' %}
+{% include '@hero' %}
+
+<section class="pad-top-medium pad-top-xlarge--medium pad-bottom-medium pad-bottom-xlarge--medium">
+    <div class="wrapper">
+        {% render '@section-listing--long-grid' %}
+    </div>
+</section>
+
+{% render '@cta' %}
+{% render '@footer' %}

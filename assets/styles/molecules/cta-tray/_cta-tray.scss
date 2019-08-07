@@ -1,0 +1,52 @@
+// ==========================================================================
+// CTA Tray Molecule
+// ==========================================================================
+
+.m-cta-tray {
+  width: 100%;
+  padding: spacing(15 0);
+  background: palette(white);
+  text-align: left;
+
+  @include link-hover() {
+    cursor: pointer;
+  }
+
+  &.is--open {
+
+  }
+}
+
+.m-cta-tray__title {
+  color: palette(secondary);
+  font-size: ms(0, $thread: desktop);
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-skip: ink;
+
+  .chevron {
+    margin-bottom: spacing(2);
+    margin-left: spacing(3);
+  }
+}
+
+.m-cta-tray__close {
+  display: none;
+  font-size: ms(0, $thread: desktop);
+
+  @include respond-to(medium) {
+    display: block;
+  }
+}
+
+
+.m-cta-tray__inner {
+  display: none;
+  padding: spacing(15 0);
+  background: palette(secondary);
+  color: white;
+
+  &.is--open {
+    display: block;
+  }
+}

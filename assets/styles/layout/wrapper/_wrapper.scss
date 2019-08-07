@@ -1,0 +1,20 @@
+// ==========================================================================
+// WRAPPER LAYOUT
+// ==========================================================================
+
+// CONFIG + SETTINGS
+// Max-width of the wrapper module regardless of the breakpoint,
+$_wrapper-max-width: 1200;
+
+// Gutter width of the wrapper to aid legibility on smaller devices.
+$_wrapper-padding: 25;
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: rem-calc($_wrapper-max-width);
+  padding-right: rem-calc($_wrapper-padding);
+  padding-left: rem-calc($_wrapper-padding);
+  margin: 0 auto;
+  clear: both;
+}

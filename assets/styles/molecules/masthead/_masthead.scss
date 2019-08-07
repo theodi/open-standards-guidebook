@@ -1,0 +1,18 @@
+// ==========================================================================
+// Masthead Molecule
+// ==========================================================================
+
+.m-masthead {
+  padding-top: spacing(small);
+  padding-bottom: spacing(small);
+  background: palette(grey-dark);
+
+  @include respond-to(medium) {
+    padding-top: spacing(medium);
+    padding-bottom: spacing(small);
+  }
+
+  @media print {
+    display: none;
+  }
+}

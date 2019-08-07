@@ -1,0 +1,30 @@
+// ==========================================================================
+// Callout Atom
+// ==========================================================================
+
+.callout {
+  @include trim();
+
+  padding: spacing(base);
+  margin: spacing(base 0);
+  background: palette(grey);
+
+  @include respond-to(medium) {
+    padding: spacing(medium);
+  }
+
+  > *:first-child {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  > *:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+    li:last-child {
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+}

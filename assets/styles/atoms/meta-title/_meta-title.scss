@@ -1,0 +1,41 @@
+// ==========================================================================
+// Meta Title Atom
+// ==========================================================================
+
+.meta-title {
+  display: block;
+  padding-bottom: spacing(0);
+  font-size: ms(-1);
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &,
+  & > a {
+    color: palette(secondary);
+  }
+
+  > a {
+    @include link() {
+      color: palette(secondary);
+      text-decoration: none;
+    }
+
+    @include link-hover() {
+      color: palette(secondary);
+      text-decoration: underline;
+    }
+  }
+}
+
+.meta-title--white {
+  &,
+  & > a {
+    color: palette(white);
+  }
+
+  > a {
+    @include link() {
+      color: palette(white);
+    }
+  }
+}

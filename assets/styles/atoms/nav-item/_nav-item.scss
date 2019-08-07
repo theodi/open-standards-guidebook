@@ -1,0 +1,98 @@
+// ==========================================================================
+// Nav Item Molecule
+// ==========================================================================
+
+.nav-item {
+  &,
+  & > a {
+    @include link() {
+      display: block;
+      margin-bottom: spacing(5);
+      color: palette(grey-dark);
+      font-size: ms(-1);
+      line-height: 1.33;
+
+      @include respond-to(medium) {
+        font-size: ms(0, $thread: desktop);
+      }
+    }
+
+    @include link-hover() {
+      color: palette(primary);
+      outline: none;
+    }
+  }
+
+  &.is--active {
+    &,
+    & > a {
+      @include link() {
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.nav-item--large {
+  &,
+  & > a {
+    @include link() {
+      margin-bottom: spacing(11);
+      font-size: ms(0);
+
+      @include respond-to(medium) {
+        font-size: ms(1);
+      }
+    }
+  }
+}
+
+.nav-item--inline {
+  &,
+  & > a {
+    @include link() {
+      display: inline-block;
+      margin-right: spacing(8);
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.nav-item--white {
+  &,
+  & > a {
+    @include link() {
+      display: block;
+      margin-right: spacing(8);
+      margin-bottom: spacing(5);
+      color: white;
+      font-size: ms(-1);
+
+      @include respond-to(medium) {
+        font-size: ms(0, $thread: desktop);
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    @include link-hover() {
+      color: tint(white, "darken");
+    }
+  }
+
+  &.is--active {
+    &,
+    & > a {
+      @include link() {
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+  }
+}

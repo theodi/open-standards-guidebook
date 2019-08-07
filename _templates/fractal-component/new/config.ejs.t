@@ -1,5 +1,5 @@
 ---
-to: assets/components/<%= type %>s/<%= slug %>/<%= slug %>.config.yml
+to: assets/styles/<%= type %>s/<%= slug %>/<%= slug %>.config.yml
 ---
 title: <%= h.capitalize(slug) %>
 context:

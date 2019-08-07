@@ -1,0 +1,31 @@
+// ==========================================================================
+//  Layout Alignment
+// ==========================================================================
+
+.align-end {
+  justify-content: flex-end;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+}
+
+.align-end {
+  justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+}
+
+.align-right {
+  margin-left: auto;
+}
+
+.align-v-top {
+  align-items: flex-start;
+}
+
+.align-v-bottom {
+  align-items: flex-end;
+}
+
+.align-v-center {
+  align-items: center;
+}

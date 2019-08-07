@@ -1,0 +1,144 @@
+
+
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="dns-prefetch" href="https://cdn.polyfill.io">
+    {% if site.isBuild %}
+        <link rel="stylesheet" href="{{ 'app.css' | rev | relative_url }}">
+    {% endif %}
+
+    <title>{{ page.title }} | {{ site.name }}</title>
+    {% comment %}
+      add a .js class to the html element
+    {% endcomment %}
+    <script>
+        (function(){
+            window.APP = {
+                CONFIG: {
+                    SITE_URL: '{{ site.url }}',
+                    GA: '{{ site.ga }}',
+                    ALGOLIA: {
+                        APPLICATION_ID: {{ site.env['ALGOLIA_APPLICATION_ID'] | jsonify }},
+                        API_KEY: {{ site.env['ALGOLIA_SEARCH_API_KEY'] | jsonify }},
+                        INDEX_NAME: {{ site.env['ALGOLIA_INDEX_NAME'] | jsonify }},
+                    },
+                },
+            };
+
+            var doc = document.documentElement;
+            doc.classList.remove('no-js');
+            doc.classList.add('js', 'js-loading');
+        }());
+    </script>
+
+    {% seo title=false %}
+    {% comment %}
+    Needs to be revved so can't use seo tag to output{% endcomment %}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:image" content="{{ site.url}}{{ 'img/twitter-card.png' | rev | relative_url }}" />
+    <meta property="og:image" content="{{ site.url}}{{ 'img/twitter-card.png' | rev | relative_url }}" />
+    <meta name="twitter:creator" content="@{{ site.twitter.username }}" />
+    {% capture robots %}
+        {% if page.robots %}
+            {{ page.robots }}
+        {% else %}
+            {{ site.robots }}
+        {% endif %}
+    {% endcapture %}
+    <meta name="robots" content="{{ robots | strip }}">
+
+    {% include favicons.html %}
+</head>
+
+{% capture body_class -%}
+{% if jekyll.environment == "development" %}debug{% endif -%}
+{% endcapture -%}
+<body class="{{ body_class }}">
+
+
+<div data-page-container>
+    {% comment %} Global CTA with default content injected {% endcomment %}
+    {% capture cta_text %}
+        <div class="u-trim--all">
+            <p>Something missing? <a class="link link--bold link--secondary" href="{{ site.data.contributing.repo_url }}/issues">{{ site.data.contributing.cta_text }}</a></p>
+        </div>
+    {% endcapture %}
+    {% comment %} Global CTA Above Masthead {% endcomment %}
+    <div class="is-hidden is-visible--medium">
+    {% include cta.html content=cta_text color="white" %}
+    </div>
+
+    {% comment %} Global Masthead {% endcomment %}
+    {% include masthead.html %}
+    {% comment %} @todo @mat Will get replaced by search {% endcomment %}
+    <div id="search"></div>
+
+    {% comment %} Site Content {% endcomment %}
+    <main id="site-body">
+        {{ content }}
+    </main>
+
+    <div class="pad-top-medium pad-top-large--medium pad-bottom-medium pad-bottom-xlarge--medium island island--grey u-hide-print">
+        <div class="wrapper">
+            <div class="g">
+                {% for item in site.data.footer_aux_nav %}
+
+                    {% comment %}Is this a custom item (has title and url) {% endcomment %}
+                    {% if item.title and item.url %}
+                        {% assign itemPage = item %}
+                    {% else %}
+                        {% assign path = item %}
+
+                        {% comment %}Add a .md file extension if missing {% endcomment %}
+                        {% unless path contains '.md' or path contains '.html' %}
+                            {% assign path = path | append:'.md' %}
+                        {% endunless %}
+                        {% assign itemPage = site.pages | where:'path', path | first %}
+                    {% endif %}
+
+                    {% if itemPage %}
+                        <div class="g__cell g__cell-12 g__cell-6--medium g__cell-4--large">
+                            <a class="link link--black" href="{{ itemPage.url | relative_url }}"><strong>{{ itemPage.title | improve  }}</strong></a>
+                            <p>{{ itemPage.description | improve  }}</p>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    {% comment %} Global CTA Above Footer {% endcomment %}
+    {% include cta.html content=cta_text color="primary" %}
+
+    {% comment %} Global Footer {% endcomment %}
+    {% include footer.html %}
+</div>
+
+
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+
+{% if site.isBuild %}
+  <script src="{{ 'chunk-vendors.js' | rev | path }}"></script>
+  <script src="{{ 'app.js' | rev | path }}"></script>
+{% else %}
+  <script src="http://localhost:{{ site.env['ASSET_SERVER_PORT'] }}/app.js"></script>
+{% endif %}
+
+
+
+{% if site.ga and jekyll.environment == 'production' %}
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '{{ site.ga }}', 'auto');
+  ga('send', 'pageview');
+</script>
+{% endif %}
+</body>
+</html>

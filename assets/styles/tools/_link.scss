@@ -1,0 +1,51 @@
+// ==========================================================================
+// Links Mixin
+// ==========================================================================
+
+////
+/// @group Mixins
+////
+
+/// Applies :link and :visited
+///
+/// @example scss - Basic Usage Sass
+///    .im-a-link {
+///        @include link(){
+///           background: grey;
+///       }
+///   }
+
+
+@mixin link() {
+  &,
+  &:link,
+  &:visited {
+    @content;
+  }
+}
+
+/// Applies :focus and :hover
+///
+/// @example scss - Basic Usage Sass
+///    .im-a-link:hover {
+///        @include link-hover(){
+///           background: black;
+///       }
+///   }
+
+@mixin link-hover() {
+  &:hover,
+  &:focus {
+    @content;
+  }
+}
+
+@mixin link-plain() {
+  background-image: none;
+  color: currentColor;
+  text-decoration: none !important;
+
+  @include link-hover {
+    background-image: none;
+  }
+}
