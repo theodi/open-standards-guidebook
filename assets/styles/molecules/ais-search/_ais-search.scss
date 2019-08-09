@@ -1,0 +1,119 @@
+/* Algolia search styling */
+
+.ais-InstantSearch {
+  background-color: palette(grey-dark);
+
+}
+
+.ais-SearchBox {
+  @extend .wrapper;
+  padding: spacing(base);
+}
+
+.ais-SearchBox-form {
+  position: relative;
+  width: 100%;
+
+  @include respond-to(medium) {
+    width: 50%;
+  }
+}
+
+.ais-SearchBox-input {
+  width: 100%;
+  max-width: 100%;
+  height: rem-calc(50);
+  padding: spacing(10 15 8);
+  border: 1px solid palette(grey);
+  background-color: white;
+  border-radius: rem-calc(2);
+  font-size: ms(-1);
+  line-height: 1.44;
+}
+
+.ais-SearchBox-submit,
+.ais-SearchBox-reset {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: rem-calc(50);
+  padding: spacing(11 20 7);
+  border: solid 2px palette(primary);
+  background: palette(primary);
+  background-image: linear-gradient(to bottom, tiny(palette(primary), "lighten"), palette(primary));
+  border-radius: 0px 2px 2px 0px;
+
+  @include link-hover() {
+    border-color: tint(palette(primary), "darken");
+    background: tint(palette(primary), "darken");
+  }
+
+  svg {
+    width: rem-calc(14);
+    height: rem-calc(14);
+    fill: white;
+  }
+
+}
+
+.ais-Hits-container {
+  background: white;
+}
+
+.ais-Hits {
+  padding: spacing(0 base base base);
+  background-color: white;
+
+  @include respond-to(medium) {
+    padding-top: spacing(base);
+  }
+}
+
+.ais-Hits-list {
+  padding: 0;
+  @extend .wrapper;
+}
+
+.ais-Hits-item {
+  padding-bottom: spacing(base);
+  padding-left: 0;
+  border-bottom: 1px solid palette(grey);
+
+  &:before {
+    display: none;
+  }
+}
+
+.ais-Hits-item a {
+    color: black;
+    text-decoration: none;
+  }
+
+.ais-Hits-title {
+  color: palette(primary);
+  text-decoration: underline;
+  transition: color 250ms;
+
+  &:hover {
+    color: black;
+  }
+}
+
+.ais-Snippet {
+  mark {
+    background-color: palette(primary);
+    color: white;
+  }
+}
+
+.ais-NoResults {
+  @extend .wrapper;
+  background-color: white;
+  padding-bottom: spacing(base);
+}
+
+.ais-PoweredBy {
+  padding-bottom: spacing(base);
+  background-color: white;
+  text-align: center;
+}

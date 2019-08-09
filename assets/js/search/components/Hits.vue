@@ -1,8 +1,8 @@
 <template>
-  <div v-if="showHits">
+  <div class="ais-Hits-container" v-if="showHits">
     <ais-hits>
       <a slot="item" slot-scope="{ item }" :href="item.url">
-        <h3>{{ item.title }}</h3>
+        <h3 class="ais-Hits-title">{{ item.title }}</h3>
         <ais-snippet attribute="description" :hit="item" />
       </a>
     </ais-hits>
