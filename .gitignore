@@ -10,6 +10,7 @@
 .bundle/
 yarn-error.log
 /vendor/bundle/
+/contributions/vendor/bundle
 
 ###################
 # Build artefacts
