@@ -84,7 +84,7 @@
     "hygen": "^4.0.7",
     "inquirer": "^6.2.2",
     "mini-css-extract-plugin": "^0.7.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "prettier": "^1.16.4",
     "prettier-stylelint": "^0.4.2",
     "purgecss-whitelister": "^2.1.0",
