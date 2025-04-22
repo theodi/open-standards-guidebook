@@ -48,7 +48,7 @@
     "dotenv": "^8.0.0",
     "enquire.js": "^2.1.6",
     "instantsearch.js": "^3.6.0",
-    "ip": "^1.1.5",
+    "ip": "^2.0.1",
     "js-yaml": "^3.13.1",
     "jsonfile": "^5.0.0",
     "littlefoot": "^1.0.0",
