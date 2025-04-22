@@ -91,7 +91,7 @@
     "randomatic": "^3.1.1",
     "sane": "^4.1.0",
     "sass-loader": "^7.1.0",
-    "shelljs": "^0.8.3",
+    "shelljs": "^0.8.5",
     "stylelint": "^10.1.0",
     "stylelint-config-idiomatic-order": "^7.0.0",
     "stylelint-config-sass-guidelines": "^6.0.0",
